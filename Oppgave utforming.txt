@@ -27,13 +27,10 @@ Vi velger å benytte oss av Eclipse på grunn av tidligere erfaring under utdann
 Vi vil bruke smidig(-)utviklings metodikk, hvor vi setter opp kortere perioder, hvor man jobber på spesifikke problemstillinger. Idéen med smidig utvikling er at etter hver utviklings periode(sprint) sitter man igjen med et system som virker med den funksjonaliteten som er planlagt for sprinten. Hver sprint begynner med en planleggingsrunde over hva man skal ha med i sprinten, og avsluttes med full testing og deployment(utrulling). Vi planlegger i stor grad å benytte Test Driven Development(TDD)(Kanskje finne en norsk versjon her også?) for å sørge for at API'er er godt testet og ikke forandrer seg overtid. Semantic versioning(semver.org)(her bør vi finne et norskt ord) er et versjonerings konsept som gjør det enkelt å spesifisere API kompabilitet over livstiden av et produkt. Vi velger å benytte det i vårt prosjekt. Vi setter opp til en felles dag i uken med arbeid i plenum, og jobber hver for oss de resterende dager. Vi kommer til å bruke 3 uker pr sprint, oppgaver som ikke er utført i en sprint på grunn av manglende tid vil bli overført til neste sprint. Start og slutt på en sprint legger til felles arbeidsdager i den gjeldende uken. All dokumentasjon med unntak av selve bachlore oppgaven benytter engelsk språk. Dette er fordi prosjektet publiseres som åpenkildekode, og det blir da mulig å få bistand fra eksterne aktører.
 
 ## Løsning ##
- - Lage en webapplikasjon
  - Java-bibliotek som skal ta input data og generere SVG
- - Java-bibliotek som kan ta en SVG fil, og lage et bitmap(om SVG ikke er tilgjenglig)
-	- Minimum font størrelse, 10 / 8 pt.
  - Java-bibliotek som parser input data og lager en datastruktur som SVG-biblioteket kan bruke.
- - Desktop/Web applikasjon som kan bruke de nevnte java-bibliotek.
- - Desktop applikasjon som benytter web tjenesten for graf generering(Offline mode?)
+ - Lage en webapplikasjon som kan bruke de nevnte java-bibliotek.
+
  - Dekningsgrad av SVG-støtte i nettlesere (hvor mye av standarden støtter de? bugs? politiske synspunkter)
  - Proprietære teknologier som Flash, SilverLight og VML istedenfor SVG.
  - JavaScript-biblioteker som innkapsler vektor-tegning (slik som http://raphaeljs.com/).
