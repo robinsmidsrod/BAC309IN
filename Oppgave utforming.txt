@@ -1,0 +1,72 @@
+## Bachlore oppgave ##
+
+## Abstact ##
+ - Kort hva oppgaven går ut på
+ - Hvorfor valgte vi denne oppgaven
+
+## Problemstilling ##
+Vi ønsker å lage en java komponent som tar forsjellige typer input data og
+generer forsjellige typer grafer i SVG format. Dette er veldig likt hva regneark
+kan gjøre med sine graf komponenter. Vi ønsker å gi den samme muligheten til 
+applikasjoner for web hvor SVG er svært vanlig. Vi skal ha støtte for flere
+graftyper, blant annet Line/Pie/Bar/Point-chart. For å gjøre det enklere for
+sluttbrukere å benytte komponenten skal vi også kunne lese inn data fra tradisjonelle
+filformater som CSV/XML/XLS(ODT).
+
+## Verktøy ##
+ - Eclipse 3.x
+ - Tomcat webapplication server
+ - J2SE 1.5
+ - Batik SVG toolkit
+ - Git revision control system
+ - Github.com repository
+ - Liquidplanner.com project management tool
+
+Vi velger å benytte oss av Eclipse på grunn av tidligere erfaring under utdanningsløpet. Siden
+vi har planlagt å lage en web applikasjon trenger vi også en servlet container og det er da
+naturlig å bruke apache sin tomcat siden denne er integrert i eclipse. Vi har ingen planer
+om å begrense applikasjonen til kun å virke i tomcat men støtter alle de tradisjonelle servlet
+kontainerne. Vi velger å benytte JS2SE 1.5 og kompilere alle komponenter under denne standarden.
+Dette gir oss økt kompabilitet med eldre Mac installasjoner som ikke har støtte for J2SE 1.6.
+Vi kommer mest sannsynlig til å bruke Batik SVG toolkit for å slippe reimplementasjon av hele
+SVG standarden, noe Batik ser ut til å gjøre svært godt. For å kordinere oppgavene velger vi
+å bruke liquidplanner.com(LP) som er et svært godt planleggingsverktøy som er gratis tilgjenglig
+for akademisk bruk. LP er svært godt egnet til en smidig utviklingsmetodikk(Agile). Valget på
+Git benytter vi fordi det gir god støtte for desentralisert utvikling. Den har også enkel støtte
+for branching, som gjør det lett å jobbe på flere separate idéer samtidig. Github er en tjeneste
+som tillater hosting av git kildekodesamlinger(repositories) og det er gratis for åpnekildekode
+prosjekter. Vi velger å tilgjengeliggjøre vårt prosjekt som åpenkildekode fra dag en. Prosjektet
+vil bli lisensiert under BSD lisensen, som også gjør det mulig å bruke komponentene kommersielt.
+En av grunnene til å bruke Github er at den har et godt system for å integrere andre utviklere
+som kanskje ønsker å hjelpe til med utvikling i fremtiden. 
+
+## Arbeidsmetodikk ##
+ - Smidig utviklings metode (Agile development method)
+ - Test Driven Development
+ - Semantic Versioning
+ - Bruke engelsk språk
+
+Vi vil bruke Agile utviklings metodikk, hvor vi setter opp kortere perioder, hvor man jobber
+på spesifikke problemstillinger. Idéen med smidig utvikling er at etter hver utviklings periode(sprint)
+sitter man igjen med et system som virker med den funksjonaliteten som er planlagt for sprinten.
+Hver sprint begynner med en planleggingsrunde over hva man skal ha med i sprinten, og avsluttes
+med full testing og deployment. Vi planlegger i stor grad å benytte Test Driven Development(TDD) for å
+sørge for at API'er er godt testet og ikke forandrer seg overtid. Semantic versioning(semver.org) er
+et versjonerings konsept som gjør det enkelt å spesifisere API kompabilitet over livstiden av et
+produkt. Vi velger å benytte det i vårt prosjekt. Vi setter opp til en felles dag i uken med
+arbeid i plenum, og jobber hver for oss de resterende dager. Vi kommer til å bruke 3 uker pr sprint,
+oppgaver som ikke er utført i en sprint på grunn av manglende tid vil bli overført til neste sprint.
+Start og slutt på en sprint legger til felles arbeidsdager i den gjeldende uken. All dokumentasjon med
+unntak av selve bachlore oppgaven benytter engelsk språk. Dette er fordi prosjektet publiseres som
+åpenkildekode, og det blir da mulig å få bistand fra eksterne aktører.
+
+## Løsning ##
+ - Lage en webapplikasjon
+ - Komponent som skal ta input data og generere SVG
+ - Komponent som kan ta en SVG fil, og lage et bitmap(om SVG ikke er tilgjenglig)
+	- Minimum font størrelse, 10 / 8 pt.
+ - Komponent som parser input data og lager en datastruktur som SVG komponenten kan bruke.
+ - Desktop/Web applikasjon som kan bruke de nevnte komponentene.
+ - Desktop applikasjon som benytter web tjenesten for graf generering(Offline mode?)
+
+
