@@ -28,11 +28,11 @@ Vi vil bruke smidig(-)utviklings metodikk, hvor vi setter opp kortere perioder, 
 
 ## Løsning ##
  - Lage en webapplikasjon
- - Komponent som skal ta input data og generere SVG
- - Komponent som kan ta en SVG fil, og lage et bitmap(om SVG ikke er tilgjenglig)
+ - Java-bibliotek som skal ta input data og generere SVG
+ - Java-bibliotek som kan ta en SVG fil, og lage et bitmap(om SVG ikke er tilgjenglig)
 	- Minimum font størrelse, 10 / 8 pt.
- - Komponent som parser input data og lager en datastruktur som SVG komponenten kan bruke.
- - Desktop/Web applikasjon som kan bruke de nevnte komponentene.
+ - Java-bibliotek som parser input data og lager en datastruktur som SVG-biblioteket kan bruke.
+ - Desktop/Web applikasjon som kan bruke de nevnte java-bibliotek.
  - Desktop applikasjon som benytter web tjenesten for graf generering(Offline mode?)
  - Dekningsgrad av SVG-støtte i nettlesere (hvor mye av standarden støtter de? bugs? politiske synspunkter)
  - Proprietære teknologier som Flash, SilverLight og VML istedenfor SVG.
