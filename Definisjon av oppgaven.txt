@@ -31,7 +31,7 @@ Vi vil bruke smidig(-)utviklings metodikk, hvor vi setter opp kortere perioder, 
  - Java-bibliotek som parser input data og lager en datastruktur som SVG-biblioteket kan bruke.
  - Lage en webapplikasjon som kan bruke de nevnte java-bibliotek.
 
- - Dekningsgrad av SVG-støtte i nettlesere (hvor mye av standarden støtter de? bugs? politiske synspunkter)
+ - Dekningsgrad av SVG-støtte i nettlesere (hvor mye av standarden støtter de? bugs? politiske synspunkter. Hvorfor er dekningsgraden slik er viktig.)
  - Proprietære teknologier som Flash, SilverLight og VML istedenfor SVG.
  - JavaScript-biblioteker som innkapsler vektor-tegning (slik som http://raphaeljs.com/).
  
