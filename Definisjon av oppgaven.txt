@@ -1,5 +1,14 @@
 # Bacheloroppgave om Scalable Vector Graphics (SVG) #
 
+Bachelor for Informatikk 2009/2010
+Høgskolen i Vestfold
+
+Gruppemedlemmer:
+ * Petter Dahl Thunæs
+ * Robin Smidsrød
+
+Veileder: Viggo Holmstedt
+
 ## Problemstilling ##
 
 Vi ønsker å lage et java-bibliotek som tar forsjellige typer inn-data 
