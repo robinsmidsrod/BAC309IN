@@ -11,17 +11,23 @@ Veileder: Viggo Holmstedt
 
 ## Problemstilling ##
 
-Vi ønsker å lage et java-bibliotek som tar forsjellige typer inn-data 
-og generer forsjellige typer grafer i SVG-format. Dette er veldig likt 
-hva regneark kan gjøre med sine graf-komponenter. Vi ønsker å gi den 
-samme muligheten til applikasjoner for web. Vi skal ha støtte for flere 
-graftyper, blant annet linje, kake, streker og punkter. For å gjøre 
-det enklere for sluttbrukere å benytte java-biblioteket skal vi også 
-kunne lese inn data fra strukturerte tekstfiler (CSV). I tillegg ønsker 
-vi også å finne ut av om SVG fremdeles er den teknologien som 
-anbefales for presentasjon av skalerbar grafikk på World Wide Web, 
-eller om det er kommet nye teknologier på markedet som prøver å 
-sidestille SVG som standard. 
+SVG-standarden (Scalable Vector Graphics) har vært tilgjengelig i mange 
+år. Den har likevel ikke total markedspenetrasjon. Vi ønsker å finne 
+ut hvorfor SVG den dag i dag fremdeles ikke kan benyttes av utviklere 
+uten mye hodebry. En viktig del av dette er å finne ut hvordan 
+Microsoft har klart å sette kjepper i hjulene for adopsjon av 
+SVG-standarden. I tillegg ønsker vi også å finne ut av om SVG 
+fremdeles er den teknologien som anbefales for presentasjon av skalerbar 
+grafikk på World Wide Web, eller om det er kommet andre teknologier på 
+markedet som bedre løser SVG sitt problemområde. 
+
+For å illustrere bruk av SVG ønsker vi å lage et bibliotek for å 
+generere diagrammer til forretningsbruk, slik som kakediagram og 
+linjediagram. Vi velger også å lage et tradisjonelt program med 
+grafisk brukergrensesnitt. Dette programmet skal ta imot data fra 
+brukeren og generere SVG-filer ved hjelp av biblioteket omtalt over. 
+Programmet skal kunne lese inn data fra ekstern kilde, slik som en fil 
+eller URL. 
 
 ## Spørsmål som dekker grunnlaget for oppgaven ##
 
@@ -48,7 +54,7 @@ sidestille SVG som standard.
  
 ## Arbeidsmetodikk ##
 
-Vi vil bruke en smidig utviklingsmetodikk, hvor vi setter opp korte 
+Vi vil bruke en smidig utviklingsmetodikk (agile), hvor vi setter opp korte 
 perioder (sprint), hvor vi jobber på spesifikke problemstillinger. 
 Idéen med smidig utvikling er at etter hver periode sitter man igjen 
 med et system som virker med den funksjonaliteten som var planlagt for 
@@ -65,7 +71,7 @@ prosjektet uavhengig av norsk språkforståelse.
 
 ## Modellapplikasjon ##
 
-### Java-bibliotek som skal ta input data og generere SVG ###
+### Bibliotek: SVG-generator ###
 
 Vi skal lage et Java-bibliotek som gjør det mulig å generere SVG-filer 
 basert på instanser med strukturerte data. Vi velger å benytte 
@@ -74,7 +80,7 @@ utvide biblioteket til å støtte mer funksjonalitet på et senere
 tidspunkt. Vi planlegger å benytte white-box reuse-konseptet for å 
 oppnå høy fleksibilitet.
 
-### Tolk for å lese inn data fra fil ###
+#### Tolk for å lese inn data fra fil ####
 
 Vi planlegger å lage en tolk (eng:parser) som kan ta inndata i form av 
 XML eller CSV (Comma Separated Values) og gjøre om dette til strukturer 
@@ -85,7 +91,7 @@ det eksport-formatet som er enklest å generere for en sluttbruker av
 desktop-applikasjonen. Excel sitt "XML-regneark 2003"-format er f.eks. 
 godt egnet som inndata. 
 
-### Lage en skrivebordapplikasjon som kan bruke det overnevnte bibliotek ###
+### Applikasjon: Grafisk brukergrensesnitt for håndtering av inndata ###
 
 Her planlegger vi å lage en normal applikasjon som kan gi et 
 grensesnitt til brukeren for å skrive inn data eller laste inn en fil 
@@ -101,37 +107,35 @@ filer på en gang. Vi planlegger å benytte mønstre for god programdesign
 for å gjøre applikasjonen enkel å utvide og lettere å vedlikeholde. Dette
 vil passe godt sammen med vårt valg om å benytte en smidig utviklingsmetodikk.
 
+### Lisensiering ###
+
+Kildekoden til biblioteket og applikasjonen velger vi å tilgjengeliggjøre
+under BSD-lisensen. Dette gjør det mulig for andre utviklere å benytte
+koden fra denne bacheloroppgaven i kommersielle sammenhenger.
+
 ## Valg av verktøy til prosessen ##
 
- - Eclipse 3.x
- - Tomcat webapplication server
- - J2SE 1.5
- - Batik SVG toolkit
- - Git revision control system
- - Github.com repository
- - Liquidplanner.com project management tool
+Vi velger å benytte oss av Eclipse på grunn av god erfaring med denne 
+utviklingsplatformen. Siden vi har opparbeidet oss god erfaring med bruk 
+av Java velger vi å benytte dette programmeringsspråket til 
+modellapplikasjonen. 
 
-Vi velger å benytte oss av Eclipse på grunn av tidligere erfaring 
-under utdanningsløpet. Siden vi har planlagt å lage en web applikasjon 
-trenger vi også en servlet kontainer og det er da naturlig å bruke 
-apache sin tomcat siden denne er integrert i eclipse. Vi har ingen 
-planer om å begrense applikasjonen til kun å virke i tomcat men 
-støtter alle de tradisjonelle servlet kontainerne. Vi velger å benytte 
-JS2SE 1.5 og kompilere alle komponenter under denne standarden. Dette 
-gir oss økt kompabilitet med eldre Mac installasjoner som ikke har 
-støtte for J2SE 1.6. Vi kommer mest sannsynlig til å bruke Batik SVG 
-toolkit for å slippe reimplementasjon av hele SVG standarden, noe Batik 
-ser ut til å gjøre svært godt. For å kordinere oppgavene velger vi 
-å bruke liquidplanner.com(LP) som er et svært godt 
-planleggingsverktøy som er gratis tilgjenglig for akademisk bruk. LP er 
-svært godt egnet til en smidig utviklingsmetodikk(Agile). Valget på 
-Git benytter vi fordi det gir god støtte for desentralisert utvikling. 
-Den har også enkel støtte for branching (forgrening av kodebasen), som 
-gjør det lett å jobbe på flere separate idéer samtidig. Github er en 
-tjeneste som tillater hosting av git kildekodesamlinger(repositories) og 
-det er gratis for åpnekildekode prosjekter. Vi velger å 
-tilgjengeliggjøre vårt prosjekt som åpenkildekode fra dag en. 
-Prosjektet vil bli lisensiert under BSD lisensen, som også gjør det 
-mulig å bruke komponentene kommersielt. En av grunnene til å bruke 
-Github er at den har et godt system for å integrere andre utviklere som 
-kanskje ønsker å hjelpe til med utvikling i fremtiden. 
+For å koordinere arbeidsoppgavene i prosjektet velger vi å benytte 
+LiquidPlanner.com (LP) som er et svært godt planleggingsverktøy som er 
+gratis tilgjenglig for akademisk bruk. LP er svært godt egnet til en 
+smidig utviklingsmetodikk. 
+
+Versjonskontroll er viktig i større prosjekter. For å dekke det 
+behovet velger vi å benytte Git og GitHub.com. Git gir oss gode 
+muligheter til å jobbe på flere deler av prosjektet samtidig uten 
+frykt for integrasjonsproblemer. Denne muligheten kommer fra det faktum 
+at Git er et distribuert revisjonskontrollsystem. 
+
+Grunnen til at vi velger GitHub.com som tjenesteleverandør er at de gir 
+gratis tilgang til prosjekter som klassifiseres som fri programvare. De 
+er en seriøs aktør på markedet med svært god stabilitet og 
+sikkerhet. I tillegg har brukergrensesnittet deres mange fiffige 
+funksjoner som øker effektiviteten i en distribuert 
+utviklingsarbeidsflyt. Dersom noen utviklere i fremtiden ønsker å 
+videreutvikle prosjektet gir GitHub dem en enkel mulighet til å gjøre 
+det. 
