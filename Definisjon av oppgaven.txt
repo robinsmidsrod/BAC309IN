@@ -14,23 +14,6 @@ anbefales for presentasjon av skalerbar grafikk på World Wide Web,
 eller om det er kommet nye teknologier på markedet som prøver å 
 sidestille SVG som standard. 
 
-## Arbeidsmetodikk ##
-
-Vi vil bruke en smidig utviklingsmetodikk, hvor vi setter opp korte 
-perioder (sprint), hvor vi jobber på spesifikke problemstillinger. 
-Idéen med smidig utvikling er at etter hver periode sitter man igjen 
-med et system som virker med den funksjonaliteten som var planlagt for 
-perioden. Hver periode begynner med en planleggingsrunde over hva man 
-skal ha med, og avsluttes med versjoner av applikasjon og bibliotek som 
-kan benyttes slik de er. Vi setter opp til en felles dag i uken med 
-arbeid i plenum og jobber hver for oss de resterende dagene. Vi kommer 
-til å bruke 3 uker pr. periode. Oppgaver som ikke er utført i en 
-periode på grunn av manglende tid vil bli overført til neste periode. 
-Start og slutt på en periode legges til felles arbeidsdager i den 
-gjeldende uken. All dokumentasjon av programvaren benytter engelsk som 
-språk. Dette gjør det enklere for tredjeparter å evaluere koden i 
-prosjektet uavhengig av norsk språkforståelse.
-
 ## Spørsmål som dekker grunnlaget for oppgaven ##
 
  - Introduksjon: Hva er SVG?
@@ -54,6 +37,23 @@ prosjektet uavhengig av norsk språkforståelse.
      - Er VML som standard knyttet for sterkt til Microsoft sin implementasjon?
  - Konklusjon: Hva må skje i markedet for at SVG skal "ta av" som standard?
  
+## Arbeidsmetodikk ##
+
+Vi vil bruke en smidig utviklingsmetodikk, hvor vi setter opp korte 
+perioder (sprint), hvor vi jobber på spesifikke problemstillinger. 
+Idéen med smidig utvikling er at etter hver periode sitter man igjen 
+med et system som virker med den funksjonaliteten som var planlagt for 
+perioden. Hver periode begynner med en planleggingsrunde over hva man 
+skal ha med, og avsluttes med versjoner av applikasjon og bibliotek som 
+kan benyttes slik de er. Vi setter opp til en felles dag i uken med 
+arbeid i plenum og jobber hver for oss de resterende dagene. Vi kommer 
+til å bruke 3 uker pr. periode. Oppgaver som ikke er utført i en 
+periode på grunn av manglende tid vil bli overført til neste periode. 
+Start og slutt på en periode legges til felles arbeidsdager i den 
+gjeldende uken. All dokumentasjon av programvaren benytter engelsk som 
+språk. Dette gjør det enklere for tredjeparter å evaluere koden i 
+prosjektet uavhengig av norsk språkforståelse.
+
 ## Modellapplikasjon ##
 
 ### Java-bibliotek som skal ta input data og generere SVG ###
@@ -92,7 +92,7 @@ filer på en gang. Vi planlegger å benytte mønstre for god programdesign
 for å gjøre applikasjonen enkel å utvide og lettere å vedlikeholde. Dette
 vil passe godt sammen med vårt valg om å benytte en smidig utviklingsmetodikk.
 
-## Valg av verktøy ##
+## Valg av verktøy til prosessen ##
 
  - Eclipse 3.x
  - Tomcat webapplication server
