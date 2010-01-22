@@ -1,13 +1,25 @@
-## Bachlore oppgave ##
+# Bacheloroppgave om Scalable Vector Graphics (SVG) #
 
-## Abstact ##
+## Abstract ##
  - Kort hva oppgaven går ut på
  - Hvorfor valgte vi denne oppgaven
 
 ## Problemstilling ##
-Vi ønsker å lage et java-bibliotek som tar forsjellige typer inn-data og generer forsjellige typer grafer i SVG-format. Dette er veldig likt hva regneark kan gjøre med sine graf-komponenter. Vi ønsker å gi den samme muligheten til applikasjoner for web. Vi skal ha støtte for flere graftyper, blant annet linje, kake, streker og punkter. For å gjøre det enklere for sluttbrukere å benytte java-biblioteket skal vi også kunne lese inn data fra strukturerte tekstfiler (CSV). I tillegg ønsker vi også å finne ut av om SVG fremdeles er den teknologien som anbefales for presentasjon av skalerbar grafikk på World Wide Web, eller om det er kommet nye teknologier på markedet som prøver å sidestille SVG som standard.
 
-## Verktøy ##
+Vi ønsker å lage et java-bibliotek som tar forsjellige typer inn-data 
+og generer forsjellige typer grafer i SVG-format. Dette er veldig likt 
+hva regneark kan gjøre med sine graf-komponenter. Vi ønsker å gi den 
+samme muligheten til applikasjoner for web. Vi skal ha støtte for flere 
+graftyper, blant annet linje, kake, streker og punkter. For å gjøre 
+det enklere for sluttbrukere å benytte java-biblioteket skal vi også 
+kunne lese inn data fra strukturerte tekstfiler (CSV). I tillegg ønsker 
+vi også å finne ut av om SVG fremdeles er den teknologien som 
+anbefales for presentasjon av skalerbar grafikk på World Wide Web, 
+eller om det er kommet nye teknologier på markedet som prøver å 
+sidestille SVG som standard. 
+
+## Valg av verktøy ##
+
  - Eclipse 3.x
  - Tomcat webapplication server
  - J2SE 1.5
@@ -16,23 +28,74 @@ Vi ønsker å lage et java-bibliotek som tar forsjellige typer inn-data og gener
  - Github.com repository
  - Liquidplanner.com project management tool
 
-Vi velger å benytte oss av Eclipse på grunn av tidligere erfaring under utdanningsløpet. Siden vi har planlagt å lage en web applikasjon trenger vi også en servlet kontainer og det er da naturlig å bruke apache sin tomcat siden denne er integrert i eclipse. Vi har ingen planer om å begrense applikasjonen til kun å virke i tomcat men støtter alle de tradisjonelle servlet kontainerne. Vi velger å benytte JS2SE 1.5 og kompilere alle komponenter under denne standarden. Dette gir oss økt kompabilitet med eldre Mac installasjoner som ikke har støtte for J2SE 1.6. Vi kommer mest sannsynlig til å bruke Batik SVG toolkit for å slippe reimplementasjon av hele SVG standarden, noe Batik ser ut til å gjøre svært godt. For å kordinere oppgavene velger vi å bruke liquidplanner.com(LP) som er et svært godt planleggingsverktøy som er gratis tilgjenglig for akademisk bruk. LP er svært godt egnet til en smidig utviklingsmetodikk(Agile). Valget på Git benytter vi fordi det gir god støtte for desentralisert utvikling. Den har også enkel støtte for branching (forgrening av kodebasen), som gjør det lett å jobbe på flere separate idéer samtidig. Github er en tjeneste som tillater hosting av git kildekodesamlinger(repositories) og det er gratis for åpnekildekode prosjekter. Vi velger å tilgjengeliggjøre vårt prosjekt som åpenkildekode fra dag en. Prosjektet vil bli lisensiert under BSD lisensen, som også gjør det mulig å bruke komponentene kommersielt. En av grunnene til å bruke Github er at den har et godt system for å integrere andre utviklere som kanskje ønsker å hjelpe til med utvikling i fremtiden. 
+Vi velger å benytte oss av Eclipse på grunn av tidligere erfaring 
+under utdanningsløpet. Siden vi har planlagt å lage en web applikasjon 
+trenger vi også en servlet kontainer og det er da naturlig å bruke 
+apache sin tomcat siden denne er integrert i eclipse. Vi har ingen 
+planer om å begrense applikasjonen til kun å virke i tomcat men 
+støtter alle de tradisjonelle servlet kontainerne. Vi velger å benytte 
+JS2SE 1.5 og kompilere alle komponenter under denne standarden. Dette 
+gir oss økt kompabilitet med eldre Mac installasjoner som ikke har 
+støtte for J2SE 1.6. Vi kommer mest sannsynlig til å bruke Batik SVG 
+toolkit for å slippe reimplementasjon av hele SVG standarden, noe Batik 
+ser ut til å gjøre svært godt. For å kordinere oppgavene velger vi 
+å bruke liquidplanner.com(LP) som er et svært godt 
+planleggingsverktøy som er gratis tilgjenglig for akademisk bruk. LP er 
+svært godt egnet til en smidig utviklingsmetodikk(Agile). Valget på 
+Git benytter vi fordi det gir god støtte for desentralisert utvikling. 
+Den har også enkel støtte for branching (forgrening av kodebasen), som 
+gjør det lett å jobbe på flere separate idéer samtidig. Github er en 
+tjeneste som tillater hosting av git kildekodesamlinger(repositories) og 
+det er gratis for åpnekildekode prosjekter. Vi velger å 
+tilgjengeliggjøre vårt prosjekt som åpenkildekode fra dag en. 
+Prosjektet vil bli lisensiert under BSD lisensen, som også gjør det 
+mulig å bruke komponentene kommersielt. En av grunnene til å bruke 
+Github er at den har et godt system for å integrere andre utviklere som 
+kanskje ønsker å hjelpe til med utvikling i fremtiden. 
 
 ## Arbeidsmetodikk ##
+
  - Smidig utvikling (Agile development)
  - Test Driven Development
  - Semantic Versioning
  - Bruke engelsk språk
 
-Vi vil bruke smidig utviklingsmetodikk, hvor vi setter opp korte perioder, hvor vi jobber på spesifikke problemstillinger. Idéen med smidig utvikling er at etter hver utviklingsperiode(sprint) sitter man igjen med et system som virker med den funksjonaliteten som er planlagt for perioden. Hver periode begynner med en planleggingsrunde over hva man skal ha med, og avsluttes med full testing og utrulling(deployment). Vi planlegger i stor grad å benytte Test Driven Development(TDD) for å sørge for at API'er er godt testet og ikke forandrer seg overtid. Semantic versioning(semver.org) er et versjonerings konsept som gjør det enkelt å spesifisere API kompabilitet over livstiden av et produkt. Vi velger å benytte det i vårt prosjekt. Vi setter opp til en felles dag i uken med arbeid i plenum, og jobber hver for oss de resterende dagene. Vi kommer til å bruke 3 uker pr periode, oppgaver som ikke er utført i en periode på grunn av manglende tid vil bli overført til neste periode. Start og slutt på en periode legges til felles arbeidsdager i den gjeldende uken. All dokumentasjon med unntak av selve bacheloroppgaven benytter engelsk språk. Dette er fordi prosjektet publiseres som åpenkildekode, og det blir da mulig å få bistand fra eksterne aktører.
+Vi vil bruke smidig utviklingsmetodikk, hvor vi setter opp korte 
+perioder, hvor vi jobber på spesifikke problemstillinger. Idéen med 
+smidig utvikling er at etter hver utviklingsperiode(sprint) sitter man 
+igjen med et system som virker med den funksjonaliteten som er planlagt 
+for perioden. Hver periode begynner med en planleggingsrunde over hva 
+man skal ha med, og avsluttes med full testing og utrulling(deployment). 
+Vi planlegger i stor grad å benytte Test Driven Development(TDD) for å 
+sørge for at API'er er godt testet og ikke forandrer seg overtid. 
+Semantic versioning(semver.org) er et versjonerings konsept som gjør 
+det enkelt å spesifisere API kompabilitet over livstiden av et produkt. 
+Vi velger å benytte det i vårt prosjekt. Vi setter opp til en felles 
+dag i uken med arbeid i plenum, og jobber hver for oss de resterende 
+dagene. Vi kommer til å bruke 3 uker pr periode, oppgaver som ikke er 
+utført i en periode på grunn av manglende tid vil bli overført til 
+neste periode. Start og slutt på en periode legges til felles 
+arbeidsdager i den gjeldende uken. All dokumentasjon med unntak av selve 
+bacheloroppgaven benytter engelsk språk. Dette er fordi prosjektet 
+publiseres som åpenkildekode, og det blir da mulig å få bistand fra 
+eksterne aktører. 
 
-## Løsning ##
- - Java-bibliotek som skal ta input data og generere SVG
- - Java-bibliotek som parser input data og lager en datastruktur som SVG-biblioteket kan bruke.
- - Lage en webapplikasjon som kan bruke de nevnte java-bibliotek.
+## Modellapplikasjon ##
 
- - Dekningsgrad av SVG-støtte i nettlesere (hvor mye av standarden støtter de? bugs? politiske synspunkter. Hvorfor er dekningsgraden slik er viktig.)
- - Proprietære teknologier som Flash, SilverLight og VML istedenfor SVG.
- - JavaScript-biblioteker som innkapsler vektor-tegning (slik som http://raphaeljs.com/).
+ - Java-bibliotek som skal ta input data og generere SVG 
+ - Java-bibliotek som parser input data og lager en datastruktur som 
+SVG-biblioteket kan bruke. 
+ - Lage en webapplikasjon som kan bruke de nevnte java-bibliotek. 
+
+## Emner vi skal avklare ##
+
+ - Dekningsgrad av SVG-støtte i nettlesere (hvor mye av standarden 
+støtter de? bugs? politiske synspunkter. Hvorfor er dekningsgraden slik 
+er viktig.) 
+ - Proprietære teknologier som Flash, SilverLight og VML istedenfor 
+SVG. 
+ - JavaScript-biblioteker som innkapsler vektor-tegning (slik som 
+http://raphaeljs.com/). 
+
  
 
