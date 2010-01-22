@@ -80,26 +80,19 @@ bacheloroppgaven benytter engelsk språk. Dette er fordi prosjektet
 publiseres som åpenkildekode, og det blir da mulig å få bistand fra 
 eksterne aktører. 
 
-## Modellapplikasjon ##
-
- - Java-bibliotek som skal ta input data og generere SVG 
- - Java-bibliotek som parser input data og lager en datastruktur som 
-SVG-biblioteket kan bruke. 
- - Lage en desktop-applikasjon som kan bruke de nevnte java-bibliotek. 
-
 ## Spørsmål som må besvares ##
 
- - Hva er SVG?
+ - Introduksjon: Hva er SVG?
  - Hvilke nettlesere må støtte SVG for at man som utvikler kan benytte SVG uten å tenke på klient-støtte?
- - Hvor mye av SVG-standarden støtter de forskjellige nettleserne?
-   - Hvilke nettlesere støtter standarden i det hele tatt?
-   - Er det noe spesifikk funksjonalitet i SVG-standarden som ikke er støttet?
-   - Finnes det noen mangler eller andre svakheter i støtten av SVG-standarden i disse nettleserne, f.eks. feil implementasjon?
+   - Hvor mye av SVG-standarden støtter de forskjellige nettleserne?
+     - Hvilke nettlesere støtter standarden i det hele tatt?
+     - Er det noe spesifikk funksjonalitet i SVG-standarden som ikke er støttet?
+     - Finnes det noen mangler eller andre svakheter i støtten av SVG-standarden i disse nettleserne, f.eks. feil implementasjon?
  - Hvorfor støtter ikke Microsoft Internet Explorer SVG-standarden?
    - Hvordan forholder Microsoft seg til W3C sin SVG-standard?
      - Har det synspunktet endret seg over tid?
    - Hvilke andre teknologier har Microsoft valgt å benytte isteden?
- - Hvilken innvirkning på markedet har Microsoft sitt synspunkt på adopsjon av SVG i sin helhet?
+   - Hvilken innvirkning på markedet har Microsoft sitt synspunkt på adopsjon av SVG i sin helhet?
  - Hvilke alternative teknologier eksisterer som dekker SVG sin funksjonalitet?
    - Hvordan benytter utviklere Adobe Flash fordi SVG ikke er tilgjengelig?
    - Kan Microsoft SilverLight også benyttes for å omgå mangel på SVG-støtte?
@@ -108,4 +101,44 @@ SVG-biblioteket kan bruke.
  - Kunne VML (Vector Markup Lanuage), som Microsoft støtter, vært avansert som en global standard istedenfor SVG?
    - Finnes det proprietære elementer i VML som gjør den uskikket som en åpen standard?
    - Er VML som standard knyttet for sterkt til Microsoft sin implementasjon?
+ - Konklusjon: Hva må skje i markedet for at SVG skal "ta av" som standard?
  
+## Modellapplikasjon ##
+
+### Java-bibliotek som skal ta input data og generere SVG ###
+
+Vi skal lage et Java-bibliotek som gjør det mulig å generere SVG-filer 
+basert på instanser med strukturerte data. Vi velger å benytte 
+mønstre for god programdesign slik at biblioteket gjør det enkelt å 
+utvide biblioteket til å støtte mer funksjonalitet på et senere 
+tidspunkt. Vi planlegger å benytte white-box reuse-konseptet for å 
+oppnå høy fleksibilitet.
+
+### Tolk for å lese inn data fra fil ###
+
+Vi planlegger å lage en tolk (eng:parser) som kan ta inndata i form av 
+XML eller CSV (Comma Separated Values) og gjøre om dette til strukturer 
+som SVG-generatoren kan benytte. Intensjonen er å gjøre det mulig å 
+enkelt eksportere data fra et regneark (f.eks. Excel eller OpenOffice) 
+som kan benyttes som inn-data til denne tolken. Poenget er å støtte 
+det eksport-formatet som er enklest å generere for en sluttbruker av 
+desktop-applikasjonen. Excel sitt "XML-regneark 2003"-format er f.eks. 
+godt egnet som inndata. 
+
+### Lage en skrivebordapplikasjon som kan bruke det overnevnte bibliotek ###
+
+Her planlegger vi å lage en normal applikasjon som kan gi et 
+grensesnitt til brukeren for å skrive inn data eller laste inn en fil 
+for å fylle inn et datasett. Den skal igjen kunne generere SVG-filer 
+basert på dette datasettet og åpne de i en nettleser. Applikasjonen 
+skal detektere hvilke nettlesere brukeren har og gi en opsjon på 
+hvilken man ønsker å benytte til presentasjon av SVG-filen. Hvis tiden 
+strekker til vurderer vi og også legge inn støtte for å prosessere 
+mange filer på en gang (eng:batch-conversion). Med et godt API for 
+hvordan generere et datasett burde det være enkelt å utvide 
+applikasjonen fra å håndtere kun en fil til å kunne håndtere mange 
+filer på en gang. Vi planlegger å benytte mønstre for god programdesign
+for å gjøre applikasjonen enkel å utvide og lettere å vedlikeholde. Dette
+vil passe godt sammen med vårt valg om å benytte en smidig utviklingsmetodikk.
+
+
