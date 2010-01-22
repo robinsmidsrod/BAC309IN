@@ -55,30 +55,20 @@ kanskje ønsker å hjelpe til med utvikling i fremtiden.
 
 ## Arbeidsmetodikk ##
 
- - Smidig utvikling (Agile development)
- - Test Driven Development
- - Semantic Versioning
- - Bruke engelsk språk
-
-Vi vil bruke smidig utviklingsmetodikk, hvor vi setter opp korte 
-perioder, hvor vi jobber på spesifikke problemstillinger. Idéen med 
-smidig utvikling er at etter hver utviklingsperiode(sprint) sitter man 
-igjen med et system som virker med den funksjonaliteten som er planlagt 
-for perioden. Hver periode begynner med en planleggingsrunde over hva 
-man skal ha med, og avsluttes med full testing og utrulling(deployment). 
-Vi planlegger i stor grad å benytte Test Driven Development(TDD) for å 
-sørge for at API'er er godt testet og ikke forandrer seg overtid. 
-Semantic versioning(semver.org) er et versjonerings konsept som gjør 
-det enkelt å spesifisere API kompabilitet over livstiden av et produkt. 
-Vi velger å benytte det i vårt prosjekt. Vi setter opp til en felles 
-dag i uken med arbeid i plenum, og jobber hver for oss de resterende 
-dagene. Vi kommer til å bruke 3 uker pr periode, oppgaver som ikke er 
-utført i en periode på grunn av manglende tid vil bli overført til 
-neste periode. Start og slutt på en periode legges til felles 
-arbeidsdager i den gjeldende uken. All dokumentasjon med unntak av selve 
-bacheloroppgaven benytter engelsk språk. Dette er fordi prosjektet 
-publiseres som åpenkildekode, og det blir da mulig å få bistand fra 
-eksterne aktører. 
+Vi vil bruke en smidig utviklingsmetodikk, hvor vi setter opp korte 
+perioder (sprint), hvor vi jobber på spesifikke problemstillinger. 
+Idéen med smidig utvikling er at etter hver periode sitter man igjen 
+med et system som virker med den funksjonaliteten som var planlagt for 
+perioden. Hver periode begynner med en planleggingsrunde over hva man 
+skal ha med, og avsluttes med versjoner av applikasjon og bibliotek som 
+kan benyttes slik de er. Vi setter opp til en felles dag i uken med 
+arbeid i plenum og jobber hver for oss de resterende dagene. Vi kommer 
+til å bruke 3 uker pr. periode. Oppgaver som ikke er utført i en 
+periode på grunn av manglende tid vil bli overført til neste periode. 
+Start og slutt på en periode legges til felles arbeidsdager i den 
+gjeldende uken. All dokumentasjon av programvaren benytter engelsk som 
+språk. Dette gjør det enklere for tredjeparter å evaluere koden i 
+prosjektet uavhengig av norsk språkforståelse.
 
 ## Spørsmål som må besvares ##
 
@@ -98,9 +88,9 @@ eksterne aktører.
    - Kan Microsoft SilverLight også benyttes for å omgå mangel på SVG-støtte?
    - Kan JavaScript-bibliotek som [Raphaël http://raphaeljs.com/] være et alternativ til SVG?
      - Hvordan skille Raphaël sin imparative fokus seg fra SVG sin deklarative fokus?   
- - Kunne VML (Vector Markup Lanuage), som Microsoft støtter, vært avansert som en global standard istedenfor SVG?
-   - Finnes det proprietære elementer i VML som gjør den uskikket som en åpen standard?
-   - Er VML som standard knyttet for sterkt til Microsoft sin implementasjon?
+   - Kunne VML (Vector Markup Lanuage), som Microsoft støtter, vært avansert som en global standard istedenfor SVG?
+     - Finnes det proprietære elementer i VML som gjør den uskikket som en åpen standard?
+     - Er VML som standard knyttet for sterkt til Microsoft sin implementasjon?
  - Konklusjon: Hva må skje i markedet for at SVG skal "ta av" som standard?
  
 ## Modellapplikasjon ##
