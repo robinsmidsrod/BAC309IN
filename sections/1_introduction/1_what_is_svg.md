@@ -60,7 +60,7 @@ W3C forklarer selv hva SVG er [på denne måten][10]:
 > SVG, and they can also be generated through client-side or server-side 
 > scripting languages. 
 
-# Forskjellige SVG profiler til ulike enheter #
+# Forskjellige SVG profiler til ulike formål #
 
 Det finnes flere forskjellige [profiler av SVG][11] som beskriver deler 
 av spesifikasjonen. Disse forskjellige profilene er utviklet slik at 
