@@ -6,6 +6,44 @@ benyttes et eksternt tilegg som gir SVG-støtte. Flere deler av standarden er fo
 eksempel støttet i Internet Explorer fordi man her må benytte en ekstern plugin, i
 motsettning til Mozilla Firefox hvor dette er byggd inn i nettleseren.
 
+Jeff Schiller, som er en aktiv deltaker i SVGIG eller SVG interest group, har laget
+oversikt, tilgjenglig på nett[8], over hvilke deler av SVG-implementasjon som er
+tilgjenglig i de ulike nettleserne. Det er en oversikt som tar for seg både browser
+og andre applikasjoner som implementere SVG-standarden. Vår oppgave tar ikke
+utgangspunkt i de andre applikasjonene er spesifsert her, men kun nettlesere som
+er relevant og i bruk pr i dag. Det finnes gode statestikker på nettet over hvilke
+nettlesere som er relevante for tiden, blant annet har statcounter[9] en veldig
+god oversikt. Ut ifra denne oversikten kom vi frem til følgende nettlesere som
+skal vurderes opp mot SVG-standarden.
+
+ * Microsoft Internet Explorer 7 / 8
+ * Mozilla Firefox 2.0 / 3.0 / 3.5 / 3.6
+ * Google Chrome 2(Nightly-build) / 4
+ * Opera 9.6(9.5 er nærmeste) / 10.0
+ * Apple Safari 4
+
+Alle nettlesere er godt representert på internett idag, og kjent av internett
+brukere i hele verden.
+
+På informasjon siden om SVG-status[8] i de ulike nettlesere ligger det også en prosent
+andel som forteller hvor mange prosent av standarden som er støttet. Det er interesant
+at nettlesere som har bygget SVG-standarden inn i nettleser motoren, som f.eks Mozilla
+har gjort med Gecko og Safari har gjort med Webkit, kommer dårligere ut av denne
+testen imotsettning til Opera som har laget sin helt egen nettleser motor og bygget
+SVG-standarden inn i denne.
+
+ * Microsoft Internet Explorer 0.00% / 0.00%
+ * Mozilla Firefox 46.17% / 60.40% / 60.77% / 61.50%
+ * Google Chrome 81.39% / 82.12%
+ * Opera 94.16% / 94.34%
+ * Apple Safari 82.12%
+
+Ut i fra prosent fordeling over kan man legge merke til at både Chrome 4 og Safari 4
+har samme prosent fordeling, noe som er rimlig ettersom begge er basert på Webkit sin
+implementasjon av SVG. Firefox kommer dårlig ut i prosent fordeling, selv om det er
+en av de mest brukte nettleserne etter Internet Explorer. Det må også legges merke
+til at Internet Explorer ikke har innebygget støtte for SVG i det hele tatt.
+
 Mozilla Firefox har fått SVG-standarden byggd direkte inn i nettleseren. Mozilla har
 en egen prosjekt gruppe som jobber med SVG implementasjonen, i hovedsak mot Firefox.
 Det er blitt opprettet en status-side[1] hvor det ligger en oversikt over funksjonalitet
@@ -63,7 +101,24 @@ Gecko motoren som Mozilla Firefox benytter, og er grunnstenen i nettleseren.
 Implementasjon av SVG er derfor gjort i Webkit, og vi sammenligner derfor Webkit,
 ikke Chrome og Safari hver for seg.
 
-Webkit
+Webkit har mange likheter med blant annet Mozilla, men ut ifra status-sidene[10] virker
+det som det eksister mangler eller halveis implementasjoner på moduler som f.eks Mozilla
+og Opera har implementert fullstendig. Text modulen heller ikke her støtte for symboler,
+som i Opera og Mozilla, og det kan virke som dette er et generelt problem å implementere.
+Webkit har heller ingen fullstending implementasjon av Filter modulen. Det er få tall
+som ikke er prøvd implementert men de aller fleste inneholder bugs eller er delvis
+støttet. Det Webkit har klart imotsettning til Mozilla er å implementere store deler av
+Animation modulen, selv om mye ikke er fullstendig. Webkit har også implementert store
+deler av Font modulen, som enda ikke Mozilla og Opera har fått til.
+
+Internet Explorer fra Microsoft har derimot ingen innbygget støtte for SVG. Det ser nå
+lyser ut for Internet Explorer, ettersom det har blitt kjent at Microsoft har satt seg ned
+med SVGWG, SVG working group, for å bygge inn SVG-standarden forhåpentligvis i IE9 [11].
+I Internet Explorer 8 og tidligere finnes det ingen støtte for SVG-standarden, uten at
+det blir benyttet en ekstern plugin. Adobe har f.eks laget en slik plugin som kan
+benyttes for å vise SVG i IE[12]. Det finnes også andre tilegg som kan installeres for å
+oppnå SVG støtte, der i blant Batik toolkit fra Apache som implementere SVG
+spesifikasjonene[13].
 
 [1] http://www.mozilla.org/projects/svg/status.html
 [2] http://www.w3.org/Graphics/SVG/IG/wiki/SVG_Plugin_for_IE#Use_of_the_SVG_rendering_technology_present_in_web-browsers_with_native_SVG_support
@@ -72,80 +127,9 @@ Webkit
 [5] http://dev.opera.com/articles/view/introduction-html5-video/
 [6] http://dev.w3.org/html5/html4-differences/
 [7] http://webkit.org/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Støtten 
-for SVG er ikke fullkommen i noen av nettleserne, men de fleste støtter store deler. 
-Det finnes nettlesere som ikke har implementert SVG direkte, men benytter en plugin 
-for å oppnå samme effekten. Microsoft sin Internet Explorer benytter blant annet denne
-løsningen, for å vise SVG data. Mozilla, Safari, Opera og Chrome har alle innbygget støtte for SVG. 
-Det er også liten forskjell for hvilken 
-støtte som finnes i de ulike nettleserne. Det er altså de samme funksjonene innen 
-SVG biblioteket som ikke fungerer i de ulike nettleserne.
-
-Mozilla har implementert nesten alle aspekter av SVG standarden. Målet til Mozilla 
-er å ha implementert hele Full 1.1 spesifikasjonen til SVG. Det er deler av SVG hvor 
-det meste av standarden er implementert. Mozilla har f.eks implementert store deler 
-av Text modulen, men mangler delene som har med "glyps" å gjøre. De store bitene som 
-mangler i implementasjonen til Mozilla er Font og Animation modulen. Det er her ingen 
-funksjoner som fungerer korrekt innenfor modulen. Det er prøvd å implementere deler 
-av Animation, men det eksisterer bugs på disse til dags dato.
-[http://www.mozilla.org/projects/svg/status.html]
-
-Opera har i motsetning til Mozilla implementert helt på egenhånd. Siden Opera ikke 
-bygger på Gecko motoren, måtte dette gjøres helt fra bunn. Opera har også 
-implementert store deler av SVG standarden, men også her mangler det flere moduler. 
-Som hos Mozilla mangler det støtte for "glyphs", men hos Opera har man har klart å 
-implementere animasjons aspektet av SVG. Det er ikke hunder prosent, ettersom det 
-mangler både lyd og video støtte. Det er heller ingen støtte for font eller cursor 
-modulen som også Mozilla mangler. 
-[http://www.opera.com/docs/specs/svg/]
-
-Chrome og Safari baserer seg på Webkit som er en nettleser motor for å vise grafikk. 
-Derfor vil det være naturlig å bruke statusen for SVG implementasjonen i Webkit 
-isteden for å sammenlignende nettleserne. Ettersom disse benytter Webkit, og vil ha 
-samme feil og mangler. Webkit har implementert store deler av SVG standarden, men også 
-her mangler det flere moduler. Det finnes flere likheter med de andre nettlesernes 
-mangler også i Webkit. Blant annet mangler det "glyph" støtte i tekst modulen, samt 
-store deler av animation modulen. Det som er annerledes fra Webkit til f.eks Opera, 
-er at det i webkit mangler støtte for flere filter. Webkit har derimot bedre støtte 
-når det kommer til font modulen.
-[http://webkit.org/projects/svg/status.xml]
-
-Internet Explorer har ingen native støtte for SVG. Den baserer seg på at man benytter 
-en form for plugin, hvor den mest kjente er produsert av Adobe. Denne støtter den fulle 
-SVG standarden, inkludert både animasjonen og fonter. Det finnes også flere plugins 
-som f.eks Batik SVG kit. Kiten er skrevet i Java, og har like god støtte som Adobe 
-pluginen. Microsoft har planlagt og delta mer aktivt i SVG utviklingen, men inntil videre 
-må man nøye seg med en plugin om man vil benytte SVG i Internet Explorer.
-[http://www.planetsvg.com/content/svg-solutions-internet-explorer]
-
-# SVG-støtte i nettlesere #
+[8] http://www.codedread.com/svg-support-table.html
+[9] http://gs.statcounter.com/#browser_version-ww-monthly-200902-201003-bar
+[10] http://webkit.org/projects/svg/status.xml
+[11] http://blogs.msdn.com/ie/archive/2010/01/05/microsoft-joins-w3c-svg-working-group.aspx
+[12] http://www.adobe.com/svg/viewer/install
+[13] http://xmlgraphics.apache.org/batik/index.html
