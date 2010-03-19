@@ -1,0 +1,3 @@
+
+# Svakheter i implementasjonene #
+

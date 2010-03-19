@@ -1,4 +1,6 @@
-# Hvor mye av SVG standaren støtter de ulike nettleserne? #
+
+# Støtte for SVG i nettlesere #
+
 Nettlesere som alle har fått et rykte på dagens internett, har alle implementert
 SVG-standarden til en viss grad. Støtten varier etter hvordan SVG blir implementert.
 Det er for eksempel mulig å bygge SVG-standarden inn i nettleseren, eller det kan
