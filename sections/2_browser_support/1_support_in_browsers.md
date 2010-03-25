@@ -16,6 +16,15 @@ som gir Internet Explorer mulighet til å vise nesten alle elementene i standard
 Apache har også gjort en innsats for å utvikle en plugin som Internet Explorer kan
 benytte, eller andre applikasjoner som skulle ha behov for SVG-støtte.
 
+Flere av de andre populære nettleserne har gjort en implementasjon av SVG-standarden
+men ingen har kommet til det punktet at all funksjonalitet er støttet hundre
+prosent. Både Mozilla Firefox, Google Chrome, Apple Safari og Opera har alle prøvd
+å implementere SVG. Noen av dem har lykkes i større grad enn andre, men alle har
+begynt på en vei vi ser frem til å følge fremover. SVG gjør det mulig for
+nettlesere å utføre avanserte aninimasjons oppgaver, samt generere egene tekst typer,
+relativt enkelt. Det vil mest sansynlig få stor betydning for hvordan vi utvikler
+websider i fremtiden. 
+
 Jeff Schiller, som er en aktiv deltaker i SVGIG eller SVG interest group, har laget
 oversikt, [tilgjenglig på nett][8], over hvilke deler av SVG-implementasjon som er
 tilgjenglig i de ulike nettleserne. Det er en oversikt som tar for seg både browser

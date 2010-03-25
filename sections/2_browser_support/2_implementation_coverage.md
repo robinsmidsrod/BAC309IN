@@ -27,12 +27,6 @@ som burde være veldig relevante i forhold til å bruke SVG aktivt i utvikling. Al
 funksjoner under disse modulene er enten ikke implementert eller inneholder bugs. 
 Noe av det som faktisk er flott med SVG er det å enkelt kunne lage animasjoner på nett.
 
-Det står ikke konrekt informasjon om video, eller lyd er implementert i Mozilla sin
-SVG-implementasjon. Dette har blant annet andre nettlesere gjort, og det fungerer utmerket
-der for dette er implementert. 
-
-<Finne informasjon om lyd og bilde i SVG-implementasjon til Mozilla>
-
 Opera har en av de bedre implementasjon av [SVG-standarden][2]. Det ble også gjort en
 undersøkelse av Jeff Schiller, hvor han benyttet en test pakke fra W3C for å gradere
 støtten for SVG i de ulike nettleserne. Det er fortsatt moduler som mangler i Opera også,
