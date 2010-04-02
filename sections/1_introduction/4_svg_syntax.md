@@ -157,11 +157,90 @@ identisk i X- og Y-retningen). Man må derfor spesifisere både `rx` og `ry`
 for å tegne ellipsen. Radius kan heller ikke her være negativ, på lik linje
 med rektangelet.
 
-# FIXME: Tekst #
+## Tekst ##
 
-# FIXME: Filter #
+Under kan man se et eksempel på [text-elementet][19] i SVG.
 
-# FIXME: Animasjon #
+{{{INCLUDE:text.svg}}}
+
+![<text> example](text.svg)
+
+Eksempelet viser først en tekst-streng plassert tett opp til venstre kant og
+toppen av tegneområdet. Det er valgt en generisk sans-serif skrifttype i en
+passende størrelse. Den neste tekst-strengen er plassert 20 piksler lenger
+nede på skjermen og benytter en serif skrifttype. I tillegg er det
+spesifisert at selve teksten skal animeres fra utgangspunktet til X-posisjon
+200 i løpet av 0.5s. Parameteret *freeze* til fill-attributtet betyr at det
+animerte elementet skal bli [stående i sluttposisjonen][20] når animasjonen
+er ferdig. Vanligvis flytter elementet som er animert seg tilbake til
+utgangsposisjonen etter fullført animasjon (fill="remove"). Igjen ser vi
+bruk av en enkel sti-spesifikasjon for å beskrive bevegelsen i animasjonen.
+
+## Filter ##
+
+Under kan man se et eksempel på bruk av [filtre][21] i SVG.
+
+{{{INCLUDE:filter.svg}}}
+
+![filter example](filter.svg)
+
+Eksempelet viser flere avanserte metoder i SVG for gjenbruk av definisjoner
+uten behov for duplisering. La oss gå gjennom hver del steg for steg.
+
+Det første man legger merke til er at det er lagt til navnerommet for
+[XLink][22], noe som gjør det mulig å referere til andre elementer ved hjelp
+av URI-referanser. Selv om URI-referansene er interne må man benytte
+xlink:href-attributtet for å peke til ressursene.
+
+Det neste vi legger merke til er [<defs>-elementet][23]. Dette er et
+samlingselement for andre elementer, på lik linje med <g>-elementet. Det som
+er spesielt med **defs** er at alle definisjonene innenfor elementet ikke
+blir tegnet opp umiddelbart. Men siden de kan refereres til senere i
+dokumentet gjør det gjenbruk kjapt og enkelt å få til. Hvis vi hopper over
+de faktiske definisjonene kan vi se at begge [<use>-elementene][24] henviser
+til et internt element med id="text".
+
+Hvis vi tar en kikk på <text>-elementet innenfor definisjonen ovenfor finner
+vi igjen det refererte id-attributtet. Tekst-elementet blir her tegnet opp
+to ganger, først en gang med en grå tegnefarge, og deretter med en sort
+tegnefarge. Man kan også se at den grå teksten har et filter aktivert. Hvis
+ikke filteret hadde vært benyttet ville den sorte teksten tegnet rett over
+den grå teksten som da ikke ville blitt synlig. Men siden filteret er
+aktivert påvirker det den grå teksten før den tegnes ut. Det er verdt å
+legge merke til at href-definisjonen benytter lenkesyntaks fra HTML sitt
+<a>-element, mens filter-attributtet benytter CSS-syntaks for å referere til
+en ressurs.
+
+Hvis vi nå tar en kikk på <filter>-elementet innenfor definisjonsblokken ser
+vi at filteret består av en [gaussian blur-effekt][25] pluss en
+[offset-effekt][26]. Blur-effekten bruker kildegrafikken, utfører en
+blur-operasjon på størrelse 2 og lagrer resultatet i en midlertidig buffer
+som navngis **blur**. Offset-effekten benytter da denne mildertidige
+bufferen som kilde og flytter x- og y-posisjon med 3 piksler. Dette fører da
+til at en skygge tegnes i grått først, og sort tekst tegnes over skyggen
+avslutningsvis.
+
+## Animasjon ##
+
+Under kan man se et eksempel på bruk av [animasjon][27] i SVG.
+
+{{{INCLUDE:animation.svg}}}
+
+![animation example](animation.svg)
+
+Eksempelet viser et rektangel som omtalt før, men denne gangen med et sett
+med animasjonsregler som påvirker fyll-fargen og avrundingen i hjørnene.
+Attributtet **attributeName** spesifiserer hvilket attributt på det
+omsluttende elementet som skal animeres, og attributtet **attributeType**
+spesifiserer om det er et XML-attributt eller et CSS-attributt som skal
+animeres. I vårt eksempel animerer vi kun XML-attributter. Først
+spesifiserer vi at fyll-fargen skal endres fra rød til gul over en
+tidsperiode på 2 sekunder. Når farge-endringen er ferdig skal den bli
+stående fordi vi benytter fill="freeze". Deretter har vi to identiske regler
+som forteller at rx og ry-attributtene (hjørneradius) skal endres fra
+verdien 0 (skarp) til verdien 10 (avrundet) over en periode på 2 sekunder,
+men man skal vente 2 sekunder før man starter endringen. I dette tilfellet
+skal endringen bli stående igjen etter at animasjonen er ferdig.
 
 [1]: http://www.w3.org/TR/xml-names/ "XML Namespaces"
 [2]: http://www.w3.org/TR/SVG11/attindex.html "SVG 1.1 attribute index"
@@ -181,3 +260,12 @@ med rektangelet.
 [16]: http://www.w3.org/TR/SVG11/paths.html#PathData "Path data"
 [17]: http://www.w3.org/TR/SVG11/shapes.html#CircleElement "<circle> element"
 [18]: http://www.w3.org/TR/SVG11/shapes.html#EllipseElement "<ellipse> element"
+[19]: http://www.w3.org/TR/SVG11/text.html#TextElement "<text> element"
+[20]: http://www.w3.org/TR/SVG11/animate.html#TimingAttributes "Animation timing attributes"
+[21]: http://www.w3.org/TR/SVG11/filters.html "Filter effects"
+[22]: http://www.w3.org/TR/xlink/ "XML Linking Language version 1.0"
+[23]: http://www.w3.org/TR/SVG11/struct.html#DefsElement "<defs> element"
+[24]: http://www.w3.org/TR/SVG11/struct.html#UseElement "<use> element"
+[25]: http://www.w3.org/TR/SVG11/filters.html#feGaussianBlur "<feGaussianBlur> filter effect"
+[26]: http://www.w3.org/TR/SVG11/filters.html#feOffset "<feOffset> filter effect"
+[27]: http://www.w3.org/TR/SVG11/animate.html "Animation elements"
