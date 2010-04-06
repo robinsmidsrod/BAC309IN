@@ -2,7 +2,7 @@
 # Funksjonalitet som ikke er implementert #
 
 Det finnes også en mer detaljert oversikt over hvilke elementer de ulike nettleserne
-støtter iforhold til SVG. Denne oversikten finnes på samme sted, som [prosent-fordelingene][8].
+støtter iforhold til SVG. Denne oversikten finnes på samme sted, som [prosent-fordelingene][1].
 Oversikten gir en veldig god indikasjon på hvilke områder av SVG-standarden som
 ikke er implementert i de respektive nettleserne.
 
@@ -21,11 +21,11 @@ ikke fantes støtte i det hele tatt. Det er også de eneste som har implementert
 av nettlesere vi har sett på.
 
 Både Chrome og Safari som begge baserer seg på Webkit har ingen støtte for filtre. Det
-kan se ut som at Chrome har prøvd å få til støtte i versjoen 5 beta, men denne ser
+kan se ut som at Chrome har prøvd å få til støtte i versjon 5 beta, men denne ser
 utifra oversikten relativt eksperimentel ut.
 
 Det er generelt samme resultat på de resterende filter elementene som man finner på
-tester litt lenger ned på [statussiden][8]. Noe som egentlig er interesant, fordi
+tester litt lenger ned på [statussiden][1]. Noe som egentlig er interesant, fordi
 det viser at man rett og slett i noen nettlesere bare har droppet hele denne modulen.
 Er det noe man har gjort med vilje, eller er det på grunn av arbeidet som ligger
 under SVG-standarden og påvirker.
@@ -77,3 +77,4 @@ i beste tilfelle øke bruken av SVG. Det er først da vi vil se 100% korrekte
 implementasjon av SVG. Foreløpig er det Opera som når høyest på listen, og
 inneholder det aller meste av elementene.
 
+[1]: http://www.codedread.com/svg-support-table.html

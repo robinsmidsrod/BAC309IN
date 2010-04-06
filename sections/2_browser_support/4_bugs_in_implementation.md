@@ -1,16 +1,16 @@
 
 # Manger i implementasjon av SVG #
 
-Mozilla Firefox har i hovedsak mangl i to av SVG-modulene som jobbes med. Dette er
+Mozilla Firefox har i hovedsak mangler i to av SVG-modulene som jobbes med. Dette er
 Font og Animasjons modulen. Animasjons modulen står det verst til med ettersom
 denne inneholder elementer som enten ikke er implementert, og de som er prøvd
 implementert inneholder mangler som gjør at de ikke funger på en riktig måte i
 forhold til W3C sin SVG-standard. Første element som ikke fungerer korrekt er
 animate, som gjør det mulig å animere en enkel attribut eller ting over tid. Det
-er lagt inn en bug [melding][1] på denne modulen, som finnes i bugzilla. Et
+er lagt inn en bug [rapport][1] på denne modulen, som finnes i bugzilla. Et
 annet element som er market som mangle fult er, animateTransform. Elementet
 skal blant annet gjøre det mulig å skalere eller rotere en ting i SVG, f.eks
-et rektangel eller en firkant. Det er også her lagt inn en bug melding[1] i
+et rektangel eller en firkant. Det er også her lagt inn en bug rapport[1] i
 tracking systemet mozilla benytter under utvikling. Elementet funger ikke
 som det skal, noe som har opprinnelse i feilen som også eksister i animate
 elementet. Dette gjør at det å animere elementer ikke fungerer i 
