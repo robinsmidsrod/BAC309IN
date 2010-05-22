@@ -1,8 +1,13 @@
 body {
 font-family: serif;
+font-size: 10pt;
 width: auto;
 }
 
 h2 {
 page-break-before: always;
+}
+
+pre code {
+font-size: 75%;
 }

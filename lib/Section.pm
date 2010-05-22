@@ -3,6 +3,8 @@
 package Section;
 use Moose;
 
+use HTML::TreeBuilder ();
+
 has 'tt' => (
     is => 'ro',
     isa => 'Template',
@@ -23,6 +25,36 @@ has 'dir' => (
     isa      => 'Path::Class::Dir',
     required => 1,
 );
+
+sub dir_name {
+    my ($self) = @_;
+    return $self->dir->relative( $self->dir->parent );
+}
+
+has 'extra_files' => (
+    is => 'ro',
+    isa => 'ArrayRef[Path::Class::File]',
+    init_arg => undef,
+    lazy_build => 1,
+    traits => ['Array'],
+    handles => {
+        'all_extra_files' => 'elements',
+    }
+);
+
+sub _build_extra_files {
+    my ($self) = @_;
+    my @children = $self->dir->children;
+    my @files;
+    foreach my $child ( @children ) {
+        next unless $child;
+        next unless $child->isa('Path::Class::File');
+        next if $child =~ m{/title$};
+        next if $child =~ /\.md$/;
+        push @files, $child;
+    }
+    return \@files;
+}
 
 has 'title' => (
     is 	     => 'ro',
@@ -68,6 +100,47 @@ sub process {
 sub markdown {
     my ($self, $input) = @_;
     my $output = Text::MultiMarkdown::markdown($input);
+    return $self->convert_relative_links($output);
+}
+
+
+sub convert_relative_links {
+    my ($self, $input) = @_;
+
+    my $tree = HTML::TreeBuilder->new_from_content( $input );
+
+    # Prepend relative paths with current directory name
+    my $dir_name = $self->dir_name . "/";
+    foreach my $el ( $tree->look_down('_tag', 'a') ) {
+	if ( $el->attr('href') !~ /^http/i ) {
+		$el->attr('href', $dir_name . $el->attr('href') );
+	}
+    }
+
+    # Prepend relative paths with current directory name
+    foreach my $el ( $tree->look_down('_tag', 'img') ) {
+	if ( $el->attr('src') !~ /^http/i ) {
+		$el->attr('src', $dir_name . $el->attr('src') );
+	}
+	# Hardcode all SVG files to 200x200 pixels
+	if ( $el->attr('src') =~ m{\.svg$} ) {
+	    $el->attr('width', '200');
+	    $el->attr('height', '200');
+	}
+    }
+
+    # Extract return HTML body elements
+    my $output = "";
+    my $body = $tree->look_down( '_tag', 'body' );
+    if ($body) {
+        foreach my $el ( $body->content_list() ) {
+            my $content = blessed($el) ? $el->as_HTML( q|<>&'"|, '  ', {} ) : $el;
+            $output .= $content;
+        }
+    }
+
+    $tree->delete();
+
     return $output;
 }
 

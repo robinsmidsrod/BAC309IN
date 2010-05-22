@@ -46,3 +46,9 @@ font-size: 150%;
 white-space: pre;
 padding: 1em;
 }
+
+img {
+display: block;
+margin-left: 1.5em;
+border: 1px solid #ccc;
+}

@@ -5,6 +5,7 @@ use Moose;
 use Moose::Util::TypeConstraints;
 
 use Path::Class::Dir ();
+use File::Copy ();
 use File::Copy::Recursive ();
 use Template ();
 use Encode ();
@@ -175,6 +176,7 @@ sub _build_main_document_content {
     foreach my $section ( $self->all_sections ) {
         $content .= "<h2>" . $section->title . "</h2>";
         $content .= $section->content;
+        $self->copy_section_extra_files($section);
     }
     return $content;
 }
@@ -201,6 +203,19 @@ sub _build_sections {
     }
     return \@sections;
 }
+
+sub copy_section_extra_files {
+    my ($self, $section) = @_;
+    foreach my $file ( $section->all_extra_files ) {
+        next unless $file;
+        my $extra_dir = $self->build_dir->subdir( $section->dir_name );
+        my $dst = $extra_dir->file( $file->relative($section->dir) );
+        $extra_dir->mkpath();
+        File::Copy::copy($file . "",$dst . "");
+    }
+}
+
+
 
 no Moose;
 __PACKAGE__->meta->make_immutable();
