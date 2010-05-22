@@ -1,6 +1,5 @@
-# Bacheloroppgave om Scalable Vector Graphics (SVG) #
-
 Bachelor for Informatikk 2009/2010
+
 Høgskolen i Vestfold
 
 Gruppemedlemmer:
