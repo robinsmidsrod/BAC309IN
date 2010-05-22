@@ -24,9 +24,8 @@ Ved å analysere epost-listene [public-svg-wg][2] og [public-svg-ig][3]
 kommer vi frem til følgende oversikt over aktivitet fra de forskjellige
 medlemsorganisasjoner:
 
---------------------------------------------------------------------
 | Organisasjon                      | Ant. meld. til WG+IG | Andel |
---------------------------------------------------------------------
+|-----------------------------------|----------------------|-------|
 | W3C                               |                 1089 |   66% |
 | Opera                             |                  253 |   15% |
 | Canon                             |                  158 |    9% |
@@ -43,7 +42,6 @@ medlemsorganisasjoner:
 | PTC-Arbortext                     |                    0 |    0% |
 | Ericsson                          |                    0 |    0% |
 | Cisco                             |                    0 |    0% |
---------------------------------------------------------------------
 
 **FIXME: Kakediagrammet under må genereres fra tabellen over via modell-applikasjon**
 

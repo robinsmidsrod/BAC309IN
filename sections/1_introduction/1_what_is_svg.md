@@ -1,4 +1,4 @@
-﻿
+
 # Hva er SVG? #
 
 Scalable Vector Graphics ([SVG][1]) er en åpen standard utgitt av World 

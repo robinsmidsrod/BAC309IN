@@ -42,7 +42,7 @@ er verdt å merke seg er at ingen av eksemplene spesifiserer `width` eller
 
 Under kan man se et eksempel på [line-elementet][8] i SVG.
 
-{{{INCLUDE:line.svg}}}
+[% INSERT 'line.svg' | indent %]
 
 ![<line> example](line.svg)
 
@@ -57,7 +57,7 @@ er at attributtene ikke er de samme som i HTML. Se en oversikt over hvilke
 
 Under kan man se et eksempel på [polyline-elementet][10] i SVG.
 
-{{{INCLUDE:polyline.svg}}}
+[% INSERT 'polyline.svg' | indent %]
 
 ![<polyline> example](polyline.svg)
 
@@ -82,7 +82,7 @@ presentasjonsattributter.
 
 Under kan man se et eksempel på [polygon-elementet][13] i SVG.
 
-{{{INCLUDE:polygon.svg}}}
+[% INSERT 'polygon.svg' | indent %]
 
 ![<polygon> example](polygon.svg)
 
@@ -97,7 +97,7 @@ spesifisert med tradisjonelle hex-koder som i HTML.
 
 Under kan man se et eksempel på [rect-elementet][14] i SVG.
 
-{{{INCLUDE:rect.svg}}}
+[% INSERT 'rect.svg' | indent %]
 
 ![<rect> example](rect.svg)
 
@@ -115,7 +115,7 @@ de konstante navnene i CSS for farger, samt bruk av transparens med
 
 Under kan man se et eksempel på [path-elementet][15] i SVG.
 
-{{{INCLUDE:path.svg}}}
+[% INSERT 'path.svg' | indent %]
 
 ![<path> example](path.svg)
 
@@ -133,7 +133,7 @@ primitivene jeg har beskrevet her også kan tegnes ved hjelp av en sti.
 
 Under kan man se et eksempel på [circle-elementet][17] i SVG.
 
-{{{INCLUDE:circle.svg}}}
+[% INSERT 'circle.svg' | indent %]
 
 ![<circle> example](circle.svg)
 
@@ -146,7 +146,7 @@ forhold til størrelsen på forelder-elementet.
 
 Under kan man se et eksempel på [ellipse-elementet][18] i SVG.
 
-{{{INCLUDE:ellipse.svg}}}
+[% INSERT 'ellipse.svg' | indent %]
 
 ![<ellipse> example](ellipse.svg)
 
@@ -161,7 +161,7 @@ med rektangelet.
 
 Under kan man se et eksempel på [text-elementet][19] i SVG.
 
-{{{INCLUDE:text.svg}}}
+[% INSERT 'text.svg' | indent %]
 
 ![<text> example](text.svg)
 
@@ -180,7 +180,7 @@ bruk av en enkel sti-spesifikasjon for å beskrive bevegelsen i animasjonen.
 
 Under kan man se et eksempel på bruk av [filtre][21] i SVG.
 
-{{{INCLUDE:filter.svg}}}
+[% INSERT 'filter.svg' | indent %]
 
 ![filter example](filter.svg)
 
@@ -224,7 +224,7 @@ avslutningsvis.
 
 Under kan man se et eksempel på bruk av [animasjon][27] i SVG.
 
-{{{INCLUDE:animation.svg}}}
+[% INSERT 'animation.svg' | indent %]
 
 ![animation example](animation.svg)
 
