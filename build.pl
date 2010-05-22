@@ -18,4 +18,4 @@ my $builder = Builder->new(
     asset_dir    => 'assets',
 );
 $builder->build();
-system("prince", "report/index.html", "-o", "report/report.pdf");
+system("prince", "report/index.html", "-s", "report/prince.css", "--media=print", "-o", "report/report.pdf");

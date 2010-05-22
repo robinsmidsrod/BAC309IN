@@ -52,3 +52,7 @@ display: block;
 margin-left: 1.5em;
 border: 1px solid #ccc;
 }
+
+ul {
+padding-left: 2em;
+}

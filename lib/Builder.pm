@@ -10,6 +10,8 @@ use File::Copy::Recursive ();
 use Template ();
 use Encode ();
 use Text::MultiMarkdown ();
+use HTML::Toc ();
+use HTML::TocInsertor ();
 
 use Section;
 
@@ -101,6 +103,21 @@ sub build_main_document {
         $self->main_document_vars,
         $self->main_document_filename
     );
+    $self->update_toc();
+}
+
+# Updates (actually creates) a Table of Contents on page 2
+sub update_toc {
+    my ($self) = @_;
+    my $filename = $self->build_dir->file($self->main_document_filename) . "";
+
+    my $toc = HTML::Toc->new();
+    $toc->setOptions({
+        insertionPoint => 'replace ToC will be placed here.',
+    });
+    my $toc_inserter = HTML::TocInsertor->new();
+    $toc_inserter->insertIntoFile($toc, $filename, { outputFile => $filename . ".new" });
+    rename $filename . ".new", $filename;
 }
 
 # Template Toolkit parser - used for transforming documents with inline markup
@@ -174,7 +191,7 @@ sub _build_main_document_content {
     }
     # Build content for each section/chapter
     foreach my $section ( $self->all_sections ) {
-        $content .= "<h2>" . $section->title . "</h2>";
+        $content .= "<h2>" . $section->title . "</h2>\n";
         $content .= $section->content;
         $self->copy_section_extra_files($section);
     }
