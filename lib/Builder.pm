@@ -7,6 +7,8 @@ use Moose::Util::TypeConstraints;
 use Path::Class::Dir ();
 use File::Copy::Recursive ();
 use Template ();
+use Encode ();
+use Text::MultiMarkdown ();
 
 use Section;
 
@@ -110,8 +112,9 @@ has 'tt' => (
 sub _build_tt {
     my ($self) = @_;
     return Template->new(
-        INCLUDE_PATH => $self->template_dir,
-        OUTPUT_PATH  => $self->build_dir,
+        INCLUDE_PATH => $self->template_dir->absolute,
+        OUTPUT_PATH  => $self->build_dir->absolute,
+        ENCODING     => 'UTF-8', # Input file encoding
     );
 }
 
@@ -149,9 +152,7 @@ sub _build_main_document_title {
     my ($self) = @_;
     my $title_filename = $self->section_dir->file('title');
     return '<Please specify a title>' unless $title_filename->stat;
-    my $title = $title_filename->slurp();
-    chomp $title; # Get rid of trailing newlines
-    return $title;
+    return Encode::decode_utf8( $title_filename->slurp( chomp => 1) );
 }
 
 # The complete content that will go into the main document
@@ -164,6 +165,13 @@ has 'main_document_content' => (
 sub _build_main_document_content {
     my ($self) = @_;
     my $content = "";
+    # Build front page content
+    my $file = $self->section_dir->file('frontpage.md');
+    if ( $file->stat ) {
+        my $frontpage_content = $file->slurp() . "";
+        $content .= Text::MultiMarkdown::markdown( $frontpage_content );
+    }
+    # Build content for each section/chapter
     foreach my $section ( $self->all_sections ) {
         $content .= "<h2>" . $section->title . "</h2>";
         $content .= $section->content;
@@ -189,7 +197,7 @@ sub _build_sections {
     my @sections;
     foreach my $dir ( sort @children ) {
         next unless $dir and $dir->isa('Path::Class::Dir');
-        push @sections, Section->new( tt => $self->tt, dir => $dir );
+        push @sections, Section->new( dir => $dir );
     }
     return \@sections;
 }
