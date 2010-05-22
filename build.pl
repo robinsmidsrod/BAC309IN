@@ -18,4 +18,14 @@ my $builder = Builder->new(
     asset_dir    => 'assets',
 );
 $builder->build();
-system("prince", "report/index.html", "-s", "report/prince.css", "--media=print", "-o", "report/report.pdf");
+system("prince", "report/index.html", "-s", "report/prince.css", "--media=print", "-o", "report/first.pdf");
+# http://www.pdfhacks.com/pdftk/
+system(
+"pdftk",
+"report/first.pdf",
+"report/1_introduction/svg_authors.pdf",
+"cat",
+"output",
+"report/report.pdf",
+);
+unlink "report/first.pdf";

@@ -12,6 +12,8 @@ use Encode ();
 use Text::MultiMarkdown ();
 use HTML::Toc ();
 use HTML::TocInsertor ();
+use HTML::TreeBuilder ();
+use HTML::Element ();
 
 use Section;
 
@@ -189,12 +191,30 @@ sub _build_main_document_content {
         my $frontpage_content = $file->slurp() . "";
         $content .= Text::MultiMarkdown::markdown( $frontpage_content );
     }
-    # Build content for each section/chapter
+
+    # Build content for each section/chapter (except attachments)
     foreach my $section ( $self->all_sections ) {
-        $content .= "<h2>" . $section->title . "</h2>\n";
+        next if $section->dir_name eq '9_attachments';
+        if ( $section->title ) {
+            $content .= "<h2>" . $section->title . "</h2>\n";
+        }
         $content .= $section->content;
         $self->copy_section_extra_files($section);
     }
+
+    # Build bibliography
+    $content = $self->build_bibliography($content);
+
+    # Build content for attachment section
+    foreach my $section ( $self->all_sections ) {
+        next unless $section->dir_name eq '9_attachments';
+        if ( $section->title ) {
+            $content .= "<h2>" . $section->title . "</h2>\n";
+        }
+        $content .= $section->content;
+        $self->copy_section_extra_files($section);
+    }
+
     return $content;
 }
 
@@ -232,7 +252,50 @@ sub copy_section_extra_files {
     }
 }
 
+sub build_bibliography {
+    my ($self, $input) = @_;
 
+    my $tree = HTML::TreeBuilder->new_from_content( $input );
+
+    # Fetch all url
+    my $urls = {};
+    my $bib_id = 1;
+    foreach my $el ( $tree->look_down('_tag', 'a') ) {
+	if ( $el->attr('href') =~ /^http/i ) {
+	    $urls->{$bib_id} = { url => $el->attr('href'), title => $el->attr('title') };
+	    my $anchor = HTML::Element->new("a");
+	    $anchor->attr('href', "#bib$bib_id");
+	    $anchor->attr('class', "bib");
+	    $anchor->push_content($bib_id);
+	    my $h = HTML::Element->new("sup");
+	    $h->push_content($anchor);
+	    $el->postinsert($h);
+	    $bib_id++;
+	}
+    }
+
+    # Extract return HTML body elements
+    my $output = "";
+    my $body = $tree->look_down( '_tag', 'body' );
+    if ($body) {
+        foreach my $el ( $body->content_list() ) {
+            my $content = blessed($el) ? $el->as_HTML( q|<>&'"|, '  ', {} ) : $el;
+            $output .= $content;
+        }
+    }
+
+    $tree->delete();
+
+    my @urls;
+    foreach my $url ( sort { $a <=> $b } keys %$urls ) {
+        push @urls, $urls->{$url};
+    }
+
+    my $processed;
+    $self->tt->process('bibliography.html', { urls => \@urls }, \$processed);
+
+    return $output . ( $processed // "" );
+}
 
 no Moose;
 __PACKAGE__->meta->make_immutable();

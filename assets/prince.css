@@ -1,5 +1,31 @@
+body {
+    page: main;
+    counter-reset: page 1;
+}
+
 @media print {
     ul {
         padding-left: 1pt !important;
+    }
+}
+
+.toc {
+    page: table-of-contents;
+    counter-reset: page 1;
+}
+
+.toc ul a:after {
+    content: leader('.') target-counter(attr(href), page);
+}
+
+@page table-of-contents {
+    @top {
+        content: "Innholdsfortegnelse";
+    }
+}
+
+@page main {
+    @bottom {
+        content: "Side " counter(page) " av " counter(pages);
     }
 }

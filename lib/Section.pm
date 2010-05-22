@@ -66,7 +66,7 @@ has 'title' => (
 sub _build_title {
     my ($self) = @_;
     my $title_filename = $self->dir->file('title');
-    return '<Please specify a title>' unless $title_filename->stat;
+    return '' unless $title_filename->stat;
     return $title_filename->slurp( chomp => 1);
 }
 
@@ -112,7 +112,7 @@ sub convert_relative_links {
     # Prepend relative paths with current directory name
     my $dir_name = $self->dir_name . "/";
     foreach my $el ( $tree->look_down('_tag', 'a') ) {
-	if ( $el->attr('href') !~ /^http/i ) {
+	if ( $el->attr('href') !~ /^(?:http|#)/i ) {
 		$el->attr('href', $dir_name . $el->attr('href') );
 	}
     }
@@ -123,7 +123,7 @@ sub convert_relative_links {
 		$el->attr('src', $dir_name . $el->attr('src') );
 	}
 	# Hardcode all SVG files to 200x200 pixels
-	if ( $el->attr('src') =~ m{\.svg$} ) {
+	if ( $el->attr('src') =~ m{\.svg$} and not ( $el->attr('width') and $el->attr('height') ) ) {
 	    $el->attr('width', '200');
 	    $el->attr('height', '200');
 	}
