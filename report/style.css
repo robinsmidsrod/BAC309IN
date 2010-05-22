@@ -14,9 +14,9 @@ font-family: monospace;
 }
 
 pre {
-    margin-left: 2em;
-    padding: 0.5em;
-    background: #ccc;
+margin-left: 2em;
+padding: 0.5em;
+background: #ccc;
 }
 
 code {
@@ -43,8 +43,10 @@ padding: 0.25em;
 .frontpage {
 width: 30em;
 font-size: 150%;
-white-space: pre;
-padding: 1em;
+font-family: sans-serif;
+background: none;
+padding: 0;
+margin-left: 0;
 }
 
 img {
