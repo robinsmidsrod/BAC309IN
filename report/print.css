@@ -1,0 +1,21 @@
+body {
+font-family: serif;
+font-size: 10pt;
+width: auto;
+}
+
+h2 {
+page-break-before: always;
+}
+
+pre code {
+font-size: 75%;
+}
+
+.toc {
+line-height: 1.25em;
+}
+
+ul {
+padding-left: 20pt;
+}
