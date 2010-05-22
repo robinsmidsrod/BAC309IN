@@ -1,15 +1,4 @@
-Bachelor for Informatikk 2009/2010
-
-Høgskolen i Vestfold
-
-Gruppemedlemmer:
-
-* Petter Dahl Thunæs
-* Robin Smidsrød
-
-Veileder: Viggo Holmstedt
-
-## Problemstilling ##
+### Problemstilling ###
 
 SVG-standarden (Scalable Vector Graphics) har vært tilgjengelig i mange 
 år. Den har likevel ikke total markedspenetrasjon. Vi ønsker å finne 
@@ -29,7 +18,7 @@ brukeren og generere SVG-filer ved hjelp av biblioteket omtalt over.
 Programmet skal kunne lese inn data fra ekstern kilde, slik som en fil 
 eller URL. 
 
-## Spørsmål som dekker grunnlaget for oppgaven ##
+### Spørsmål som dekker grunnlaget for oppgaven ###
 
  - Introduksjon: Hva er SVG?
  - Hvilke nettlesere må støtte SVG for at man som utvikler kan benytte SVG uten å tenke på klient-støtte?
@@ -52,7 +41,7 @@ eller URL.
      - Er VML som standard knyttet for sterkt til Microsoft sin implementasjon?
  - Konklusjon: Hva må skje i markedet for at SVG skal "ta av" som standard?
  
-## Arbeidsmetodikk ##
+### Arbeidsmetodikk ###
 
 Vi vil bruke en smidig utviklingsmetodikk (agile), hvor vi setter opp korte 
 perioder (sprint), hvor vi jobber på spesifikke problemstillinger. 
@@ -69,9 +58,9 @@ gjeldende uken. All dokumentasjon av programvaren benytter engelsk som
 språk. Dette gjør det enklere for tredjeparter å evaluere koden i 
 prosjektet uavhengig av norsk språkforståelse.
 
-## Modellapplikasjon ##
+### Modellapplikasjon ###
 
-### Bibliotek: SVG-generator ###
+#### Bibliotek: SVG-generator ####
 
 Vi skal lage et Java-bibliotek som gjør det mulig å generere SVG-filer 
 basert på instanser med strukturerte data. Vi velger å benytte 
@@ -80,7 +69,7 @@ utvide biblioteket til å støtte mer funksjonalitet på et senere
 tidspunkt. Vi planlegger å benytte white-box reuse-konseptet for å 
 oppnå høy fleksibilitet.
 
-#### Tolk for å lese inn data fra fil ####
+##### Tolk for å lese inn data fra fil #####
 
 Vi planlegger å lage en tolk (eng:parser) som kan ta inndata i form av 
 XML eller CSV (Comma Separated Values) og gjøre om dette til strukturer 
@@ -91,7 +80,7 @@ det eksport-formatet som er enklest å generere for en sluttbruker av
 desktop-applikasjonen. Excel sitt "XML-regneark 2003"-format er f.eks. 
 godt egnet som inndata. 
 
-### Applikasjon: Grafisk brukergrensesnitt for håndtering av inndata ###
+#### Applikasjon: Grafisk brukergrensesnitt for håndtering av inndata ####
 
 Her planlegger vi å lage en normal applikasjon som kan gi et 
 grensesnitt til brukeren for å skrive inn data eller laste inn en fil 
@@ -107,13 +96,13 @@ filer på en gang. Vi planlegger å benytte mønstre for god programdesign
 for å gjøre applikasjonen enkel å utvide og lettere å vedlikeholde. Dette
 vil passe godt sammen med vårt valg om å benytte en smidig utviklingsmetodikk.
 
-### Lisensiering ###
+#### Lisensiering ####
 
 Kildekoden til biblioteket og applikasjonen velger vi å tilgjengeliggjøre
 under BSD-lisensen. Dette gjør det mulig for andre utviklere å benytte
 koden fra denne bacheloroppgaven i kommersielle sammenhenger.
 
-## Valg av verktøy til prosessen ##
+### Valg av verktøy til prosessen ###
 
 Vi velger å benytte oss av Eclipse på grunn av god erfaring med denne 
 utviklingsplatformen. Siden vi har opparbeidet oss god erfaring med bruk 

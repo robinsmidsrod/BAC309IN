@@ -1,5 +1,5 @@
 
-# Medlemmer i SVG Working Group #
+### Medlemmer i SVG Working Group ###
 
 De følgende institusjoner er registrert med et eller flere [medlemmer i
 SVG Working Group (WG) pr. 7. mars 2010][1].
@@ -93,8 +93,6 @@ gjøre en større analyse av aktiviteten internt i arbeidsgruppen for å se
 hvilke organisasjoner som har bidratt mest til at standarden har utviklet
 seg. Hvis ikke vi får disse opplysningene må vi basere våre funn på de
 offentlige dataene gjengitt ovenfor.
-
-**FIXME: Utvid tabellen med informasjon fra Doug Schepers hvis data blir tilgjengelig**
 
 [1]: http://www.w3.org/2000/09/dbwg/details?group=19480&public=1&gs=1& "SVG Working Group Participants"
 [2]: http://lists.w3.org/Archives/Public/public-svg-wg/ "SVG Working Group public mailing list archive, extracted 2010-04-01"

@@ -1,5 +1,5 @@
 
-# Manger i implementasjon av SVG #
+### Mangler i implementasjon av SVG ###
 
 Mozilla Firefox har i hovedsak mangler i to av SVG-modulene som jobbes med. Dette er
 Font og Animasjons modulen. Animasjons modulen står det verst til med ettersom

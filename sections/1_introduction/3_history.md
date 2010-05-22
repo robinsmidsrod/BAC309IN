@@ -1,5 +1,5 @@
 
-# Historisk bakgrunn #
+### Historisk bakgrunn ###
 
 Med utgangspunkt i dokumentet [The Secret Origin of SVG][1] er det tydelig
 at mange organisasjoner var svært interessert i å få en enhetlig standard
@@ -35,7 +35,7 @@ Tidlig i utviklingen av SVG-standarden var det W3Cs Chris Lilley og Adobes
 Jon Ferraiolo som var mest aktive. Som forrige avsnitt viser har Adobe sin
 aktivitet synket noe siden den gang.
 
-# Revisjoner og profiler av SVG-standarden #
+### Revisjoner og profiler av SVG-standarden ###
 
 [SVG 1.0][7] ble en godkjent W3C standard 4. september 2001.
 
