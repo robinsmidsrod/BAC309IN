@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 300 300">
  <text x="10" y="20" style="font-family:sans-serif;font-size:24"
   >Stationary text</text>
  <text x="10" y="40" style="font-family:serif;font-size:24">Moving text
