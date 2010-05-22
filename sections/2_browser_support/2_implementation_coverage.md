@@ -9,7 +9,8 @@ deler som enda ikke er støttet. For å kunne sammenligne Mozilla sin SVG-implem
 men andre nettlesere, skal vi trekke ut moduler som ikke er støttet av Mozilla og
 sammenligne disse mot andre nettlesere.
 
-Moduler vi bør legge spesielt merke til
+Moduler vi bør legge spesielt merke til:
+
  * [Text][1]
  * [Color-profile][2]
  * [Cursor][3]
