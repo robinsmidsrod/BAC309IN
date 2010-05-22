@@ -1,4 +1,4 @@
-<div class="frontpage">
+<pre class="frontpage">
 1. juni 2010
 
 Bachelor for Informatikk 2009/2010
@@ -11,4 +11,4 @@ Gruppemedlemmer:
   Robin Smidsrød
 
 Veileder: Viggo Holmstedt
-</div>
+</pre>

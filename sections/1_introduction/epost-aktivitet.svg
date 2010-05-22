@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin"
+    version="1.1" viewBox="0 0 1000 750">
+    <title>Aktivitet på SVG WG+IG epostliste</title>
+    <desc>Aktivitet for SVG WG medlemmer på SVG WG+IG epostliste siden 2008</desc>
+    <rect fill="none" height="748" stroke="black" stroke-width="1"
+        width="998" x="1" y="1"/>
+    <text font-family="sans-serif" font-size="32" text-anchor="middle"
+        x="50%" y="52">Aktivitet på SVG WG+IG epostliste</text>
+    <g transform="translate(780.0 72.0)">
+        <rect fill="none" height="408.0" stroke="black" stroke-width="1"
+            width="200.0" x="0.0" y="0.0"/>
+        <circle cx="15" cy="23.0" fill="#fff6a3cf" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="32.0">W3C</text>
+        <circle cx="15" cy="47.0" fill="#fffc007b" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="56.0">Opera</text>
+        <circle cx="15" cy="71.0" fill="#ff52b1b1" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="80.0">Canon</text>
+        <circle cx="15" cy="95.0" fill="#fff81e1c" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="104.0">Institut Telecom</text>
+        <circle cx="15" cy="119.0" fill="#ffce8392"
+            r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="128.0">Ikivo</text>
+        <circle cx="15" cy="143.0" fill="#fffd8f15"
+            r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="152.0">Mozilla</text>
+        <circle cx="15" cy="167.0" fill="#ff221c92"
+            r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="176.0">Apple</text>
+        <circle cx="15" cy="191.0" fill="#ff2c95b3"
+            r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="200.0">Quickoffice</text>
+        <circle cx="15" cy="215.0" fill="#ffd33d4f"
+            r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="224.0">Adobe</text>
+        <circle cx="15" cy="239.0" fill="#ff3391ab"
+            r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="248.0">Microsoft</text>
+        <circle cx="15" cy="263.0" fill="#ffcf0083"
+            r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="272.0">Samsung</text>
+        <circle cx="15" cy="287.0" fill="#ff68176e"
+            r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="296.0">Telecom Italia SpA</text>
+        <circle cx="15" cy="311.0" fill="#ffb20ce0"
+            r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="320.0">Rochester Institute of Technology</text>
+        <circle cx="15" cy="335.0" fill="#ff3b4087"
+            r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="344.0">PTC-Arbortext</text>
+        <circle cx="15" cy="359.0" fill="#ff649019"
+            r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="368.0">Ericsson</text>
+        <circle cx="15" cy="383.0" fill="#ffcec99b"
+            r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="392.0">Cisco</text>
+    </g>
+    <line stroke="black" x1="20" x2="20" y1="674" y2="72"/>
+    <line stroke="black" x1="20" x2="23" y1="524" y2="524"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="528">272.25</text>
+    <line stroke="black" x1="20" x2="23" y1="373" y2="373"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="377">544.5</text>
+    <line stroke="black" x1="20" x2="23" y1="223" y2="223"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="227">816.75</text>
+    <line stroke="black" x1="20" x2="23" y1="72" y2="72"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="76">1,089</text>
+    <line stroke="black" x1="20" x2="23" y1="674" y2="674"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="678">0</text>
+    <text font-family="sans-serif" font-size="14" stroke="black"
+        text-anchor="start" x="20" y="61">meldinger (stk)</text>
+    <line stroke="black" x1="20" x2="760" y1="674" y2="674"/>
+    <defs>
+        <filter id="highlight">
+            <feMorphology operator="dilate" radius="2"/>
+            <feColorMatrix type="saturate" values="1"/>
+            <feGaussianBlur result="coloredBlur" stdDeviation="2.5"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <defs>
+        <pattern height="10" id="highlightPattern"
+            patternUnits="userSpaceOnUse" viewBox="0 0 10 10" width="10"
+            x="0" y="0">
+            <line stroke="black" x1="0" x2="10" y1="0" y2="10"/>
+        </pattern>
+    </defs>
+    <rect fill="#fff6a3cf" height="602" stroke="black" width="33" x="68" y="72"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 68,674)" x="70" y="672">1,089</text>
+    <rect fill="#fffc007b" filter="url(#highlight)" height="139"
+        stroke="black" width="33" x="111" y="535"/>
+    <rect fill="url(#highlightPattern)" height="139" stroke="black"
+        width="33" x="111" y="535"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 111,674)" x="113" y="672">253</text>
+    <rect fill="#ff52b1b1" height="87" stroke="black" width="33" x="154" y="587"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 154,674)" x="156" y="672">158</text>
+    <rect fill="#fff81e1c" height="23" stroke="black" width="33" x="197" y="651"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 197,674)" x="199" y="672">42</text>
+    <rect fill="#ffce8392" height="12" stroke="black" width="33" x="240" y="662"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 240,674)" x="242" y="672">22</text>
+    <rect fill="#fffd8f15" height="10" stroke="black" width="33" x="283" y="664"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 283,674)" x="285" y="672">19</text>
+    <rect fill="#ff221c92" filter="url(#highlight)" height="10"
+        stroke="black" width="33" x="326" y="664"/>
+    <rect fill="url(#highlightPattern)" height="10" stroke="black"
+        width="33" x="326" y="664"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 326,674)" x="328" y="672">19</text>
+    <rect fill="#ff2c95b3" height="9" stroke="black" width="33" x="369" y="665"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 369,674)" x="371" y="672">18</text>
+    <rect fill="#ffd33d4f" height="6" stroke="black" width="33" x="412" y="668"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 412,674)" x="414" y="672">11</text>
+    <rect fill="#ff3391ab" height="1" stroke="black" width="33" x="455" y="673"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 455,674)" x="457" y="672">3</text>
+    <rect fill="#ffcf0083" height="0" stroke="black" width="33" x="498" y="674"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 498,674)" x="500" y="672">1</text>
+    <rect fill="#ff68176e" height="0" stroke="black" width="33" x="541" y="674"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 541,674)" x="543" y="672">0</text>
+    <rect fill="#ffb20ce0" height="0" stroke="black" width="33" x="584" y="674"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 584,674)" x="586" y="672">0</text>
+    <rect fill="#ff3b4087" height="0" stroke="black" width="33" x="627" y="674"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 627,674)" x="629" y="672">0</text>
+    <rect fill="#ff649019" height="0" stroke="black" width="33" x="670" y="674"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 670,674)" x="672" y="672">0</text>
+    <rect fill="#ffcec99b" height="0" stroke="black" width="33" x="713" y="674"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" transform="rotate(90 713,674)" x="715" y="672">0</text>
+</svg>

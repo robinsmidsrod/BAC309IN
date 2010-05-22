@@ -79,7 +79,7 @@ oppnå SVG støtte, der i blant Batik toolkit fra Apache som implementere [SVG-s
 [6]: http://www.w3.org/TR/SVG11/fonts.html#font-mod
 [7]: http://www.mozilla.org/projects/svg/status.html
 [8]: http://www.codedread.com/svg-support-table.html
-[9]: http://www.opera.com/docs/specs/svg/̈́
+[9]: http://www.opera.com/docs/specs/svg/
 [10]: http://www.opera.com/docs/specs/presto25/html5/
 [11]: https://developer.mozilla.org/en/Gecko
 [12]: http://webkit.org/
