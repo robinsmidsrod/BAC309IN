@@ -51,15 +51,21 @@ Det kan også være et godt alternativ for utvikler som ikke er kjent
 med den XML lignende markupen til SVG. Slik at de kan bruke den imperative
 metodikken også når de trenger å vise animasjoner eller grafikk.
 
-#### Fordeler ved Raphael sitt JavaScript bibliotek ####
+Raphael sitt Javascript bibliotek vil først og fremst være et verktøy for å
+bruke SVG teknologien som allerede finnes i nettleserne. Det hadde ikke på
+egenhånd fungert, om det ikke hadde SVG i bakhånden. Ettersom den bruker
+store deler av SVG standarden for å kunne vise elementene som lages ved
+hjelp av dette bilblioteket. 
 
-- Crossbrowser functionality from same source.
-- Creates native element to browser and DOM.
-- Works in every large scale browser, including ie6
-- 
+Intill vi ser en jevn og god støtte i alle de store nettleserne er det behov
+for slike biblioteker som gjør det mulig å utnytte funksjonalitet som enda
+ikke funger helt prikkfritt slik at vi kan bli kan kjent med standarden og
+hva den kan brukes til i fremtiden.
 
-#### Ulemper ved Raphael sitt Javascript bibliotek ####
-
--
-
+http://raphaeljs.com/
+http://raphaeljs.com/reference.html
+http://en.wikipedia.org/wiki/Imperative_programming
+http://en.wikipedia.org/wiki/Declarative_programming
+http://net.tutsplus.com/tutorials/javascript-ajax/an-introduction-to-the-raphael-js-library/
+Raphaels Paper - SVG Open 2009
 
