@@ -88,8 +88,8 @@ Det er derfor skremmende at dette ikke er en teknologi som også er tilgjenglig
 for allmenheten og kontrollert av et sentralt organ.
 
 I motsettning til Flash er flere andre teknologier som blir benyttet på nettsider
-idag åpne standarer. CSS, JavaScript og HTML er teknologier som er åpne for alle,
 og kontrollert av en sentral enhet hvor store aktør innenfor internett markedet
+idag åpne standarer. CSS, JavaScript og HTML er teknologier som er åpne for alle,
 er med å bestemmer. Dette gjelder også for SVG som er en åpen standard, og utviklere
 som er interesert i å være med i utvikling kan selv ta ansvar for å rapportere feil.
 
