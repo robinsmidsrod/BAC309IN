@@ -88,4 +88,5 @@ FIXME: Legge lenker inn i teksten.
 [2]: http://raphaeljs.com/reference.html
 [3]: http://en.wikipedia.org/wiki/Imperative_programming
 [4]: http://en.wikipedia.org/wiki/Declarative_programming
-[5]: http://net.tutsplus.com/tutorials/javascript-ajax/an-introduction-to-the-raphael-js-library/ "Raphaels Paper - SVG Open 2009"
+[5]: http://net.tutsplus.com/tutorials/javascript-ajax/an-introduction-to-the-raphael-js-library/ 
+[6]: "Raphaels Paper - SVG Open 2009"
