@@ -59,6 +59,13 @@ has 'build_dir' => (
     coerce   => 1,
 );
 
+# The name of the main document template (and output document in the build_dir)
+has 'main_document_filename' => (
+    is 	     => 'ro',
+    isa      => 'Str',
+    required => 1,
+);
+
 sub build {
     my ($self) = @_;
     unless ( $self->section_dir->stat ) {
@@ -105,6 +112,7 @@ sub build_main_document {
         $self->main_document_vars,
         $self->main_document_filename
     );
+    # HTML::ToC doesn't work with XHTML - mangles header
     $self->update_toc();
 }
 
@@ -138,13 +146,6 @@ sub _build_tt {
     );
 }
 
-# The name of the main document template (and output document in the build_dir)
-has 'main_document_filename' => (
-    is => 'ro',
-    isa => 'Str',
-    default => 'index.html',
-);
-
 # Variables that will be available to the main document template
 has 'main_document_vars' => (
     is => 'ro',
@@ -172,7 +173,7 @@ sub _build_main_document_title {
     my ($self) = @_;
     my $title_filename = $self->section_dir->file('title');
     return '<Please specify a title>' unless $title_filename->stat;
-    return Encode::decode_utf8( $title_filename->slurp( chomp => 1) );
+    return $title_filename->slurp( chomp => 1);
 }
 
 # The complete content that will go into the main document

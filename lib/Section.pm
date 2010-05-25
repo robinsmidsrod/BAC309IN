@@ -16,7 +16,7 @@ sub _build_tt {
     my ($self) = @_;
     return Template->new(
         INCLUDE_PATH => $self->dir->absolute,
-        ENCODING     => 'UTF-8', # Input file encoding
+#        ENCODING     => 'UTF-8', # Input file encoding
     );
 }
 
