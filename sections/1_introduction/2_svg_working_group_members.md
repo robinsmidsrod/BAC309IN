@@ -96,7 +96,7 @@ offentlige dataene gjengitt ovenfor.
 [1]: http://www.w3.org/2000/09/dbwg/details?group=19480&public=1&gs=1& "SVG Working Group Participants"
 [2]: http://lists.w3.org/Archives/Public/public-svg-wg/ "SVG Working Group public mailing list archive, extracted 2010-04-01"
 [3]: http://lists.w3.org/Archives/Public/public-svg-ig/ "SVG Interest Group public mailing list archive, extracted 2010-04-01"
-[4]: #w3creply2010-03-08 "Information directly from Doug Schepers, W3C SVG WG Team Contact, dated 2010-03-08"
+[4]: #vedlegg "Information directly from Doug Schepers, W3C SVG WG Team Contact, dated 2010-03-08"
 [5]: http://www.institut-telecom.fr/p_en_present_inst_36.html "Institut Télécom about page"
 [6]: http://www.ikivo.com/04about.html "Ikivo AB about page"
 [7]: http://www.ikivo.com/open_standards.html "Ikivo - Based on open standards"
