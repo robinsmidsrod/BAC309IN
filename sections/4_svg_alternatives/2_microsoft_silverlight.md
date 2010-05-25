@@ -1,4 +1,3 @@
-
 ### Kan Microsoft SilverLight også benyttes for å omgå mangel på SVG-støtte? ###
 
 Microsoft Silverlight er på mange måter det samme som Flash fra Adobe, pakket inn
@@ -68,8 +67,10 @@ tolke det. Er dette veldig likt, så mange stiller spørsmål ved hvorfor Micros
 ikke heller tok i bruk teknologi som allerede var tilstedet, SVG, isteden for
 å lage noe helt eget og propertiert. 
 
-http://en.wikipedia.org/wiki/Microsoft_Silverlight
-http://www.smashingmagazine.com/2009/05/09/flash-vs-silverlight-what-suits-your-needs-best/
-http://faq.programmerworld.net/programming/silverlight.html
-http://news.cnet.com/what-is-silverlight-really/
-http://weblogs.asp.net/jgalloway/archive/2007/06/05/silverlight-and-xaml-have-you-guys-met-old-man-svg.aspx
+FIXME: Legge lenker inn i teksten.
+
+[1]: http://en.wikipedia.org/wiki/Microsoft_Silverlight
+[2]: http://www.smashingmagazine.com/2009/05/09/flash-vs-silverlight-what-suits-your-needs-best/
+[3]: http://faq.programmerworld.net/programming/silverlight.html
+[4]: http://news.cnet.com/what-is-silverlight-really/
+[5]: http://weblogs.asp.net/jgalloway/archive/2007/06/05/silverlight-and-xaml-have-you-guys-met-old-man-svg.aspx

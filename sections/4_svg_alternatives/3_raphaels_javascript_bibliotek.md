@@ -1,11 +1,11 @@
+### Kan JavaScript-bibliotek som Raphaël være et alternativ til SVG? ###
 
-### Kan JavaScript-bibliotek som [Raphaël http://raphaeljs.com/] være et alternativ til SVG? ###
-
-Raphael sitt JavaScript bibliotek baserer seg på SVG standarden, for å kunne vise
-animasjoner og vektor grafikk i nettleseren. Den benytter også seg av VML, som er
-Microsoft versjon av SVG, for å kunne vise vektorgrafikk og animasjoner selv i 
-Internet Explorer. Dette gjør det mulig for utviklere og ta i bruk en enkel kilde 
-for å vise animasjoner og grafikk, nemlig Raphael sitt JavaScript bibliotek.
+[Raphaël](http://raphaeljs.com/) er et JavaScript-bibliotek som baserer seg
+på SVG standarden for å kunne vise animasjoner og vektor grafikk i
+nettleseren. Den benytter også seg av VML, som er Microsoft versjon av SVG,
+for å kunne vise vektorgrafikk og animasjoner selv i Internet Explorer.
+Dette gjør det mulig for utviklere og ta i bruk en enkel kilde for å vise
+animasjoner og grafikk, nemlig Raphael sitt JavaScript bibliotek.
 
 Ved å inkludere samt benytte dette når det skal genereres vektor grafikk slipper 
 man å tenke på om grafikken vil vises likt i de ulike nettleserne fordi biblioteket 
@@ -21,9 +21,9 @@ slippe å sette seg grundig inn i f.eks XML syntaks for å kunne lese SVG filer
 direkte, men heller bruke et sett med funksjoner for å lage grafikken det er behov
 for.
 
-#### Fordeler ved Raphael sitt JavaScript bibliotek ####
+#### Fordeler ved Raphaël sitt JavaScript bibliotek ####
 
-Selv om ikke Raphael sitt bibliotek kan være noen nytt alternativ til SVG
+Selv om ikke Raphaël sitt bibliotek kan være noen nytt alternativ til SVG
 standarden er det fortsatt et nyttig verktøy for utvikling av vektor grafikk.
 
 Raphael sitt JavaScript bibliotek gjør det mulig å lage grafikk ved å bruke
@@ -46,7 +46,7 @@ definert flere steder for animasjon. I slike tilfeller kunne man slippet unna
 med mindre omskriving ved f.eks å bruke Raphael sitt bibliotek og duplisert
 elementer med f.eks en for løkke. 
 
-#### Ulemper ved bruk av Raphaels JavaScript bibliotek ####
+#### Ulemper ved bruk av Raphaël JavaScript-bibliotek ####
 
 Biblioteket er ikke direkte støttet av nettleseren. Det kreves at et
 bibliotek er importert i koden på nettsiden før eventuelle animasjoner
@@ -77,15 +77,15 @@ egenhånd fungert, om det ikke hadde SVG i bakhånden. Ettersom den bruker
 store deler av SVG standarden for å kunne vise elementene som lages ved
 hjelp av dette bilblioteket. 
 
-Intill vi ser en jevn og god støtte i alle de store nettleserne er det behov
+Inntil vi ser en jevn og god støtte i alle de store nettleserne er det behov
 for slike biblioteker som gjør det mulig å utnytte funksjonalitet som enda
 ikke funger helt prikkfritt slik at vi kan bli kan kjent med standarden og
 hva den kan brukes til i fremtiden.
 
-http://raphaeljs.com/
-http://raphaeljs.com/reference.html
-http://en.wikipedia.org/wiki/Imperative_programming
-http://en.wikipedia.org/wiki/Declarative_programming
-http://net.tutsplus.com/tutorials/javascript-ajax/an-introduction-to-the-raphael-js-library/
-Raphaels Paper - SVG Open 2009
+FIXME: Legge lenker inn i teksten.
 
+[1]: http://raphaeljs.com/
+[2]: http://raphaeljs.com/reference.html
+[3]: http://en.wikipedia.org/wiki/Imperative_programming
+[4]: http://en.wikipedia.org/wiki/Declarative_programming
+[5]: http://net.tutsplus.com/tutorials/javascript-ajax/an-introduction-to-the-raphael-js-library/ "Raphaels Paper - SVG Open 2009"

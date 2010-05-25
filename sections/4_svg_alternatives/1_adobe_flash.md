@@ -1,5 +1,3 @@
-﻿
-
 ### Hvordan benytter utviklere Adobe Flash fordi SVG ikke er tilgjengelig? ###
 
 Adobe Flash har lenge vært en viktig del av vår hverdag på internett. Reklamsjon er
@@ -39,7 +37,7 @@ tilby. Noen støtter ikke SVG i det hele tatt, uten en plugin, og da kan man lik
 gjerne benytte Flash for å lagre mindre jobb for sluttbruker.
 
 
-## Ulemper ved Adobe Flash ##
+#### Ulemper ved Adobe Flash ####
 
 Med tiden har vi blitt mer bevist på hva vi benytter av applikasjoner og tillegg
 for å kunne se det vi vil på nettet. Vi har også blitt mer bevist på hvilke teknologier
@@ -93,11 +91,12 @@ idag åpne standarer. CSS, JavaScript og HTML er teknologier som er åpne for al
 er med å bestemmer. Dette gjelder også for SVG som er en åpen standard, og utviklere
 som er interesert i å være med i utvikling kan selv ta ansvar for å rapportere feil.
 
+FIXME: Legge lenker inn i teksten.
 
-http://svg.kvalitne.cz/svg-introduction/index.xhtmlz#(17)
-http://www.svgopen.org/2009/papers/6-The_strengths_of_SVG_in_web_mapping_/
-http://www.urban75.org/tech/q026.html
-http://articles.sitepoint.com/article/v-svg-which-should-choose (fordeler ulemper)
-http://www.itk.ilstu.edu/faculty/javila/svg/SVG_overview/svg-vs-flash.htm
-http://www.planetpublish.com/mainpage.asp?webpageid=229-
-http://www.apple.com/hotnews/thoughts-on-flash/
+[1]: http://svg.kvalitne.cz/svg-introduction/index.xhtmlz#(17)
+[2]: http://www.svgopen.org/2009/papers/6-The_strengths_of_SVG_in_web_mapping_/
+[3]: http://www.urban75.org/tech/q026.html
+[4]: http://articles.sitepoint.com/article/v-svg-which-should-choose (fordeler ulemper)
+[5]: http://www.itk.ilstu.edu/faculty/javila/svg/SVG_overview/svg-vs-flash.htm
+[6]: http://www.planetpublish.com/mainpage.asp?webpageid=229-
+[7]: http://www.apple.com/hotnews/thoughts-on-flash/

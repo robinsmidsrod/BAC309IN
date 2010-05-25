@@ -1,14 +1,14 @@
 ### Problemstilling ###
 
-SVG-standarden (Scalable Vector Graphics) har vært tilgjengelig i mange 
-år. Den har likevel ikke total markedspenetrasjon. Vi ønsker å finne 
-ut hvorfor SVG den dag i dag fremdeles ikke kan benyttes av utviklere 
-uten å måtte forholde seg til hvor standarden er støttet. En viktig 
-del av dette er å finne ut hvordan Microsoft har påvirket utvikleres 
-syn på SVG som en moden standard. I tillegg ønsker vi også å finne 
-ut av om SVG fremdeles er den teknologien som anbefales for presentasjon 
-av skalerbar grafikk på World Wide Web, eller om det er kommet andre 
-teknologier på markedet som bedre løser SVG sitt problemområde. 
+SVG-standarden (Scalable Vector Graphics) har vært tilgjengelig i mange år.
+Den har likevel ikke total markedspenetrasjon. Vi ønsker å finne ut hvorfor
+SVG den dag i dag fremdeles ikke kan benyttes av utviklere uten å måtte
+forholde seg til hvor godt standarden er støttet. En viktig del av dette er
+å finne ut hvordan Microsoft har påvirket utvikleres syn på SVG som en moden
+standard. I tillegg ønsker vi også å finne ut av om SVG fremdeles er den
+teknologien som anbefales for presentasjon av skalerbar grafikk på World
+Wide Web, eller om det er kommet andre teknologier på markedet som bedre
+løser SVG sitt problemområde.
 
 For å illustrere bruk av SVG ønsker vi å lage et bibliotek som 
 genererer diagrammer til forretningsbruk, slik som kakediagram og 
