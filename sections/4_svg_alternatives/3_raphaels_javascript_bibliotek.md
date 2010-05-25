@@ -2,54 +2,74 @@
 ### Kan JavaScript-bibliotek som [Raphaël http://raphaeljs.com/] være et alternativ til SVG? ###
 
 Raphael sitt JavaScript bibliotek baserer seg på SVG standarden, for å kunne vise
-animasjoner og vektor grafikk i nettleseren. Den benytter også seg av VML teknologi
-for å kunne vise vektorgrafikk og animasjoner selv i Internet Explorer.
+animasjoner og vektor grafikk i nettleseren. Den benytter også seg av VML, som er
+Microsoft versjon av SVG, for å kunne vise vektorgrafikk og animasjoner selv i 
+Internet Explorer. Dette gjør det mulig for utviklere og ta i bruk en enkel kilde 
+for å vise animasjoner og grafikk, nemlig Raphael sitt JavaScript bibliotek.
 
-Det eksister mange nettlesere idag, og det er like mye variasjoner i hvor stor del
-av SVG standarden de ulike nettleserne støtter. Det er derfor lite gunstig for 
-en utvikler som baserer seg på at f.eks grafikken skal se lik ut i alle nettlesere
-ikke kan ta denne forutsetningen.
+Ved å inkludere samt benytte dette når det skal genereres vektor grafikk slipper 
+man å tenke på om grafikken vil vises likt i de ulike nettleserne fordi biblioteket 
+emulerer selv funksjonalitet som ikke er tilgjenglig i SVG implementasjon for
+nettlesere. Derfor kan man være enda litt sikrere på at innholdet vil bli vist på
+korrekt måte uavhengi av nettleser.
 
-Det er her Raphael kommer inn i bildet, ettersom biblioteket hans baserer seg på SVG
-standarden er mye av funksjonalitet også tilstedet i biblioteket. Ved å inkludere
-samt benytte dette når man skal generere vektor grafikk slipper man å tenke på om
-grafikken vil vises likt i de ulike nettleserne fordi biblioteket emulerer selv
-funksjonalitet som ikke er tilgjenglig i SVG implementasjon for nettleseren. Derfor
-kan være litt ekstra sikker på å få et resultat som er tilgjenglig for de aller aller
-fleste.
+I prinsippe kan man ikke kalle Raphael sitt JavaScript bibliotek et alternativ
+til SVG siden den faktisk tar i bruk SVG, men emulerer funksjonalitet som enda
+ikke er støttet hundre prosent i de ulike nettleserne. Det kan heller være et
+godt hjelpemiddel for utvikler vant med en imperativ programmerings form. Som vil
+slippe å sette seg grundig inn i f.eks XML syntaks for å kunne lese SVG filer
+direkte, men heller bruke et sett med funksjoner for å lage grafikken det er behov
+for.
 
-Det eneste som skal til for å benytte Raphael sitt bibliotek er å plassere biblioteket
-et sted på nettsiden, samt lage en import settninig i javascript delen hvor det er
-nødvendig å bruke biblioteket for å lage grafikk.
+#### Fordeler ved Raphael sitt JavaScript bibliotek ####
 
-En stor fordel ved å bruke biblioteket er at du får muligheten til å bruke vanlig
-imperativ programmerings metodikk for å lage SVG grafikk. Dette gjør det f.eks
-enkelere å multiplisere et element, eller bruke annen funksjonalitet som kommer
-med standard JavaScript som f.eks if tester.
+Selv om ikke Raphael sitt bibliotek kan være noen nytt alternativ til SVG
+standarden er det fortsatt et nyttig verktøy for utvikling av vektor grafikk.
 
-Dette er en stor fordel når man ser på antall gjentagelser man få i en tekstfil
-med SVG markup. Ofte kan det være tidkrevende å endre f.eks en farge eller
-størrelse på teksten til flere elementer ettersom dette defineres på flere
-ulike steder i teksten. 
+Raphael sitt JavaScript bibliotek gjør det mulig å lage grafikk ved å bruke
+funksjoner som man ville gjort i f.eks Java eller C++. Biblioteket har altså
+et imperativt programmerings fokus, i motsettning til SVG som er deklarativt.
+Ved å bruke denne programmerings formen er det enklere å f.eks duplisere 
+elementer eller ta valg basert på hendelser i koden. 
 
-Raphaels har også en fordel som vi ser Flash mangler. Flash har ikke mulighet
-til å ta ut informasjon fra DOM i nettleseren, og kan heller ikke snakke med
-nettleseren direkte. Dette er ingen begrensning i Raphael sitt bibliotek siden
-det er basert på JavaScript. 
+SVG benytter deklarativ programmerings form i sine tekstfiler som kan tolkes
+av nettleseren. For utviklere eller brukere kjente med f.eks XML og HTML som
+begge er deklarative språk, er det en kort lærningskurve for å kunne lage
+avanserte animasjoner. De som ikke er kjent med denne formen for programmering
+kan ha mer nytte av f.eks biblioteket til Raphael som lager grafikk ved å 
+bruke kjent programmerings stil. 
 
-Det er heller ikke behov for tredjeparts applikasjoner eller biblioteker på
-klient siden. Dette legges med på selve nettsiden, slik at brukeren har en
-ting mindre å bekymre seg med.
+Det kan også være en tung affære å gjøre endringer på et SVG element etter å
+ha skrevet komplisert kode til animasjoner og grafikk. Det kan f.eks være at
+det har blitt valgt feil farge, eller gjort en skrive feil i en tekst som blir
+definert flere steder for animasjon. I slike tilfeller kunne man slippet unna
+med mindre omskriving ved f.eks å bruke Raphael sitt bibliotek og duplisert
+elementer med f.eks en for løkke. 
 
-Raphael sitt javascript bibliotek er fortsatt bundet til hva Javascript og
-SVG kan gjøre sammen, og det er derfor ikke noe grensespengende som er mulig
-å oppnå ved bruk av dette biblioteket f.eks visning av lyd og bilde. Men
-det er absolutt et godt bibliotek for med sikkerhet å kunne vise grafikk
-og animasjoner likt til alle brukere med ulik nettleser.
+#### Ulemper ved bruk av Raphaels JavaScript bibliotek ####
 
-Det kan også være et godt alternativ for utvikler som ikke er kjent
-med den XML lignende markupen til SVG. Slik at de kan bruke den imperative
-metodikken også når de trenger å vise animasjoner eller grafikk.
+Biblioteket er ikke direkte støttet av nettleseren. Det kreves at et
+bibliotek er importert i koden på nettsiden før eventuelle animasjoner
+begynner å tegnes opp. Vi ser her noe av det samme som må til for å få
+blant annet Flash og Silverlight til å fungere, men Raphael er alikvel
+bedre ettersom det ikke er opp til brukeren å legge til noe ekstra, men
+opp til utvikleren.
+
+I en optimal verden er tredjeparts moduler som Flash og Silverlight byttet
+ut med SVG funksjonalitet og denne er implementert med samme funksjonalitet
+i alle nettlesere. Vi er enda ikke komme dit at SVG har full støtte i alle
+nettlesere men det er fortsatt tungvindt å måtte legge et lag imellom nettlesere
+og klient for å få vist grafikk og animasjon.
+
+Raphael sitt bibliotek har tatt utgangspunkt i grafikk, samt animasjons
+funksjonaliteten til SVG standarden. Dette har allerede blitt implementert
+i de fleste nettlesere igjennom SVG. Etterhvert som dette utvikles videre
+kan man spørre om det faktisk er nødvendig med et eget bibliotek for å oppnå
+funksjonalitet som senere vil eksistere i alle nettlesere med SVG, selv Internet
+Explorer har annonsert at de vil ha en SVG implementasjon ferdig i IE 9. Det
+har i en lenger periode gjort det enklere for utvikler å lage animasjon som
+fungere i alle nettlesere, men vil bli overflødig så fort fulle implementasjoner
+av SVG blir tilgjenglig i nettlesere.
 
 Raphael sitt Javascript bibliotek vil først og fremst være et verktøy for å
 bruke SVG teknologien som allerede finnes i nettleserne. Det hadde ikke på

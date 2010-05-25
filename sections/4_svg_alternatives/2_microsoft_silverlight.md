@@ -68,7 +68,6 @@ tolke det. Er dette veldig likt, så mange stiller spørsmål ved hvorfor Micros
 ikke heller tok i bruk teknologi som allerede var tilstedet, SVG, isteden for
 å lage noe helt eget og propertiert. 
 
-
 http://en.wikipedia.org/wiki/Microsoft_Silverlight
 http://www.smashingmagazine.com/2009/05/09/flash-vs-silverlight-what-suits-your-needs-best/
 http://faq.programmerworld.net/programming/silverlight.html
