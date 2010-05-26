@@ -1,6 +1,6 @@
 ### Kan JavaScript-bibliotek som Raphaël være et alternativ til SVG? ###
 
-[Raphaël](http://raphaeljs.com/) er et JavaScript-bibliotek som baserer seg
+[RaphaëlJS][1] er et JavaScript-bibliotek som baserer seg
 på SVG standarden for å kunne vise animasjoner og vektor grafikk i
 nettleseren. Den benytter også seg av VML, som er Microsoft versjon av SVG,
 for å kunne vise vektorgrafikk og animasjoner selv i Internet Explorer.
