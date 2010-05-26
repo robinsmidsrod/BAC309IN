@@ -643,11 +643,11 @@ C211 300 186 274 156 274&quot;
 <p>Generelt kan det se ut som de fleste av nettleserne har fått det til når det kommer til implementasjons av SVG-standarden, men det er relativt stor forskjell på hvilke elementer som faktisk er støttet i de ulike nettleserne. Dette gjør det vanskelig å ta høyde for spesiell funksjonalitet når man skal utvikle f.eks websider med SVG innhold og man ikke kan regne med at animasjoner fungerer som de skal, eller om fonten man har valgt å bruke vises likt i allefall nettlesere. Dette er en veldig svakhet, som gjør jobben til utviklere og designere vanskelig. Det kan være en indikasjon på at ting begynner å bli bedre ettersom jo høyere versjons nummerne blir på de ulike nettleserne. Dette kan bety at SVG-standarden kan bli brukt mer aktivt i web applikasjoner.</p>
 <p>Internet explorer ikke nevnt ovenfor av en grunn, den støtter ikke SVG uten å måtte ha installert en plugin for å vise SVG. Det er påbegynt arbeid med SVG i Internet explorer i Januar 2010. Noe som kan bety at vi kanskje får se en Internet Explorer også med SVG støtte. Dette vil nok gjøre SVG mer kjent og vil i beste tilfelle øke bruken av SVG. Det er først da vi vil se 100% korrekte implementasjon av SVG. Foreløpig er det Opera som når høyest på listen, og inneholder det aller meste av elementene.</p>
 <h3 id="mangleriimplementasjonavsvg"><a name="h-1.4.4"></a>Mangler i implementasjon av SVG</h3>
-<p>Mozilla Firefox har i hovedsak mangler i to av SVG-modulene som jobbes med. Dette er Font og Animasjons modulen. Animasjons modulen står det verst til med ettersom denne inneholder elementer som enten ikke er implementert, og de som er prøvd implementert inneholder mangler som gjør at de ikke funger på en riktig måte i forhold til W3C sin SVG-standard. Første element som ikke fungerer korrekt er animate, som gjør det mulig å animere en enkel attribut eller ting over tid. Det er lagt inn en bug <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=216462">rapport</a><sup><a class="bib" href="#bib99">99</a></sup> på denne modulen, som finnes i bugzilla. Et annet element som er market som mangle fult er, animateTransform. Elementet skal blant annet gjøre det mulig å skalere eller rotere en ting i SVG, f.eks et rektangel eller en firkant. Det er også her lagt inn en bug rapport<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=216462">1</a><sup><a class="bib" href="#bib99">99</a></sup> i tracking systemet mozilla benytter under utvikling. Elementet funger ikke som det skal, noe som har opprinnelse i feilen som også eksister i animate elementet. Dette gjør at det å animere elementer ikke fungerer i SVG-implementasjon i Firefox.</p>
-<p>Den andre modulen som enda ikke er ferdig implementert i Firefox er Font modulen. Foreløpig har Mozilla ikke klart å vise mere avanserte fonter, eller fonter som inneholder spesielle symboler som man f.eks finner i japansk tegnsett. Dette fører til at fonter generelt ikke vil fungere korrekt. Og isteden for å vise deler av fonten som faktisk fungerer eller gi tilbake en generell font, blir tekst som bruker en avansert font ikke bli vist i det hele tatt. Det har blitt også her lagt inn en <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=119490">bug</a><sup><a class="bib" href="#bib100">100</a></sup> i bugzilla, som med aninimasjons feilen. Dette skaper problemer for å vise tekst som blir generert av SVG generelt og vil igjen gjøre SVG upolitelig til å vise tekst i når det blir brukt avanserte fonter.</p>
-<p>Webkit har flere moduler som inneholder mangler. Dette går på flere av de samme modulene som Firefox har hatt problemer med å implementere men også Cursor modulen, samt View. Cursor modulen gjør det mulig å lage en egendefinert peker som kan benyttes i applikasjonen. F.eks om man har lyst til å bruke et eget ikon som skal fungere som mus. Det finnes ingen bug henvisninger på cursor modulen, til hva som faktisk er feil. Men modulen er definitivt ikke implementert korrekt og markert med gult. View modulen har fått registrert en <a href="https://bugs.webkit.org/show_bug.cgi?id=15495">bug</a><sup><a class="bib" href="#bib101">101</a></sup> som forteller at det ikke er mulig å hente ut currentView. Det er hva vi har i nettleseren på et gitt aktivt tidspunkt, og W3C har selv kommentert at denne er vanskelig og implementere. </p>
-<p>Webkit har også flere svakhetere som også eksister i implementasjon til Firefox. Dette går da i hovedsak på animasjons modulen. Flere av elementene i animasjons modulen inneholder feil, dette gjør blant annet at det ikke er mulig å sette attributter under en aninmasjon for en vis tidsperiode. Det er heller ikke mulig å flytte en ting et på en linje, eller skalere og rotere et elementet for å lage en aninmasjon. Dette er relativt viktige delere når det kommer til å lage animasjoner. F.eks når man skal få ting til å fade inn, og fade ut eller bare vil at ting flytter seg fra et sted eller annet. Implementasjon av aninmasjons modulen er derfor relativt ubrukelig i webkit. Samme gjelder for gradevis endringer i farger, hvor det har blitt registrert en <a href="https://bugs.webkit.org/show_bug.cgi?id=6034">bug</a><sup><a class="bib" href="#bib102">102</a></sup> i Webkit sin bugzilla.</p>
-<p>Opera har ikke spesifisert steder hvor elementer i de ulike modulene kun er delevis implementert. Vi kan derimot utifra den <a href="http://www.codedread.com/svg-support-table.html">generelle</a><sup><a class="bib" href="#bib85">85</a></sup> SVG-status siden, som benytter SVG tester, trekke ut en konklusjon på hvordan det står til med SVG-støtten i Opera. Ut ifra status-sidene ser man få tegn til elementer som fungerer delevis. Det eneste som kan nevnes er at Opera generelt har flere grønne felter enn både Webkit baserte nettlesere og Mozilla. Det finnes et par tester som viser at det kun er delevis støtte tilgjenglig. Dette er blant annet på aninimasjons testen, og på testen som går på fonter som inneholder symboler. Det ser fortsatt ut som både font og aninmasjon er bedre implementert i Opera enn i Webkit og Mozilla.</p>
+<p>Mozilla Firefox har i hovedsak mangler i to av SVG-modulene som jobbes med. Dette er Font og Animasjons modulen. Animasjons modulen står det verst til med ettersom denne inneholder elementer som enten ikke er implementert, og de som er prøvd implementert inneholder mangler som gjør at de ikke funger på en riktig måte i forhold til W3C sin SVG-standard. Første element som ikke fungerer korrekt er animate, som gjør det mulig å animere en enkel attribut eller ting over tid. Det er lagt inn en bug <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=216462" title="Implement SVG (SMIL) Animation, Mozilla Bug Tracker, reported: 2003-08-17, last modified: 2010-03-05, status: RESOLVED FIXED">rapport</a><sup><a class="bib" href="#bib99">99</a></sup> på denne modulen, som finnes i bugzilla. Et annet element som er market som mangle fult er, animateTransform. Elementet skal blant annet gjøre det mulig å skalere eller rotere en ting i SVG, f.eks et rektangel eller en firkant. Det er også her lagt inn en bug rapport<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=216462" title="Implement SVG (SMIL) Animation, Mozilla Bug Tracker, reported: 2003-08-17, last modified: 2010-03-05, status: RESOLVED FIXED">1</a><sup><a class="bib" href="#bib99">99</a></sup> i tracking systemet mozilla benytter under utvikling. Elementet funger ikke som det skal, noe som har opprinnelse i feilen som også eksister i animate elementet. Dette gjør at det å animere elementer ikke fungerer i SVG-implementasjon i Firefox.</p>
+<p>Den andre modulen som enda ikke er ferdig implementert i Firefox er Font modulen. Foreløpig har Mozilla ikke klart å vise mere avanserte fonter, eller fonter som inneholder spesielle symboler som man f.eks finner i japansk tegnsett. Dette fører til at fonter generelt ikke vil fungere korrekt. Og isteden for å vise deler av fonten som faktisk fungerer eller gi tilbake en generell font, blir tekst som bruker en avansert font ikke bli vist i det hele tatt. Det har blitt også her lagt inn en <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=119490" title="Implement SVG fonts, Mozilla Bug Tracker, reported: 2002-01-11, last modified: 2010-05-25, status: ASSIGNED">bug</a><sup><a class="bib" href="#bib100">100</a></sup> i bugzilla, som med aninimasjons feilen. Dette skaper problemer for å vise tekst som blir generert av SVG generelt og vil igjen gjøre SVG upolitelig til å vise tekst i når det blir brukt avanserte fonter.</p>
+<p>Webkit har flere moduler som inneholder mangler. Dette går på flere av de samme modulene som Firefox har hatt problemer med å implementere men også Cursor modulen, samt View. Cursor modulen gjør det mulig å lage en egendefinert peker som kan benyttes i applikasjonen. F.eks om man har lyst til å bruke et eget ikon som skal fungere som mus. Det finnes ingen bug henvisninger på cursor modulen, til hva som faktisk er feil. Men modulen er definitivt ikke implementert korrekt og markert med gult. View modulen har fått registrert en <a href="https://bugs.webkit.org/show_bug.cgi?id=15495" title="SVGViewSpec DOM bindings aka SVGSVGElement.currentView is unimplemented, WebKit Bug Tracker, reported: 2007-10-13, last modified: 2010-05-18, status: NEW">bug</a><sup><a class="bib" href="#bib101">101</a></sup> som forteller at det ikke er mulig å hente ut currentView. Det er hva vi har i nettleseren på et gitt aktivt tidspunkt, og W3C har selv kommentert at denne er vanskelig og implementere. </p>
+<p>Webkit har også flere svakhetere som også eksister i implementasjon til Firefox. Dette går da i hovedsak på animasjons modulen. Flere av elementene i animasjons modulen inneholder feil, dette gjør blant annet at det ikke er mulig å sette attributter under en aninmasjon for en vis tidsperiode. Det er heller ikke mulig å flytte en ting et på en linje, eller skalere og rotere et elementet for å lage en aninmasjon. Dette er relativt viktige delere når det kommer til å lage animasjoner. F.eks når man skal få ting til å fade inn, og fade ut eller bare vil at ting flytter seg fra et sted eller annet. Implementasjon av aninmasjons modulen er derfor relativt ubrukelig i webkit. Samme gjelder for gradevis endringer i farger, hvor det har blitt registrert en <a href="https://bugs.webkit.org/show_bug.cgi?id=6034" title="WebKit+SVG needs to support color-interpolation for gradients and opacity calculations, WebKit Bug Tracker, reported: 2005-12-10, last modified: 2010-01-30, status: NEW">bug</a><sup><a class="bib" href="#bib102">102</a></sup> i Webkit sin bugzilla.</p>
+<p>Opera har ikke spesifisert steder hvor elementer i de ulike modulene kun er delevis implementert. Vi kan derimot utifra den <a href="http://www.codedread.com/svg-support-table.html" title="SVG Support in browsers, Jeff Schiller, extracted 2010-03-14">generelle</a><sup><a class="bib" href="#bib85">85</a></sup> SVG-status siden, som benytter SVG tester, trekke ut en konklusjon på hvordan det står til med SVG-støtten i Opera. Ut ifra status-sidene ser man få tegn til elementer som fungerer delevis. Det eneste som kan nevnes er at Opera generelt har flere grønne felter enn både Webkit baserte nettlesere og Mozilla. Det finnes et par tester som viser at det kun er delevis støtte tilgjenglig. Dette er blant annet på aninimasjons testen, og på testen som går på fonter som inneholder symboler. Det ser fortsatt ut som både font og aninmasjon er bedre implementert i Opera enn i Webkit og Mozilla.</p>
 <h2><a name="h-1.5"></a>Microsofts rolle i utbredelsen av SVG</h2>
 <h3 id="internetexplorersmanglendesttteforsvg"><a name="h-1.5.1"></a>Internet Explorers manglende støtte for SVG</h3>
 <p>Fra analysen av nettlesere tidligere ser vi at Microsoft sin Internet Explorer (IE) aldri har hatt innebygget støtte for SVG. Man har alltid vært avhengig av et tredjepartstillegg (plugin) for å kunne se SVG i IE. Den <a href="http://www.oreillynet.com/mac/blog/2001/04/exploring_svg.html" title="Exploring SVG, Jason McIntosh, 2001-04-30">mest populære har til nå vært Adobe sin SVG Viewer</a><sup><a class="bib" href="#bib103">103</a></sup>, men andre har nå kommet på markedet fordi Adobe valgte å <a href="http://www.adobe.com/svg/eol.html" title="Adobe to Discontinue Adobe SVG Viewer, Adobe, 2009-01-01">stoppe å utvikle sin plugin</a><sup><a class="bib" href="#bib104">104</a></sup>.</p>
@@ -749,238 +749,353 @@ C211 300 186 274 156 274&quot;
 
 
 
-<ol>
-<li><a class="bib" name="bib1" href="http://github.com">http://github.com</a></li> 
+<dl class="bibliography">
+<dt>1. <a class="bib" name="bib1" href="http://github.com">http://github.com</a></dt>
+<dd></dd>
 
-<li><a class="bib" name="bib2" href="http://www.w3.org/Graphics/SVG/">http://www.w3.org/Graphics/SVG/</a> <em>(Scalable Vector Graphics)</em></li> 
+<dt>2. <a class="bib" name="bib2" href="http://www.w3.org/Graphics/SVG/">http://www.w3.org/Graphics/SVG/</a></dt>
+<dd>Scalable Vector Graphics</dd>
 
-<li><a class="bib" name="bib3" href="http://www.w3.org">http://www.w3.org</a> <em>(World Wide Web Consortium)</em></li> 
+<dt>3. <a class="bib" name="bib3" href="http://www.w3.org">http://www.w3.org</a></dt>
+<dd>World Wide Web Consortium</dd>
 
-<li><a class="bib" name="bib4" href="http://www.w3.org/2007/11/SVG_rechartering/SVG-WG-charter.html#coordination">http://www.w3.org/2007/11/SVG_rechartering/SVG-WG-charter.html#coordination</a> <em>(SVG Dependencies)</em></li> 
+<dt>4. <a class="bib" name="bib4" href="http://www.w3.org/2007/11/SVG_rechartering/SVG-WG-charter.html#coordination">http://www.w3.org/2007/11/SVG_rechartering/SVG-WG-charter.html#coordination</a></dt>
+<dd>SVG Dependencies</dd>
 
-<li><a class="bib" name="bib5" href="http://www.w3.org/standards/xml">http://www.w3.org/standards/xml</a> <em>(eXtensible Markup Language)</em></li> 
+<dt>5. <a class="bib" name="bib5" href="http://www.w3.org/standards/xml">http://www.w3.org/standards/xml</a></dt>
+<dd>eXtensible Markup Language</dd>
 
-<li><a class="bib" name="bib6" href="http://en.wikipedia.org/wiki/Declarative_programming">http://en.wikipedia.org/wiki/Declarative_programming</a> <em>(Declarative programming)</em></li> 
+<dt>6. <a class="bib" name="bib6" href="http://en.wikipedia.org/wiki/Declarative_programming">http://en.wikipedia.org/wiki/Declarative_programming</a></dt>
+<dd>Declarative programming</dd>
 
-<li><a class="bib" name="bib7" href="http://www.w3.org/standards/webdesign/htmlcss">http://www.w3.org/standards/webdesign/htmlcss</a> <em>(HyperText Markup Language)</em></li> 
+<dt>7. <a class="bib" name="bib7" href="http://www.w3.org/standards/webdesign/htmlcss">http://www.w3.org/standards/webdesign/htmlcss</a></dt>
+<dd>HyperText Markup Language</dd>
 
-<li><a class="bib" name="bib8" href="http://www.ecmascript.org/">http://www.ecmascript.org/</a> <em>(ECMAScript)</em></li> 
+<dt>8. <a class="bib" name="bib8" href="http://www.ecmascript.org/">http://www.ecmascript.org/</a></dt>
+<dd>ECMAScript</dd>
 
-<li><a class="bib" name="bib9" href="http://www.w3.org/DOM/">http://www.w3.org/DOM/</a> <em>(Document Object Model)</em></li> 
+<dt>9. <a class="bib" name="bib9" href="http://www.w3.org/DOM/">http://www.w3.org/DOM/</a></dt>
+<dd>Document Object Model</dd>
 
-<li><a class="bib" name="bib10" href="http://www.w3.org/TR/smil-animation/">http://www.w3.org/TR/smil-animation/</a> <em>(Synchronized Multimedia Integration Language)</em></li> 
+<dt>10. <a class="bib" name="bib10" href="http://www.w3.org/TR/smil-animation/">http://www.w3.org/TR/smil-animation/</a></dt>
+<dd>Synchronized Multimedia Integration Language</dd>
 
-<li><a class="bib" name="bib11" href="http://www.w3.org/standards/webdesign/graphics">http://www.w3.org/standards/webdesign/graphics</a> <em>(W3C Graphics)</em></li> 
+<dt>11. <a class="bib" name="bib11" href="http://www.w3.org/standards/webdesign/graphics">http://www.w3.org/standards/webdesign/graphics</a></dt>
+<dd>W3C Graphics</dd>
 
-<li><a class="bib" name="bib12" href="http://www.w3.org/Graphics/SVG/About.html">http://www.w3.org/Graphics/SVG/About.html</a> <em>(About SVG)</em></li> 
+<dt>12. <a class="bib" name="bib12" href="http://www.w3.org/Graphics/SVG/About.html">http://www.w3.org/Graphics/SVG/About.html</a></dt>
+<dd>About SVG</dd>
 
-<li><a class="bib" name="bib13" href="http://www.3gpp.org/">http://www.3gpp.org/</a> <em>(3rd Generation Partnership Project)</em></li> 
+<dt>13. <a class="bib" name="bib13" href="http://www.3gpp.org/">http://www.3gpp.org/</a></dt>
+<dd>3rd Generation Partnership Project</dd>
 
-<li><a class="bib" name="bib14" href="http://www.w3.org/2000/09/dbwg/details?group=19480&amp;public=1&amp;gs=1&amp;">http://www.w3.org/2000/09/dbwg/details?group=19480&amp;public=1&amp;gs=1&amp;</a> <em>(SVG Working Group Participants)</em></li> 
+<dt>14. <a class="bib" name="bib14" href="http://www.w3.org/2000/09/dbwg/details?group=19480&amp;public=1&amp;gs=1&amp;">http://www.w3.org/2000/09/dbwg/details?group=19480&amp;public=1&amp;gs=1&amp;</a></dt>
+<dd>SVG Working Group Participants</dd>
 
-<li><a class="bib" name="bib15" href="http://lists.w3.org/Archives/Public/public-svg-wg/">http://lists.w3.org/Archives/Public/public-svg-wg/</a> <em>(SVG Working Group public mailing list archive, extracted 2010-04-01)</em></li> 
+<dt>15. <a class="bib" name="bib15" href="http://lists.w3.org/Archives/Public/public-svg-wg/">http://lists.w3.org/Archives/Public/public-svg-wg/</a></dt>
+<dd>SVG Working Group public mailing list archive, extracted 2010-04-01</dd>
 
-<li><a class="bib" name="bib16" href="http://lists.w3.org/Archives/Public/public-svg-ig/">http://lists.w3.org/Archives/Public/public-svg-ig/</a> <em>(SVG Interest Group public mailing list archive, extracted 2010-04-01)</em></li> 
+<dt>16. <a class="bib" name="bib16" href="http://lists.w3.org/Archives/Public/public-svg-ig/">http://lists.w3.org/Archives/Public/public-svg-ig/</a></dt>
+<dd>SVG Interest Group public mailing list archive, extracted 2010-04-01</dd>
 
-<li><a class="bib" name="bib17" href="http://www.institut-telecom.fr/p_en_present_inst_36.html">http://www.institut-telecom.fr/p_en_present_inst_36.html</a> <em>(Institut Télécom about page)</em></li> 
+<dt>17. <a class="bib" name="bib17" href="http://www.institut-telecom.fr/p_en_present_inst_36.html">http://www.institut-telecom.fr/p_en_present_inst_36.html</a></dt>
+<dd>Institut Télécom about page</dd>
 
-<li><a class="bib" name="bib18" href="http://www.ikivo.com/04about.html">http://www.ikivo.com/04about.html</a> <em>(Ikivo AB about page)</em></li> 
+<dt>18. <a class="bib" name="bib18" href="http://www.ikivo.com/04about.html">http://www.ikivo.com/04about.html</a></dt>
+<dd>Ikivo AB about page</dd>
 
-<li><a class="bib" name="bib19" href="http://www.ikivo.com/open_standards.html">http://www.ikivo.com/open_standards.html</a> <em>(Ikivo - Based on open standards)</em></li> 
+<dt>19. <a class="bib" name="bib19" href="http://www.ikivo.com/open_standards.html">http://www.ikivo.com/open_standards.html</a></dt>
+<dd>Ikivo - Based on open standards</dd>
 
-<li><a class="bib" name="bib20" href="http://www.w3.org/Graphics/SVG/WG/wiki/Secret_Origin_of_SVG">http://www.w3.org/Graphics/SVG/WG/wiki/Secret_Origin_of_SVG</a> <em>(The Secret Origin of SVG)</em></li> 
+<dt>20. <a class="bib" name="bib20" href="http://www.w3.org/Graphics/SVG/WG/wiki/Secret_Origin_of_SVG">http://www.w3.org/Graphics/SVG/WG/wiki/Secret_Origin_of_SVG</a></dt>
+<dd>The Secret Origin of SVG</dd>
 
-<li><a class="bib" name="bib21" href="http://www.w3.org/TR/1998/NOTE-PGML-19980410">http://www.w3.org/TR/1998/NOTE-PGML-19980410</a> <em>(Precision Graphics Markup Language)</em></li> 
+<dt>21. <a class="bib" name="bib21" href="http://www.w3.org/TR/1998/NOTE-PGML-19980410">http://www.w3.org/TR/1998/NOTE-PGML-19980410</a></dt>
+<dd>Precision Graphics Markup Language</dd>
 
-<li><a class="bib" name="bib22" href="http://www.w3.org/Submission/1998/08/">http://www.w3.org/Submission/1998/08/</a> <em>(Vector Markup Language)</em></li> 
+<dt>22. <a class="bib" name="bib22" href="http://www.w3.org/Submission/1998/08/">http://www.w3.org/Submission/1998/08/</a></dt>
+<dd>Vector Markup Language</dd>
 
-<li><a class="bib" name="bib23" href="http://www.w3.org/TR/1998/NOTE-HGML-19980619">http://www.w3.org/TR/1998/NOTE-HGML-19980619</a> <em>(Hyper Graphics Markup Language)</em></li> 
+<dt>23. <a class="bib" name="bib23" href="http://www.w3.org/TR/1998/NOTE-HGML-19980619">http://www.w3.org/TR/1998/NOTE-HGML-19980619</a></dt>
+<dd>Hyper Graphics Markup Language</dd>
 
-<li><a class="bib" name="bib24" href="http://www.w3.org/Submission/1998/20/">http://www.w3.org/Submission/1998/20/</a> <em>(Draw Markup Language)</em></li> 
+<dt>24. <a class="bib" name="bib24" href="http://www.w3.org/Submission/1998/20/">http://www.w3.org/Submission/1998/20/</a></dt>
+<dd>Draw Markup Language</dd>
 
-<li><a class="bib" name="bib25" href="http://www.w3.org/Submission/1998/13/">http://www.w3.org/Submission/1998/13/</a> <em>(Web profile of Computer Graphics Metafile standard, ISO/IEC 8632:1992)</em></li> 
+<dt>25. <a class="bib" name="bib25" href="http://www.w3.org/Submission/1998/13/">http://www.w3.org/Submission/1998/13/</a></dt>
+<dd>Web profile of Computer Graphics Metafile standard, ISO/IEC 8632:1992</dd>
 
-<li><a class="bib" name="bib26" href="http://www.w3.org/TR/SVG10/">http://www.w3.org/TR/SVG10/</a> <em>(SVG 1.0 W3C Recommendation)</em></li> 
+<dt>26. <a class="bib" name="bib26" href="http://www.w3.org/TR/SVG10/">http://www.w3.org/TR/SVG10/</a></dt>
+<dd>SVG 1.0 W3C Recommendation</dd>
 
-<li><a class="bib" name="bib27" href="http://www.w3.org/TR/SVG11/">http://www.w3.org/TR/SVG11/</a> <em>(SVG 1.1 W3C Recommendation)</em></li> 
+<dt>27. <a class="bib" name="bib27" href="http://www.w3.org/TR/SVG11/">http://www.w3.org/TR/SVG11/</a></dt>
+<dd>SVG 1.1 W3C Recommendation</dd>
 
-<li><a class="bib" name="bib28" href="http://www.w3.org/TR/2003/REC-SVGMobile-20030114/">http://www.w3.org/TR/2003/REC-SVGMobile-20030114/</a> <em>(Mobile SVG Profiles: SVG Tiny and SVG Basic)</em></li> 
+<dt>28. <a class="bib" name="bib28" href="http://www.w3.org/TR/2003/REC-SVGMobile-20030114/">http://www.w3.org/TR/2003/REC-SVGMobile-20030114/</a></dt>
+<dd>Mobile SVG Profiles: SVG Tiny and SVG Basic</dd>
 
-<li><a class="bib" name="bib29" href="http://www.w3.org/TR/SVGTiny12/">http://www.w3.org/TR/SVGTiny12/</a> <em>(SVG Tiny 1.2 Specification)</em></li> 
+<dt>29. <a class="bib" name="bib29" href="http://www.w3.org/TR/SVGTiny12/">http://www.w3.org/TR/SVGTiny12/</a></dt>
+<dd>SVG Tiny 1.2 Specification</dd>
 
-<li><a class="bib" name="bib30" href="http://www.w3.org/TR/SVG12/">http://www.w3.org/TR/SVG12/</a> <em>(SVG Full 1.2 Working Draft)</em></li> 
+<dt>30. <a class="bib" name="bib30" href="http://www.w3.org/TR/SVG12/">http://www.w3.org/TR/SVG12/</a></dt>
+<dd>SVG Full 1.2 Working Draft</dd>
 
-<li><a class="bib" name="bib31" href="http://www.w3.org/TR/SVGPrint12/">http://www.w3.org/TR/SVGPrint12/</a> <em>(SVG Print 1.2 Working Draft)</em></li> 
+<dt>31. <a class="bib" name="bib31" href="http://www.w3.org/TR/SVGPrint12/">http://www.w3.org/TR/SVGPrint12/</a></dt>
+<dd>SVG Print 1.2 Working Draft</dd>
 
-<li><a class="bib" name="bib32" href="http://www.w3.org/TR/SVGMobile12/feature.html#SVG-static">http://www.w3.org/TR/SVGMobile12/feature.html#SVG-static</a> <em>(SVG Tiny 1.2 Static Profile)</em></li> 
+<dt>32. <a class="bib" name="bib32" href="http://www.w3.org/TR/SVGMobile12/feature.html#SVG-static">http://www.w3.org/TR/SVGMobile12/feature.html#SVG-static</a></dt>
+<dd>SVG Tiny 1.2 Static Profile</dd>
 
-<li><a class="bib" name="bib33" href="http://www.w3.org/TR/xml-names/">http://www.w3.org/TR/xml-names/</a> <em>(XML Namespaces)</em></li> 
+<dt>33. <a class="bib" name="bib33" href="http://www.w3.org/TR/xml-names/">http://www.w3.org/TR/xml-names/</a></dt>
+<dd>XML Namespaces</dd>
 
-<li><a class="bib" name="bib34" href="http://www.w3.org/TR/SVG11/attindex.html">http://www.w3.org/TR/SVG11/attindex.html</a> <em>(SVG 1.1 attribute index)</em></li> 
+<dt>34. <a class="bib" name="bib34" href="http://www.w3.org/TR/SVG11/attindex.html">http://www.w3.org/TR/SVG11/attindex.html</a></dt>
+<dd>SVG 1.1 attribute index</dd>
 
-<li><a class="bib" name="bib35" href="http://www.w3.org/TR/SVGTiny12/mimereg.html">http://www.w3.org/TR/SVGTiny12/mimereg.html</a> <em>(SVG Tiny 1.2 mimetype registration)</em></li> 
+<dt>35. <a class="bib" name="bib35" href="http://www.w3.org/TR/SVGTiny12/mimereg.html">http://www.w3.org/TR/SVGTiny12/mimereg.html</a></dt>
+<dd>SVG Tiny 1.2 mimetype registration</dd>
 
-<li><a class="bib" name="bib36" href="http://tools.ietf.org/html/rfc3023#section-3.2">http://tools.ietf.org/html/rfc3023#section-3.2</a> <em>(application/xml mimetype registration)</em></li> 
+<dt>36. <a class="bib" name="bib36" href="http://tools.ietf.org/html/rfc3023#section-3.2">http://tools.ietf.org/html/rfc3023#section-3.2</a></dt>
+<dd>application/xml mimetype registration</dd>
 
-<li><a class="bib" name="bib37" href="http://www.w3.org/TR/SVG/intro.html#MIMEType">http://www.w3.org/TR/SVG/intro.html#MIMEType</a> <em>(SVG mime type, file name extension)</em></li> 
+<dt>37. <a class="bib" name="bib37" href="http://www.w3.org/TR/SVG/intro.html#MIMEType">http://www.w3.org/TR/SVG/intro.html#MIMEType</a></dt>
+<dd>SVG mime type, file name extension</dd>
 
-<li><a class="bib" name="bib38" href="http://www.w3.org/TR/SVG11/intro.html#TermShape">http://www.w3.org/TR/SVG11/intro.html#TermShape</a> <em>(Shape term)</em></li> 
+<dt>38. <a class="bib" name="bib38" href="http://www.w3.org/TR/SVG11/intro.html#TermShape">http://www.w3.org/TR/SVG11/intro.html#TermShape</a></dt>
+<dd>Shape term</dd>
 
-<li><a class="bib" name="bib39" href="http://www.w3.org/TR/SVG11/struct.html#SVGElement">http://www.w3.org/TR/SVG11/struct.html#SVGElement</a> <em>(&lt;svg&gt; element)</em></li> 
+<dt>39. <a class="bib" name="bib39" href="http://www.w3.org/TR/SVG11/struct.html#SVGElement">http://www.w3.org/TR/SVG11/struct.html#SVGElement</a></dt>
+<dd>&lt;svg&gt; element</dd>
 
-<li><a class="bib" name="bib40" href="http://www.w3.org/TR/SVG11/shapes.html#LineElement">http://www.w3.org/TR/SVG11/shapes.html#LineElement</a> <em>(&lt;line&gt; element)</em></li> 
+<dt>40. <a class="bib" name="bib40" href="http://www.w3.org/TR/SVG11/shapes.html#LineElement">http://www.w3.org/TR/SVG11/shapes.html#LineElement</a></dt>
+<dd>&lt;line&gt; element</dd>
 
-<li><a class="bib" name="bib41" href="http://www.w3.org/TR/SVG11/styling.html">http://www.w3.org/TR/SVG11/styling.html</a> <em>(SVG styling properties)</em></li> 
+<dt>41. <a class="bib" name="bib41" href="http://www.w3.org/TR/SVG11/styling.html">http://www.w3.org/TR/SVG11/styling.html</a></dt>
+<dd>SVG styling properties</dd>
 
-<li><a class="bib" name="bib42" href="http://www.w3.org/TR/SVG11/shapes.html#PolylineElement">http://www.w3.org/TR/SVG11/shapes.html#PolylineElement</a> <em>(&lt;polyline&gt; element)</em></li> 
+<dt>42. <a class="bib" name="bib42" href="http://www.w3.org/TR/SVG11/shapes.html#PolylineElement">http://www.w3.org/TR/SVG11/shapes.html#PolylineElement</a></dt>
+<dd>&lt;polyline&gt; element</dd>
 
-<li><a class="bib" name="bib43" href="http://zvon.org/xxl/svgReference/Standard1.1/styling.html#UsingPresentationAttributes">http://zvon.org/xxl/svgReference/Standard1.1/styling.html#UsingPresentationAttributes</a> <em>(Using presentation attributes)</em></li> 
+<dt>43. <a class="bib" name="bib43" href="http://zvon.org/xxl/svgReference/Standard1.1/styling.html#UsingPresentationAttributes">http://zvon.org/xxl/svgReference/Standard1.1/styling.html#UsingPresentationAttributes</a></dt>
+<dd>Using presentation attributes</dd>
 
-<li><a class="bib" name="bib44" href="http://www.w3.org/TR/SVG11/styling.html#Inheritance">http://www.w3.org/TR/SVG11/styling.html#Inheritance</a> <em>(Styling inheritance rules)</em></li> 
+<dt>44. <a class="bib" name="bib44" href="http://www.w3.org/TR/SVG11/styling.html#Inheritance">http://www.w3.org/TR/SVG11/styling.html#Inheritance</a></dt>
+<dd>Styling inheritance rules</dd>
 
-<li><a class="bib" name="bib45" href="http://www.w3.org/TR/SVG11/shapes.html#PolygonElement">http://www.w3.org/TR/SVG11/shapes.html#PolygonElement</a> <em>(&lt;polygon&gt; element)</em></li> 
+<dt>45. <a class="bib" name="bib45" href="http://www.w3.org/TR/SVG11/shapes.html#PolygonElement">http://www.w3.org/TR/SVG11/shapes.html#PolygonElement</a></dt>
+<dd>&lt;polygon&gt; element</dd>
 
-<li><a class="bib" name="bib46" href="http://www.w3.org/TR/SVG11/shapes.html#RectElement">http://www.w3.org/TR/SVG11/shapes.html#RectElement</a> <em>(&lt;rect&gt; element)</em></li> 
+<dt>46. <a class="bib" name="bib46" href="http://www.w3.org/TR/SVG11/shapes.html#RectElement">http://www.w3.org/TR/SVG11/shapes.html#RectElement</a></dt>
+<dd>&lt;rect&gt; element</dd>
 
-<li><a class="bib" name="bib47" href="http://www.w3.org/TR/SVG11/paths.html#PathElement">http://www.w3.org/TR/SVG11/paths.html#PathElement</a> <em>(&lt;path&gt; element)</em></li> 
+<dt>47. <a class="bib" name="bib47" href="http://www.w3.org/TR/SVG11/paths.html#PathElement">http://www.w3.org/TR/SVG11/paths.html#PathElement</a></dt>
+<dd>&lt;path&gt; element</dd>
 
-<li><a class="bib" name="bib48" href="http://www.w3.org/TR/SVG11/paths.html#PathData">http://www.w3.org/TR/SVG11/paths.html#PathData</a> <em>(Path data)</em></li> 
+<dt>48. <a class="bib" name="bib48" href="http://www.w3.org/TR/SVG11/paths.html#PathData">http://www.w3.org/TR/SVG11/paths.html#PathData</a></dt>
+<dd>Path data</dd>
 
-<li><a class="bib" name="bib49" href="http://www.w3.org/TR/SVG11/shapes.html#CircleElement">http://www.w3.org/TR/SVG11/shapes.html#CircleElement</a> <em>(&lt;circle&gt; element)</em></li> 
+<dt>49. <a class="bib" name="bib49" href="http://www.w3.org/TR/SVG11/shapes.html#CircleElement">http://www.w3.org/TR/SVG11/shapes.html#CircleElement</a></dt>
+<dd>&lt;circle&gt; element</dd>
 
-<li><a class="bib" name="bib50" href="http://www.w3.org/TR/SVG11/shapes.html#EllipseElement">http://www.w3.org/TR/SVG11/shapes.html#EllipseElement</a> <em>(&lt;ellipse&gt; element)</em></li> 
+<dt>50. <a class="bib" name="bib50" href="http://www.w3.org/TR/SVG11/shapes.html#EllipseElement">http://www.w3.org/TR/SVG11/shapes.html#EllipseElement</a></dt>
+<dd>&lt;ellipse&gt; element</dd>
 
-<li><a class="bib" name="bib51" href="http://www.w3.org/TR/SVG11/text.html#TextElement">http://www.w3.org/TR/SVG11/text.html#TextElement</a> <em>(&lt;text&gt; element)</em></li> 
+<dt>51. <a class="bib" name="bib51" href="http://www.w3.org/TR/SVG11/text.html#TextElement">http://www.w3.org/TR/SVG11/text.html#TextElement</a></dt>
+<dd>&lt;text&gt; element</dd>
 
-<li><a class="bib" name="bib52" href="http://www.w3.org/TR/SVG11/animate.html#TimingAttributes">http://www.w3.org/TR/SVG11/animate.html#TimingAttributes</a> <em>(Animation timing attributes)</em></li> 
+<dt>52. <a class="bib" name="bib52" href="http://www.w3.org/TR/SVG11/animate.html#TimingAttributes">http://www.w3.org/TR/SVG11/animate.html#TimingAttributes</a></dt>
+<dd>Animation timing attributes</dd>
 
-<li><a class="bib" name="bib53" href="http://www.w3.org/TR/SVG11/filters.html">http://www.w3.org/TR/SVG11/filters.html</a> <em>(Filter effects)</em></li> 
+<dt>53. <a class="bib" name="bib53" href="http://www.w3.org/TR/SVG11/filters.html">http://www.w3.org/TR/SVG11/filters.html</a></dt>
+<dd>Filter effects</dd>
 
-<li><a class="bib" name="bib54" href="http://www.w3.org/TR/xlink/">http://www.w3.org/TR/xlink/</a> <em>(XML Linking Language version 1.0)</em></li> 
+<dt>54. <a class="bib" name="bib54" href="http://www.w3.org/TR/xlink/">http://www.w3.org/TR/xlink/</a></dt>
+<dd>XML Linking Language version 1.0</dd>
 
-<li><a class="bib" name="bib55" href="http://www.w3.org/TR/SVG11/struct.html#DefsElement">http://www.w3.org/TR/SVG11/struct.html#DefsElement</a> <em>(&lt;defs&gt; element)</em></li> 
+<dt>55. <a class="bib" name="bib55" href="http://www.w3.org/TR/SVG11/struct.html#DefsElement">http://www.w3.org/TR/SVG11/struct.html#DefsElement</a></dt>
+<dd>&lt;defs&gt; element</dd>
 
-<li><a class="bib" name="bib56" href="http://www.w3.org/TR/SVG11/struct.html#UseElement">http://www.w3.org/TR/SVG11/struct.html#UseElement</a> <em>(&lt;use&gt; element)</em></li> 
+<dt>56. <a class="bib" name="bib56" href="http://www.w3.org/TR/SVG11/struct.html#UseElement">http://www.w3.org/TR/SVG11/struct.html#UseElement</a></dt>
+<dd>&lt;use&gt; element</dd>
 
-<li><a class="bib" name="bib57" href="http://www.w3.org/TR/SVG11/filters.html#feGaussianBlur">http://www.w3.org/TR/SVG11/filters.html#feGaussianBlur</a> <em>(&lt;feGaussianBlur&gt; filter effect)</em></li> 
+<dt>57. <a class="bib" name="bib57" href="http://www.w3.org/TR/SVG11/filters.html#feGaussianBlur">http://www.w3.org/TR/SVG11/filters.html#feGaussianBlur</a></dt>
+<dd>&lt;feGaussianBlur&gt; filter effect</dd>
 
-<li><a class="bib" name="bib58" href="http://www.w3.org/TR/SVG11/filters.html#feOffset">http://www.w3.org/TR/SVG11/filters.html#feOffset</a> <em>(&lt;feOffset&gt; filter effect)</em></li> 
+<dt>58. <a class="bib" name="bib58" href="http://www.w3.org/TR/SVG11/filters.html#feOffset">http://www.w3.org/TR/SVG11/filters.html#feOffset</a></dt>
+<dd>&lt;feOffset&gt; filter effect</dd>
 
-<li><a class="bib" name="bib59" href="http://www.w3.org/TR/SVG11/animate.html">http://www.w3.org/TR/SVG11/animate.html</a> <em>(Animation elements)</em></li> 
+<dt>59. <a class="bib" name="bib59" href="http://www.w3.org/TR/SVG11/animate.html">http://www.w3.org/TR/SVG11/animate.html</a></dt>
+<dd>Animation elements</dd>
 
-<li><a class="bib" name="bib60" href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics#Software_and_support_in_applications">http://en.wikipedia.org/wiki/Scalable_Vector_Graphics#Software_and_support_in_applications</a> <em>(SVG support in applications)</em></li> 
+<dt>60. <a class="bib" name="bib60" href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics#Software_and_support_in_applications">http://en.wikipedia.org/wiki/Scalable_Vector_Graphics#Software_and_support_in_applications</a></dt>
+<dd>SVG support in applications</dd>
 
-<li><a class="bib" name="bib61" href="http://office.microsoft.com/en-us/visio/FX100487861033.aspx">http://office.microsoft.com/en-us/visio/FX100487861033.aspx</a> <em>(Microsoft Office Visio)</em></li> 
+<dt>61. <a class="bib" name="bib61" href="http://office.microsoft.com/en-us/visio/FX100487861033.aspx">http://office.microsoft.com/en-us/visio/FX100487861033.aspx</a></dt>
+<dd>Microsoft Office Visio</dd>
 
-<li><a class="bib" name="bib62" href="http://www.svgopen.org/2003/papers/SVG_Scenarios_using_Microsoft_Office_Visio_2003/index.html">http://www.svgopen.org/2003/papers/SVG_Scenarios_using_Microsoft_Office_Visio_2003/index.html</a> <em>(SVG Scenarios for Microsoft Visio 2003)</em></li> 
+<dt>62. <a class="bib" name="bib62" href="http://www.svgopen.org/2003/papers/SVG_Scenarios_using_Microsoft_Office_Visio_2003/index.html">http://www.svgopen.org/2003/papers/SVG_Scenarios_using_Microsoft_Office_Visio_2003/index.html</a></dt>
+<dd>SVG Scenarios for Microsoft Visio 2003</dd>
 
-<li><a class="bib" name="bib63" href="http://www.adobe.com/products/illustrator/">http://www.adobe.com/products/illustrator/</a> <em>(Adobe Illustrator)</em></li> 
+<dt>63. <a class="bib" name="bib63" href="http://www.adobe.com/products/illustrator/">http://www.adobe.com/products/illustrator/</a></dt>
+<dd>Adobe Illustrator</dd>
 
-<li><a class="bib" name="bib64" href="http://www.adobe.com/svg/tools.html">http://www.adobe.com/svg/tools.html</a> <em>(Adobe SVG Tools)</em></li> 
+<dt>64. <a class="bib" name="bib64" href="http://www.adobe.com/svg/tools.html">http://www.adobe.com/svg/tools.html</a></dt>
+<dd>Adobe SVG Tools</dd>
 
-<li><a class="bib" name="bib65" href="http://www.corel.com/servlet/Satellite/us/en/Product/1191272117978">http://www.corel.com/servlet/Satellite/us/en/Product/1191272117978</a> <em>(CorelDRAW Graphics Suite X5)</em></li> 
+<dt>65. <a class="bib" name="bib65" href="http://www.corel.com/servlet/Satellite/us/en/Product/1191272117978">http://www.corel.com/servlet/Satellite/us/en/Product/1191272117978</a></dt>
+<dd>CorelDRAW Graphics Suite X5</dd>
 
-<li><a class="bib" name="bib66" href="http://www.unleash.com/davidt/svg/index.asp">http://www.unleash.com/davidt/svg/index.asp</a> <em>(Using SVG in CorelDRAW - a tutorial)</em></li> 
+<dt>66. <a class="bib" name="bib66" href="http://www.unleash.com/davidt/svg/index.asp">http://www.unleash.com/davidt/svg/index.asp</a></dt>
+<dd>Using SVG in CorelDRAW - a tutorial</dd>
 
-<li><a class="bib" name="bib67" href="http://corel.custhelp.com/app/answers/detail/a_id/754171/">http://corel.custhelp.com/app/answers/detail/a_id/754171/</a> <em>(CorelDRAW SVG support information)</em></li> 
+<dt>67. <a class="bib" name="bib67" href="http://corel.custhelp.com/app/answers/detail/a_id/754171/">http://corel.custhelp.com/app/answers/detail/a_id/754171/</a></dt>
+<dd>CorelDRAW SVG support information</dd>
 
-<li><a class="bib" name="bib68" href="http://www.xara.com/us/products/xtreme/">http://www.xara.com/us/products/xtreme/</a> <em>(Xara Xtreme)</em></li> 
+<dt>68. <a class="bib" name="bib68" href="http://www.xara.com/us/products/xtreme/">http://www.xara.com/us/products/xtreme/</a></dt>
+<dd>Xara Xtreme</dd>
 
-<li><a class="bib" name="bib69" href="http://support.xara.com/index.php?_m=knowledgebase&amp;_a=viewarticle&amp;kbarticleid=2562">http://support.xara.com/index.php?_m=knowledgebase&amp;_a=viewarticle&amp;kbarticleid=2562</a> <em>(Xara Xtreme SVG support)</em></li> 
+<dt>69. <a class="bib" name="bib69" href="http://support.xara.com/index.php?_m=knowledgebase&amp;_a=viewarticle&amp;kbarticleid=2562">http://support.xara.com/index.php?_m=knowledgebase&amp;_a=viewarticle&amp;kbarticleid=2562</a></dt>
+<dd>Xara Xtreme SVG support</dd>
 
-<li><a class="bib" name="bib70" href="http://www.openoffice.org/product/draw.html">http://www.openoffice.org/product/draw.html</a> <em>(OpenOffice.org Draw)</em></li> 
+<dt>70. <a class="bib" name="bib70" href="http://www.openoffice.org/product/draw.html">http://www.openoffice.org/product/draw.html</a></dt>
+<dd>OpenOffice.org Draw</dd>
 
-<li><a class="bib" name="bib71" href="http://graphics.openoffice.org/files/documents/12/406/svg_overview.htm">http://graphics.openoffice.org/files/documents/12/406/svg_overview.htm</a> <em>(OpenOffice.org Graphics SVG overview)</em></li> 
+<dt>71. <a class="bib" name="bib71" href="http://graphics.openoffice.org/files/documents/12/406/svg_overview.htm">http://graphics.openoffice.org/files/documents/12/406/svg_overview.htm</a></dt>
+<dd>OpenOffice.org Graphics SVG overview</dd>
 
-<li><a class="bib" name="bib72" href="http://www.inkscape.org/">http://www.inkscape.org/</a> <em>(Inkscape)</em></li> 
+<dt>72. <a class="bib" name="bib72" href="http://www.inkscape.org/">http://www.inkscape.org/</a></dt>
+<dd>Inkscape</dd>
 
-<li><a class="bib" name="bib73" href="http://wiki.inkscape.org/wiki/index.php/FAQ#What_SVG_features_does_Inkscape_implement.3F">http://wiki.inkscape.org/wiki/index.php/FAQ#What_SVG_features_does_Inkscape_implement.3F</a> <em>(Inkscape SVG support)</em></li> 
+<dt>73. <a class="bib" name="bib73" href="http://wiki.inkscape.org/wiki/index.php/FAQ#What_SVG_features_does_Inkscape_implement.3F">http://wiki.inkscape.org/wiki/index.php/FAQ#What_SVG_features_does_Inkscape_implement.3F</a></dt>
+<dd>Inkscape SVG support</dd>
 
-<li><a class="bib" name="bib74" href="http://www.scribus.net/">http://www.scribus.net/</a> <em>(Scribus)</em></li> 
+<dt>74. <a class="bib" name="bib74" href="http://www.scribus.net/">http://www.scribus.net/</a></dt>
+<dd>Scribus</dd>
 
-<li><a class="bib" name="bib75" href="http://docs.scribus.net/index.php?lang=en&amp;page=scribus-svg">http://docs.scribus.net/index.php?lang=en&amp;page=scribus-svg</a> <em>(Scribus SVG support)</em></li> 
+<dt>75. <a class="bib" name="bib75" href="http://docs.scribus.net/index.php?lang=en&amp;page=scribus-svg">http://docs.scribus.net/index.php?lang=en&amp;page=scribus-svg</a></dt>
+<dd>Scribus SVG support</dd>
 
-<li><a class="bib" name="bib76" href="http://xmlgraphics.apache.org/batik/">http://xmlgraphics.apache.org/batik/</a> <em>(Batik Java SVG Toolkit, Apache Software Foundation, 2010-01-02)</em></li> 
+<dt>76. <a class="bib" name="bib76" href="http://xmlgraphics.apache.org/batik/">http://xmlgraphics.apache.org/batik/</a></dt>
+<dd>Batik Java SVG Toolkit, Apache Software Foundation, 2010-01-02</dd>
 
-<li><a class="bib" name="bib77" href="http://cairographics.org/">http://cairographics.org/</a> <em>(Cairo 2D graphics library)</em></li> 
+<dt>77. <a class="bib" name="bib77" href="http://cairographics.org/">http://cairographics.org/</a></dt>
+<dd>Cairo 2D graphics library</dd>
 
-<li><a class="bib" name="bib78" href="https://wiki.mozilla.org/Gecko_1.9_Roadmap#cairo_Graphics_Substrate">https://wiki.mozilla.org/Gecko_1.9_Roadmap#cairo_Graphics_Substrate</a> <em>(Cairo usage in Mozilla Gecko)</em></li> 
+<dt>78. <a class="bib" name="bib78" href="https://wiki.mozilla.org/Gecko_1.9_Roadmap#cairo_Graphics_Substrate">https://wiki.mozilla.org/Gecko_1.9_Roadmap#cairo_Graphics_Substrate</a></dt>
+<dd>Cairo usage in Mozilla Gecko</dd>
 
-<li><a class="bib" name="bib79" href="http://processing.org/about/">http://processing.org/about/</a> <em>(Processing programming language)</em></li> 
+<dt>79. <a class="bib" name="bib79" href="http://processing.org/about/">http://processing.org/about/</a></dt>
+<dd>Processing programming language</dd>
 
-<li><a class="bib" name="bib80" href="http://dev.processing.org/reference/core/javadoc/processing/core/PApplet.html">http://dev.processing.org/reference/core/javadoc/processing/core/PApplet.html</a> <em>(PApplet class definition)</em></li> 
+<dt>80. <a class="bib" name="bib80" href="http://dev.processing.org/reference/core/javadoc/processing/core/PApplet.html">http://dev.processing.org/reference/core/javadoc/processing/core/PApplet.html</a></dt>
+<dd>PApplet class definition</dd>
 
-<li><a class="bib" name="bib81" href="http://processing.org/reference/libraries/candy/SVG.html">http://processing.org/reference/libraries/candy/SVG.html</a> <em>(Processing SVG support)</em></li> 
+<dt>81. <a class="bib" name="bib81" href="http://processing.org/reference/libraries/candy/SVG.html">http://processing.org/reference/libraries/candy/SVG.html</a></dt>
+<dd>Processing SVG support</dd>
 
-<li><a class="bib" name="bib82" href="http://dev.processing.org/reference/core/javadoc/processing/core/PShapeSVG.html">http://dev.processing.org/reference/core/javadoc/processing/core/PShapeSVG.html</a> <em>(PShapeSVG class definition)</em></li> 
+<dt>82. <a class="bib" name="bib82" href="http://dev.processing.org/reference/core/javadoc/processing/core/PShapeSVG.html">http://dev.processing.org/reference/core/javadoc/processing/core/PShapeSVG.html</a></dt>
+<dd>PShapeSVG class definition</dd>
 
-<li><a class="bib" name="bib83" href="http://www.adobe.com/svg/viewer/install/">http://www.adobe.com/svg/viewer/install/</a> <em>(Adobe SVG Viewer IE Plugin install page, Adobe)</em></li> 
+<dt>83. <a class="bib" name="bib83" href="http://www.adobe.com/svg/viewer/install/">http://www.adobe.com/svg/viewer/install/</a></dt>
+<dd>Adobe SVG Viewer IE Plugin install page, Adobe</dd>
 
-<li><a class="bib" name="bib84" href="http://www.w3.org/Graphics/SVG/IG/">http://www.w3.org/Graphics/SVG/IG/</a> <em>(SVG Interest Group, W3C)</em></li> 
+<dt>84. <a class="bib" name="bib84" href="http://www.w3.org/Graphics/SVG/IG/">http://www.w3.org/Graphics/SVG/IG/</a></dt>
+<dd>SVG Interest Group, W3C</dd>
 
-<li><a class="bib" name="bib85" href="http://www.codedread.com/svg-support-table.html">http://www.codedread.com/svg-support-table.html</a> <em>(SVG Support in browsers, Jeff Schiller, extracted 2010-03-14)</em></li> 
+<dt>85. <a class="bib" name="bib85" href="http://www.codedread.com/svg-support-table.html">http://www.codedread.com/svg-support-table.html</a></dt>
+<dd>SVG Support in browsers, Jeff Schiller, extracted 2010-03-14</dd>
 
-<li><a class="bib" name="bib86" href="http://www.mozilla.org/projects/svg/status.html">http://www.mozilla.org/projects/svg/status.html</a></li> 
+<dt>86. <a class="bib" name="bib86" href="http://www.mozilla.org/projects/svg/status.html">http://www.mozilla.org/projects/svg/status.html</a></dt>
+<dd></dd>
 
-<li><a class="bib" name="bib87" href="http://www.w3.org/TR/SVG11/text.html#text-mod">http://www.w3.org/TR/SVG11/text.html#text-mod</a></li> 
+<dt>87. <a class="bib" name="bib87" href="http://www.w3.org/TR/SVG11/text.html#text-mod">http://www.w3.org/TR/SVG11/text.html#text-mod</a></dt>
+<dd></dd>
 
-<li><a class="bib" name="bib88" href="http://www.w3.org/TR/SVG11/color.html#color-profile-mod">http://www.w3.org/TR/SVG11/color.html#color-profile-mod</a></li> 
+<dt>88. <a class="bib" name="bib88" href="http://www.w3.org/TR/SVG11/color.html#color-profile-mod">http://www.w3.org/TR/SVG11/color.html#color-profile-mod</a></dt>
+<dd></dd>
 
-<li><a class="bib" name="bib89" href="http://www.w3.org/TR/SVG11/interact.html#cursor-mod">http://www.w3.org/TR/SVG11/interact.html#cursor-mod</a></li> 
+<dt>89. <a class="bib" name="bib89" href="http://www.w3.org/TR/SVG11/interact.html#cursor-mod">http://www.w3.org/TR/SVG11/interact.html#cursor-mod</a></dt>
+<dd></dd>
 
-<li><a class="bib" name="bib90" href="http://www.w3.org/TR/SVG11/linking.html#view-mod">http://www.w3.org/TR/SVG11/linking.html#view-mod</a></li> 
+<dt>90. <a class="bib" name="bib90" href="http://www.w3.org/TR/SVG11/linking.html#view-mod">http://www.w3.org/TR/SVG11/linking.html#view-mod</a></dt>
+<dd></dd>
 
-<li><a class="bib" name="bib91" href="http://www.w3.org/TR/SVG11/animate.html#animation-mod">http://www.w3.org/TR/SVG11/animate.html#animation-mod</a></li> 
+<dt>91. <a class="bib" name="bib91" href="http://www.w3.org/TR/SVG11/animate.html#animation-mod">http://www.w3.org/TR/SVG11/animate.html#animation-mod</a></dt>
+<dd></dd>
 
-<li><a class="bib" name="bib92" href="http://www.w3.org/TR/SVG11/fonts.html#font-mod">http://www.w3.org/TR/SVG11/fonts.html#font-mod</a></li> 
+<dt>92. <a class="bib" name="bib92" href="http://www.w3.org/TR/SVG11/fonts.html#font-mod">http://www.w3.org/TR/SVG11/fonts.html#font-mod</a></dt>
+<dd></dd>
 
-<li><a class="bib" name="bib93" href="http://www.opera.com/docs/specs/svg/">http://www.opera.com/docs/specs/svg/</a></li> 
+<dt>93. <a class="bib" name="bib93" href="http://www.opera.com/docs/specs/svg/">http://www.opera.com/docs/specs/svg/</a></dt>
+<dd></dd>
 
-<li><a class="bib" name="bib94" href="http://www.opera.com/docs/specs/presto25/html5/">http://www.opera.com/docs/specs/presto25/html5/</a></li> 
+<dt>94. <a class="bib" name="bib94" href="http://www.opera.com/docs/specs/presto25/html5/">http://www.opera.com/docs/specs/presto25/html5/</a></dt>
+<dd></dd>
 
-<li><a class="bib" name="bib95" href="https://developer.mozilla.org/en/Gecko">https://developer.mozilla.org/en/Gecko</a></li> 
+<dt>95. <a class="bib" name="bib95" href="https://developer.mozilla.org/en/Gecko">https://developer.mozilla.org/en/Gecko</a></dt>
+<dd></dd>
 
-<li><a class="bib" name="bib96" href="http://webkit.org/">http://webkit.org/</a></li> 
+<dt>96. <a class="bib" name="bib96" href="http://webkit.org/">http://webkit.org/</a></dt>
+<dd></dd>
 
-<li><a class="bib" name="bib97" href="http://webkit.org/projects/svg/status.xml">http://webkit.org/projects/svg/status.xml</a></li> 
+<dt>97. <a class="bib" name="bib97" href="http://webkit.org/projects/svg/status.xml">http://webkit.org/projects/svg/status.xml</a></dt>
+<dd></dd>
 
-<li><a class="bib" name="bib98" href="http://blogs.msdn.com/b/ie/archive/2010/01/05/microsoft-joins-w3c-svg-working-group.aspx">http://blogs.msdn.com/b/ie/archive/2010/01/05/microsoft-joins-w3c-svg-working-group.aspx</a> <em>(Microsoft joins W3C SVG Working Group, Microsoft IE Team Blog, 2010-01-05)</em></li> 
+<dt>98. <a class="bib" name="bib98" href="http://blogs.msdn.com/b/ie/archive/2010/01/05/microsoft-joins-w3c-svg-working-group.aspx">http://blogs.msdn.com/b/ie/archive/2010/01/05/microsoft-joins-w3c-svg-working-group.aspx</a></dt>
+<dd>Microsoft joins W3C SVG Working Group, Microsoft IE Team Blog, 2010-01-05</dd>
 
-<li><a class="bib" name="bib99" href="https://bugzilla.mozilla.org/show_bug.cgi?id=216462">https://bugzilla.mozilla.org/show_bug.cgi?id=216462</a></li> 
+<dt>99. <a class="bib" name="bib99" href="https://bugzilla.mozilla.org/show_bug.cgi?id=216462">https://bugzilla.mozilla.org/show_bug.cgi?id=216462</a></dt>
+<dd>Implement SVG (SMIL) Animation, Mozilla Bug Tracker, reported: 2003-08-17, last modified: 2010-03-05, status: RESOLVED FIXED</dd>
 
-<li><a class="bib" name="bib100" href="https://bugzilla.mozilla.org/show_bug.cgi?id=119490">https://bugzilla.mozilla.org/show_bug.cgi?id=119490</a></li> 
+<dt>100. <a class="bib" name="bib100" href="https://bugzilla.mozilla.org/show_bug.cgi?id=119490">https://bugzilla.mozilla.org/show_bug.cgi?id=119490</a></dt>
+<dd>Implement SVG fonts, Mozilla Bug Tracker, reported: 2002-01-11, last modified: 2010-05-25, status: ASSIGNED</dd>
 
-<li><a class="bib" name="bib101" href="https://bugs.webkit.org/show_bug.cgi?id=15495">https://bugs.webkit.org/show_bug.cgi?id=15495</a></li> 
+<dt>101. <a class="bib" name="bib101" href="https://bugs.webkit.org/show_bug.cgi?id=15495">https://bugs.webkit.org/show_bug.cgi?id=15495</a></dt>
+<dd>SVGViewSpec DOM bindings aka SVGSVGElement.currentView is unimplemented, WebKit Bug Tracker, reported: 2007-10-13, last modified: 2010-05-18, status: NEW</dd>
 
-<li><a class="bib" name="bib102" href="https://bugs.webkit.org/show_bug.cgi?id=6034">https://bugs.webkit.org/show_bug.cgi?id=6034</a></li> 
+<dt>102. <a class="bib" name="bib102" href="https://bugs.webkit.org/show_bug.cgi?id=6034">https://bugs.webkit.org/show_bug.cgi?id=6034</a></dt>
+<dd>WebKit+SVG needs to support color-interpolation for gradients and opacity calculations, WebKit Bug Tracker, reported: 2005-12-10, last modified: 2010-01-30, status: NEW</dd>
 
-<li><a class="bib" name="bib103" href="http://www.oreillynet.com/mac/blog/2001/04/exploring_svg.html">http://www.oreillynet.com/mac/blog/2001/04/exploring_svg.html</a> <em>(Exploring SVG, Jason McIntosh, 2001-04-30)</em></li> 
+<dt>103. <a class="bib" name="bib103" href="http://www.oreillynet.com/mac/blog/2001/04/exploring_svg.html">http://www.oreillynet.com/mac/blog/2001/04/exploring_svg.html</a></dt>
+<dd>Exploring SVG, Jason McIntosh, 2001-04-30</dd>
 
-<li><a class="bib" name="bib104" href="http://www.adobe.com/svg/eol.html">http://www.adobe.com/svg/eol.html</a> <em>(Adobe to Discontinue Adobe SVG Viewer, Adobe, 2009-01-01)</em></li> 
+<dt>104. <a class="bib" name="bib104" href="http://www.adobe.com/svg/eol.html">http://www.adobe.com/svg/eol.html</a></dt>
+<dd>Adobe to Discontinue Adobe SVG Viewer, Adobe, 2009-01-01</dd>
 
-<li><a class="bib" name="bib105" href="http://en.wikipedia.org/wiki/Vector_Markup_Language">http://en.wikipedia.org/wiki/Vector_Markup_Language</a> <em>(Vector Markup Language, Wikipedia, extracted 2010-05-25)</em></li> 
+<dt>105. <a class="bib" name="bib105" href="http://en.wikipedia.org/wiki/Vector_Markup_Language">http://en.wikipedia.org/wiki/Vector_Markup_Language</a></dt>
+<dd>Vector Markup Language, Wikipedia, extracted 2010-05-25</dd>
 
-<li><a class="bib" name="bib106" href="http://www.robweir.com/blog/2006/07/cum-mortuis-in-lingua-mortua.html">http://www.robweir.com/blog/2006/07/cum-mortuis-in-lingua-mortua.html</a> <em>(VML and OOXML: Cum mortuis in lingua mortua, Rob Weir, 2006-07-24)</em></li> 
+<dt>106. <a class="bib" name="bib106" href="http://www.robweir.com/blog/2006/07/cum-mortuis-in-lingua-mortua.html">http://www.robweir.com/blog/2006/07/cum-mortuis-in-lingua-mortua.html</a></dt>
+<dd>VML and OOXML: Cum mortuis in lingua mortua, Rob Weir, 2006-07-24</dd>
 
-<li><a class="bib" name="bib107" href="http://www.readwriteweb.com/archives/web_browser_faceoff.php">http://www.readwriteweb.com/archives/web_browser_faceoff.php</a> <em>(Web Browser Faceoff, Alex Iskold, 2006-10-06)</em></li> 
+<dt>107. <a class="bib" name="bib107" href="http://www.readwriteweb.com/archives/web_browser_faceoff.php">http://www.readwriteweb.com/archives/web_browser_faceoff.php</a></dt>
+<dd>Web Browser Faceoff, Alex Iskold, 2006-10-06</dd>
 
-<li><a class="bib" name="bib108" href="http://gs.statcounter.com/#browser-ww-monthly-200807-201005">http://gs.statcounter.com/#browser-ww-monthly-200807-201005</a> <em>(StatCounter Global Stats, Browsers, July 2008 to May 2010)</em></li> 
+<dt>108. <a class="bib" name="bib108" href="http://gs.statcounter.com/#browser-ww-monthly-200807-201005">http://gs.statcounter.com/#browser-ww-monthly-200807-201005</a></dt>
+<dd>StatCounter Global Stats, Browsers, July 2008 to May 2010</dd>
 
-<li><a class="bib" name="bib109" href="http://www.sitepoint.com/blogs/2009/12/17/microsoft-browser-ballot-screen/">http://www.sitepoint.com/blogs/2009/12/17/microsoft-browser-ballot-screen/</a> <em>(Microsoft agrees to browser ballot terms, Craig Buckler, 2009-12-17)</em></li> 
+<dt>109. <a class="bib" name="bib109" href="http://www.sitepoint.com/blogs/2009/12/17/microsoft-browser-ballot-screen/">http://www.sitepoint.com/blogs/2009/12/17/microsoft-browser-ballot-screen/</a></dt>
+<dd>Microsoft agrees to browser ballot terms, Craig Buckler, 2009-12-17</dd>
 
-<li><a class="bib" name="bib110" href="http://gs.statcounter.com/#mobile_vs_desktop-ww-monthly-200812-201005">http://gs.statcounter.com/#mobile_vs_desktop-ww-monthly-200812-201005</a> <em>(StatCounter Global Stats, Mobile vs. Desktop,  December 2008 to May 2010)</em></li> 
+<dt>110. <a class="bib" name="bib110" href="http://gs.statcounter.com/#mobile_vs_desktop-ww-monthly-200812-201005">http://gs.statcounter.com/#mobile_vs_desktop-ww-monthly-200812-201005</a></dt>
+<dd>StatCounter Global Stats, Mobile vs. Desktop,  December 2008 to May 2010</dd>
 
-<li><a class="bib" name="bib111" href="http://www.dlocc.com/articles/apple-ipad-no-flash-plugin-support/">http://www.dlocc.com/articles/apple-ipad-no-flash-plugin-support/</a> <em>(Apple iPad: No Flash plugin support, Devin Walker, 2010-01-27)</em></li> 
+<dt>111. <a class="bib" name="bib111" href="http://www.dlocc.com/articles/apple-ipad-no-flash-plugin-support/">http://www.dlocc.com/articles/apple-ipad-no-flash-plugin-support/</a></dt>
+<dd>Apple iPad: No Flash plugin support, Devin Walker, 2010-01-27</dd>
 
-<li><a class="bib" name="bib112" href="http://tech.slashdot.org/story/10/01/06/1829223/Microsoft-Wants-To-Participate-In-SVG-Development">http://tech.slashdot.org/story/10/01/06/1829223/Microsoft-Wants-To-Participate-In-SVG-Development</a> <em>(Microsoft wants to participate in SVG development, Slashdot, 2010-01-06)</em></li> 
+<dt>112. <a class="bib" name="bib112" href="http://tech.slashdot.org/story/10/01/06/1829223/Microsoft-Wants-To-Participate-In-SVG-Development">http://tech.slashdot.org/story/10/01/06/1829223/Microsoft-Wants-To-Participate-In-SVG-Development</a></dt>
+<dd>Microsoft wants to participate in SVG development, Slashdot, 2010-01-06</dd>
 
-<li><a class="bib" name="bib113" href="http://news.cnet.com/8301-30685_3-10426321-264.html">http://news.cnet.com/8301-30685_3-10426321-264.html</a> <em>(Microsoft Web-graphics move signals IE ambitions, CNet News, 2010-01-06)</em></li> 
+<dt>113. <a class="bib" name="bib113" href="http://news.cnet.com/8301-30685_3-10426321-264.html">http://news.cnet.com/8301-30685_3-10426321-264.html</a></dt>
+<dd>Microsoft Web-graphics move signals IE ambitions, CNet News, 2010-01-06</dd>
 
-<li><a class="bib" name="bib114" href="http://msdn.microsoft.com/en-us/ie/ff468705.aspx#_Scaling_Vector_Graphics">http://msdn.microsoft.com/en-us/ie/ff468705.aspx#_Scaling_Vector_Graphics</a> <em>(Microsoft IE9 will support SVG, Microsoft Developer Network, 2010-05-05)</em></li> 
+<dt>114. <a class="bib" name="bib114" href="http://msdn.microsoft.com/en-us/ie/ff468705.aspx#_Scaling_Vector_Graphics">http://msdn.microsoft.com/en-us/ie/ff468705.aspx#_Scaling_Vector_Graphics</a></dt>
+<dd>Microsoft IE9 will support SVG, Microsoft Developer Network, 2010-05-05</dd>
 
-<li><a class="bib" name="bib115" href="http://raphaeljs.com/">http://raphaeljs.com/</a></li> 
+<dt>115. <a class="bib" name="bib115" href="http://raphaeljs.com/">http://raphaeljs.com/</a></dt>
+<dd></dd>
 
-</ol>
+</dl>
 <h2><a name="h-1.9"></a>Vedlegg</h2>
 <p><a href="#" name="vedlegg"> </a></p>
 <pre><code>Date: Sun, 07 Mar 2010 19:00:24 -0500
