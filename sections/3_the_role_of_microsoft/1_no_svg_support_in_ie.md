@@ -54,5 +54,5 @@ og sterkere.
 [6]: http://www.w3.org/Graphics/SVG/WG/wiki/Secret_Origin_of_SVG "Secret Origins of SVG, W3C, extracted 2010-05-25"
 [7]: http://gs.statcounter.com/#browser-ww-monthly-200807-201005 "StatCounter Global Stats, Browsers, July 2008 to May 2010"
 [8]: http://www.sitepoint.com/blogs/2009/12/17/microsoft-browser-ballot-screen/ "Microsoft agrees to browser ballot terms, Craig Buckler, 2009-12-17"
-[9]: http://gs.statcounter.com/#mobile_vs_desktop-ww-monthly-200812-201005 "StatCounter Global Stats, Movile vs. Desktop,  December 2008 to May 2010"
+[9]: http://gs.statcounter.com/#mobile_vs_desktop-ww-monthly-200812-201005 "StatCounter Global Stats, Mobile vs. Desktop,  December 2008 to May 2010"
 [10]: http://www.dlocc.com/articles/apple-ipad-no-flash-plugin-support/ "Apple iPad: No Flash plugin support, Devin Walker, 2010-01-27"

@@ -63,8 +63,8 @@ implementasjon av SVG. Firefox kommer dårlig ut i prosent fordeling, selv om de
 en av de mest brukte nettleserne etter Internet Explorer. Det må også legges merke
 til at Internet Explorer ikke har innebygget støtte for SVG i det hele tatt.
 
-[1]: http://www.codedread.com/svg-support-table.html
-[2]: http://gs.statcounter.com/#browser_version-ww-monthly-200902-201003-bar
-[3]: http://www.w3.org/Graphics/SVG/IG/
-[4]: http://www.adobe.com/svg/viewer/install/
-[5]: http://xmlgraphics.apache.org/batik/
+[1]: http://www.codedread.com/svg-support-table.html "SVG Support in browsers, Jeff Schiller, extracted 2010-03-14"
+[2]: http://gs.statcounter.com/#browser_version-ww-monthly-200902-201003-bar "StatCounter Global Stats, Browser version, February 2009 to March 2010
+[3]: http://www.w3.org/Graphics/SVG/IG/ "SVG Interest Group, W3C"
+[4]: http://www.adobe.com/svg/viewer/install/ "Adobe SVG Viewer IE Plugin install page, Adobe"
+[5]: http://xmlgraphics.apache.org/batik/ "Batik Java SVG Toolkit, Apache Software Foundation, 2010-01-02"

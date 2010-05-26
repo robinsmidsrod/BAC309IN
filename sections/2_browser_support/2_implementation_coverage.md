@@ -3,7 +3,7 @@
 
 Mozilla Firefox har fått SVG-standarden byggd direkte inn i nettleseren. Mozilla har
 en egen prosjekt gruppe som jobber med SVG implementasjonen, i hovedsak mot Firefox.
-Det er blitt opprettet en [statusside][1] hvor det ligger en oversikt over funksjonalitet
+Det er blitt opprettet en [statusside][7] hvor det ligger en oversikt over funksjonalitet
 som pr idag er implementert. Det er enkelt å legge merke til at flere moduler har
 deler som enda ikke er støttet. For å kunne sammenligne Mozilla sin SVG-implementasjon
 men andre nettlesere, skal vi trekke ut moduler som ikke er støttet av Mozilla og
@@ -63,13 +63,15 @@ støttet. Det Webkit har klart imotsettning til Mozilla er å implementere store
 Animation modulen, selv om mye ikke er fullstendig. Webkit har også implementert store
 deler av Font modulen, som enda ikke Mozilla og Opera har fått til.
 
-Internet Explorer fra Microsoft har derimot ingen innbygget støtte for SVG. Det ser nå
-lyser ut for Internet Explorer, ettersom det har blitt kjent at Microsoft har satt seg ned
-med SVGWG, SVG working group, for å bygge inn SVG-standarden forhåpentligvis i [IE9][14].
-I Internet Explorer 8 og tidligere finnes det ingen støtte for SVG-standarden, uten at
-det blir benyttet en ekstern plugin. Adobe har f.eks laget en slik plugin som kan
-benyttes for å vise SVG i [IE][15]. Det finnes også andre tilegg som kan installeres for å
-oppnå SVG støtte, der i blant Batik toolkit fra Apache som implementere [SVG-spesifikasjonene][16].
+Internet Explorer fra Microsoft har derimot ingen innbygget støtte for SVG.
+Det ser nå lysere ut for Internet Explorer, ettersom det har blitt kjent at
+Microsoft har [meldt seg inn i SVG WG][14], forhåpentligvis for å bygge
+SVG-standarden inn i IE9. I Internet Explorer 8 og tidligere finnes det
+ingen støtte for SVG-standarden, uten at det blir benyttet en ekstern
+plugin. Adobe har f.eks laget en slik plugin som kan benyttes for å [vise
+SVG i IE][15]. Det finnes også andre tillegg som kan installeres for å oppnå
+SVG-støtte, der i blant [Batik toolkit fra Apache][16] som implementere
+SVG-spesifikasjonene.
 
 [1]: http://www.w3.org/TR/SVG11/text.html#text-mod
 [2]: http://www.w3.org/TR/SVG11/color.html#color-profile-mod
@@ -84,6 +86,6 @@ oppnå SVG støtte, der i blant Batik toolkit fra Apache som implementere [SVG-s
 [11]: https://developer.mozilla.org/en/Gecko
 [12]: http://webkit.org/
 [13]: http://webkit.org/projects/svg/status.xml
-[14]: http://blogs.msdn.com/ie/archive/2010/01/05/microsoft-joins-w3c-svg-working-group.aspx
-[15]: http://www.adobe.com/svg/viewer/install
-[16]: http://xmlgraphics.apache.org/batik/index.html
+[14]: http://blogs.msdn.com/b/ie/archive/2010/01/05/microsoft-joins-w3c-svg-working-group.aspx "Microsoft joins W3C SVG Working Group, Microsoft IE Team Blog, 2010-01-05"
+[15]: http://www.adobe.com/svg/viewer/install/
+[16]: http://xmlgraphics.apache.org/batik/ "Batik Java SVG Toolkit, Apache Software Foundation, 2010-01-02"

@@ -106,7 +106,7 @@ avansert SVG-støtte kan man benytte Batik-biblioteket som nevnt ovenfor.
 [14]: http://wiki.inkscape.org/wiki/index.php/FAQ#What_SVG_features_does_Inkscape_implement.3F "Inkscape SVG support"
 [15]: http://www.scribus.net/ "Scribus"
 [16]: http://docs.scribus.net/index.php?lang=en&page=scribus-svg "Scribus SVG support"
-[17]: http://xmlgraphics.apache.org/batik/ "Batik SVG Toolkit"
+[17]: http://xmlgraphics.apache.org/batik/ "Batik Java SVG Toolkit, Apache Software Foundation, 2010-01-02"
 [18]: http://cairographics.org/ "Cairo 2D graphics library"
 [19]: https://wiki.mozilla.org/Gecko_1.9_Roadmap#cairo_Graphics_Substrate "Cairo usage in Mozilla Gecko"
 [20]: http://processing.org/about/ "Processing programming language"
