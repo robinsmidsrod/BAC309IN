@@ -12,7 +12,7 @@
 <pre class="frontpage">
 1. juni 2010
 
-Bachelor for Informatikk 2009/2010
+Bachelor i Informatikk 2009/2010
 
 Høgskolen i Vestfold
 
@@ -179,39 +179,30 @@ Veileder: Viggo Holmstedt
 <h3 id="valgavverktytilprosessen"><a name="h-1.2.5"></a>Valg av verktøy til prosessen</h3>
 <p>Vi velger å benytte oss av Eclipse på grunn av god erfaring med denne utviklingsplatformen. Siden vi har opparbeidet oss god erfaring med bruk av Java velger vi å benytte dette programmeringsspråket til modellapplikasjonen.</p>
 <p>For å koordinere arbeidsoppgavene i prosjektet velger vi å benytte LiquidPlanner.com (LP) som er et svært godt planleggingsverktøy som er gratis tilgjenglig for akademisk bruk. LP er svært godt egnet til en smidig utviklingsmetodikk.</p>
-<p>Versjonskontroll er viktig i større prosjekter. For å dekke det behovet velger vi å benytte Git og <a href="http://github.com">GitHub.com</a><sup><a class="bib" href="#bib1">1</a></sup>. Git gir oss gode muligheter til å jobbe på flere deler av prosjektet samtidig uten frykt for integrasjonsproblemer. Denne muligheten kommer fra det faktum at Git er et distribuert revisjonskontrollsystem.</p>
+<p>Versjonskontroll er viktig i større prosjekter. For å dekke det behovet velger vi å benytte Git og <a href="http://github.com" title="github - social coding, open source code hosting service">github.com</a><sup><a class="bib" href="#bib1">1</a></sup>. Git gir oss gode muligheter til å jobbe på flere deler av prosjektet samtidig uten frykt for integrasjonsproblemer. Denne muligheten kommer fra det faktum at Git er et distribuert revisjonskontrollsystem.</p>
 <p>Grunnen til at vi velger GitHub.com som tjenesteleverandør er at de gir gratis tilgang til prosjekter som klassifiseres som fri programvare. De er en seriøs aktør på markedet med svært god stabilitet og sikkerhet. I tillegg har brukergrensesnittet deres mange gode funksjoner som øker effektiviteten i en distribuert utviklingsarbeidsflyt. Dersom noen utviklere i fremtiden ønsker å videreutvikle prosjektet gir GitHub dem en enkel mulighet til å gjøre det.</p>
 <h2><a name="h-1.3"></a>Introduksjon </h2>
 <h3 id="hvaersvg"><a name="h-1.3.1"></a>Hva er SVG?</h3>
-<p>Scalable Vector Graphics (<a href="http://www.w3.org/Graphics/SVG/" title="Scalable Vector Graphics">SVG</a><sup><a class="bib" href="#bib2">2</a></sup>) er en åpen standard utgitt av World Wide Web Consortium (<a href="http://www.w3.org" title="World Wide Web Consortium">W3C</a><sup><a class="bib" href="#bib3">3</a></sup>) som skal dekke behovet i markedet for å kunne representere to-dimensjonal grafikk på et utvalg av medier og enheter. Man kan si at det er et programmeringspråk for å beskrive to-dimensjonal grafikk og grafiske applikasjoner. Med to-dimensjonal grafikk snakker vi om vektoriserte figurer, raster-grafikk (bitmap) og tekst-elementer. </p>
-<p>SVG baserer seg på mange andre åpne standarder og prøver å <a href="http://www.w3.org/2007/11/SVG_rechartering/SVG-WG-charter.html#coordination" title="SVG Dependencies">gjenbruke de</a><sup><a class="bib" href="#bib4">4</a></sup> så mye som mulig for å unngå overlappende standardiseringsarbeid, både innenfor og utenfor W3C-prosessen. </p>
-<p>SVG-standarden er implementert som en applikasjon i <a href="http://www.w3.org/standards/xml" title="eXtensible Markup Language">XML</a><sup><a class="bib" href="#bib5">5</a></sup>. Det er en <a href="http://en.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">deklarativ</a><sup><a class="bib" href="#bib6">6</a></sup> standard på lik linje med <a href="http://www.w3.org/standards/webdesign/htmlcss" title="HyperText Markup Language">HTML</a><sup><a class="bib" href="#bib7">7</a></sup>. Hvordan SVG fysisk representeres i XML omtales i seksjon 1.4. </p>
-<p>SVG har støtte for scripting, noe som gjør det mulig å lage avanserte brukergrensesnitt og interaksjoner basert på kjente programmeringsprinsipper benyttet i tradisjonell web-design. SVG benytter <a href="http://www.ecmascript.org/" title="ECMAScript">ECMAScript</a><sup><a class="bib" href="#bib8">8</a></sup> som sitt scriptspråk, noe som gjør det lett for en web-utvikler å benytte eksisterende kunnskap til å gjøre SVG-dokumenter interaktive. SVG benytter også <a href="http://www.w3.org/DOM/" title="Document Object Model">DOM-standarden</a><sup><a class="bib" href="#bib9">9</a></sup>, på linje med HTML og XML, for å kunne adressere og manipulere individuelle elementer i et SVG-dokument fra et script. </p>
-<p>SVG har også støtte for animasjon. Dette gjøres med notasjon basert på <a href="http://www.w3.org/TR/smil-animation/" title="Synchronized Multimedia Integration Language">SMIL-standarden</a><sup><a class="bib" href="#bib10">10</a></sup>. Hvordan SMIL benyttes for å animere et element blir omtalt i seksjon 1.4. Animasjon basert på SMIL er deklarativ, mens animasjon basert på bruk av script-støtten i SVG er prosedyre-basert. Den deklarative notasjonen med SMIL er noe som brukere som har erfaring med tradisjonell animasjon sannsynligvis vil kjenne igjen fordi det baserer seg på tidskoder, synkronisering av aktiviteter over en tidslinje med mer. Tradisjonelle programmerer, derimot, vil sannsynligvis føle seg mer bekvemme med å bruke script-støtten for å utføre en tilsvarende animasjon. Dette betyr i praksis at SVG-standarden er fleksibel nok til at brukere med forskjellige teknologisk utgangspunkt kan ta den i bruk og benytte de delene som er nødvendig for dem.</p>
-<p>W3C forklarer selv hva SVG er <a href="http://www.w3.org/standards/webdesign/graphics" title="W3C Graphics">på denne måten</a><sup><a class="bib" href="#bib11">11</a></sup>:</p>
+<p>Scalable Vector Graphics (<a href="http://www.w3.org/Graphics/SVG/" title="Scalable Vector Graphics - XML Graphics for the Web, W3C, 2009-12-11">SVG</a><sup><a class="bib" href="#bib2">2</a></sup>) er en åpen standard utgitt av World Wide Web Consortium (<a href="http://www.w3.org" title="World Wide Web Consortium front page">W3C</a><sup><a class="bib" href="#bib3">3</a></sup>) som skal dekke behovet i markedet for å kunne representere to-dimensjonal grafikk på et utvalg av medier og enheter. Man kan si at det er et programmeringspråk for å beskrive to-dimensjonal grafikk og grafiske applikasjoner. Med to-dimensjonal grafikk snakker vi om vektoriserte figurer, raster-grafikk (bitmap) og tekst-elementer. </p>
+<p>SVG baserer seg på mange andre åpne standarder og prøver å <a href="http://www.w3.org/2007/11/SVG_rechartering/SVG-WG-charter.html#coordination" title="SVG Dependencies, W3C/Doug Schepers/Chris Lilley, 2008-04-16">gjenbruke de</a><sup><a class="bib" href="#bib4">4</a></sup> så mye som mulig for å unngå overlappende standardiseringsarbeid, både innenfor og utenfor W3C-prosessen. </p>
+<p>SVG-standarden er implementert som en applikasjon i <a href="http://www.w3.org/standards/xml" title="eXtensible Markup Language overview page, W3C">XML</a><sup><a class="bib" href="#bib5">5</a></sup>. Det er en <a href="http://en.wikipedia.org/wiki/Declarative_programming" title="Declarative programming, Wikipedia, read 2010-02-26">deklarativ</a><sup><a class="bib" href="#bib6">6</a></sup> standard på lik linje med <a href="http://www.w3.org/standards/webdesign/htmlcss" title="HyperText Markup Language overview page, W3C">HTML</a><sup><a class="bib" href="#bib7">7</a></sup>. Hvordan SVG fysisk representeres i XML omtales i seksjon 1.4. </p>
+<p>SVG har støtte for scripting, noe som gjør det mulig å lage avanserte brukergrensesnitt og interaksjoner basert på kjente programmeringsprinsipper benyttet i tradisjonell web-design. SVG benytter <a href="http://www.ecmascript.org/" title="ECMAScript - the language of the web, Ecma International">ECMAScript</a><sup><a class="bib" href="#bib8">8</a></sup> som sitt scriptspråk, noe som gjør det lett for en web-utvikler å benytte eksisterende kunnskap til å gjøre SVG-dokumenter interaktive. SVG benytter også <a href="http://www.w3.org/DOM/" title="Document Object Model overview page, W3C/Philippe Le Hégaret/Ray Whitmer/Lauren Wood, 2009-01-06">DOM-standarden</a><sup><a class="bib" href="#bib9">9</a></sup>, på linje med HTML og XML, for å kunne adressere og manipulere individuelle elementer i et SVG-dokument fra et script. </p>
+<p>SVG har også støtte for animasjon. Dette gjøres med notasjon basert på <a href="http://www.w3.org/TR/smil-animation/" title="Synchronized Multimedia Integration Language W3C Recommendation, W3C, 2001-09-04">SMIL-standarden</a><sup><a class="bib" href="#bib10">10</a></sup>. Hvordan SMIL benyttes for å animere et element blir omtalt i seksjon 1.4. Animasjon basert på SMIL er deklarativ, mens animasjon basert på bruk av script-støtten i SVG er prosedyre-basert. Den deklarative notasjonen med SMIL er noe som brukere som har erfaring med tradisjonell animasjon sannsynligvis vil kjenne igjen fordi det baserer seg på tidskoder, synkronisering av aktiviteter over en tidslinje med mer. Tradisjonelle programmerer, derimot, vil sannsynligvis føle seg mer bekvemme med å bruke script-støtten for å utføre en tilsvarende animasjon. Dette betyr i praksis at SVG-standarden er fleksibel nok til at brukere med forskjellige teknologisk utgangspunkt kan ta den i bruk og benytte de delene som er nødvendig for dem.</p>
+<p>W3C forklarer selv hva SVG er <a href="http://www.w3.org/standards/webdesign/graphics" title="Graphics overview page, W3C">på denne måten</a><sup><a class="bib" href="#bib11">11</a></sup>:</p>
 <blockquote>
   <p>Scalable Vector Graphics (SVG) is like HTML for graphics. It is a markup language for describing all aspects of an image or Web application, from the geometry of shapes, to the styling of text and shapes, to animation, to multimedia presentations including video and audio. It is fully interactive, and includes a scriptable DOM as well as declarative animation (via the SMIL specification). It supports a wide range of visual features such as gradients, opacity, filters, clipping, and masking. </p>
   <p>The use of SVG allows fully scalable, smooth, reusable graphics, from simple graphics to enhance HTML pages, to fully interactive chart and data visualization, to games, to standalone high-quality static images. SVG is natively supported by most modern browsers (with plugins to allow its use on all browsers), and is widely available on mobile devices and set-top boxes. All major vector graphics drawing tools import and export SVG, and they can also be generated through client-side or server-side scripting languages. </p>
 </blockquote>
 <h3 id="forskjelligesvgprofilertilulikeforml"><a name="h-1.3.2"></a>Forskjellige SVG profiler til ulike formål</h3>
-<p>Det finnes flere forskjellige <a href="http://www.w3.org/Graphics/SVG/About.html" title="About SVG">profiler av SVG</a><sup><a class="bib" href="#bib12">12</a></sup> som beskriver deler av spesifikasjonen. Disse forskjellige profilene er utviklet slik at leverandører av programvare og enheter kan støtte et del-sett av SVG sin totale funksjonalitet og fremdeles være kompatibel med en gitt profil. Under kan du se en oversikt over de forskjellige profilene som er definert. </p>
-<ul>
-  <li>SVG Full <ul>
-      <li>SVG Mobile <ul>
-          <li>SVG Basic</li>
-          <li>SVG Tiny</li>
-        </ul>
-      </li>
-      <li>SVG Print</li>
-    </ul>
-  </li>
-</ul>
-<p>FIXME: Bytt til figur med UML-diagram av avhengighetene mellom profilene (i SVG).</p>
-<p>SVG Mobile-profilen (som ombefatter både SVG Tiny og SVG Basic) ble adoptert av <a href="http://www.3gpp.org/" title="3rd Generation Partnership Project">3GPP</a><sup><a class="bib" href="#bib13">13</a></sup>, en samling av mobiloperatører, som grunnlaget for deres støtte for grafikk i mobile enheter. Flere av disse mobiloperatørene jobber aktivt med å videreutvikle SVG Mobile-profilen for å dekke deres behov på mobile enheter. </p>
+<p>Det finnes flere forskjellige <a href="http://www.w3.org/Graphics/SVG/About.html" title="About SVG - 2d Graphics in XML, W3C/Chris Lilley/Dean Jackson, 2004-10-29">profiler av SVG</a><sup><a class="bib" href="#bib12">12</a></sup> som beskriver deler av spesifikasjonen. Disse forskjellige profilene er utviklet slik at leverandører av programvare og enheter kan støtte et del-sett av SVG sin totale funksjonalitet og fremdeles være kompatibel med en gitt profil. Under kan du se en oversikt over de forskjellige profilene som er definert. </p>
+<p>
+  <object data="1_introduction/svg-profiles.svg" height="280" type="image/svg+xml" width="380">Forskjellige SVG-profiler</object>
+</p>
+<p>SVG Mobile-profilen (som ombefatter både SVG Tiny og SVG Basic) ble adoptert av <a href="http://www.3gpp.org/" title="3rd Generation Partnership Project front page, ETSI">3GPP</a><sup><a class="bib" href="#bib13">13</a></sup>, en samling av mobiloperatører, som grunnlaget for deres støtte for grafikk i mobile enheter. Flere av disse mobiloperatørene jobber aktivt med å videreutvikle SVG Mobile-profilen for å dekke deres behov på mobile enheter. </p>
 <p>SVG Print-profilen fokuserer på hvordan SVG kan benyttes til å gi høyoppløselige utskrifter av grafikk på papir og andre ikke-bevegelige medier. Animasjon og andre interaktive elementer i SVG er naturligvis ikke med i denne profilen da det ikke lar seg reprodusere i statisk format. Canon, HP, Adobe og Corel er aktive medlemmer som jobber med videreutvikling av denne profilen. </p>
 <p>SVG Full er den profilen som dekker opp for alle de andre variantene. Hvis man hevder at en applikasjon støtter SVG Full må den også støtte alle de andre profilene, fordi de andre profilene bare er del-sett av SVG Full. </p>
 <h3 id="medlemmerisvgworkinggroup"><a name="h-1.3.3"></a>Medlemmer i SVG Working Group</h3>
-<p>De følgende institusjoner er registrert med et eller flere <a href="http://www.w3.org/2000/09/dbwg/details?group=19480&amp;public=1&amp;gs=1&amp;" title="SVG Working Group Participants">medlemmer i SVG Working Group (WG) pr. 7. mars 2010</a><sup><a class="bib" href="#bib14">14</a></sup>.</p>
+<p>De følgende institusjoner er registrert med et eller flere <a href="http://www.w3.org/2000/09/dbwg/details?group=19480&amp;public=1&amp;gs=1&amp;" title="SVG Working Group Participants, W3C/Gerald Oskoboiny/Dominique Hazaël-Massieux, 2010-04-09">medlemmer i SVG Working Group (WG) pr. 7. mars 2010</a><sup><a class="bib" href="#bib14">14</a></sup>.</p>
 <ul>
   <li>Adobe Systems Inc.</li>
   <li>Apple, Inc.</li>
@@ -331,40 +322,40 @@ Veileder: Viggo Holmstedt
 <p>Det som umiddelbart viser seg er at W3C internt står for mesteparten av aktiviteten rundt standardiseringsarbeidet, hele 2/3 av all aktiviteten i perioden tallene er hentet fra.</p>
 <p>Opera viser seg som den mest aktive nettleser-leverandøren med 15% aktivitet. Deres fokus på SVG gjenspeiler seg også i kvaliteten på deres implementasjon av SVG i deres nettleser, noe som blir mer omtalt i kapittel 2. Mozilla, Apple og Microsoft derimot viser ikke altfor stor aktivitet i gruppen, noe som igjen kan gjenspeiles i deres implementasjoner (mer informasjon om forskjeller i implementasjonene omtales i kapittel 2).</p>
 <p>Canon viser et ganske høyt aktivitetsnivå, noe som overrasker, siden de er et firma som hovedsaklig baserer seg på produkter som driver med raster-teknologi (fotografi og utskrift). Adobe, som også driver med grafiske applikasjoner, viser helt klart et lavere aktivitetsnivå, noe som kan bety at de ikke er fullt så fokusert på standardisering pga. deres høye markedsandel i deres segment.</p>
-<p><a href="http://www.institut-telecom.fr/p_en_present_inst_36.html" title="Institut Télécom about page">Institut Télécom</a><sup><a class="bib" href="#bib17">17</a></sup> er et firma som driver med trening og utdanning av fagpersoner innen telekom-sektoren. Deres aktivitet viser at de er interessert i åpne standarder, og at vektorisert grafikk er et viktig område også for telekom-sektoren. <a href="http://www.ikivo.com/04about.html" title="Ikivo AB about page">Ikivo AB</a><sup><a class="bib" href="#bib18">18</a></sup> er et selskap som fokuserer på multimediale applikasjoner for mobile enheter. Deres aktivitet viser at de ser på SVG som en viktig standard for mobile enheter. De fremhever spesifikt på <a href="http://www.ikivo.com/open_standards.html" title="Ikivo - Based on open standards">sin informasjonsside</a><sup><a class="bib" href="#bib19">19</a></sup> at de benytter SVG Mobile 1.2 og andre åpne standarder i deres <em>Enrich</em>-produkter.</p>
+<p><a href="http://www.institut-telecom.fr/p_en_present_inst_36.html" title="Institut Télécom about page, read 2010-04-01">Institut Télécom</a><sup><a class="bib" href="#bib17">17</a></sup> er et firma som driver med trening og utdanning av fagpersoner innen telekom-sektoren. Deres aktivitet viser at de er interessert i åpne standarder, og at vektorisert grafikk er et viktig område også for telekom-sektoren. <a href="http://www.ikivo.com/04about.html" title="Ikivo AB about page, read 2010-04-01">Ikivo AB</a><sup><a class="bib" href="#bib18">18</a></sup> er et selskap som fokuserer på multimediale applikasjoner for mobile enheter. Deres aktivitet viser at de ser på SVG som en viktig standard for mobile enheter. De fremhever spesifikt på <a href="http://www.ikivo.com/open_standards.html" title="Based on open standards, Ikivo AB, 2009-10-23">sin informasjonsside</a><sup><a class="bib" href="#bib19">19</a></sup> at de benytter SVG Mobile 1.2 og andre åpne standarder i deres <em>Enrich</em>-produkter.</p>
 <p>De resterende medlemmene viser liten til ingen aktivitet i arbeidsgruppen, noe som kan bety at de ikke interesserer seg fullt så mye for videre utbedring av SVG-standarden, eller at de benytter andre måter å kommunisere med de andre medlemmene i arbeidsgruppen.</p>
 <p>Som <a href="#vedlegg" title="Information directly from Doug Schepers, W3C SVG WG Team Contact, dated 2010-03-08">vår epost til SVG WG</a> viser, har vi prøvd å få tak i mer informasjon om aktiviteten før 2008, men foreløpig (2010-01-04) er det uvisst hvorvidt vi vil få tilgang til disse opplysningene. Hvis vi får opplysningene kan vi gjøre en større analyse av aktiviteten internt i arbeidsgruppen for å se hvilke organisasjoner som har bidratt mest til at standarden har utviklet seg. Hvis ikke vi får disse opplysningene må vi basere våre funn på de offentlige dataene gjengitt ovenfor.</p>
 <h3 id="historiskbakgrunn"><a name="h-1.3.4"></a>Historisk bakgrunn</h3>
-<p>Med utgangspunkt i dokumentet <a href="http://www.w3.org/Graphics/SVG/WG/wiki/Secret_Origin_of_SVG" title="The Secret Origin of SVG">The Secret Origin of SVG</a><sup><a class="bib" href="#bib20">20</a></sup> er det tydelig at mange organisasjoner var svært interessert i å få en enhetlig standard for vektorgrafikk på internett i midten av 1990-tallet. Det eksisterte mange forskjellige varianter, men rundt 1998 var det disse fem standardene som sto igjen som de mest sannsynlige til å ta over markedet som en åpen standard for vektorgrafikk: <a href="http://www.w3.org/TR/1998/NOTE-PGML-19980410" title="Precision Graphics Markup Language">PGML</a><sup><a class="bib" href="#bib21">21</a></sup>, <a href="http://www.w3.org/Submission/1998/08/" title="Vector Markup Language">VML</a><sup><a class="bib" href="#bib22">22</a></sup>, <a href="http://www.w3.org/TR/1998/NOTE-HGML-19980619" title="Hyper Graphics Markup Language">HGML</a><sup><a class="bib" href="#bib23">23</a></sup>, <a href="http://www.w3.org/Submission/1998/20/" title="Draw Markup Language">DrawML</a><sup><a class="bib" href="#bib24">24</a></sup> og <a href="http://www.w3.org/Submission/1998/13/" title="Web profile of Computer Graphics Metafile standard, ISO/IEC 8632:1992">WebCGM</a><sup><a class="bib" href="#bib25">25</a></sup>.</p>
+<p>Med utgangspunkt i dokumentet <a href="http://www.w3.org/Graphics/SVG/WG/wiki/Secret_Origin_of_SVG" title="The Secret Origin of SVG, W3C/Doug Schepers, 2008-09-15">The Secret Origin of SVG</a><sup><a class="bib" href="#bib20">20</a></sup> er det tydelig at mange organisasjoner var svært interessert i å få en enhetlig standard for vektorgrafikk på internett i midten av 1990-tallet. Det eksisterte mange forskjellige varianter, men rundt 1998 var det disse fem standardene som sto igjen som de mest sannsynlige til å ta over markedet som en åpen standard for vektorgrafikk: <a href="http://www.w3.org/TR/1998/NOTE-PGML-19980410" title="Precision Graphics Markup Language (PGML) W3C note, Adobe/IBM/Netscape/Sun, 1998-04-10">PGML</a><sup><a class="bib" href="#bib21">21</a></sup>, <a href="http://www.w3.org/Submission/1998/08/" title="Vector Markup Language specification, Autodesk/Hewlett-Packard/Macromedia/Microsoft/Visio, 1998-05-13">VML</a><sup><a class="bib" href="#bib22">22</a></sup>, <a href="http://www.w3.org/TR/1998/NOTE-HGML-19980619" title="Hyper Graphics Markup Language W3C note, PRP (UK)/Orange PCSL, 1998-06-19">HGML</a><sup><a class="bib" href="#bib23">23</a></sup>, <a href="http://www.w3.org/Submission/1998/20/" title="Draw Markup Language specification, Excosoft AB, 1998-11-12">DrawML</a><sup><a class="bib" href="#bib24">24</a></sup> og <a href="http://www.w3.org/Submission/1998/13/" title="Web profile of Computer Graphics Metafile standard, ISO/IEC 8632:1992 specification, Boeing/CCLRC/Inso/JISC/Xerox, 1998-09-19">WebCGM</a><sup><a class="bib" href="#bib25">25</a></sup>.</p>
 <p>På grunnlag av disse forskjellige forslagene til standarder ble det avgjort å stifte en arbeidsgruppe (SVG WG) for å utvikle en ny standard for vektorgrafikk. Standarden ble utviklet fra bunnen av med erfaringer fra de overnevnte forslagene.</p>
 <p>SVG sin kompakte syntaks for å beskrive stier (path data) arves i stor grad fra VML. Dette ble bestemt etter undersøkelser som viste at den kompakte syntaksen hadde en stor innvirkning på filstørrelse, både med og uten komprimering. Fra PGML (som igjen var basert på PostScript og PDF) benyttet man konsepter rundt koordinatsystemet, transformasjoner, fargerom og tekst/skrifttyper. En av tingene som er interessant å legge merke til er at det ble tidlig bestemt at variabler som beskriver hvordan elementer oppfører seg ble kodet som XML-attributter, ikke som element-innhold. Dette gjør det enklere å tolke innholdet i et SVG-dokument for f.eks. søkemotorer og annen programvare som håndterer XML på et generelt nivå. XML-attributtene blir i en slik sammenheng ofte ignorert og man sitter igjen med tekst-innhold som beskriver det faktiske innholdet i dokumentet istedenfor formateringen. Siden SVG også støtter hyperlenking (både internt og eksternt) kan man lenke til andre dokumenter like enkelt som i HTML. Dette gjør formatet godt egnet til å formidle informasjon som kan konsumeres av både mennesker og maskiner på en enkel måte.</p>
 <p>Tidlig i utviklingen av SVG-standarden var det W3Cs Chris Lilley og Adobes Jon Ferraiolo som var mest aktive. Som forrige avsnitt viser har Adobe sin aktivitet synket noe siden den gang.</p>
 <h3 id="revisjonerogprofileravsvg-standarden"><a name="h-1.3.5"></a>Revisjoner og profiler av SVG-standarden</h3>
-<p><a href="http://www.w3.org/TR/SVG10/" title="SVG 1.0 W3C Recommendation">SVG 1.0</a><sup><a class="bib" href="#bib26">26</a></sup> ble en godkjent W3C standard 4. september 2001.</p>
+<p><a href="http://www.w3.org/TR/SVG10/" title="SVG 1.0 W3C Recommendation, W3C/Jon Ferraiolo, 2001-09-04">SVG 1.0</a><sup><a class="bib" href="#bib26">26</a></sup> ble en godkjent W3C standard 4. september 2001.</p>
 <p>Forfatter-listen viser at følgende organisasjoner var involvert: Adobe, Apple, Autodesk, BitFlash, Canon, Corel, Excosoft, Hewlett-Packard, IBM, ILOG, IntraNet Solutions, Kodak, Lexica, Macromedia, Microsoft, Netscape, OASIS, Opera, Oxford Brookes University, Quark, RAL (CCLRC), Sun Microsystems, Visio, W3C og Xerox.</p>
-<p><strong><a href="http://www.w3.org/TR/SVG11/" title="SVG 1.1 W3C Recommendation">SVG 1.1</a><sup><a class="bib" href="#bib27">27</a></sup> ble en godkjent W3C standard 14. januar 2003.</strong></p>
+<p><strong><a href="http://www.w3.org/TR/SVG11/" title="SVG 1.1 W3C Recommendation, W3C/Jon Ferraiolo/Fujisawa Jun/Dean Jackson, 2003-01-14">SVG 1.1</a><sup><a class="bib" href="#bib27">27</a></sup> ble en godkjent W3C standard 14. januar 2003.</strong></p>
 <p>Forfatter-listen viser at følgende organisasjoner nå også er involvert i tillegg til de som nevnes for versjon 1.0: AGFA, America Online, Ericsson, Expway, Fuchsia Design, KDDI Research Labs, Nokia, Openwave, Savage Software, Schema Software, Sharp og Zoomon.</p>
 <p>SVG 1.1 er først og fremst en ny versjon av standarden som modulariserer standarden, slik at forskjellige profiler av standarden nå kan implementeres. Dette baner vei for definisjon av subsettene SVG Tiny, Basic og Print.</p>
-<p><strong><a href="http://www.w3.org/TR/2003/REC-SVGMobile-20030114/" title="Mobile SVG Profiles: SVG Tiny and SVG Basic">SVG Mobile (Basic og Tiny) 1.1</a><sup><a class="bib" href="#bib28">28</a></sup> ble en godkjent W3C standard 14. januar 2003</strong>, samtidig som SVG 1.1 ble godkjent.</p>
+<p><strong><a href="http://www.w3.org/TR/SVGMobile/" title="Mobile SVG Profiles: SVG Tiny and SVG Basic W3C Recommendation, W3C/Tolga Capin, 2003-01-14">SVG Mobile (Basic og Tiny) 1.1</a><sup><a class="bib" href="#bib28">28</a></sup> ble en godkjent W3C standard 14. januar 2003</strong>, samtidig som SVG 1.1 ble godkjent.</p>
 <p>SVG Tiny er et direkte subsett av SVG Basic som igjen er et direkte subsett av SVG 1.1. Dette gjør det enklere for utviklere å implementere løsninger som ikke trenger å støtte hele SVG 1.1, men bare de mindre tunge profilene SVG Basic eller SVG Tiny. SVG Tiny ble opprinnelig utviklet for mobil-telefoner og SVG Basic var beregnet på mobile håndholdte enheter (PDAer).</p>
 <p>Forfatter-listen her viser flere interessante funn. Ikke alle som står oppført på forfatter-listen for SVG 1.1 er oppført på listen over forfattere for SVG Mobile. Dette kan bety at SVG-arbeidsgruppen har fordelt arbeidet med de forskjellige standardiseringsjobbene basert på deres interesseområde.</p>
 <p>Følgende selskaper er ikke involvert i det hele tatt i SVG Mobile: Apple, Autodesk, Excosoft, IBM, Lexica, Macromedia, Microsoft, Netscape, Opera, Oxford Brookes University, RAL(CCLRC), Visio og Xerox.</p>
 <p>Det som er overraskende med denne oversikten er at Apple og Opera ikke har involvert seg nok i arbeidet med den mobile SVG-standarden, selv om de helt klart er veldig fokusert på det mobile markedet. Det er mulig at både Apple og Opera har fokusert på SVG Full istedenfor Mobile-profilen fordi deres nettlesere faktisk prøver å støtte den fulle SVG-standarden uansett enhet nettleseren kjører på.</p>
-<p><strong><a href="http://www.w3.org/TR/SVGTiny12/" title="SVG Tiny 1.2 Specification">SVG Tiny 1.2</a><sup><a class="bib" href="#bib29">29</a></sup> ble en godkjent W3C standard 22. desember 2008.</strong></p>
+<p><strong><a href="http://www.w3.org/TR/SVGTiny12/" title="SVG Tiny 1.2 W3C Recommendation, W3C, 2008-12-22">SVG Tiny 1.2</a><sup><a class="bib" href="#bib29">29</a></sup> ble en godkjent W3C standard 22. desember 2008.</strong></p>
 <p>Forfatter-listen viser at enda flere organisasjoner har kommet til: France Telecom, Groupe des Ecoles des Télécommunications (GET), Motorola, OpenText, Quickoffice, Research in Motion (RIM), Samsung, SAP, Streamezzo, Telecom Italia og Vodafone.</p>
 <p>I tillegg har flere organisasjoner utvidet antall personer de har involvert i arbeidsgruppen, noe som helt klart tyder på at standarden begynner å få større markedsandeler og blir benyttet mer. Det som er interessant å legge merke til er at de fleste nye organisasjonene er selskaper som leverer tjenester på mobile enheter eller utvikler mobile enheter.</p>
 <p>SVG Tiny 1.2 foretok en endring i måten de forskjellige profilene i SVG-standarden påvirker hverandre. SVG Tiny 1.2 er definert som et subsett av SVG 1.1, men med ny funksjonalitet.</p>
-<p><strong><a href="http://www.w3.org/TR/SVG12/" title="SVG Full 1.2 Working Draft">SVG Full 1.2</a><sup><a class="bib" href="#bib30">30</a></sup> er enda ikke godkjent som en W3C standard, men ble sist oppdatert 13. april 2005.</strong></p>
+<p><strong><a href="http://www.w3.org/TR/SVG12/" title="SVG Full 1.2 W3C Working Draft, W3C/Dean Jackson/Craig Northway, 2005-04-13">SVG Full 1.2</a><sup><a class="bib" href="#bib30">30</a></sup> er enda ikke godkjent som en W3C standard, men ble sist oppdatert 13. april 2005.</strong></p>
 <p>SVG Full 1.2 er ment som den komplette videreføringen av SVG 1.1, som benytter SVG Tiny 1.2 som basis og utvider den standarden for å oppnå full støtte for SVG 1.1 pluss ny funksjonalitet.</p>
 <p>Siden standarden enda ikke er godkjent er det uvisst hvilke organisasjoner som vil være involvert i den endelige versjonen av standarden.</p>
-<p><strong><a href="http://www.w3.org/TR/SVGPrint12/" title="SVG Print 1.2 Working Draft">SVG Print 1.2</a><sup><a class="bib" href="#bib31">31</a></sup> er enda ikke godkjent som en W3C standard, men ble sist oppdatert 21. desember 2007.</strong></p>
-<p>SVG Print er en ment som en standard for utskrift av SVG-dokumenter. Et program som sier at det støtter SVG Print må teknisk sett støtte SVG Tiny 1.2 sin <a href="http://www.w3.org/TR/SVGMobile12/feature.html#SVG-static" title="SVG Tiny 1.2 Static Profile">statiske profil</a><sup><a class="bib" href="#bib32">32</a></sup>. SVG Print er således en utvidelse av det statiske subsettet av SVG Tiny 1.2.</p>
+<p><strong><a href="http://www.w3.org/TR/SVGPrint12/" title="SVG Print 1.2 Part II: Language W3C Working Draft, W3C, 2007-12-21">SVG Print 1.2</a><sup><a class="bib" href="#bib31">31</a></sup> er enda ikke godkjent som en W3C standard, men ble sist oppdatert 21. desember 2007.</strong></p>
+<p>SVG Print er en ment som en standard for utskrift av SVG-dokumenter. Et program som sier at det støtter SVG Print må teknisk sett støtte SVG Tiny 1.2 sin <a href="http://www.w3.org/TR/SVGMobile12/feature.html#SVG-static" title="SVG Tiny 1.2 Static Profile, W3C, 2008-12-22">statiske profil</a><sup><a class="bib" href="#bib32">32</a></sup>. SVG Print er således en utvidelse av det statiske subsettet av SVG Tiny 1.2.</p>
 <p>Siden standarden enda ikke er godkjent er det uvisst hvilke organisasjoner som vil være involvert i den endelige versjonen av standarden. Fra oversikten over redaktører er det tydlig at Canon viser en stor interesse for dette arbeidet.</p>
-<p>Det vedlaget dokumentet viser en <a href="1_introduction/svg_authors.pdf" title="Oversikt over forfattere av SVG-standarder">oversikt over alle forfatterne for de forskjellige revisjonene av SVG-standarden</a> fargekodet med når de involverte seg i arbeidsgruppen.</p>
+<p>Det vedlaget dokumentet viser en <a href="1_introduction/svg_authors.pdf" title="Oversikt over forfattere av SVG-standarder, vedlegg 3, Robin Smidsrød, 2010-04-01">oversikt over alle forfatterne for de forskjellige revisjonene av SVG-standarden</a> fargekodet med når de involverte seg i arbeidsgruppen.</p>
 <h3 id="hvordansersvgut"><a name="h-1.3.6"></a>Hvordan ser SVG ut?</h3>
-<p>Som tidligere nevnt er SVG en applikasjon i XML. Det betyr at SVG dokumenter er beskrevet som XML-kode. For at programmer skal skjønne at man jobber med SVG og ikke en generisk form for XML må man sørge for å spesifisere et <a href="http://www.w3.org/TR/xml-names/" title="XML Namespaces">XML namespace</a><sup><a class="bib" href="#bib33">33</a></sup> som identifiserer SVG. SVG sitt namespace er definert som <code>http://www.w3.org/2000/svg</code> i <a href="http://www.w3.org/TR/SVG11/attindex.html" title="SVG 1.1 attribute index">SVG versjon 1.1</a><sup><a class="bib" href="#bib34">34</a></sup>. For at nettlesere og andre enheter som benytter HTTP skal kunne identifisere SVG uten å måtte dekode dokumentet bør man benytte mimetypen <code>image/svg+xml</code>, som er <a href="http://www.w3.org/TR/SVGTiny12/mimereg.html" title="SVG Tiny 1.2 mimetype registration">registrert</a><sup><a class="bib" href="#bib35">35</a></sup> hos IANA. Hvis XML-dokumentet innholder data fra forskjellige navnerom kan man benytte den mer generiske mimetypen <a href="http://tools.ietf.org/html/rfc3023#section-3.2" title="application/xml mimetype registration"><code>application/xml</code></a><sup><a class="bib" href="#bib36">36</a></sup>. Tradisjonelt blir filer med SVG-data navngitt med .svg eller .svgz (for komprimert data) som <a href="http://www.w3.org/TR/SVG/intro.html#MIMEType" title="SVG mime type, file name extension">filendelse</a><sup><a class="bib" href="#bib37">37</a></sup>.</p>
+<p>Som tidligere nevnt er SVG en applikasjon i XML. Det betyr at SVG dokumenter er beskrevet som XML-kode. For at programmer skal skjønne at man jobber med SVG og ikke en generisk form for XML må man sørge for å spesifisere et <a href="http://www.w3.org/TR/xml-names/" title="Namespaces in XML 1.0 (3rd Edition), W3C/Tim Bray/Dave Hollander/Andrew Layman/Richard Tobin/Henry S. Thompson, 2009-12-8">XML namespace</a><sup><a class="bib" href="#bib33">33</a></sup> som identifiserer SVG. SVG sitt namespace er definert som <code>http://www.w3.org/2000/svg</code> i <a href="http://www.w3.org/TR/SVG11/attindex.html" title="SVG 1.1 attribute index, W3C, 2003-01-14">SVG versjon 1.1</a><sup><a class="bib" href="#bib34">34</a></sup>. For at nettlesere og andre enheter som benytter HTTP skal kunne identifisere SVG uten å måtte dekode dokumentet bør man benytte mimetypen <code>image/svg+xml</code>, som er <a href="http://www.w3.org/TR/SVGTiny12/mimereg.html" title="SVG Tiny 1.2 mimetype registration, W3C, 2008-12-22">registrert</a><sup><a class="bib" href="#bib35">35</a></sup> hos IANA. Hvis XML-dokumentet innholder data fra forskjellige navnerom kan man benytte den mer generiske mimetypen <a href="http://tools.ietf.org/html/rfc3023#section-3.2" title="application/xml mimetype registration - XML Media Types, M. Murata/IBM/S. St. Laurent/simonstl.com/D. Kohn/Skymoon Ventures, 2001-01-XX"><code>application/xml</code></a><sup><a class="bib" href="#bib36">36</a></sup>. Tradisjonelt blir filer med SVG-data navngitt med .svg eller .svgz (for komprimert data) som <a href="http://www.w3.org/TR/SVG/intro.html#MIMEType" title="SVG mime type, file name extension, W3C, 2003-01-14">filendelse</a><sup><a class="bib" href="#bib37">37</a></sup>.</p>
 <p>SVG inneholder et sett med primitiver som kan benyttes for å lage komplekse figurer i likhet med andre systemer for å tegne vektorisert grafikk. I tillegg støtter den også tekst og vanlig raster-grafikk (bitmaps). I første omgang skal vi se på hvilke primitiver som er tilgjengelig, senere kommer vi inn på bruken av tekst og rastergrafikk.</p>
-<p>Følgende primitiver er <a href="http://www.w3.org/TR/SVG11/intro.html#TermShape" title="Shape term">tilgjengelig</a><sup><a class="bib" href="#bib38">38</a></sup> (XML-element benyttet i SVG i parentes):</p>
+<p>Følgende primitiver er <a href="http://www.w3.org/TR/SVG11/intro.html#TermShape" title="SVG 1.1 shape term, W3C, 2003-01-14">tilgjengelig</a><sup><a class="bib" href="#bib38">38</a></sup> (XML-element benyttet i SVG i parentes):</p>
 <ul>
   <li>Linje (line)</li>
   <li>Sammenhengende linjer (polyline)</li>
@@ -374,9 +365,9 @@ Veileder: Viggo Holmstedt
   <li>Sirkel (circle)</li>
   <li>Ellipse (ellipse)</li>
 </ul>
-<p>Nedenfor vil jeg gå gjennom hver enkelt primitiv i detalj. Som man kan se i eksemplene er det alltid et rot-element med navn <code>svg</code> som definerer synlig område (<a href="http://www.w3.org/TR/SVG11/struct.html#SVGElement" title="&lt;svg&gt; element">viewport</a><sup><a class="bib" href="#bib39">39</a></sup>) for hele tegneflaten. I tillegg er det her man definerer hvilken versjon av SVG-standarden man benytter, evt. hvilken SVG-profil man baserer seg på (<code>baseProfile</code>) samt navnerommet, som nevnt over. En ting som er verdt å merke seg er at ingen av eksemplene spesifiserer <code>width</code> eller <code>height</code>, noe som betyr at viewport skal være så stor som overhodet mulig (dvs. begge verdier har en standard-verdi på 100%).</p>
+<p>Nedenfor vil jeg gå gjennom hver enkelt primitiv i detalj. Som man kan se i eksemplene er det alltid et rot-element med navn <code>svg</code> som definerer synlig område (<a href="http://www.w3.org/TR/SVG11/struct.html#SVGElement" title="SVG 1.1 &lt;svg&gt; element, W3C, 2003-01-14">viewport</a><sup><a class="bib" href="#bib39">39</a></sup>) for hele tegneflaten. I tillegg er det her man definerer hvilken versjon av SVG-standarden man benytter, evt. hvilken SVG-profil man baserer seg på (<code>baseProfile</code>) samt navnerommet, som nevnt over. En ting som er verdt å merke seg er at ingen av eksemplene spesifiserer <code>width</code> eller <code>height</code>, noe som betyr at viewport skal være så stor som overhodet mulig (dvs. begge verdier har en standard-verdi på 100%).</p>
 <h4 id="linje"><a name="h-1.3.6.1"></a>Linje</h4>
-<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/shapes.html#LineElement" title="&lt;line&gt; element">line-elementet</a><sup><a class="bib" href="#bib40">40</a></sup> i SVG.</p>
+<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/shapes.html#LineElement" title="SVG 1.1 &lt;line&gt; element, W3C, 2003-01-14">line-elementet</a><sup><a class="bib" href="#bib40">40</a></sup> i SVG.</p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
      viewBox=&quot;0 0 350 350&quot;&gt;
@@ -388,9 +379,9 @@ Veileder: Viggo Holmstedt
 <p>
   <object data="1_introduction/line.svg" height="200" id="lineexample" type="image/svg+xml" width="200">&lt;line&gt; example</object>
 </p>
-<p>Eksempelet viser en linje fra punkt 0,0 (øverst til venstre) til 300,300. Farge og tykkelse er spesifisert ved hjelp av CSS med attributtene <code>stroke</code> og <code>stroke-width</code>. Man bruker tradisjonell CSS-syntax innenfor style-attributtet, akkurat som i HTML/XHTML. Det man må være oppmerksom på er at attributtene ikke er de samme som i HTML. Se en oversikt over hvilke <a href="http://www.w3.org/TR/SVG11/styling.html" title="SVG styling properties">CSS-attributter som er gyldige for SVG</a><sup><a class="bib" href="#bib41">41</a></sup>.</p>
+<p>Eksempelet viser en linje fra punkt 0,0 (øverst til venstre) til 300,300. Farge og tykkelse er spesifisert ved hjelp av CSS med attributtene <code>stroke</code> og <code>stroke-width</code>. Man bruker tradisjonell CSS-syntax innenfor style-attributtet, akkurat som i HTML/XHTML. Det man må være oppmerksom på er at attributtene ikke er de samme som i HTML. Se en oversikt over hvilke <a href="http://www.w3.org/TR/SVG11/styling.html" title="SVG 1.1 styling properties, W3C, 2003-01-14">CSS-attributter som er gyldige for SVG</a><sup><a class="bib" href="#bib41">41</a></sup>.</p>
 <h4 id="sammenhengendelinjer"><a name="h-1.3.6.2"></a>Sammenhengende linjer</h4>
-<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/shapes.html#PolylineElement" title="&lt;polyline&gt; element">polyline-elementet</a><sup><a class="bib" href="#bib42">42</a></sup> i SVG.</p>
+<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/shapes.html#PolylineElement" title="SVG 1.1 &lt;polyline&gt; element, W3C, 2003-01-14">polyline-elementet</a><sup><a class="bib" href="#bib42">42</a></sup> i SVG.</p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
      viewBox=&quot;0 0 1200 1200&quot;&gt;
@@ -411,9 +402,9 @@ Veileder: Viggo Holmstedt
 <p>
   <object data="1_introduction/polyline.svg" height="200" id="polylineexample" type="image/svg+xml" width="200">&lt;polyline&gt; example</object>
 </p>
-<p>I dette eksempelet ser vi en linje trukket gjennom et sett med punkter spesifisert med <code>points</code>-attributtet. Vær oppmerksom på at dersom man skal spesifisere desimaltall for koordinatene <em>må</em> man benytte punktum som desimalskille, ikke komma. Kommaet skiller mellom X- og Y-koordinatet mens et eller flere mellomrom skiller mellom koordinatene i listen. Det som også er verdt å legge merke til er at verdiene for å sette tykkelse og farge er her spesifisert med presentasjonsattributter istedenfor CSS-verdier via style-attributtet. Presentasjonsattributter har <a href="http://zvon.org/xxl/svgReference/Standard1.1/styling.html#UsingPresentationAttributes" title="Using presentation attributes">lavere rang</a><sup><a class="bib" href="#bib43">43</a></sup> enn CSS-verdier, så hvis begge deler er spesifisert får verdiene som er spesifisert i stilarket prioritet. Fordelen med å bruke stilark er de samme som i HTML, at man kan samle sammen utseende-definisjoner og gjenbruke de på mange elementer. Presentasjonsattributtene arver etter samme regler som i CSS2, men dokumentasjonen for attributtet forteller om det <a href="http://www.w3.org/TR/SVG11/styling.html#Inheritance" title="Styling inheritance rules">støtter arv eller ikke</a><sup><a class="bib" href="#bib44">44</a></sup>. SVG-verktøy må ikke støtte CSS, så det er verdt å tenke på at dersom man ønsker et mest mulig kompatibelt dokument, bør man bruke presentasjonsattributter.</p>
+<p>I dette eksempelet ser vi en linje trukket gjennom et sett med punkter spesifisert med <code>points</code>-attributtet. Vær oppmerksom på at dersom man skal spesifisere desimaltall for koordinatene <em>må</em> man benytte punktum som desimalskille, ikke komma. Kommaet skiller mellom X- og Y-koordinatet mens et eller flere mellomrom skiller mellom koordinatene i listen. Det som også er verdt å legge merke til er at verdiene for å sette tykkelse og farge er her spesifisert med presentasjonsattributter istedenfor CSS-verdier via style-attributtet. Presentasjonsattributter har <a href="http://www.w3.org/TR/SVG11/styling.html#UsingPresentationAttributes" title="SVG 1.1 specifying properties using the presentation attributes, W3C, 2003-01-14">lavere rang</a><sup><a class="bib" href="#bib43">43</a></sup> enn CSS-verdier, så hvis begge deler er spesifisert får verdiene som er spesifisert i stilarket prioritet. Fordelen med å bruke stilark er de samme som i HTML, at man kan samle sammen utseende-definisjoner og gjenbruke de på mange elementer. Presentasjonsattributtene arver etter samme regler som i CSS2, men dokumentasjonen for attributtet forteller om det <a href="http://www.w3.org/TR/SVG11/styling.html#Inheritance" title="SVG 1.1 styling inheritance rules, W3C, 2003-01-14">støtter arv eller ikke</a><sup><a class="bib" href="#bib44">44</a></sup>. SVG-verktøy må ikke støtte CSS, så det er verdt å tenke på at dersom man ønsker et mest mulig kompatibelt dokument, bør man bruke presentasjonsattributter.</p>
 <h4 id="polygon"><a name="h-1.3.6.3"></a>Polygon</h4>
-<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/shapes.html#PolygonElement" title="&lt;polygon&gt; element">polygon-elementet</a><sup><a class="bib" href="#bib45">45</a></sup> i SVG.</p>
+<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/shapes.html#PolygonElement" title="SVG 1.1 &lt;polygon&gt; element, W3C, 2003-01-14">polygon-elementet</a><sup><a class="bib" href="#bib45">45</a></sup> i SVG.</p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
      viewBox=&quot;0 0 350 350&quot;&gt;
@@ -427,7 +418,7 @@ Veileder: Viggo Holmstedt
 </p>
 <p>På lik linje med <code>polyline</code> benytter man et attributt med navn <code>points</code> til å spesifisere hvilke punkter polygonet skal bestå av. I praksis er et polygon det samme som en polyline, men etter det siste koordinatet blir det tegnet en ekstra linje tilbake til første koordinat og hele elementet blir fylt med spesifisert fyll-farge. Legg merke til at fargene er her spesifisert med tradisjonelle hex-koder som i HTML.</p>
 <h4 id="rektangel"><a name="h-1.3.6.4"></a>Rektangel</h4>
-<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/shapes.html#RectElement" title="&lt;rect&gt; element">rect-elementet</a><sup><a class="bib" href="#bib46">46</a></sup> i SVG.</p>
+<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/shapes.html#RectElement" title="SVG 1.1 &lt;rect&gt; element, W3C, 2003-01-14">rect-elementet</a><sup><a class="bib" href="#bib46">46</a></sup> i SVG.</p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
      viewBox=&quot;0 0 300 300&quot;&gt;
@@ -441,7 +432,7 @@ Veileder: Viggo Holmstedt
 </p>
 <p>Et rektangel er spesifisert ved å sette <code>x</code>, <code>y</code>, <code>width</code> og <code>height</code> attributter som forventet. Attributtene <code>rx</code> og <code>ry</code> derimot krever litt mer forklaring. De gjør det mulig å få runde hjørner på rektangelet. Verdiene representerer radius i X- og Y-retning for sirkelen som benyttes for å tegne hjørnet. Dersom ingen av disse er spesifisert får man hjørner med en 90 graders vinkel. Det som er viktig å huske på er at negative verdier for rx/ry/width/height ikke er tillatt. I dette eksempelet ser man også bruke av de konstante navnene i CSS for farger, samt bruk av transparens med <code>opacity</code>-attributtet. I dette tilfellet er elementet 50% gjennomskinnelig.</p>
 <h4 id="sti"><a name="h-1.3.6.5"></a>Sti</h4>
-<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/paths.html#PathElement" title="&lt;path&gt; element">path-elementet</a><sup><a class="bib" href="#bib47">47</a></sup> i SVG.</p>
+<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/paths.html#PathElement" title="SVG 1.1 &lt;path&gt; element, W3C, 2003-01-14">path-elementet</a><sup><a class="bib" href="#bib47">47</a></sup> i SVG.</p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
      viewBox=&quot;0 0 400 400&quot;&gt;
@@ -465,9 +456,9 @@ C211 300 186 274 156 274&quot;
 <p>
   <object data="1_introduction/path.svg" height="200" id="pathexample" type="image/svg+xml" width="200">&lt;path&gt; example</object>
 </p>
-<p>I dette eksempelet ser man en spiral tegnet opp ved å bruke en rekke tegneoperasjoner etter hverandre presentert i et kompakt format. En <code>M</code> betyr moveto og setter utgangspunktet for tegneoperasjonen. En <code>C</code> betyr curveto og tegner en bézierkurve fra utgangspunktet gjennom to kontrollpunkter til destinasjonspunktet. Destinasjonspunktet blir da det nye utgangspunktet og tegneoperasjonen fortsetter. Det finnes flere <a href="http://www.w3.org/TR/SVG11/paths.html#PathData" title="Path data">andre tegneoperasjoner</a><sup><a class="bib" href="#bib48">48</a></sup> man kan benytte til å tegne en sti som vi ikke omtaler her. Det som er interessant å legge merke til er at alle de andre primitivene jeg har beskrevet her også kan tegnes ved hjelp av en sti.</p>
+<p>I dette eksempelet ser man en spiral tegnet opp ved å bruke en rekke tegneoperasjoner etter hverandre presentert i et kompakt format. En <code>M</code> betyr moveto og setter utgangspunktet for tegneoperasjonen. En <code>C</code> betyr curveto og tegner en bézierkurve fra utgangspunktet gjennom to kontrollpunkter til destinasjonspunktet. Destinasjonspunktet blir da det nye utgangspunktet og tegneoperasjonen fortsetter. Det finnes flere <a href="http://www.w3.org/TR/SVG11/paths.html#PathData" title="SVG 1.1 path data, W3C, 2003-01-14">andre tegneoperasjoner</a><sup><a class="bib" href="#bib48">48</a></sup> man kan benytte til å tegne en sti som vi ikke omtaler her. Det som er interessant å legge merke til er at alle de andre primitivene jeg har beskrevet her også kan tegnes ved hjelp av en sti.</p>
 <h4 id="sirkel"><a name="h-1.3.6.6"></a>Sirkel</h4>
-<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/shapes.html#CircleElement" title="&lt;circle&gt; element">circle-elementet</a><sup><a class="bib" href="#bib49">49</a></sup> i SVG.</p>
+<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/shapes.html#CircleElement" title="SVG 1.1 &lt;circle&gt; element, W3C, 2003-01-14">circle-elementet</a><sup><a class="bib" href="#bib49">49</a></sup> i SVG.</p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
      viewBox=&quot;0 0 200 200&quot;&gt;
@@ -482,7 +473,7 @@ C211 300 186 274 156 274&quot;
 </p>
 <p>Dette er et ganske enkelt eksempel som viser en sirkel plassert i senter av viewport med en radius på 50 punkter. Bruken av prosent-anvisninger følger samme tankegang som HTML sin boksmodell ved at tallet blir evaluert i forhold til størrelsen på forelder-elementet.</p>
 <h4 id="ellipse"><a name="h-1.3.6.7"></a>Ellipse</h4>
-<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/shapes.html#EllipseElement" title="&lt;ellipse&gt; element">ellipse-elementet</a><sup><a class="bib" href="#bib50">50</a></sup> i SVG.</p>
+<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/shapes.html#EllipseElement" title="SVG 1.1 &lt;ellipse&gt; element, W3C, 2003-01-14">ellipse-elementet</a><sup><a class="bib" href="#bib50">50</a></sup> i SVG.</p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
      viewBox=&quot;0 0 200 200&quot;&gt;
@@ -496,7 +487,7 @@ C211 300 186 274 156 274&quot;
 </p>
 <p>På lik linje med sirkelen spesifiserer <code>cx</code> og <code>cy</code> senterpunktet for tegneoperasjonen. Men det som er spesielt med en ellipse er at radius i X- og Y-retningen er forskjellige (i motsetning til sirkelen hvor radius er identisk i X- og Y-retningen). Man må derfor spesifisere både <code>rx</code> og <code>ry</code> for å tegne ellipsen. Radius kan heller ikke her være negativ, på lik linje med rektangelet.</p>
 <h4 id="tekst"><a name="h-1.3.6.8"></a>Tekst</h4>
-<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/text.html#TextElement" title="&lt;text&gt; element">text-elementet</a><sup><a class="bib" href="#bib51">51</a></sup> i SVG.</p>
+<p>Under kan man se et eksempel på <a href="http://www.w3.org/TR/SVG11/text.html#TextElement" title="SVG 1.1 &lt;text&gt; element, W3C, 2003-01-14">text-elementet</a><sup><a class="bib" href="#bib51">51</a></sup> i SVG.</p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
      viewBox=&quot;0 0 300 300&quot;&gt;
@@ -510,9 +501,9 @@ C211 300 186 274 156 274&quot;
 <p>
   <object data="1_introduction/text.svg" height="200" id="textexample" type="image/svg+xml" width="200">&lt;text&gt; example</object>
 </p>
-<p>Eksempelet viser først en tekst-streng plassert tett opp til venstre kant og toppen av tegneområdet. Det er valgt en generisk sans-serif skrifttype i en passende størrelse. Den neste tekst-strengen er plassert 20 piksler lenger nede på skjermen og benytter en serif skrifttype. I tillegg er det spesifisert at selve teksten skal animeres fra utgangspunktet til X-posisjon 200 i løpet av 0.5s. Parameteret <em>freeze</em> til fill-attributtet betyr at det animerte elementet skal bli <a href="http://www.w3.org/TR/SVG11/animate.html#TimingAttributes" title="Animation timing attributes">stående i sluttposisjonen</a><sup><a class="bib" href="#bib52">52</a></sup> når animasjonen er ferdig. Vanligvis flytter elementet som er animert seg tilbake til utgangsposisjonen etter fullført animasjon (fill=&quot;remove&quot;). Igjen ser vi bruk av en enkel sti-spesifikasjon for å beskrive bevegelsen i animasjonen.</p>
+<p>Eksempelet viser først en tekst-streng plassert tett opp til venstre kant og toppen av tegneområdet. Det er valgt en generisk sans-serif skrifttype i en passende størrelse. Den neste tekst-strengen er plassert 20 piksler lenger nede på skjermen og benytter en serif skrifttype. I tillegg er det spesifisert at selve teksten skal animeres fra utgangspunktet til X-posisjon 200 i løpet av 0.5s. Parameteret <em>freeze</em> til fill-attributtet betyr at det animerte elementet skal bli <a href="http://www.w3.org/TR/SVG11/animate.html#TimingAttributes" title="SVG 1.1 animation timing attributes, W3C, 2003-01-14">stående i sluttposisjonen</a><sup><a class="bib" href="#bib52">52</a></sup> når animasjonen er ferdig. Vanligvis flytter elementet som er animert seg tilbake til utgangsposisjonen etter fullført animasjon (fill=&quot;remove&quot;). Igjen ser vi bruk av en enkel sti-spesifikasjon for å beskrive bevegelsen i animasjonen.</p>
 <h4 id="filter"><a name="h-1.3.6.9"></a>Filter</h4>
-<p>Under kan man se et eksempel på bruk av <a href="http://www.w3.org/TR/SVG11/filters.html" title="Filter effects">filtre</a><sup><a class="bib" href="#bib53">53</a></sup> i SVG.</p>
+<p>Under kan man se et eksempel på bruk av <a href="http://www.w3.org/TR/SVG11/filters.html" title="SVG 1.1 filter effects, W3C, 2003-01-14">filtre</a><sup><a class="bib" href="#bib53">53</a></sup> i SVG.</p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
              xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;
@@ -536,12 +527,12 @@ C211 300 186 274 156 274&quot;
   <object data="1_introduction/filter.svg" height="200" id="filterexample" type="image/svg+xml" width="200">filter example</object>
 </p>
 <p>Eksempelet viser flere avanserte metoder i SVG for gjenbruk av definisjoner uten behov for duplisering. La oss gå gjennom hver del steg for steg.</p>
-<p>Det første man legger merke til er at det er lagt til navnerommet for <a href="http://www.w3.org/TR/xlink/" title="XML Linking Language version 1.0">XLink</a><sup><a class="bib" href="#bib54">54</a></sup>, noe som gjør det mulig å referere til andre elementer ved hjelp av URI-referanser. Selv om URI-referansene er interne må man benytte xlink:href-attributtet for å peke til ressursene.</p>
-<p>Det neste vi legger merke til er <a href="http://www.w3.org/TR/SVG11/struct.html#DefsElement" title="&lt;defs&gt; element"><code>&lt;defs&gt;</code>-elementet</a><sup><a class="bib" href="#bib55">55</a></sup>. Dette er et samlingselement for andre elementer, på lik linje med <code>&lt;g&gt;</code>-elementet. Det som er spesielt med <code>defs</code> er at alle definisjonene innenfor elementet ikke blir tegnet opp umiddelbart. Men siden de kan refereres til senere i dokumentet gjør det gjenbruk kjapt og enkelt å få til. Hvis vi hopper over de faktiske definisjonene kan vi se at begge <a href="http://www.w3.org/TR/SVG11/struct.html#UseElement" title="&lt;use&gt; element"><code>&lt;use&gt;</code>-elementene</a><sup><a class="bib" href="#bib56">56</a></sup> henviser til et internt element med id=&quot;text&quot;.</p>
+<p>Det første man legger merke til er at det er lagt til navnerommet for <a href="http://www.w3.org/TR/xlink/" title="XML Linking Language 1.0 W3C Recommendation, W3C/Steve DeRose/Eve Maler/David Orchard, 2001-06-27">XLink</a><sup><a class="bib" href="#bib54">54</a></sup>, noe som gjør det mulig å referere til andre elementer ved hjelp av URI-referanser. Selv om URI-referansene er interne må man benytte xlink:href-attributtet for å peke til ressursene.</p>
+<p>Det neste vi legger merke til er <a href="http://www.w3.org/TR/SVG11/struct.html#DefsElement" title="SVG 1.1 &lt;defs&gt; element, W3C, 2003-01-14"><code>&lt;defs&gt;</code>-elementet</a><sup><a class="bib" href="#bib55">55</a></sup>. Dette er et samlingselement for andre elementer, på lik linje med <code>&lt;g&gt;</code>-elementet. Det som er spesielt med <code>defs</code> er at alle definisjonene innenfor elementet ikke blir tegnet opp umiddelbart. Men siden de kan refereres til senere i dokumentet gjør det gjenbruk kjapt og enkelt å få til. Hvis vi hopper over de faktiske definisjonene kan vi se at begge <a href="http://www.w3.org/TR/SVG11/struct.html#UseElement" title="SVG 1.1 &lt;use&gt; element, W3C, 2003-01-14"><code>&lt;use&gt;</code>-elementene</a><sup><a class="bib" href="#bib56">56</a></sup> henviser til et internt element med id=&quot;text&quot;.</p>
 <p>Hvis vi tar en kikk på <code>&lt;text&gt;</code>-elementet innenfor definisjonen ovenfor finner vi igjen det refererte id-attributtet. Tekst-elementet blir her tegnet opp to ganger, først en gang med en grå tegnefarge, og deretter med en sort tegnefarge. Man kan også se at den grå teksten har et filter aktivert. Hvis ikke filteret hadde vært benyttet ville den sorte teksten tegnet rett over den grå teksten som da ikke ville blitt synlig. Men siden filteret er aktivert påvirker det den grå teksten før den tegnes ut. Det er verdt å legge merke til at href-definisjonen benytter lenkesyntaks fra HTML sitt <code>&lt;a&gt;</code>-element, mens filter-attributtet benytter CSS-syntaks for å referere til en ressurs.</p>
-<p>Hvis vi nå tar en kikk på <code>&lt;filter&gt;</code>-elementet innenfor definisjonsblokken ser vi at filteret består av en <a href="http://www.w3.org/TR/SVG11/filters.html#feGaussianBlur" title="&lt;feGaussianBlur&gt; filter effect">gaussian blur-effekt</a><sup><a class="bib" href="#bib57">57</a></sup> pluss en <a href="http://www.w3.org/TR/SVG11/filters.html#feOffset" title="&lt;feOffset&gt; filter effect">offset-effekt</a><sup><a class="bib" href="#bib58">58</a></sup>. Blur-effekten bruker kildegrafikken, utfører en blur-operasjon på størrelse 2 og lagrer resultatet i en midlertidig buffer som navngis <strong>blur</strong>. Offset-effekten benytter da denne mildertidige bufferen som kilde og flytter x- og y-posisjon med 3 piksler. Dette fører da til at en skygge tegnes i grått først, og sort tekst tegnes over skyggen avslutningsvis.</p>
+<p>Hvis vi nå tar en kikk på <code>&lt;filter&gt;</code>-elementet innenfor definisjonsblokken ser vi at filteret består av en <a href="http://www.w3.org/TR/SVG11/filters.html#feGaussianBlur" title="SVG 1.1 &lt;feGaussianBlur&gt; filter effect, W3C, 2003-01-14">gaussian blur-effekt</a><sup><a class="bib" href="#bib57">57</a></sup> pluss en <a href="http://www.w3.org/TR/SVG11/filters.html#feOffset" title="SVG 1.1 &lt;feOffset&gt; filter effect, W3C, 2003-01-14">offset-effekt</a><sup><a class="bib" href="#bib58">58</a></sup>. Blur-effekten bruker kildegrafikken, utfører en blur-operasjon på størrelse 2 og lagrer resultatet i en midlertidig buffer som navngis <strong>blur</strong>. Offset-effekten benytter da denne mildertidige bufferen som kilde og flytter x- og y-posisjon med 3 piksler. Dette fører da til at en skygge tegnes i grått først, og sort tekst tegnes over skyggen avslutningsvis.</p>
 <h4 id="animasjon"><a name="h-1.3.6.10"></a>Animasjon</h4>
-<p>Under kan man se et eksempel på bruk av <a href="http://www.w3.org/TR/SVG11/animate.html" title="Animation elements">animasjon</a><sup><a class="bib" href="#bib59">59</a></sup> i SVG.</p>
+<p>Under kan man se et eksempel på bruk av <a href="http://www.w3.org/TR/SVG11/animate.html" title="SVG 1.1 animation elements, W3C, 2003-01-14">animasjon</a><sup><a class="bib" href="#bib59">59</a></sup> i SVG.</p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;
      viewBox=&quot;0 0 300 300&quot;&gt;
@@ -574,20 +565,20 @@ C211 300 186 274 156 274&quot;
 </p>
 <p>Eksempelet viser et rektangel som omtalt før, men denne gangen med et sett med animasjonsregler som påvirker fyll-fargen og avrundingen i hjørnene. Attributtet <strong>attributeName</strong> spesifiserer hvilket attributt på det omsluttende elementet som skal animeres, og attributtet <strong>attributeType</strong> spesifiserer om det er et XML-attributt eller et CSS-attributt som skal animeres. I vårt eksempel animerer vi kun XML-attributter. Først spesifiserer vi at fyll-fargen skal endres fra rød til gul over en tidsperiode på 2 sekunder. Når farge-endringen er ferdig skal den bli stående fordi vi benytter fill=&quot;freeze&quot;. Deretter har vi to identiske regler som forteller at rx og ry-attributtene (hjørneradius) skal endres fra verdien 0 (skarp) til verdien 10 (avrundet) over en periode på 2 sekunder, men man skal vente 2 sekunder før man starter endringen. I dette tilfellet skal endringen bli stående igjen etter at animasjonen er ferdig.</p>
 <h3 id="programvaresomkanproduseresvg-dokumenter"><a name="h-1.3.7"></a>Programvare som kan produsere SVG-dokumenter</h3>
-<p>Det finnes en <a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics#Software_and_support_in_applications" title="SVG support in applications">god del programvare</a><sup><a class="bib" href="#bib60">60</a></sup> på markedet som allerede støtter SVG-standarden til en varierende grad. Under har vi klassifisert de mest populære verktøyene på markedet som faktisk kan brukes til å produsere SVG-dokumenter.</p>
+<p>Det finnes en <a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics#Software_and_support_in_applications" title="SVG support in applications, Wikipedia, 2010-03-26">god del programvare</a><sup><a class="bib" href="#bib60">60</a></sup> på markedet som allerede støtter SVG-standarden til en varierende grad. Under har vi klassifisert de mest populære verktøyene på markedet som faktisk kan brukes til å produsere SVG-dokumenter.</p>
 <h4 id="kommersiellprogramvare"><a name="h-1.3.7.1"></a>Kommersiell programvare</h4>
-<p><a href="http://office.microsoft.com/en-us/visio/FX100487861033.aspx" title="Microsoft Office Visio">Microsoft Visio</a><sup><a class="bib" href="#bib61">61</a></sup> er et verktøy for å lage varierte vektoriserte diagrammer. Visio beskriver ikke på sine nettsider eksplisitt at de støtter SVG som et eksport-format, men en <a href="http://www.svgopen.org/2003/papers/SVG_Scenarios_using_Microsoft_Office_Visio_2003/index.html" title="SVG Scenarios for Microsoft Visio 2003">omfattende artikkel</a><sup><a class="bib" href="#bib62">62</a></sup> beskriver hvordan Visio kan benyttes i en arbeidsflyt som involverer bruk av SVG. Avsnitt 3.3 i artikkelen forteller også om noen av begrensningene med å importere SVG-dokumenter inn i Visio, f.eks. det at text og tspan-elementer i SVG ikke eksplisitt gir opplysninger om teksten faktisk inneholder linjeskift eller om teksten har blitt foldet fordi linjene er for lange. Det er en del andre deler av SVG-standarden som ikke er støttet, men alt i alt er støtten overraskende god.</p>
-<p><a href="http://www.adobe.com/products/illustrator/" title="Adobe Illustrator">Adobe Illustrator</a><sup><a class="bib" href="#bib63">63</a></sup> er et av verdens mest kjente verktøy for grafiske designere. Illustrator har støttet SVG siden versjon 9 og fikk også utvidet støtte for SVG Tiny i CS2 (versjon 12) i følge Wikipedia. Illustrator CS2 og senere <a href="http://www.adobe.com/svg/tools.html" title="Adobe SVG Tools">støtter flere avanserte funksjonaliteter</a><sup><a class="bib" href="#bib64">64</a></sup> i SVG, deriblant filtere, interaktivitet, rik typografi, hyperlenking og mer.</p>
-<p><a href="http://www.corel.com/servlet/Satellite/us/en/Product/1191272117978" title="CorelDRAW Graphics Suite X5">CorelDRAW</a><sup><a class="bib" href="#bib65">65</a></sup> er et designer-verktøy på lik linje med Adobe Illustrator. CorelDRAW har <a href="http://www.unleash.com/davidt/svg/index.asp" title="Using SVG in CorelDRAW - a tutorial">støttet SVG siden versjon 10</a><sup><a class="bib" href="#bib66">66</a></sup>, som ble lansert i 2000. De fleste statiske finessene i SVG er <a href="http://corel.custhelp.com/app/answers/detail/a_id/754171/" title="CorelDRAW SVG support information">godt støttet</a><sup><a class="bib" href="#bib67">67</a></sup> i versjon 12. En ting som er verdt å legge merke til er at skygger faktisk blir gjort om til rastergrafikk istedenfor å benytte f.eks. blur-filter samt et offset-filter som vist i forrige avsnitt (se rubrikken ang. filtere). Det er ikke klart hvorfor de velger å benytte denne metoden på skygger.</p>
-<p><a href="http://www.xara.com/us/products/xtreme/" title="Xara Xtreme">Xara Xtreme</a><sup><a class="bib" href="#bib68">68</a></sup> er på lik linje med Illustrator og CorelDRAW et verktøy for grafiske designere. Xara Xtreme har hatt <a href="http://support.xara.com/index.php?_m=knowledgebase&amp;_a=viewarticle&amp;kbarticleid=2562" title="Xara Xtreme SVG support">støtte for eksport av SVG-dokumenter siden versjon 3.2</a><sup><a class="bib" href="#bib69">69</a></sup>. Xara bekrefter at støtten for SVG ikke er komplett, men at de jobber med å forbedre støtten fortløpende.</p>
+<p><a href="http://office.microsoft.com/en-us/visio/FX100487861033.aspx" title="Microsoft Office Visio 2007 front page, Microsoft, read 2010-04-04">Microsoft Visio</a><sup><a class="bib" href="#bib61">61</a></sup> er et verktøy for å lage varierte vektoriserte diagrammer. Visio beskriver ikke på sine nettsider eksplisitt at de støtter SVG som et eksport-format, men en <a href="http://www.svgopen.org/2003/papers/SVG_Scenarios_using_Microsoft_Office_Visio_2003/index.html" title="SVG Scenarios for Microsoft Visio 2003, Richard See, 2003">omfattende artikkel</a><sup><a class="bib" href="#bib62">62</a></sup> beskriver hvordan Visio kan benyttes i en arbeidsflyt som involverer bruk av SVG. Avsnitt 3.3 i artikkelen forteller også om noen av begrensningene med å importere SVG-dokumenter inn i Visio, f.eks. det at text og tspan-elementer i SVG ikke eksplisitt gir opplysninger om teksten faktisk inneholder linjeskift eller om teksten har blitt foldet fordi linjene er for lange. Det er en del andre deler av SVG-standarden som ikke er støttet, men alt i alt er støtten overraskende god.</p>
+<p><a href="http://www.adobe.com/products/illustrator/" title="Adobe Illustrator graphic design software, Adobe, read 2010-04-04">Adobe Illustrator</a><sup><a class="bib" href="#bib63">63</a></sup> er et av verdens mest kjente verktøy for grafiske designere. Illustrator har støttet SVG siden versjon 9 og fikk også utvidet støtte for SVG Tiny i CS2 (versjon 12) i følge Wikipedia. Illustrator CS2 og senere <a href="http://www.adobe.com/svg/tools.html" title="Adobe SVG Authoring Tools, Adobe, read 2010-04-04">støtter flere avanserte funksjonaliteter</a><sup><a class="bib" href="#bib64">64</a></sup> i SVG, deriblant filtere, interaktivitet, rik typografi, hyperlenking og mer.</p>
+<p><a href="http://www.corel.com/servlet/Satellite/us/en/Product/1191272117978" title="CorelDRAW Graphics Suite X5, Corel, read 2010-04-04">CorelDRAW</a><sup><a class="bib" href="#bib65">65</a></sup> er et designer-verktøy på lik linje med Adobe Illustrator. CorelDRAW har <a href="http://www.unleash.com/davidt/svg/index.asp" title="SVG - From CorelDRAW to Your Browser, David Troidl, 2007">støttet SVG siden versjon 10</a><sup><a class="bib" href="#bib66">66</a></sup>, som ble lansert i 2000. De fleste statiske finessene i SVG er <a href="http://corel.custhelp.com/app/answers/detail/a_id/754171/" title="CorelDRAW SVG support information - Corel Knowledgebase, Corel, read 2010-04-04">godt støttet</a><sup><a class="bib" href="#bib67">67</a></sup> i versjon 12. En ting som er verdt å legge merke til er at skygger faktisk blir gjort om til rastergrafikk istedenfor å benytte f.eks. blur-filter samt et offset-filter som vist i forrige avsnitt (se rubrikken ang. filtere). Det er ikke klart hvorfor de velger å benytte denne metoden på skygger.</p>
+<p><a href="http://www.xara.com/us/products/xtreme/" title="Xara Xtreme graphics software, Xara Group Limited, read 2010-04-04">Xara Xtreme</a><sup><a class="bib" href="#bib68">68</a></sup> er på lik linje med Illustrator og CorelDRAW et verktøy for grafiske designere. Xara Xtreme har hatt <a href="http://support.xara.com/index.php?_m=knowledgebase&amp;_a=viewarticle&amp;kbarticleid=2562" title="Xara Xtreme SVG support - Xara knowledgebase, Xara Group Limited, 2007-06-13">støtte for eksport av SVG-dokumenter siden versjon 3.2</a><sup><a class="bib" href="#bib69">69</a></sup>. Xara bekrefter at støtten for SVG ikke er komplett, men at de jobber med å forbedre støtten fortløpende.</p>
 <h4 id="friprogramvare"><a name="h-1.3.7.2"></a>Fri programvare</h4>
-<p><a href="http://www.openoffice.org/product/draw.html" title="OpenOffice.org Draw">OpenOffice.org Draw</a><sup><a class="bib" href="#bib70">70</a></sup> er et tegneprogram som er en del av den større OpenOffice.org-pakken (OOo) for produktivitet. <a href="http://graphics.openoffice.org/files/documents/12/406/svg_overview.htm" title="OpenOffice.org Graphics SVG overview">Følgende dokument</a><sup><a class="bib" href="#bib71">71</a></sup> bekrefter at OOo Draw har hatt grunnleggende støtte for eksport av SVG-dokumenter siden 2002. Det som er interessant å legge merke til i dette dokumentet er at OOo baserer seg sterkt på Batik SVG Toolkit (omtales under) for håndtering av SVG. Siden Batik har en av de mest komplette implementasjonene av SVG-standarden bør OOo Draw sin støtte være ganske god.</p>
-<p><a href="http://www.inkscape.org/" title="Inkscape">Inkscape</a><sup><a class="bib" href="#bib72">72</a></sup> er et vektorbasert tegneprogram på lik linje med Illustrator, CorelDRAW og Xara Xtreme. Det som er spesielt med Inkscape er at det benytter SVG som standard filformat for lagring av vektorisert grafikk. Inkscape har ikke noe proprietært filformat. Inkscape <a href="http://wiki.inkscape.org/wiki/index.php/FAQ#What_SVG_features_does_Inkscape_implement.3F" title="Inkscape SVG support">støtter majoriteten av SVG 1.1</a><sup><a class="bib" href="#bib73">73</a></sup>, med unntak av animasjon og noen filtre.</p>
-<p><a href="http://www.scribus.net/" title="Scribus">Scribus</a><sup><a class="bib" href="#bib74">74</a></sup> er en programvare for produksjon av side-oppsett (DTP), på lik linje med f.eks. det kommersielle Quark Express. Scribus sin <a href="http://docs.scribus.net/index.php?lang=en&amp;page=scribus-svg" title="Scribus SVG support">støtte for SVG</a><sup><a class="bib" href="#bib75">75</a></sup> er relativt grunnleggende. De forteller at de ikke støtter tekst-elementer fullt ut enda, samt at graderinger, innebygde bilder og masking/clipping også ikke er støttet. Derimot bekrefter de at nesten alle funksjoner i et Scribus-dokument kan eksporteres til SVG med stort hell. Det er stort sett import av SVG som er problematisk.</p>
+<p><a href="http://www.openoffice.org/product/draw.html" title="OpenOffice.org Draw, Oracle/Sun, read 2010-04-04">OpenOffice.org Draw</a><sup><a class="bib" href="#bib70">70</a></sup> er et tegneprogram som er en del av den større OpenOffice.org-pakken (OOo) for produktivitet. <a href="http://graphics.openoffice.org/files/documents/12/406/svg_overview.htm" title="OpenOffice.org Graphics SVG integration improvement proposal, Vincent Hardy/Kai Ahrens, 2002-07-01">Følgende dokument</a><sup><a class="bib" href="#bib71">71</a></sup> bekrefter at OOo Draw har hatt grunnleggende støtte for eksport av SVG-dokumenter siden 2002. Det som er interessant å legge merke til i dette dokumentet er at OOo baserer seg sterkt på Batik SVG Toolkit (omtales under) for håndtering av SVG. Siden Batik har en av de mest komplette implementasjonene av SVG-standarden bør OOo Draw sin støtte være ganske god.</p>
+<p><a href="http://www.inkscape.org/" title="Inkscape vector graphics editor, read 2010-04-04">Inkscape</a><sup><a class="bib" href="#bib72">72</a></sup> er et vektorbasert tegneprogram på lik linje med Illustrator, CorelDRAW og Xara Xtreme. Det som er spesielt med Inkscape er at det benytter SVG som standard filformat for lagring av vektorisert grafikk. Inkscape har ikke noe proprietært filformat. Inkscape <a href="http://wiki.inkscape.org/wiki/index.php/FAQ#What_SVG_features_does_Inkscape_implement.3F" title="Inkscape SVG support, Inkscape Wiki, 2010-02-12">støtter majoriteten av SVG 1.1</a><sup><a class="bib" href="#bib73">73</a></sup>, med unntak av animasjon og noen filtre.</p>
+<p><a href="http://www.scribus.net/" title="Scribus Open Source Desktop Publishing, read 2010-04-04">Scribus</a><sup><a class="bib" href="#bib74">74</a></sup> er en programvare for produksjon av side-oppsett (DTP), på lik linje med f.eks. det kommersielle Quark Express. Scribus sin <a href="http://docs.scribus.net/index.php?lang=en&amp;page=scribus-svg" title="Scribus SVG support, Scribus documentation, read 2010-04-04">støtte for SVG</a><sup><a class="bib" href="#bib75">75</a></sup> er relativt grunnleggende. De forteller at de ikke støtter tekst-elementer fullt ut enda, samt at graderinger, innebygde bilder og masking/clipping også ikke er støttet. Derimot bekrefter de at nesten alle funksjoner i et Scribus-dokument kan eksporteres til SVG med stort hell. Det er stort sett import av SVG som er problematisk.</p>
 <h4 id="verktyforutviklere"><a name="h-1.3.7.3"></a>Verktøy for utviklere</h4>
 <p><a href="http://xmlgraphics.apache.org/batik/" title="Batik Java SVG Toolkit, Apache Software Foundation, 2010-01-02">Batik SVG Toolkit</a><sup><a class="bib" href="#bib76">76</a></sup> er et bibliotek for Java-utviklere som kan benyttes til å manipulere, produsere og presentere SVG. Versjon 1.7 av Batik støtter den statiske profilen til SVG 1.1 uten mangler, samt at den også støtter en god del av den deklarative spesifikasjonen for animasjon (SMIL).</p>
-<p><a href="http://cairographics.org/" title="Cairo 2D graphics library">Cairo</a><sup><a class="bib" href="#bib77">77</a></sup> er et 2D grafikk-bibliotek for utviklere. I tillegg til å kunne presentere vektorgrafikk på interaktive flater som X11, Win32 og Quartz, kan den også generere SVG-dokumenter av tegne-operasjonene. Cairo er et C-bibliotek med bindinger til mange programmeringsspråk, bl.a. PHP, Python, Perl, Ruby, Lisp, Java, C++, .NET, med mer. Cairo benyttes av blant annet <a href="https://wiki.mozilla.org/Gecko_1.9_Roadmap#cairo_Graphics_Substrate" title="Cairo usage in Mozilla Gecko">Gecko</a><sup><a class="bib" href="#bib78">78</a></sup> for fremvisning av SVG i Mozilla-baserte nettlesere, samt at den benyttes av WebKit-motoren, som danner grunnlaget for nettleserne Safari og Chrome.</p>
-<p><a href="http://processing.org/about/" title="Processing programming language">Processing</a><sup><a class="bib" href="#bib79">79</a></sup> er et programmeringsspråk som fokuserer på å lære programvareutvikling ved hjelp av en visuell kontekst. Verktøyet kommer med en integrert IDE som gjør det enkelt å komme i gang med programmeringen og umiddelbart se resultater. Processing er faktisk Java på bunnen, og benytter seg av den spesialiserte klassen <a href="http://dev.processing.org/reference/core/javadoc/processing/core/PApplet.html" title="PApplet class definition">PApplet</a><sup><a class="bib" href="#bib80">80</a></sup> som implementerer mesteparten av språket. Processing har <a href="http://processing.org/reference/libraries/candy/SVG.html" title="Processing SVG support">innebygd støtte for SVG</a><sup><a class="bib" href="#bib81">81</a></sup>, noe som gjør det enkelt å inkludere avansert vektorgrafikk i et Processing-prosjekt. SVG-støtten er relativt <a href="http://dev.processing.org/reference/core/javadoc/processing/core/PShapeSVG.html" title="PShapeSVG class definition">grunnleggende</a><sup><a class="bib" href="#bib82">82</a></sup>, det er kun mulig å laste inn enkle primitiver. Fordelen med dette er at det ikke øker størrelsen på klasse-filen som må distribueres altfor mye. Hvis man derimot trenger avansert SVG-støtte kan man benytte Batik-biblioteket som nevnt ovenfor.</p>
+<p><a href="http://cairographics.org/" title="Cairo 2D graphics library, 2010-03-02">Cairo</a><sup><a class="bib" href="#bib77">77</a></sup> er et 2D grafikk-bibliotek for utviklere. I tillegg til å kunne presentere vektorgrafikk på interaktive flater som X11, Win32 og Quartz, kan den også generere SVG-dokumenter av tegne-operasjonene. Cairo er et C-bibliotek med bindinger til mange programmeringsspråk, bl.a. PHP, Python, Perl, Ruby, Lisp, Java, C++, .NET, med mer. Cairo benyttes av blant annet <a href="https://wiki.mozilla.org/Gecko_1.9_Roadmap#cairo_Graphics_Substrate" title="Cairo usage in Mozilla Gecko, Mozilla wiki, 2007-01-10">Gecko</a><sup><a class="bib" href="#bib78">78</a></sup> for fremvisning av SVG i Mozilla-baserte nettlesere, samt at den benyttes av WebKit-motoren, som danner grunnlaget for nettleserne Safari og Chrome.</p>
+<p><a href="http://processing.org/about/" title="Processing programming language, Ben Fry/Casey Reas, read 2010-04-04">Processing</a><sup><a class="bib" href="#bib79">79</a></sup> er et programmeringsspråk som fokuserer på å lære programvareutvikling ved hjelp av en visuell kontekst. Verktøyet kommer med en integrert IDE som gjør det enkelt å komme i gang med programmeringen og umiddelbart se resultater. Processing er faktisk Java på bunnen, og benytter seg av den spesialiserte klassen <a href="http://dev.processing.org/reference/core/javadoc/processing/core/PApplet.html" title="PApplet class definition, Processing Project, read 2010-04-04">PApplet</a><sup><a class="bib" href="#bib80">80</a></sup> som implementerer mesteparten av språket. Processing har <a href="http://processing.org/reference/libraries/candy/SVG.html" title="Processing SVG support, Processing Project, 2008-09-22">innebygd støtte for SVG</a><sup><a class="bib" href="#bib81">81</a></sup>, noe som gjør det enkelt å inkludere avansert vektorgrafikk i et Processing-prosjekt. SVG-støtten er relativt <a href="http://dev.processing.org/reference/core/javadoc/processing/core/PShapeSVG.html" title="PShapeSVG class definition, Processing Project, read 2010-04-04">grunnleggende</a><sup><a class="bib" href="#bib82">82</a></sup>, det er kun mulig å laste inn enkle primitiver. Fordelen med dette er at det ikke øker størrelsen på klasse-filen som må distribueres altfor mye. Hvis man derimot trenger avansert SVG-støtte kan man benytte Batik-biblioteket som nevnt ovenfor.</p>
 <h2><a name="h-1.4"></a>Støtte for SVG i populære nettlesere</h2>
 <h3 id="kortomnettlesereogsvg-sttte"><a name="h-1.4.1"></a>Kort om nettlesere og SVG-støtte</h3>
 <p>SVG er en standard som for lengst har blitt implementert i de fleste populære nettlesere som blir brukt av verdens befolkning. Det er heller et spørsmål om hvor mye av standaren som fungerer i de ulike nettleserne. Dette varier en god del fra nettleser til nettleser og det er kanskje ikke rart at SVG enda ikke er tatt i bruk aktivt ettersom man ikke kan garantere for at resultatet blir som forventet i de ulike nettleserne.</p>
@@ -650,13 +641,13 @@ C211 300 186 274 156 274&quot;
 <h2><a name="h-1.5"></a>Microsofts rolle i utbredelsen av SVG</h2>
 <h3 id="internetexplorersmanglendesttteforsvg"><a name="h-1.5.1"></a>Internet Explorers manglende støtte for SVG</h3>
 <p>Fra analysen av nettlesere tidligere ser vi at Microsoft sin Internet Explorer (IE) aldri har hatt innebygget støtte for SVG. Man har alltid vært avhengig av et tredjepartstillegg (plugin) for å kunne se SVG i IE. Den <a href="http://www.oreillynet.com/mac/blog/2001/04/exploring_svg.html" title="Exploring SVG, Jason McIntosh, 2001-04-30">mest populære har til nå vært Adobe sin SVG Viewer</a><sup><a class="bib" href="#bib104">104</a></sup>, men andre har nå kommet på markedet fordi Adobe valgte å <a href="http://www.adobe.com/svg/eol.html" title="Adobe to Discontinue Adobe SVG Viewer, Adobe, 2009-01-01">stoppe å utvikle sin plugin</a><sup><a class="bib" href="#bib105">105</a></sup>.</p>
-<p>IE har siden <a href="http://en.wikipedia.org/wiki/Vector_Markup_Language" title="Vector Markup Language, Wikipedia, extracted 2010-05-25">versjon 5.0</a><sup><a class="bib" href="#bib106">106</a></sup> hatt støtte for et annet grafikk-språk som heter VML (Vector Markup Language). VML er implementert i XML på lik linje med SVG, men er en mye eldre implementasjon som aldri har blitt standardisert. Vi kommer inn på VML i litt mer detalj senere.</p>
+<p>IE har siden <a href="http://en.wikipedia.org/wiki/Vector_Markup_Language" title="Vector Markup Language, Wikipedia, read 2010-05-25">versjon 5.0</a><sup><a class="bib" href="#bib106">106</a></sup> hatt støtte for et annet grafikk-språk som heter VML (Vector Markup Language). VML er implementert i XML på lik linje med SVG, men er en mye eldre implementasjon som aldri har blitt standardisert. Vi kommer inn på VML i litt mer detalj senere.</p>
 <p>Fordi VML allerede var implementert i IE var Microsoft <a href="http://www.robweir.com/blog/2006/07/cum-mortuis-in-lingua-mortua.html" title="VML and OOXML: Cum mortuis in lingua mortua, Rob Weir, 2006-07-24">ikke interessert</a><sup><a class="bib" href="#bib107">107</a></sup> i å legge inn støtte for en konkurrerende teknologi som SVG. De mente det var nok å ha et vektorformat og var derfor uvillig til å støtte en åpen standard som SVG. Sammen med det faktum at IE sitt utviklerteam nærmest ble lagt ned etter utviklingen av IE6 og at det var <a href="http://www.readwriteweb.com/archives/web_browser_faceoff.php" title="Web Browser Faceoff, Alex Iskold, 2006-10-06">stille på nettleserfronten i over 5 år</a><sup><a class="bib" href="#bib108">108</a></sup> førte til en stagnering av nettlesermarkedet.</p>
-<p>Det førte til store problemer for SVG WG, fordi Microsoft hadde gitt klart uttrykk for at VML var en standard som <a href="http://www.w3.org/Graphics/SVG/WG/wiki/Secret_Origin_of_SVG" title="Secret Origins of SVG, W3C, extracted 2010-05-25">ikke skulle endres/videreutvikles fordi den allerede var i bruk</a><sup><a class="bib" href="#bib20">20</a></sup>. W3C ble da sittende mellom barken og veden. De kunne utvikle en standard som de hadde kontroll over og kunne videreutvikle, som markedslederen ikke var interessert i å støtte, eller de kunne ratifisere en standard de ikke kunne videreutvikle, men som ville være mulig å få god markedspenetrasjon på i løpet av relativt kort tid. Det at SVG eksisterer som en standard i dag som ikke er kompatibel med VML viser klart og tydlig at de valgte å gå for den første løsningen. Dette har gitt oss en markedsituasjon hvor nettleseren med størst markedsandel ikke støtter den ledende og mest anerkjente teknologien på markedet.</p>
+<p>Det førte til store problemer for SVG WG, fordi Microsoft hadde gitt klart uttrykk for at VML var en standard som <a href="http://www.w3.org/Graphics/SVG/WG/wiki/Secret_Origin_of_SVG" title="Secret Origins of SVG, W3C, read 2010-05-25">ikke skulle endres/videreutvikles fordi den allerede var i bruk</a><sup><a class="bib" href="#bib20">20</a></sup>. W3C ble da sittende mellom barken og veden. De kunne utvikle en standard som de hadde kontroll over og kunne videreutvikle, som markedslederen ikke var interessert i å støtte, eller de kunne ratifisere en standard de ikke kunne videreutvikle, men som ville være mulig å få god markedspenetrasjon på i løpet av relativt kort tid. Det at SVG eksisterer som en standard i dag som ikke er kompatibel med VML viser klart og tydlig at de valgte å gå for den første løsningen. Dette har gitt oss en markedsituasjon hvor nettleseren med størst markedsandel ikke støtter den ledende og mest anerkjente teknologien på markedet.</p>
 <p>Helt siden IE fikk støtte for VML har Microsoft vært <a href="http://www.robweir.com/blog/2006/07/cum-mortuis-in-lingua-mortua.html" title="VML and OOXML: Cum mortuis in lingua mortua, Rob Weir, 2006-07-24">uvillig til å endre sitt standpunkt</a><sup><a class="bib" href="#bib107">107</a></sup> på om de ønsker å implementere SVG i nettleseren. Dette, sammen med det faktum at Microsoft ikke var villig til å videreutviklet IE, har ført til at sluttbrukere har begynt å benytte andre nettlesere, slik som Firefox, Safari, Opera og Chrome. Alle disse nettleserne støtter SVG i varierende grad, som tidligere avklart. Det at IE sine markedsandeler har <a href="http://gs.statcounter.com/#browser-ww-monthly-200807-201005" title="StatCounter Global Stats, Browsers, July 2008 to May 2010">falt drastisk de siste årene</a><sup><a class="bib" href="#bib109">109</a></sup> har gjort at Microsoft har vært nødt til å revurdere sin strategi hvis de ønsker å beholde brukerne. Det at EU-domstolen også har <a href="http://www.sitepoint.com/blogs/2009/12/17/microsoft-browser-ballot-screen/" title="Microsoft agrees to browser ballot terms, Craig Buckler, 2009-12-17">gitt medhold</a><sup><a class="bib" href="#bib110">110</a></sup> for at Microsoft driver med monopolistisk oppførsel rundt tilgang til alternative nettlesere har gitt sluttbrukere en mer synlig opsjon når det kommer til deres valg av nettleser. Dette, sammen med <a href="http://gs.statcounter.com/#mobile_vs_desktop-ww-monthly-200812-201005" title="StatCounter Global Stats, Mobile vs. Desktop,  December 2008 to May 2010">utbredelsen av diverse mobile enheter</a><sup><a class="bib" href="#bib111">111</a></sup> som <a href="http://www.dlocc.com/articles/apple-ipad-no-flash-plugin-support/" title="Apple iPad: No Flash plugin support, Devin Walker, 2010-01-27">ikke støtter flere av de alternative teknologiene</a><sup><a class="bib" href="#bib112">112</a></sup> vi kommer inn på senere, har ført til at behovet for SVG fra web-utviklere bare blir sterkere og sterkere.</p>
 <h3 id="microsoftmelderseginnisvgworkinggroup"><a name="h-1.5.2"></a>Microsoft melder seg inn i SVG Working Group</h3>
 <p>I januar 2010 ble det annonsert at Microsoft har <a href="http://blogs.msdn.com/b/ie/archive/2010/01/05/microsoft-joins-w3c-svg-working-group.aspx" title="Microsoft joins W3C SVG Working Group, Microsoft IE Team Blog, 2010-01-05">søkt om medlemskap i SVG WG</a><sup><a class="bib" href="#bib99">99</a></sup>. Dette kom som et <a href="http://tech.slashdot.org/story/10/01/06/1829223/Microsoft-Wants-To-Participate-In-SVG-Development" title="Microsoft wants to participate in SVG development, Slashdot, 2010-01-06">stort sjokk</a><sup><a class="bib" href="#bib113">113</a></sup> (et positivt sådan) på web-utviklere verden over. Det ble synset mye frem og tilbake om dette betydde at Microsoft endelig hadde endret sin strategi og om dette betydde at en fremtidig versjon av Internet Explorer ville få støtte for SVG. Da Microsoft ble spurt om dette betydde at en fremtidig versjon av IE ville få støtte for SVG valgte Microsoft å <a href="http://news.cnet.com/8301-30685_3-10426321-264.html" title="Microsoft Web-graphics move signals IE ambitions, CNet News, 2010-01-06">ikke ta stilling til det spørsmålet</a><sup><a class="bib" href="#bib114">114</a></sup> på det tidspunktet.</p>
-<p>Som vi har sett fra statistikken på epostliten (nevnt tidligere) ser det ut som om Microsoft har valgt å benytte sin stemme og påvirker utviklingen av standarden med sin tilstedeværelse. I tillegg er de fremdeles i <a href="http://www.w3.org/2000/09/dbwg/details?group=19480&amp;public=1&amp;gs=1&amp;" title="Participants in the SVG Working Group, W3C, extracted 2010-05-25"><em>good standing</em> med SVG WG</a><sup><a class="bib" href="#bib14">14</a></sup>, som betyr at de møter opp til de regelmessige møtene og følger opp pliktene i deres medlemskap.</p>
+<p>Som vi har sett fra statistikken på epostliten (nevnt tidligere) ser det ut som om Microsoft har valgt å benytte sin stemme og påvirker utviklingen av standarden med sin tilstedeværelse. I tillegg er de fremdeles i <a href="http://www.w3.org/2000/09/dbwg/details?group=19480&amp;public=1&amp;gs=1&amp;" title="Participants in the SVG Working Group, W3C, read 2010-05-25"><em>good standing</em> med SVG WG</a><sup><a class="bib" href="#bib14">14</a></sup>, som betyr at de møter opp til de regelmessige møtene og følger opp pliktene i deres medlemskap.</p>
 <h3 id="microsoftie9vilstttesvg"><a name="h-1.5.3"></a>Microsoft IE9 vil støtte SVG</h3>
 <p>I mai 2010 annonserte Microsoft at deres neste versjon av Internet Explorer kommer til å <a href="http://msdn.microsoft.com/en-us/ie/ff468705.aspx#_Scaling_Vector_Graphics" title="Microsoft IE9 will support SVG, Microsoft Developer Network, 2010-05-05">støtte grunnleggende elementer i SVG 1.1</a><sup><a class="bib" href="#bib115">115</a></sup>. Annonseringen viser at de støtter følgende elementer fra standarden (direkte utdrag):</p>
 <ul>
@@ -757,46 +748,46 @@ C211 300 186 274 156 274&quot;
 
 <dl class="bibliography">
 <dt>1. <a class="bib" name="bib1" href="http://github.com">http://github.com</a></dt>
-<dd></dd>
+<dd>github - social coding, open source code hosting service</dd>
 
 <dt>2. <a class="bib" name="bib2" href="http://www.w3.org/Graphics/SVG/">http://www.w3.org/Graphics/SVG/</a></dt>
-<dd>Scalable Vector Graphics</dd>
+<dd>Scalable Vector Graphics - XML Graphics for the Web, W3C, 2009-12-11</dd>
 
 <dt>3. <a class="bib" name="bib3" href="http://www.w3.org">http://www.w3.org</a></dt>
-<dd>World Wide Web Consortium</dd>
+<dd>World Wide Web Consortium front page</dd>
 
 <dt>4. <a class="bib" name="bib4" href="http://www.w3.org/2007/11/SVG_rechartering/SVG-WG-charter.html#coordination">http://www.w3.org/2007/11/SVG_rechartering/SVG-WG-charter.html#coordination</a></dt>
-<dd>SVG Dependencies</dd>
+<dd>SVG Dependencies, W3C/Doug Schepers/Chris Lilley, 2008-04-16</dd>
 
 <dt>5. <a class="bib" name="bib5" href="http://www.w3.org/standards/xml">http://www.w3.org/standards/xml</a></dt>
-<dd>eXtensible Markup Language</dd>
+<dd>eXtensible Markup Language overview page, W3C</dd>
 
 <dt>6. <a class="bib" name="bib6" href="http://en.wikipedia.org/wiki/Declarative_programming">http://en.wikipedia.org/wiki/Declarative_programming</a></dt>
-<dd>Declarative programming</dd>
+<dd>Declarative programming, Wikipedia, read 2010-02-26</dd>
 
 <dt>7. <a class="bib" name="bib7" href="http://www.w3.org/standards/webdesign/htmlcss">http://www.w3.org/standards/webdesign/htmlcss</a></dt>
-<dd>HyperText Markup Language</dd>
+<dd>HyperText Markup Language overview page, W3C</dd>
 
 <dt>8. <a class="bib" name="bib8" href="http://www.ecmascript.org/">http://www.ecmascript.org/</a></dt>
-<dd>ECMAScript</dd>
+<dd>ECMAScript - the language of the web, Ecma International</dd>
 
 <dt>9. <a class="bib" name="bib9" href="http://www.w3.org/DOM/">http://www.w3.org/DOM/</a></dt>
-<dd>Document Object Model</dd>
+<dd>Document Object Model overview page, W3C/Philippe Le Hégaret/Ray Whitmer/Lauren Wood, 2009-01-06</dd>
 
 <dt>10. <a class="bib" name="bib10" href="http://www.w3.org/TR/smil-animation/">http://www.w3.org/TR/smil-animation/</a></dt>
-<dd>Synchronized Multimedia Integration Language</dd>
+<dd>Synchronized Multimedia Integration Language W3C Recommendation, W3C, 2001-09-04</dd>
 
 <dt>11. <a class="bib" name="bib11" href="http://www.w3.org/standards/webdesign/graphics">http://www.w3.org/standards/webdesign/graphics</a></dt>
-<dd>W3C Graphics</dd>
+<dd>Graphics overview page, W3C</dd>
 
 <dt>12. <a class="bib" name="bib12" href="http://www.w3.org/Graphics/SVG/About.html">http://www.w3.org/Graphics/SVG/About.html</a></dt>
-<dd>About SVG</dd>
+<dd>About SVG - 2d Graphics in XML, W3C/Chris Lilley/Dean Jackson, 2004-10-29</dd>
 
 <dt>13. <a class="bib" name="bib13" href="http://www.3gpp.org/">http://www.3gpp.org/</a></dt>
-<dd>3rd Generation Partnership Project</dd>
+<dd>3rd Generation Partnership Project front page, ETSI</dd>
 
 <dt>14. <a class="bib" name="bib14" href="http://www.w3.org/2000/09/dbwg/details?group=19480&amp;public=1&amp;gs=1&amp;">http://www.w3.org/2000/09/dbwg/details?group=19480&amp;public=1&amp;gs=1&amp;</a></dt>
-<dd>SVG Working Group Participants</dd>
+<dd>SVG Working Group Participants, W3C/Gerald Oskoboiny/Dominique Hazaël-Massieux, 2010-04-09</dd>
 
 <dt>15. <a class="bib" name="bib15" href="http://lists.w3.org/Archives/Public/public-svg-wg/">http://lists.w3.org/Archives/Public/public-svg-wg/</a></dt>
 <dd>SVG Working Group public mailing list archive, extracted 2010-04-01</dd>
@@ -805,202 +796,202 @@ C211 300 186 274 156 274&quot;
 <dd>SVG Interest Group public mailing list archive, extracted 2010-04-01</dd>
 
 <dt>17. <a class="bib" name="bib17" href="http://www.institut-telecom.fr/p_en_present_inst_36.html">http://www.institut-telecom.fr/p_en_present_inst_36.html</a></dt>
-<dd>Institut Télécom about page</dd>
+<dd>Institut Télécom about page, read 2010-04-01</dd>
 
 <dt>18. <a class="bib" name="bib18" href="http://www.ikivo.com/04about.html">http://www.ikivo.com/04about.html</a></dt>
-<dd>Ikivo AB about page</dd>
+<dd>Ikivo AB about page, read 2010-04-01</dd>
 
 <dt>19. <a class="bib" name="bib19" href="http://www.ikivo.com/open_standards.html">http://www.ikivo.com/open_standards.html</a></dt>
-<dd>Ikivo - Based on open standards</dd>
+<dd>Based on open standards, Ikivo AB, 2009-10-23</dd>
 
 <dt>20. <a class="bib" name="bib20" href="http://www.w3.org/Graphics/SVG/WG/wiki/Secret_Origin_of_SVG">http://www.w3.org/Graphics/SVG/WG/wiki/Secret_Origin_of_SVG</a></dt>
-<dd>The Secret Origin of SVG</dd>
+<dd>The Secret Origin of SVG, W3C/Doug Schepers, 2008-09-15</dd>
 
 <dt>21. <a class="bib" name="bib21" href="http://www.w3.org/TR/1998/NOTE-PGML-19980410">http://www.w3.org/TR/1998/NOTE-PGML-19980410</a></dt>
-<dd>Precision Graphics Markup Language</dd>
+<dd>Precision Graphics Markup Language (PGML) W3C note, Adobe/IBM/Netscape/Sun, 1998-04-10</dd>
 
 <dt>22. <a class="bib" name="bib22" href="http://www.w3.org/Submission/1998/08/">http://www.w3.org/Submission/1998/08/</a></dt>
-<dd>Vector Markup Language</dd>
+<dd>Vector Markup Language specification, Autodesk/Hewlett-Packard/Macromedia/Microsoft/Visio, 1998-05-13</dd>
 
 <dt>23. <a class="bib" name="bib23" href="http://www.w3.org/TR/1998/NOTE-HGML-19980619">http://www.w3.org/TR/1998/NOTE-HGML-19980619</a></dt>
-<dd>Hyper Graphics Markup Language</dd>
+<dd>Hyper Graphics Markup Language W3C note, PRP (UK)/Orange PCSL, 1998-06-19</dd>
 
 <dt>24. <a class="bib" name="bib24" href="http://www.w3.org/Submission/1998/20/">http://www.w3.org/Submission/1998/20/</a></dt>
-<dd>Draw Markup Language</dd>
+<dd>Draw Markup Language specification, Excosoft AB, 1998-11-12</dd>
 
 <dt>25. <a class="bib" name="bib25" href="http://www.w3.org/Submission/1998/13/">http://www.w3.org/Submission/1998/13/</a></dt>
-<dd>Web profile of Computer Graphics Metafile standard, ISO/IEC 8632:1992</dd>
+<dd>Web profile of Computer Graphics Metafile standard, ISO/IEC 8632:1992 specification, Boeing/CCLRC/Inso/JISC/Xerox, 1998-09-19</dd>
 
 <dt>26. <a class="bib" name="bib26" href="http://www.w3.org/TR/SVG10/">http://www.w3.org/TR/SVG10/</a></dt>
-<dd>SVG 1.0 W3C Recommendation</dd>
+<dd>SVG 1.0 W3C Recommendation, W3C/Jon Ferraiolo, 2001-09-04</dd>
 
 <dt>27. <a class="bib" name="bib27" href="http://www.w3.org/TR/SVG11/">http://www.w3.org/TR/SVG11/</a></dt>
-<dd>SVG 1.1 W3C Recommendation</dd>
+<dd>SVG 1.1 W3C Recommendation, W3C/Jon Ferraiolo/Fujisawa Jun/Dean Jackson, 2003-01-14</dd>
 
-<dt>28. <a class="bib" name="bib28" href="http://www.w3.org/TR/2003/REC-SVGMobile-20030114/">http://www.w3.org/TR/2003/REC-SVGMobile-20030114/</a></dt>
-<dd>Mobile SVG Profiles: SVG Tiny and SVG Basic</dd>
+<dt>28. <a class="bib" name="bib28" href="http://www.w3.org/TR/SVGMobile/">http://www.w3.org/TR/SVGMobile/</a></dt>
+<dd>Mobile SVG Profiles: SVG Tiny and SVG Basic W3C Recommendation, W3C/Tolga Capin, 2003-01-14</dd>
 
 <dt>29. <a class="bib" name="bib29" href="http://www.w3.org/TR/SVGTiny12/">http://www.w3.org/TR/SVGTiny12/</a></dt>
-<dd>SVG Tiny 1.2 Specification</dd>
+<dd>SVG Tiny 1.2 W3C Recommendation, W3C, 2008-12-22</dd>
 
 <dt>30. <a class="bib" name="bib30" href="http://www.w3.org/TR/SVG12/">http://www.w3.org/TR/SVG12/</a></dt>
-<dd>SVG Full 1.2 Working Draft</dd>
+<dd>SVG Full 1.2 W3C Working Draft, W3C/Dean Jackson/Craig Northway, 2005-04-13</dd>
 
 <dt>31. <a class="bib" name="bib31" href="http://www.w3.org/TR/SVGPrint12/">http://www.w3.org/TR/SVGPrint12/</a></dt>
-<dd>SVG Print 1.2 Working Draft</dd>
+<dd>SVG Print 1.2 Part II: Language W3C Working Draft, W3C, 2007-12-21</dd>
 
 <dt>32. <a class="bib" name="bib32" href="http://www.w3.org/TR/SVGMobile12/feature.html#SVG-static">http://www.w3.org/TR/SVGMobile12/feature.html#SVG-static</a></dt>
-<dd>SVG Tiny 1.2 Static Profile</dd>
+<dd>SVG Tiny 1.2 Static Profile, W3C, 2008-12-22</dd>
 
 <dt>33. <a class="bib" name="bib33" href="http://www.w3.org/TR/xml-names/">http://www.w3.org/TR/xml-names/</a></dt>
-<dd>XML Namespaces</dd>
+<dd>Namespaces in XML 1.0 (3rd Edition), W3C/Tim Bray/Dave Hollander/Andrew Layman/Richard Tobin/Henry S. Thompson, 2009-12-8</dd>
 
 <dt>34. <a class="bib" name="bib34" href="http://www.w3.org/TR/SVG11/attindex.html">http://www.w3.org/TR/SVG11/attindex.html</a></dt>
-<dd>SVG 1.1 attribute index</dd>
+<dd>SVG 1.1 attribute index, W3C, 2003-01-14</dd>
 
 <dt>35. <a class="bib" name="bib35" href="http://www.w3.org/TR/SVGTiny12/mimereg.html">http://www.w3.org/TR/SVGTiny12/mimereg.html</a></dt>
-<dd>SVG Tiny 1.2 mimetype registration</dd>
+<dd>SVG Tiny 1.2 mimetype registration, W3C, 2008-12-22</dd>
 
 <dt>36. <a class="bib" name="bib36" href="http://tools.ietf.org/html/rfc3023#section-3.2">http://tools.ietf.org/html/rfc3023#section-3.2</a></dt>
-<dd>application/xml mimetype registration</dd>
+<dd>application/xml mimetype registration - XML Media Types, M. Murata/IBM/S. St. Laurent/simonstl.com/D. Kohn/Skymoon Ventures, 2001-01-XX</dd>
 
 <dt>37. <a class="bib" name="bib37" href="http://www.w3.org/TR/SVG/intro.html#MIMEType">http://www.w3.org/TR/SVG/intro.html#MIMEType</a></dt>
-<dd>SVG mime type, file name extension</dd>
+<dd>SVG mime type, file name extension, W3C, 2003-01-14</dd>
 
 <dt>38. <a class="bib" name="bib38" href="http://www.w3.org/TR/SVG11/intro.html#TermShape">http://www.w3.org/TR/SVG11/intro.html#TermShape</a></dt>
-<dd>Shape term</dd>
+<dd>SVG 1.1 shape term, W3C, 2003-01-14</dd>
 
 <dt>39. <a class="bib" name="bib39" href="http://www.w3.org/TR/SVG11/struct.html#SVGElement">http://www.w3.org/TR/SVG11/struct.html#SVGElement</a></dt>
-<dd>&lt;svg&gt; element</dd>
+<dd>SVG 1.1 &lt;svg&gt; element, W3C, 2003-01-14</dd>
 
 <dt>40. <a class="bib" name="bib40" href="http://www.w3.org/TR/SVG11/shapes.html#LineElement">http://www.w3.org/TR/SVG11/shapes.html#LineElement</a></dt>
-<dd>&lt;line&gt; element</dd>
+<dd>SVG 1.1 &lt;line&gt; element, W3C, 2003-01-14</dd>
 
 <dt>41. <a class="bib" name="bib41" href="http://www.w3.org/TR/SVG11/styling.html">http://www.w3.org/TR/SVG11/styling.html</a></dt>
-<dd>SVG styling properties</dd>
+<dd>SVG 1.1 styling properties, W3C, 2003-01-14</dd>
 
 <dt>42. <a class="bib" name="bib42" href="http://www.w3.org/TR/SVG11/shapes.html#PolylineElement">http://www.w3.org/TR/SVG11/shapes.html#PolylineElement</a></dt>
-<dd>&lt;polyline&gt; element</dd>
+<dd>SVG 1.1 &lt;polyline&gt; element, W3C, 2003-01-14</dd>
 
-<dt>43. <a class="bib" name="bib43" href="http://zvon.org/xxl/svgReference/Standard1.1/styling.html#UsingPresentationAttributes">http://zvon.org/xxl/svgReference/Standard1.1/styling.html#UsingPresentationAttributes</a></dt>
-<dd>Using presentation attributes</dd>
+<dt>43. <a class="bib" name="bib43" href="http://www.w3.org/TR/SVG11/styling.html#UsingPresentationAttributes">http://www.w3.org/TR/SVG11/styling.html#UsingPresentationAttributes</a></dt>
+<dd>SVG 1.1 specifying properties using the presentation attributes, W3C, 2003-01-14</dd>
 
 <dt>44. <a class="bib" name="bib44" href="http://www.w3.org/TR/SVG11/styling.html#Inheritance">http://www.w3.org/TR/SVG11/styling.html#Inheritance</a></dt>
-<dd>Styling inheritance rules</dd>
+<dd>SVG 1.1 styling inheritance rules, W3C, 2003-01-14</dd>
 
 <dt>45. <a class="bib" name="bib45" href="http://www.w3.org/TR/SVG11/shapes.html#PolygonElement">http://www.w3.org/TR/SVG11/shapes.html#PolygonElement</a></dt>
-<dd>&lt;polygon&gt; element</dd>
+<dd>SVG 1.1 &lt;polygon&gt; element, W3C, 2003-01-14</dd>
 
 <dt>46. <a class="bib" name="bib46" href="http://www.w3.org/TR/SVG11/shapes.html#RectElement">http://www.w3.org/TR/SVG11/shapes.html#RectElement</a></dt>
-<dd>&lt;rect&gt; element</dd>
+<dd>SVG 1.1 &lt;rect&gt; element, W3C, 2003-01-14</dd>
 
 <dt>47. <a class="bib" name="bib47" href="http://www.w3.org/TR/SVG11/paths.html#PathElement">http://www.w3.org/TR/SVG11/paths.html#PathElement</a></dt>
-<dd>&lt;path&gt; element</dd>
+<dd>SVG 1.1 &lt;path&gt; element, W3C, 2003-01-14</dd>
 
 <dt>48. <a class="bib" name="bib48" href="http://www.w3.org/TR/SVG11/paths.html#PathData">http://www.w3.org/TR/SVG11/paths.html#PathData</a></dt>
-<dd>Path data</dd>
+<dd>SVG 1.1 path data, W3C, 2003-01-14</dd>
 
 <dt>49. <a class="bib" name="bib49" href="http://www.w3.org/TR/SVG11/shapes.html#CircleElement">http://www.w3.org/TR/SVG11/shapes.html#CircleElement</a></dt>
-<dd>&lt;circle&gt; element</dd>
+<dd>SVG 1.1 &lt;circle&gt; element, W3C, 2003-01-14</dd>
 
 <dt>50. <a class="bib" name="bib50" href="http://www.w3.org/TR/SVG11/shapes.html#EllipseElement">http://www.w3.org/TR/SVG11/shapes.html#EllipseElement</a></dt>
-<dd>&lt;ellipse&gt; element</dd>
+<dd>SVG 1.1 &lt;ellipse&gt; element, W3C, 2003-01-14</dd>
 
 <dt>51. <a class="bib" name="bib51" href="http://www.w3.org/TR/SVG11/text.html#TextElement">http://www.w3.org/TR/SVG11/text.html#TextElement</a></dt>
-<dd>&lt;text&gt; element</dd>
+<dd>SVG 1.1 &lt;text&gt; element, W3C, 2003-01-14</dd>
 
 <dt>52. <a class="bib" name="bib52" href="http://www.w3.org/TR/SVG11/animate.html#TimingAttributes">http://www.w3.org/TR/SVG11/animate.html#TimingAttributes</a></dt>
-<dd>Animation timing attributes</dd>
+<dd>SVG 1.1 animation timing attributes, W3C, 2003-01-14</dd>
 
 <dt>53. <a class="bib" name="bib53" href="http://www.w3.org/TR/SVG11/filters.html">http://www.w3.org/TR/SVG11/filters.html</a></dt>
-<dd>Filter effects</dd>
+<dd>SVG 1.1 filter effects, W3C, 2003-01-14</dd>
 
 <dt>54. <a class="bib" name="bib54" href="http://www.w3.org/TR/xlink/">http://www.w3.org/TR/xlink/</a></dt>
-<dd>XML Linking Language version 1.0</dd>
+<dd>XML Linking Language 1.0 W3C Recommendation, W3C/Steve DeRose/Eve Maler/David Orchard, 2001-06-27</dd>
 
 <dt>55. <a class="bib" name="bib55" href="http://www.w3.org/TR/SVG11/struct.html#DefsElement">http://www.w3.org/TR/SVG11/struct.html#DefsElement</a></dt>
-<dd>&lt;defs&gt; element</dd>
+<dd>SVG 1.1 &lt;defs&gt; element, W3C, 2003-01-14</dd>
 
 <dt>56. <a class="bib" name="bib56" href="http://www.w3.org/TR/SVG11/struct.html#UseElement">http://www.w3.org/TR/SVG11/struct.html#UseElement</a></dt>
-<dd>&lt;use&gt; element</dd>
+<dd>SVG 1.1 &lt;use&gt; element, W3C, 2003-01-14</dd>
 
 <dt>57. <a class="bib" name="bib57" href="http://www.w3.org/TR/SVG11/filters.html#feGaussianBlur">http://www.w3.org/TR/SVG11/filters.html#feGaussianBlur</a></dt>
-<dd>&lt;feGaussianBlur&gt; filter effect</dd>
+<dd>SVG 1.1 &lt;feGaussianBlur&gt; filter effect, W3C, 2003-01-14</dd>
 
 <dt>58. <a class="bib" name="bib58" href="http://www.w3.org/TR/SVG11/filters.html#feOffset">http://www.w3.org/TR/SVG11/filters.html#feOffset</a></dt>
-<dd>&lt;feOffset&gt; filter effect</dd>
+<dd>SVG 1.1 &lt;feOffset&gt; filter effect, W3C, 2003-01-14</dd>
 
 <dt>59. <a class="bib" name="bib59" href="http://www.w3.org/TR/SVG11/animate.html">http://www.w3.org/TR/SVG11/animate.html</a></dt>
-<dd>Animation elements</dd>
+<dd>SVG 1.1 animation elements, W3C, 2003-01-14</dd>
 
 <dt>60. <a class="bib" name="bib60" href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics#Software_and_support_in_applications">http://en.wikipedia.org/wiki/Scalable_Vector_Graphics#Software_and_support_in_applications</a></dt>
-<dd>SVG support in applications</dd>
+<dd>SVG support in applications, Wikipedia, 2010-03-26</dd>
 
 <dt>61. <a class="bib" name="bib61" href="http://office.microsoft.com/en-us/visio/FX100487861033.aspx">http://office.microsoft.com/en-us/visio/FX100487861033.aspx</a></dt>
-<dd>Microsoft Office Visio</dd>
+<dd>Microsoft Office Visio 2007 front page, Microsoft, read 2010-04-04</dd>
 
 <dt>62. <a class="bib" name="bib62" href="http://www.svgopen.org/2003/papers/SVG_Scenarios_using_Microsoft_Office_Visio_2003/index.html">http://www.svgopen.org/2003/papers/SVG_Scenarios_using_Microsoft_Office_Visio_2003/index.html</a></dt>
-<dd>SVG Scenarios for Microsoft Visio 2003</dd>
+<dd>SVG Scenarios for Microsoft Visio 2003, Richard See, 2003</dd>
 
 <dt>63. <a class="bib" name="bib63" href="http://www.adobe.com/products/illustrator/">http://www.adobe.com/products/illustrator/</a></dt>
-<dd>Adobe Illustrator</dd>
+<dd>Adobe Illustrator graphic design software, Adobe, read 2010-04-04</dd>
 
 <dt>64. <a class="bib" name="bib64" href="http://www.adobe.com/svg/tools.html">http://www.adobe.com/svg/tools.html</a></dt>
-<dd>Adobe SVG Tools</dd>
+<dd>Adobe SVG Authoring Tools, Adobe, read 2010-04-04</dd>
 
 <dt>65. <a class="bib" name="bib65" href="http://www.corel.com/servlet/Satellite/us/en/Product/1191272117978">http://www.corel.com/servlet/Satellite/us/en/Product/1191272117978</a></dt>
-<dd>CorelDRAW Graphics Suite X5</dd>
+<dd>CorelDRAW Graphics Suite X5, Corel, read 2010-04-04</dd>
 
 <dt>66. <a class="bib" name="bib66" href="http://www.unleash.com/davidt/svg/index.asp">http://www.unleash.com/davidt/svg/index.asp</a></dt>
-<dd>Using SVG in CorelDRAW - a tutorial</dd>
+<dd>SVG - From CorelDRAW to Your Browser, David Troidl, 2007</dd>
 
 <dt>67. <a class="bib" name="bib67" href="http://corel.custhelp.com/app/answers/detail/a_id/754171/">http://corel.custhelp.com/app/answers/detail/a_id/754171/</a></dt>
-<dd>CorelDRAW SVG support information</dd>
+<dd>CorelDRAW SVG support information - Corel Knowledgebase, Corel, read 2010-04-04</dd>
 
 <dt>68. <a class="bib" name="bib68" href="http://www.xara.com/us/products/xtreme/">http://www.xara.com/us/products/xtreme/</a></dt>
-<dd>Xara Xtreme</dd>
+<dd>Xara Xtreme graphics software, Xara Group Limited, read 2010-04-04</dd>
 
 <dt>69. <a class="bib" name="bib69" href="http://support.xara.com/index.php?_m=knowledgebase&amp;_a=viewarticle&amp;kbarticleid=2562">http://support.xara.com/index.php?_m=knowledgebase&amp;_a=viewarticle&amp;kbarticleid=2562</a></dt>
-<dd>Xara Xtreme SVG support</dd>
+<dd>Xara Xtreme SVG support - Xara knowledgebase, Xara Group Limited, 2007-06-13</dd>
 
 <dt>70. <a class="bib" name="bib70" href="http://www.openoffice.org/product/draw.html">http://www.openoffice.org/product/draw.html</a></dt>
-<dd>OpenOffice.org Draw</dd>
+<dd>OpenOffice.org Draw, Oracle/Sun, read 2010-04-04</dd>
 
 <dt>71. <a class="bib" name="bib71" href="http://graphics.openoffice.org/files/documents/12/406/svg_overview.htm">http://graphics.openoffice.org/files/documents/12/406/svg_overview.htm</a></dt>
-<dd>OpenOffice.org Graphics SVG overview</dd>
+<dd>OpenOffice.org Graphics SVG integration improvement proposal, Vincent Hardy/Kai Ahrens, 2002-07-01</dd>
 
 <dt>72. <a class="bib" name="bib72" href="http://www.inkscape.org/">http://www.inkscape.org/</a></dt>
-<dd>Inkscape</dd>
+<dd>Inkscape vector graphics editor, read 2010-04-04</dd>
 
 <dt>73. <a class="bib" name="bib73" href="http://wiki.inkscape.org/wiki/index.php/FAQ#What_SVG_features_does_Inkscape_implement.3F">http://wiki.inkscape.org/wiki/index.php/FAQ#What_SVG_features_does_Inkscape_implement.3F</a></dt>
-<dd>Inkscape SVG support</dd>
+<dd>Inkscape SVG support, Inkscape Wiki, 2010-02-12</dd>
 
 <dt>74. <a class="bib" name="bib74" href="http://www.scribus.net/">http://www.scribus.net/</a></dt>
-<dd>Scribus</dd>
+<dd>Scribus Open Source Desktop Publishing, read 2010-04-04</dd>
 
 <dt>75. <a class="bib" name="bib75" href="http://docs.scribus.net/index.php?lang=en&amp;page=scribus-svg">http://docs.scribus.net/index.php?lang=en&amp;page=scribus-svg</a></dt>
-<dd>Scribus SVG support</dd>
+<dd>Scribus SVG support, Scribus documentation, read 2010-04-04</dd>
 
 <dt>76. <a class="bib" name="bib76" href="http://xmlgraphics.apache.org/batik/">http://xmlgraphics.apache.org/batik/</a></dt>
 <dd>Batik Java SVG Toolkit, Apache Software Foundation, 2010-01-02</dd>
 
 <dt>77. <a class="bib" name="bib77" href="http://cairographics.org/">http://cairographics.org/</a></dt>
-<dd>Cairo 2D graphics library</dd>
+<dd>Cairo 2D graphics library, 2010-03-02</dd>
 
 <dt>78. <a class="bib" name="bib78" href="https://wiki.mozilla.org/Gecko_1.9_Roadmap#cairo_Graphics_Substrate">https://wiki.mozilla.org/Gecko_1.9_Roadmap#cairo_Graphics_Substrate</a></dt>
-<dd>Cairo usage in Mozilla Gecko</dd>
+<dd>Cairo usage in Mozilla Gecko, Mozilla wiki, 2007-01-10</dd>
 
 <dt>79. <a class="bib" name="bib79" href="http://processing.org/about/">http://processing.org/about/</a></dt>
-<dd>Processing programming language</dd>
+<dd>Processing programming language, Ben Fry/Casey Reas, read 2010-04-04</dd>
 
 <dt>80. <a class="bib" name="bib80" href="http://dev.processing.org/reference/core/javadoc/processing/core/PApplet.html">http://dev.processing.org/reference/core/javadoc/processing/core/PApplet.html</a></dt>
-<dd>PApplet class definition</dd>
+<dd>PApplet class definition, Processing Project, read 2010-04-04</dd>
 
 <dt>81. <a class="bib" name="bib81" href="http://processing.org/reference/libraries/candy/SVG.html">http://processing.org/reference/libraries/candy/SVG.html</a></dt>
-<dd>Processing SVG support</dd>
+<dd>Processing SVG support, Processing Project, 2008-09-22</dd>
 
 <dt>82. <a class="bib" name="bib82" href="http://dev.processing.org/reference/core/javadoc/processing/core/PShapeSVG.html">http://dev.processing.org/reference/core/javadoc/processing/core/PShapeSVG.html</a></dt>
-<dd>PShapeSVG class definition</dd>
+<dd>PShapeSVG class definition, Processing Project, read 2010-04-04</dd>
 
 <dt>83. <a class="bib" name="bib83" href="http://www.adobe.com/svg/viewer/install/">http://www.adobe.com/svg/viewer/install/</a></dt>
 <dd>Adobe SVG Viewer IE Plugin install page, Adobe</dd>
@@ -1072,7 +1063,7 @@ C211 300 186 274 156 274&quot;
 <dd>Adobe to Discontinue Adobe SVG Viewer, Adobe, 2009-01-01</dd>
 
 <dt>106. <a class="bib" name="bib106" href="http://en.wikipedia.org/wiki/Vector_Markup_Language">http://en.wikipedia.org/wiki/Vector_Markup_Language</a></dt>
-<dd>Vector Markup Language, Wikipedia, extracted 2010-05-25</dd>
+<dd>Vector Markup Language, Wikipedia, read 2010-05-25</dd>
 
 <dt>107. <a class="bib" name="bib107" href="http://www.robweir.com/blog/2006/07/cum-mortuis-in-lingua-mortua.html">http://www.robweir.com/blog/2006/07/cum-mortuis-in-lingua-mortua.html</a></dt>
 <dd>VML and OOXML: Cum mortuis in lingua mortua, Rob Weir, 2006-07-24</dd>
