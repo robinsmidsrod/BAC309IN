@@ -69,13 +69,7 @@ sin totale funksjonalitet og fremdeles være kompatibel med en gitt
 profil. Under kan du se en oversikt over de forskjellige profilene som 
 er definert. 
 
- * SVG Full
-   * SVG Mobile
-     * SVG Basic
-       * SVG Tiny
-   * SVG Print
-
-FIXME: Bytt til figur med UML-diagram av avhengighetene mellom profilene (i SVG).
+<img src="svg-profiles.svg" alt="Forskjellige SVG-profiler" width="380" height="280">
    
 SVG Mobile-profilen (som ombefatter både SVG Tiny og SVG Basic) ble 
 adoptert av [3GPP][12], en samling av mobiloperatører, som grunnlaget 
@@ -95,15 +89,15 @@ Hvis man hevder at en applikasjon støtter SVG Full må den også
 støtte alle de andre profilene, fordi de andre profilene bare er 
 del-sett av SVG Full. 
 
-[1]: http://www.w3.org/Graphics/SVG/ "Scalable Vector Graphics"
-[2]: http://www.w3.org "World Wide Web Consortium"
-[3]: http://www.w3.org/2007/11/SVG_rechartering/SVG-WG-charter.html#coordination "SVG Dependencies"
-[4]: http://www.w3.org/standards/xml "eXtensible Markup Language"
-[5]: http://en.wikipedia.org/wiki/Declarative_programming "Declarative programming"
-[6]: http://www.w3.org/standards/webdesign/htmlcss "HyperText Markup Language"
-[7]: http://www.ecmascript.org/ "ECMAScript"
-[8]: http://www.w3.org/DOM/ "Document Object Model"
-[9]: http://www.w3.org/TR/smil-animation/ "Synchronized Multimedia Integration Language"
-[10]: http://www.w3.org/standards/webdesign/graphics "W3C Graphics"
-[11]: http://www.w3.org/Graphics/SVG/About.html "About SVG"
-[12]: http://www.3gpp.org/ "3rd Generation Partnership Project"
+[1]: http://www.w3.org/Graphics/SVG/ "Scalable Vector Graphics - XML Graphics for the Web, W3C, 2009-12-11"
+[2]: http://www.w3.org "World Wide Web Consortium front page"
+[3]: http://www.w3.org/2007/11/SVG_rechartering/SVG-WG-charter.html#coordination "SVG Dependencies, W3C/Doug Schepers/Chris Lilley, 2008-04-16"
+[4]: http://www.w3.org/standards/xml "eXtensible Markup Language overview page, W3C"
+[5]: http://en.wikipedia.org/wiki/Declarative_programming "Declarative programming, Wikipedia, read 2010-02-26"
+[6]: http://www.w3.org/standards/webdesign/htmlcss "HyperText Markup Language overview page, W3C"
+[7]: http://www.ecmascript.org/ "ECMAScript - the language of the web, Ecma International"
+[8]: http://www.w3.org/DOM/ "Document Object Model overview page, W3C/Philippe Le Hégaret/Ray Whitmer/Lauren Wood, 2009-01-06"
+[9]: http://www.w3.org/TR/smil-animation/ "Synchronized Multimedia Integration Language W3C Recommendation, W3C, 2001-09-04"
+[10]: http://www.w3.org/standards/webdesign/graphics "Graphics overview page, W3C"
+[11]: http://www.w3.org/Graphics/SVG/About.html "About SVG - 2d Graphics in XML, W3C/Chris Lilley/Dean Jackson, 2004-10-29"
+[12]: http://www.3gpp.org/ "3rd Generation Partnership Project front page, ETSI"

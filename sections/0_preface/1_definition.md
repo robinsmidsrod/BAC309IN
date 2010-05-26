@@ -93,7 +93,7 @@ gratis tilgjenglig for akademisk bruk. LP er svært godt egnet til en smidig
 utviklingsmetodikk.
 
 Versjonskontroll er viktig i større prosjekter. For å dekke det behovet
-velger vi å benytte Git og [GitHub.com](http://github.com). Git gir oss gode
+velger vi å benytte Git og [github.com][1]. Git gir oss gode
 muligheter til å jobbe på flere deler av prosjektet samtidig uten frykt for
 integrasjonsproblemer. Denne muligheten kommer fra det faktum at Git er et
 distribuert revisjonskontrollsystem.
@@ -105,3 +105,5 @@ har brukergrensesnittet deres mange gode funksjoner som øker effektiviteten
 i en distribuert utviklingsarbeidsflyt. Dersom noen utviklere i fremtiden
 ønsker å videreutvikle prosjektet gir GitHub dem en enkel mulighet til å
 gjøre det.
+
+[1]: http://github.com "github - social coding, open source code hosting service"

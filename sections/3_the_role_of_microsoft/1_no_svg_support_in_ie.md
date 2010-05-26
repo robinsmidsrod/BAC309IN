@@ -48,10 +48,10 @@ og sterkere.
 
 [1]: http://www.oreillynet.com/mac/blog/2001/04/exploring_svg.html "Exploring SVG, Jason McIntosh, 2001-04-30"
 [2]: http://www.adobe.com/svg/eol.html "Adobe to Discontinue Adobe SVG Viewer, Adobe, 2009-01-01"
-[3]: http://en.wikipedia.org/wiki/Vector_Markup_Language "Vector Markup Language, Wikipedia, extracted 2010-05-25"
+[3]: http://en.wikipedia.org/wiki/Vector_Markup_Language "Vector Markup Language, Wikipedia, read 2010-05-25"
 [4]: http://www.robweir.com/blog/2006/07/cum-mortuis-in-lingua-mortua.html "VML and OOXML: Cum mortuis in lingua mortua, Rob Weir, 2006-07-24"
 [5]: http://www.readwriteweb.com/archives/web_browser_faceoff.php "Web Browser Faceoff, Alex Iskold, 2006-10-06"
-[6]: http://www.w3.org/Graphics/SVG/WG/wiki/Secret_Origin_of_SVG "Secret Origins of SVG, W3C, extracted 2010-05-25"
+[6]: http://www.w3.org/Graphics/SVG/WG/wiki/Secret_Origin_of_SVG "Secret Origins of SVG, W3C, read 2010-05-25"
 [7]: http://gs.statcounter.com/#browser-ww-monthly-200807-201005 "StatCounter Global Stats, Browsers, July 2008 to May 2010"
 [8]: http://www.sitepoint.com/blogs/2009/12/17/microsoft-browser-ballot-screen/ "Microsoft agrees to browser ballot terms, Craig Buckler, 2009-12-17"
 [9]: http://gs.statcounter.com/#mobile_vs_desktop-ww-monthly-200812-201005 "StatCounter Global Stats, Mobile vs. Desktop,  December 2008 to May 2010"
