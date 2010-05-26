@@ -129,6 +129,21 @@ sub convert_relative_links {
 	}
     }
 
+    # Convert all <img> tags that link to SVG files to <object>
+    foreach my $el ( $tree->look_down('_tag', 'img') ) {
+	next unless $el->attr('src') =~ m{\.svg$};
+	# Convert to SVG <object>
+	$el->tag('object');
+	$el->attr('type', 'image/svg+xml');
+	# Convert src attribute to data attribute
+	$el->attr('data', $el->attr('src') );
+	# Convert img alt attr to unsupported replacement text
+	$el->push_content($el->attr('alt'));
+	# Delete converted attributes
+	$el->attr('alt', undef);
+	$el->attr('src', undef);
+    }
+
     # Extract return HTML body elements
     my $output = "";
     my $body = $tree->look_down( '_tag', 'body' );
