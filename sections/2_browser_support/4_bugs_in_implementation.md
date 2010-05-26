@@ -62,8 +62,8 @@ Dette er blant annet på aninimasjons testen, og på testen som går på fonter
 som inneholder symboler. Det ser fortsatt ut som både font og aninmasjon
 er bedre implementert i Opera enn i Webkit og Mozilla.
 
-[1]: https://bugzilla.mozilla.org/show_bug.cgi?id=216462
-[2]: https://bugzilla.mozilla.org/show_bug.cgi?id=119490
-[3]: https://bugs.webkit.org/show_bug.cgi?id=15495
-[4]: https://bugs.webkit.org/show_bug.cgi?id=6034
-[5]: http://www.codedread.com/svg-support-table.html
+[1]: https://bugzilla.mozilla.org/show_bug.cgi?id=216462 "Implement SVG (SMIL) Animation, Mozilla Bug Tracker, reported: 2003-08-17, last modified: 2010-03-05, status: RESOLVED FIXED"
+[2]: https://bugzilla.mozilla.org/show_bug.cgi?id=119490 "Implement SVG fonts, Mozilla Bug Tracker, reported: 2002-01-11, last modified: 2010-05-25, status: ASSIGNED"
+[3]: https://bugs.webkit.org/show_bug.cgi?id=15495 "SVGViewSpec DOM bindings aka SVGSVGElement.currentView is unimplemented, WebKit Bug Tracker, reported: 2007-10-13, last modified: 2010-05-18, status: NEW"
+[4]: https://bugs.webkit.org/show_bug.cgi?id=6034 "WebKit+SVG needs to support color-interpolation for gradients and opacity calculations, WebKit Bug Tracker, reported: 2005-12-10, last modified: 2010-01-30, status: NEW"
+[5]: http://www.codedread.com/svg-support-table.html "SVG Support in browsers, Jeff Schiller, extracted 2010-03-14"
