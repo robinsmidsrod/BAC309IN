@@ -19,6 +19,8 @@ my $builder = Builder->new(
     main_document_filename => 'index.xhtml',
 );
 $builder->build();
+
+print "Building temporary PDF document...\n";
 system(
     "prince",
     $builder->build_dir->file($builder->main_document_filename),
@@ -27,7 +29,9 @@ system(
     "--media=print",
     "-o", $builder->build_dir->file("temp.pdf"),
 );
+
 # http://www.pdfhacks.com/pdftk/
+print "Combining temporary PDF with attachments...\n";
 system(
     "pdftk",
     $builder->build_dir->file("temp.pdf"),

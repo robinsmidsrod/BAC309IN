@@ -81,7 +81,7 @@ sub copy_assets_to_build_dir {
     my ($self) = @_;
     return unless $self->asset_dir->stat;
     $self->create_build_dir();
-    Builder->voice("Copying content from asset directory '" . $self->asset_dir . "'");
+    Builder->voice("Copying content from asset directory '" . $self->asset_dir . "'...");
     File::Copy::Recursive::dircopy($self->asset_dir,$self->build_dir);
 }
 
@@ -107,6 +107,7 @@ sub remove_build_dir {
 # Build the complete main document (which is the real final result)
 sub build_main_document {
     my ($self) = @_;
+    Builder->voice("Processing TT markup...");
     $self->tt->process(
         $self->main_document_filename,
         $self->main_document_vars,
@@ -119,6 +120,7 @@ sub build_main_document {
 # Updates (actually creates) a Table of Contents on page 2
 sub update_toc {
     my ($self) = @_;
+    Builder->voice("Updating table of contents...");
     my $filename = $self->build_dir->file($self->main_document_filename) . "";
 
     my $toc = HTML::Toc->new();
@@ -171,6 +173,7 @@ has 'main_document_title' => (
 
 sub _build_main_document_title {
     my ($self) = @_;
+    Builder->voice("Computing main document title...");
     my $title_filename = $self->section_dir->file('title');
     return '<Please specify a title>' unless $title_filename->stat;
     return $title_filename->slurp( chomp => 1);
@@ -185,6 +188,7 @@ has 'main_document_content' => (
 
 sub _build_main_document_content {
     my ($self) = @_;
+    Builder->voice("Computing main document content...");
     my $content = "";
     # Build front page content
     my $file = $self->section_dir->file('frontpage.md');

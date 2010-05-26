@@ -63,6 +63,14 @@ a.bib, .toc a {
 text-decoration: none;
 }
 
+.bibliography {
+line-height: 1.125em;
+}
+
+.bibliography dt {
+margin-top: 0.5em;
+}
+
 .bibliography dd {
- font-style: italic;
+font-style: italic;
 }
