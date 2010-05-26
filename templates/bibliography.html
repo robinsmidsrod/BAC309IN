@@ -2,10 +2,11 @@
 
 [% FOREACH url IN urls %]
 [% IF loop.first %]
-<ol>
+<dl class="bibliography">
 [% END -%]
-<li><a class="bib" name="bib[% loop.count %]" href="[% url.url | html %]">[% url.url | html %]</a>[% IF url.title %] <em>([% url.title | html %])</em>[% END %]</li> 
+<dt>[% url.id %]. <a class="bib" name="bib[% url.id %]" href="[% url.url | html %]">[% url.url | html %]</a></dt>
+<dd>[% url.title | html %]</dd>
 [% IF loop.last %]
-</ol>
+</dl>
 [% END -%]
 [% END -%]

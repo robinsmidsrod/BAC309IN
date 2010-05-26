@@ -62,3 +62,7 @@ padding-left: 2em;
 a.bib, .toc a {
 text-decoration: none;
 }
+
+.bibliography dd {
+ font-style: italic;
+}
