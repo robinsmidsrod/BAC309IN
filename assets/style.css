@@ -58,3 +58,7 @@ border: 1px solid #ccc;
 ul {
 padding-left: 2em;
 }
+
+a.bib, .toc a {
+text-decoration: none;
+}

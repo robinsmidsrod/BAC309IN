@@ -258,21 +258,41 @@ sub build_bibliography {
 
     my $tree = HTML::TreeBuilder->new_from_content( $input );
 
-    # Fetch all url
+    # Fetch all external anchors
     my $urls = {};
     my $bib_id = 1;
     foreach my $el ( $tree->look_down('_tag', 'a') ) {
-	if ( $el->attr('href') =~ /^http/i ) {
-	    $urls->{$bib_id} = { url => $el->attr('href'), title => $el->attr('title') };
-	    my $anchor = HTML::Element->new("a");
-	    $anchor->attr('href', "#bib$bib_id");
-	    $anchor->attr('class', "bib");
-	    $anchor->push_content($bib_id);
-	    my $h = HTML::Element->new("sup");
-	    $h->push_content($anchor);
-	    $el->postinsert($h);
+	next unless $el->attr('href') =~ /^http/i;
+	my $url = $el->attr('href');
+	my $title = $el->attr('title');
+
+	# Add new reference to database if it isn't already there
+	# and increment counter
+	unless ( exists $urls->{$url} ) {
+            # NB: Only the title text of the first occurence of the link
+            # will be put in the bibliography
+	    $urls->{$url} = {
+	        id    => $bib_id,
+	        title => $title,
+	        url   => $url,
+	    };
 	    $bib_id++;
 	}
+
+	# Create bibliography link
+        my $anchor = HTML::Element->new("a");
+        $anchor->attr('href', "#bib" . $urls->{$url}->{'id'} );
+        $anchor->attr('class', "bib");
+        $anchor->push_content( $urls->{$url}->{'id'} );
+
+        # Add it inside a <sup> element
+        my $h = HTML::Element->new("sup");
+        $h->push_content($anchor);
+
+        # Insert <sup> after the real link
+        $el->postinsert($h);
+
+        # TODO: Should we modify the original link in any way?
     }
 
     # Extract return HTML body elements
@@ -288,7 +308,7 @@ sub build_bibliography {
     $tree->delete();
 
     my @urls;
-    foreach my $url ( sort { $a <=> $b } keys %$urls ) {
+    foreach my $url ( sort { $urls->{$a}->{'id'} <=> $urls->{$b}->{'id'} } keys %$urls ) {
         push @urls, $urls->{$url};
     }
 
