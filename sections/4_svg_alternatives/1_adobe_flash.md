@@ -5,27 +5,26 @@ blitt gitt et helt nytt medium med Flash. Da det enkelt nå kan produseres spenn
 snutter som fanger brukerens oppmerksomhet. Det også mange sider som er utviklet
 fult og helt i Flash, som vil lage en helt spesiell bruker opplevelse. 
 
-Først og fremst er Flash en multimedia plattform som nå vedlikeholdes av Adobe. Det
+Først og fremst er Flash en multimedia plattform som nå vedlikeholdes av [Adobe][1]. Det
 er mulig å lage interaktive nettsider ved å bruke Flash for å vise video, lyd og
-animasjoner. Flash er også den siste tiden blitt et verktøy for å lage så kalte
-RIA, eller "Rich internett application". Flash benytter vektor og raster grafikk
-for å lage animasjoner. Det gjør det mulig å lage animasjoner som kan skaleres
-etterbehov uten at man mister skarpheten. Dette er en av fordelene ved vektor-grafikk.
+animasjoner. [Flash][1] benytter vektor og raster grafikk for å lage animasjoner. 
+Det gjør det mulig å lage animasjoner som kan skaleres etterbehov uten at man mister 
+skarpheten. Dette er en av fordelene ved vektor-grafikk.
 
-Flash har også fått et objektorient script språk, ActionScript, som utviklere kan
+Flash har også fått et objektorient script språk, [ActionScript][1], som utviklere kan
 bruke for å øke funksjonalitet i Flash snutten. Dette kan for eksempel være at
 man vil koble opp mot eksterne script og hente ned informasjon eller lagre
 informasjonen som blir skrevet inn.
 
 Eneste kravet for å vise flash animasjoner og videoer er at man installer en plugin
-fra adobe, Adobe Flash Player.
+fra adobe, [Adobe Flash Player][1].
 
 #### Fordeler ved Adobe Flash ####
 
-Adobe Flash har lenge vært markeds dominerende når video, lyd og animasjon skal vises
+Adobe Flash har lenge vært [markedsdominerende][2] når video, lyd og animasjon skal vises
 i nettleseren. Alle har gjort seg vant med at en plugin må installeres for å kunne se
 siste trailer av en kommende film eller en video reportasje fra en avis. Etter at
-Microsoft tok i bruk under utvikling av MSN siden sine, har flere og flere fulgt etter.
+Microsoft tok i bruk under utvikling av MSN [nettsidene][1] sine, har flere og flere fulgt etter.
 Idag benytter store deler av nettsidene vi besøker flash på deler eller hele siden.
 
 Utvikler som ønsker å bruke animasjoner eller video i sitt arbeid, kan være sikker
@@ -93,6 +92,8 @@ som er interesert i å være med i utvikling kan selv ta ansvar for å rapporter
 
 FIXME: Legge lenker inn i teksten.
 
+[1]: http://en.wikipedia.org/wiki/Adobe_Flash "Adobe Flash, Wikipedia, read 2010-05-27"
+[2]: http://www.adobe.com/products/player_census/flashplayer/version_penetration.html "Adobe Flash plugin usage worldwide, Adobe, read 2010-05-27"  
 [1]: http://svg.kvalitne.cz/svg-introduction/index.xhtmlz#(17)
 [2]: http://www.svgopen.org/2009/papers/6-The_strengths_of_SVG_in_web_mapping_/
 [3]: http://www.urban75.org/tech/q026.html
