@@ -1,14 +1,14 @@
 ### Kan Microsoft SilverLight også benyttes for å omgå mangel på SVG-støtte? ###
 
 Microsoft Silverlight er på mange måter det samme som Flash fra Adobe, pakket inn
-i kjent Microsoft stil. Silverlight er først og fremst et rammeverk for utviklere
+i kjent Microsoft stil. [Silverlight][1] er først og fremst et rammeverk for utviklere
 som bruker ASP, C# eller andre språk støttet av Microsoft. Dette rammeverket gjør
 det mulig å lage grafikk, animasjoner å vise både lyd og bilde. Rammeverket har også
 fått deler av .NET rammeverket integrert, slik at mye av den samme funksjonaliteten
 som finnes i standard .NET biblioteket finnes i Silverlight.
 
 Silverlight er også tilgjenglig på andre platformer enn Microsoft sine egene,
-igjennom Moonlight. Moonlight er utviklet av Novell, og gjør det mulig å bruke
+igjennom Moonlight. [Moonlight][2] er utviklet av Novell, og gjør det mulig å bruke
 Silverlight på både Linux og BSD platform.
 
 Microsoft har med Silverlight gjort det mulig for utviklere å bruke de samme
@@ -33,8 +33,8 @@ den mot SVG. Siden SVG ikke har like mange muligheter som Silverlight, er det
 en mye mer spesialisert teknologi.
 
 Silverlight er som sagt et rammeverket, og det blir ikke generert en fil som
-inneholder alle menter brukt i en Silverlight applikasjon. Det er flere filer, og
-mapper som må være tilstede på server siden av en applikasjonen for at den skal
+inneholder alle elementer brukt i applikasjon. Det er [flere filer][3], og
+mapper som må være tilstede på server-siden av en applikasjonen for at den skal
 fungere. Det er også relativt komplisert struktur på noen av filene, og kan derfor
 være vanskelig å sette sammen en applikasjon uten et skikkelig verktøy.
 
@@ -47,7 +47,7 @@ den velkjente XML strukturen, kan SVG grafikk enkelt lages i en tekst editor.
 
 Silverlight er som Flash en klient side applikasjon. Det vil si at det er nettleseren
 som tar seg av kjøringen av Silverlight applikasjonen. Nettleseren har ingen 
-innebygget støtte  for Silverlight, og trenger derfor tredjeparts programvare for
+innebygget støtte  for Silverlight, og trenger derfor [tredjepartsprogramvare][4] for
 å kunne vise applikasjonen. Det er sjeldent positivt når en bruker oppsøker et nettsted
 og trenger enda en plugin for å kunne vise innholdet. Brukeren hadde fått en
 bedre opplevelse om andre teknologier kunne brukes for å slippe alle pluginene.
@@ -67,10 +67,7 @@ tolke det. Er dette veldig likt, så mange stiller spørsmål ved hvorfor Micros
 ikke heller tok i bruk teknologi som allerede var tilstedet, SVG, isteden for
 å lage noe helt eget og propertiert. 
 
-FIXME: Legge lenker inn i teksten.
-
-[1]: http://en.wikipedia.org/wiki/Microsoft_Silverlight
-[2]: http://www.smashingmagazine.com/2009/05/09/flash-vs-silverlight-what-suits-your-needs-best/
-[3]: http://faq.programmerworld.net/programming/silverlight.html
-[4]: http://news.cnet.com/what-is-silverlight-really/
-[5]: http://weblogs.asp.net/jgalloway/archive/2007/06/05/silverlight-and-xaml-have-you-guys-met-old-man-svg.aspx
+[1]: http://en.wikipedia.org/wiki/Microsoft_Silverlight "Microsoft Silverlight, Wikipedia, read 2010-05-27"
+[2]: http://www.mono-project.com/Moonlight#Goals "Moonlight - Mono Goals, Mono-project, read 2010-05-27"
+[3]: http://www.smashingmagazine.com/2009/05/09/flash-vs-silverlight-what-suits-your-needs-best "Flash vs. Silverlight - Deployment Part, Smashingmagazine, 2009-05-09"
+[4]: http://www.microsoft.com/silverlight/what-is-silverlight "What Is Silverlight?, Microsoft, read 2010-05-27"
