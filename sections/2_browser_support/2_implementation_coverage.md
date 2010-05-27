@@ -73,19 +73,19 @@ SVG i IE][15]. Det finnes også andre tillegg som kan installeres for å oppnå
 SVG-støtte, der i blant [Batik toolkit fra Apache][16] som implementere
 SVG-spesifikasjonene.
 
-[1]: http://www.w3.org/TR/SVG11/text.html#text-mod
-[2]: http://www.w3.org/TR/SVG11/color.html#color-profile-mod
-[3]: http://www.w3.org/TR/SVG11/interact.html#cursor-mod
-[4]: http://www.w3.org/TR/SVG11/linking.html#view-mod
-[5]: http://www.w3.org/TR/SVG11/animate.html#animation-mod
-[6]: http://www.w3.org/TR/SVG11/fonts.html#font-mod
-[7]: http://www.mozilla.org/projects/svg/status.html
+[1]: http://www.w3.org/TR/SVG11/text.html "Text - SVG 1.1, W3C, 2003-01-14"
+[2]: http://www.w3.org/TR/SVG11/color.html "Color - SVG 1.1, W3C, 2003-01-14"
+[3]: http://www.w3.org/TR/SVG11/interact.html "Interact - SVG 1.1, W3C, 2003-01-14"
+[4]: http://www.w3.org/TR/SVG11/linking.html "Linking - SVG 1.1, W3C, 2003-01-14"
+[5]: http://www.w3.org/TR/SVG11/animate.html "Animate - SVG 1.1, W3C, 2003-01-14"
+[6]: http://www.w3.org/TR/SVG11/fonts.html "Fonts - SVG 1.1, W3C, 2003-01-14"
+[7]: http://www.mozilla.org/projects/svg/status.html "Mozilla SVG Status, Mozilla, read xxx"
 [8]: http://www.codedread.com/svg-support-table.html
-[9]: http://www.opera.com/docs/specs/svg/
-[10]: http://www.opera.com/docs/specs/presto25/html5/
-[11]: https://developer.mozilla.org/en/Gecko
-[12]: http://webkit.org/
-[13]: http://webkit.org/projects/svg/status.xml
+[9]: http://www.opera.com/docs/specs/svg/ "SVG support in Opera 9, Opera, read xxx"
+[10]: http://www.opera.com/docs/specs/presto25/html5/ "Opera: HTML5 elements attributes and APIs support in Opera Presto 2.5, Opera, read xxx"
+[11]: https://developer.mozilla.org/en/Gecko "Gecko - MDC, Mozilla, 2010-03-12"
+[12]: http://webkit.org/ "The Webkit Open Source Project, Webkit, read xxx"
+[13]: http://webkit.org/projects/svg/status.xml "WebKit SVG Status, Webkit, 2010-01-05"
 [14]: http://blogs.msdn.com/b/ie/archive/2010/01/05/microsoft-joins-w3c-svg-working-group.aspx "Microsoft joins W3C SVG Working Group, Microsoft IE Team Blog, 2010-01-05"
 [15]: http://www.adobe.com/svg/viewer/install/
 [16]: http://xmlgraphics.apache.org/batik/ "Batik Java SVG Toolkit, Apache Software Foundation, 2010-01-02"
