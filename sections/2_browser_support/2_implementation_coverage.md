@@ -18,8 +18,8 @@ Moduler vi spesielt bør legge spesielt merke til:
  * [Animation][5]
  * [Font][6]
 
-Utfra [statussidene][7] kan vi konkludere med at SVG-implementasjonen i Mozilla har et
-stykke igjen før alt fungerer. Vi ser blant annet at støtten for symboler, som f.eks i
+Ut fra [statussidene][7] kan vi konkludere med at SVG-implementasjonen i Mozilla har et
+stykke igjen før alt fungerer. Vi ser blant annet at støtten for symboler, f.eks
 japanske tegn er dårlig. Disse er ikke implementert i [tekst][1] modulen i Mozillas 
 implementasjon av SVG. Det er heller ikke mulig å spesifisere eget utseende på 
 musepekeren i [cursor-modulen][3]. Funksjonalitet nevnt over er ikke det viktigste som 
@@ -46,8 +46,7 @@ nettleseren. Implementasjonen av SVG ble derfor gjort opp mot denne motoren.
 Opera derimot har laget sin helt egen implementasjon, siden Opera ikke baserer seg
 på noen separat motor. Dette gjør antagelig at Operas motor er mer tilrettelagt for SVG.
 
-Chrome, som er Google sin nettlesere og relativt ny på markedet, og Safari, Apple sin 
-nettlesere som følger med OSX, baserer seg derimot på [Webkit][12]. Webkit kan sammenlignes 
+Googles Chrome og Apples Safari baserer seg derimot på [Webkit][12]. Webkit kan sammenlignes 
 med Gecko motoren som Mozilla Firefox benytter, og er grunnstenen i nettleseren. 
 Implementasjon av SVG er derfor gjort i Webkit. Vi vurderer derfor Webkit, ikke Chrome 
 og Safari hver for seg.

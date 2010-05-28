@@ -46,7 +46,7 @@ implementert i dag.
 En annen del av oversikten er animasjonselementene. Det første vi oppdager er at Firefox
 ikke har støtte for noen av aninimasjons elementene bortsett fra 3.7-Alpha. Aninimasjons 
 elementene er bedre implementert i både Chrome og Safari, i alle fall i de siste versjonene. 
-Noen elementer har kun blitt implementert halveis eller inneholder mangler, men det meste av 
+Noen elementer har kun blitt delvis implementert eller inneholder mangler, men det meste av 
 animasjons elementene er implementert i både Chrome, Safari og Opera. Det kan se ut som 
 vi får animasjonsstøtte når Firefox 3.7 kommer på markedet.
 

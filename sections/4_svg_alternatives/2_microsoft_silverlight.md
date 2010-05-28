@@ -59,13 +59,11 @@ blant internett brukere er det viktig å gjøre mest mulig informasjon tilgjengl
 for flest mulig. 
 
 Egentlig kan man stille spørsmål om hvorfor det var behov for enda en teknologi
-som gjorde den samme jobben som flere andre før den. 
-
-FIXME: Omskriving av settning under
-
-Vi har mange likheter
-i mellom Silverlight og Flash. Mange vil gå så langt som å si at Silverlight er Flash
-i en Microsoft wrapping, noe som på mange måter er korrekt. 
+som gjør den samme jobben flere andre har gjort før den. Silverlight og Flash utfører
+mange av de samme oppgavene i nettleseren. Silverlight har et par mer avanserte
+funksjoner, som mulighet for å distribuere Silverlight innhold i mellom nettsteder.
+Silverlight er også mer integrert mot Microsoft sine lyd og video formater. Mange vil
+derfor gå så langt som å si at Silverlight er Flash i Microsoft innpakkning.
 
 Hvis vi sammenligner f.eks hvordan SVGs XML og Silverlights XAML ser ut når nettleseren skal
 tolke det, er dette veldig likt. Mange stiller derfor spørsmål hvorfor Microsoft

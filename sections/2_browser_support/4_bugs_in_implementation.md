@@ -12,7 +12,7 @@ animere en enkel attributt eller ting over tid. Det er lagt inn en bug [rapport]
 på denne modulen, som finnes i bugzilla. Et annet element som inneholder feil 
 er, animateTransform. Elementet skal blant annet gjøre det mulig å skalere eller 
 rotere en ting i SVG, f.eks et rektangel eller en firkant. Det er også her lagt 
-inn en bug rapport[1] i tracking systemet mozilla benytter under utvikling. 
+inn en [bug rapport][1] i tracking systemet mozilla benytter under utvikling. 
 Elementet funger ikke som det skal, noe som har opprinnelse i feilen som også 
 eksisterer i animateelementet. Dette gjør at det å animere elementer ikke fungerer 
 i SVG-implementasjonen i Firefox.
