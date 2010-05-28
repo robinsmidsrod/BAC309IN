@@ -69,5 +69,5 @@ teknologi som fungerer like godt i Internet Explorer. Hadde Microsoft gjort en
 innsats for utvikling av SVG også for Internet Explorer ville det vært mulig for
 utviklere og brukere heller å fokusere mot SVG istedenfor å tenke på begge. 
 
-[1]: http://msdn.microsoft.com/en-us/library/bb250524%28VS.85%29.aspx "Vector Markup Language(VML), Microsoft, read 2010-05-27"
-[2]: http://en.wikipedia.org/wiki/Vector_Markup_Language "Vector Markup Language, Wikipeida, read 2010-05-27"
+[1]: http://msdn.microsoft.com/en-us/library/bb250524%28VS.85%29.aspx "Vector Markup Language(VML), Microsoft, lest 2010-05-27"
+[2]: http://en.wikipedia.org/wiki/Vector_Markup_Language "Vector Markup Language, Wikipedia, lest 2010-05-27"

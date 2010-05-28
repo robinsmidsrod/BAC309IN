@@ -93,7 +93,7 @@ del-sett av SVG Full.
 [2]: http://www.w3.org "World Wide Web Consortium front page"
 [3]: http://www.w3.org/2007/11/SVG_rechartering/SVG-WG-charter.html#coordination "SVG Dependencies, W3C/Doug Schepers/Chris Lilley, 2008-04-16"
 [4]: http://www.w3.org/standards/xml "eXtensible Markup Language overview page, W3C"
-[5]: http://en.wikipedia.org/wiki/Declarative_programming "Declarative programming, Wikipedia, read 2010-02-26"
+[5]: http://en.wikipedia.org/wiki/Declarative_programming "Declarative programming, Wikipedia, lest 2010-02-26"
 [6]: http://www.w3.org/standards/webdesign/htmlcss "HyperText Markup Language overview page, W3C"
 [7]: http://www.ecmascript.org/ "ECMAScript - the language of the web, Ecma International"
 [8]: http://www.w3.org/DOM/ "Document Object Model overview page, W3C/Philippe Le Hégaret/Ray Whitmer/Lauren Wood, 2009-01-06"

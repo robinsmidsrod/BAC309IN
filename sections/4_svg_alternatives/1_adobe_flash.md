@@ -91,12 +91,12 @@ idag har åpne standarder. CSS, JavaScript og HTML er teknologier som er åpne f
 Dette gjelder også for SVG som er en åpen standard, og utviklere
 som er interesert i å være med i utvikling kan selv ta ansvar for å rapportere feil.
 
-[1]: http://en.wikipedia.org/wiki/Adobe_Flash "Adobe Flash, Wikipedia, read 2010-05-27"
-[2]: http://www.adobe.com/products/player_census/flashplayer/version_penetration.html "Adobe Flash plugin usage worldwide, Adobe, read 2010-05-27"
+[1]: http://en.wikipedia.org/wiki/Adobe_Flash "Adobe Flash, Wikipedia, lest 2010-05-27"
+[2]: http://www.adobe.com/products/player_census/flashplayer/version_penetration.html "Adobe Flash plugin usage worldwide, Adobe, lest 2010-05-27"
 [3]: http://www.planetsvg.com/content/svg-solutions-internet-explorer "SVG solutions for Internet Explorer, PlanetSVG, 2009-02-15"
-[4]: http://www.adobe.com/support/security/#flashplayer "Adobe Security bulletins and advisories, Adobe, read 2010-05-27"
+[4]: http://www.adobe.com/support/security/#flashplayer "Adobe Security bulletins and advisories, Adobe, lest 2010-05-27"
 [5]: http://www.trusteer.com/files/Flash_Security_Hole_Advisory.pdf "Adobe Flash Security Hole Advisory, Trusteer, 2009-08-13"
-[6]: http://en.wikipedia.org/wiki/SWF "SWF, Wikipedia, read 2010-05-27"
+[6]: http://en.wikipedia.org/wiki/SWF "SWF, Wikipedia, lest 2010-05-27"
 [7]: http://www.w3.org/TR/SVG11/minimize.html "Minimize SVG File Size, W3C, 2003-01-14"
-[8]: http://en.wikipedia.org/wiki/Adobe_Flash_Player "Adobe Flash Player, Adobe, read 2010-05-27"
-[9]: http://www.apple.com/hotnews/thoughts-on-flash "Thoughts on Flash, Apple, read 2010-05-27"
+[8]: http://en.wikipedia.org/wiki/Adobe_Flash_Player "Adobe Flash Player, Adobe, lest 2010-05-27"
+[9]: http://www.apple.com/hotnews/thoughts-on-flash "Thoughts on Flash, Apple, lest 2010-05-27"

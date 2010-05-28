@@ -67,8 +67,8 @@ tolke det, er dette veldig likt. Mange stiller derfor spørsmål hvorfor Microso
 ikke heller tok i bruk SVG som allerede var etablert istedenfor å lage noe helt 
 eget og proprietært. 
 
-[1]: http://en.wikipedia.org/wiki/Microsoft_Silverlight "Microsoft Silverlight, Wikipedia, read 2010-05-27"
-[2]: http://www.mono-project.com/Moonlight#Goals "Moonlight - Mono Goals, Mono-project, read 2010-05-27"
+[1]: http://en.wikipedia.org/wiki/Microsoft_Silverlight "Microsoft Silverlight, Wikipedia, lest 2010-05-27"
+[2]: http://www.mono-project.com/Moonlight#Goals "Moonlight - Mono Goals, Mono Project, lest 2010-05-27"
 [3]: http://www.smashingmagazine.com/2009/05/09/flash-vs-silverlight-what-suits-your-needs-best "Flash vs. Silverlight - Deployment Part, Smashingmagazine, 2009-05-09"
-[4]: http://www.microsoft.com/silverlight/what-is-silverlight "What Is Silverlight?, Microsoft, read 2010-05-27"
-[5]: http://en.wikipedia.org/wiki/Rich_Internet_application "Rich internet applications, Wikipeida, lest 2010-05-28"
+[4]: http://www.microsoft.com/silverlight/what-is-silverlight "What Is Silverlight?, Microsoft, lest 2010-05-27"
+[5]: http://en.wikipedia.org/wiki/Rich_Internet_application "Rich internet applications, Wikipedia, lest 2010-05-28"

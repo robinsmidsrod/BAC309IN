@@ -81,9 +81,9 @@ for slike biblioteker som gjør det mulig å utnytte funksjonalitet som enda
 ikke funger helt prikkfritt. Dermed kan vi bli kan kjent med standarden og
 hva den kan brukes til i fremtiden.
 
-[1]: http://raphaeljs.com "Raphaels - JavaScript library, RaphaelJs, read 2010-05-27"
-[2]: http://raphaeljs.com/reference.html "Raphael Reference, RaphaelJs, read 2010-05-27"
-[3]: http://en.wikipedia.org/wiki/Imperative_programming "Imperative Programming, Wikipeida, read 2010-05-27"
-[4]: http://en.wikipedia.org/wiki/Declarative_programming "Declarative Programming, Wikipedia, read 2010-05-27"
+[1]: http://raphaeljs.com "Raphaels - JavaScript library, RaphaelJs, lest 2010-05-27"
+[2]: http://raphaeljs.com/reference.html "Raphael Reference, RaphaelJs, lest 2010-05-27"
+[3]: http://en.wikipedia.org/wiki/Imperative_programming "Imperative Programming, Wikipedia, lest 2010-05-27"
+[4]: http://en.wikipedia.org/wiki/Declarative_programming "Declarative Programming, Wikipedia, lest 2010-05-27"
 [5]: http://blogs.msdn.com/b/ie/archive/2010/03/18/svg-in-ie9-roadmap.aspx "SVG in IE9 Roadmap, IEBlog, 2010-03-18"
-[6]: http://www.samuelclay.com/raphael/svg_open_paper.pdf "Raphaels Paper - SVG Open 2009, Raphael, read 2010-05-27"
+[6]: http://www.samuelclay.com/raphael/svg_open_paper.pdf "Raphaels Paper - SVG Open 2009, Raphael, lest 2010-05-27"
