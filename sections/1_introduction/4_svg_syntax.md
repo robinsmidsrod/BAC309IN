@@ -1,5 +1,5 @@
 
-### Hvordan ser SVG ut? ###
+### 1.4 Hvordan ser SVG ut? ###
 
 Som tidligere nevnt er SVG en applikasjon i XML. Det betyr at SVG dokumenter
 er beskrevet som XML-kode. For at programmer skal skjønne at man jobber med
@@ -38,7 +38,7 @@ er verdt å merke seg er at ingen av eksemplene spesifiserer `width` eller
 `height`, noe som betyr at viewport skal være så stor som overhodet mulig
 (dvs. begge verdier har en standard-verdi på 100%).
 
-#### Linje ####
+#### 1.4.1 Linje ####
 
 Under kan man se et eksempel på [line-elementet][8] i SVG.
 
@@ -53,7 +53,7 @@ style-attributtet, akkurat som i HTML/XHTML. Det man må være oppmerksom på
 er at attributtene ikke er de samme som i HTML. Se en oversikt over hvilke
 [CSS-attributter som er gyldige for SVG][9].
 
-#### Sammenhengende linjer ####
+#### 1.4.2 Sammenhengende linjer ####
 
 Under kan man se et eksempel på [polyline-elementet][10] i SVG.
 
@@ -78,7 +78,7 @@ eller ikke][12]. SVG-verktøy må ikke støtte CSS, så det er verdt å tenke p�
 at dersom man ønsker et mest mulig kompatibelt dokument, bør man bruke
 presentasjonsattributter.
 
-#### Polygon ####
+#### 1.4.3 Polygon ####
 
 Under kan man se et eksempel på [polygon-elementet][13] i SVG.
 
@@ -93,7 +93,7 @@ tegnet en ekstra linje tilbake til første koordinat og hele elementet blir
 fylt med spesifisert fyll-farge. Legg merke til at fargene er her
 spesifisert med tradisjonelle hex-koder som i HTML.
 
-#### Rektangel ####
+#### 1.4.4 Rektangel ####
 
 Under kan man se et eksempel på [rect-elementet][14] i SVG.
 
@@ -111,7 +111,7 @@ rx/ry/width/height ikke er tillatt. I dette eksempelet ser man også bruke av
 de konstante navnene i CSS for farger, samt bruk av transparens med
 `opacity`-attributtet. I dette tilfellet er elementet 50% gjennomskinnelig.
 
-#### Sti ####
+#### 1.4.5 Sti ####
 
 Under kan man se et eksempel på [path-elementet][15] i SVG.
 
@@ -129,7 +129,7 @@ tegneoperasjoner][16] man kan benytte til å tegne en sti som vi ikke omtaler
 her. Det som er interessant å legge merke til er at alle de andre
 primitivene jeg har beskrevet her også kan tegnes ved hjelp av en sti.
 
-#### Sirkel ####
+#### 1.4.6 Sirkel ####
 
 Under kan man se et eksempel på [circle-elementet][17] i SVG.
 
@@ -142,7 +142,7 @@ viewport med en radius på 50 punkter. Bruken av prosent-anvisninger følger
 samme tankegang som HTML sin boksmodell ved at tallet blir evaluert i
 forhold til størrelsen på forelder-elementet.
 
-#### Ellipse ####
+#### 1.4.7 Ellipse ####
 
 Under kan man se et eksempel på [ellipse-elementet][18] i SVG.
 
@@ -157,7 +157,7 @@ identisk i X- og Y-retningen). Man må derfor spesifisere både `rx` og `ry`
 for å tegne ellipsen. Radius kan heller ikke her være negativ, på lik linje
 med rektangelet.
 
-#### Tekst ####
+#### 1.4.8 Tekst ####
 
 Under kan man se et eksempel på [text-elementet][19] i SVG.
 
@@ -176,7 +176,7 @@ er ferdig. Vanligvis flytter elementet som er animert seg tilbake til
 utgangsposisjonen etter fullført animasjon (fill="remove"). Igjen ser vi
 bruk av en enkel sti-spesifikasjon for å beskrive bevegelsen i animasjonen.
 
-#### Filter ####
+#### 1.4.9 Filter ####
 
 Under kan man se et eksempel på bruk av [filtre][21] i SVG.
 
@@ -220,7 +220,7 @@ bufferen som kilde og flytter x- og y-posisjon med 3 piksler. Dette fører da
 til at en skygge tegnes i grått først, og sort tekst tegnes over skyggen
 avslutningsvis.
 
-#### Animasjon ####
+#### 1.4.10 Animasjon ####
 
 Under kan man se et eksempel på bruk av [animasjon][27] i SVG.
 

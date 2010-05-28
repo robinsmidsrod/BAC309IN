@@ -1,4 +1,4 @@
-### Microsoft IE9 vil støtte SVG ###
+### 3.3 Microsoft IE9 vil støtte SVG ###
 
 I mai 2010 annonserte Microsoft at deres neste versjon av Internet Explorer
 kommer til å [støtte grunnleggende elementer i SVG 1.1][1]. Annonseringen

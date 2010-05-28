@@ -1,5 +1,5 @@
 
-### Dekningsgrad i implementasjonene ###
+### 2.2 Dekningsgrad i implementasjonene ###
 
 Mozilla Firefox har fått SVG-standarden bygd direkte inn i nettleseren. Mozilla har
 en egen prosjektgruppe som jobber med SVG implementasjonen i Firefox.

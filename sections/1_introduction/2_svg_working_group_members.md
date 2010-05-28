@@ -1,5 +1,5 @@
 
-### Medlemmer i SVG Working Group ###
+### 1.2 Medlemmer i SVG Working Group ###
 
 De følgende institusjoner er registrert med et eller flere [medlemmer i
 SVG Working Group (WG) pr. 7. mars 2010][1].

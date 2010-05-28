@@ -1,5 +1,5 @@
 
-### Hva er SVG? ###
+### 1.1 Hva er SVG? ###
 
 Scalable Vector Graphics ([SVG][1]) er en åpen standard utgitt av World 
 Wide Web Consortium ([W3C][2]) som skal dekke behovet i markedet for å 
@@ -60,7 +60,7 @@ W3C forklarer selv hva SVG er [på denne måten][10]:
 > SVG, and they can also be generated through client-side or server-side 
 > scripting languages. 
 
-### Forskjellige SVG profiler til ulike formål ###
+#### 1.1.2 Forskjellige SVG profiler til ulike formål ####
 
 Det finnes flere forskjellige [profiler av SVG][11] som beskriver deler 
 av spesifikasjonen. Disse forskjellige profilene er utviklet slik at 

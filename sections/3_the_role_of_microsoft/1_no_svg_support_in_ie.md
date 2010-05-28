@@ -1,4 +1,4 @@
-### Internet Explorers manglende støtte for SVG ###
+### 3.1 Internet Explorers manglende støtte for SVG ###
 
 Fra analysen av nettlesere tidligere ser vi at Microsoft sin Internet
 Explorer (IE) aldri har hatt innebygget støtte for SVG. Man har alltid vært

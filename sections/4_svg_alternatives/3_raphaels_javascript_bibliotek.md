@@ -1,4 +1,4 @@
-### Kan JavaScript-bibliotek som Raphaël være et alternativ til SVG? ###
+### 4.3 Kan JavaScript-bibliotek som Raphaël være et alternativ til SVG? ###
 
 [RaphaëlJS][1] er et JavaScript-bibliotek som baserer seg
 på SVG standarden for å kunne vise animasjoner og vektorgrafikk i
@@ -21,7 +21,7 @@ som vil slippe å sette seg grundig inn i f.eks XML syntaks for å kunne lese SV
 direkte, men heller bruke et sett med funksjoner for å lage grafikken det er behov
 for.
 
-#### Fordeler ved Raphaël sitt JavaScript bibliotek ####
+#### 4.3.1 Fordeler ved Raphaël sitt JavaScript bibliotek ####
 
 Selv om Raphaëls bibliotek ikke er et nytt alternativ til SVG
 standarden er det fortsatt et nyttig verktøy for utvikling av vektorgrafikk.
@@ -46,7 +46,7 @@ definert flere steder for animasjon. I slike tilfeller kunne man sluppet unna
 med mindre omskriving ved f.eks å bruke Raphaels bibliotek og duplisert
 elementer med f.eks en for-løkke. 
 
-#### Ulemper ved bruk av Raphaël JavaScript-bibliotek ####
+#### 4.3.2 Ulemper ved bruk av Raphaël JavaScript-bibliotek ####
 
 Biblioteket er ikke direkte støttet av nettleseren. Det kreves at et
 bibliotek er importert i koden på nettsiden før eventuelle animasjoner
@@ -87,5 +87,3 @@ hva den kan brukes til i fremtiden.
 [4]: http://en.wikipedia.org/wiki/Declarative_programming "Declarative Programming, Wikipedia, read 2010-05-27"
 [5]: http://blogs.msdn.com/b/ie/archive/2010/03/18/svg-in-ie9-roadmap.aspx "SVG in IE9 Roadmap, IEBlog, 2010-03-18"
 [6]: http://www.samuelclay.com/raphael/svg_open_paper.pdf "Raphaels Paper - SVG Open 2009, Raphael, read 2010-05-27"
-
-

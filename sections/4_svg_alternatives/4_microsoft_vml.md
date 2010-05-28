@@ -1,4 +1,4 @@
-### Microsoft VML, et alternativ til SVG ###
+### 4.4 Microsoft VML, et alternativ til SVG ###
 
 VML har samme [deklarative fokuset][1] som SVG, og benytter også [XML syntaks][1]
 for å lage grafikk og animasjoner. Det som er annerledes med VML er at produktet
@@ -15,7 +15,7 @@ implementering av teknologien i nettleserne sine fra Internet Explorer 5.5 og
 oppover. Dette gjør det mulig for utviklere også i dag å bruke VML for å vise
 animasjoner og grafikk på samme måte som SVG.
 
-#### Fordeler ved Microsoft VML ####
+#### 4.4.1 Fordeler ved Microsoft VML ####
 
 VML er det eneste språket som ligner SVG og som fungerer i Internet Explorer. Det
 funger også bra, og kan vise både [grafikk og animasjoner][1] som SVG kan gjøre i andre
@@ -35,7 +35,7 @@ Siden VML benytter XML struktur er det også mulig å konvertere mellom VML og S
 Dette trenger ikke å være en enkel prosess, men det er i prinsippet mulig siden
 begge bruker en XML struktur.
 
-#### Ulemper ved Microsoft VML ####
+#### 4.4.2 Ulemper ved Microsoft VML ####
 
 Først og fremst er VML enda en ting som utviklere må ta hensyn til når de
 skal ta i bruk grafikk og animasjon i nettleseren. Vi kan bare se hvor mye 

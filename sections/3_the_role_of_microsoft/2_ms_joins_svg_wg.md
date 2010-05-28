@@ -1,4 +1,4 @@
-### Microsoft melder seg inn i SVG Working Group ###
+### 3.2 Microsoft melder seg inn i SVG Working Group ###
 
 I januar 2010 ble det annonsert at Microsoft har [søkt om medlemskap i SVG
 WG][1]. Dette kom som et [stort sjokk][2] (et positivt sådan) på

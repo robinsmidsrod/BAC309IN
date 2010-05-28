@@ -1,5 +1,5 @@
 
-### Funksjonalitet som ikke er implementert ###
+### 2.3 Funksjonalitet som ikke er implementert ###
 
 Det finnes en mer detaljert oversikt over hvilke elementer de ulike nettleserne
 støtter i forhold til SVG. Denne oversikten finnes på samme sted, som [prosentfordelingene][1].

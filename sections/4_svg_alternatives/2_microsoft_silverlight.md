@@ -1,4 +1,4 @@
-### Kan Microsoft SilverLight også benyttes for å omgå mangel på SVG-støtte? ###
+### 4.2 Kan Microsoft SilverLight benyttes for å omgå mangel på SVG-støtte? ###
 
 Microsoft Silverlight er på mange måter det samme som Flash fra Adobe, pakket inn
 i kjent Microsoft stil. [Silverlight][1] er først og fremst et rammeverk for utviklere
@@ -17,7 +17,7 @@ også benytte en tekst editor for å lage en Silverlight applikasjon, men dette
 er en mer komplisert prosess enn å bare bruke f.eks Visual Studio hvor mye av
 jobben blir automatisert.
 
-#### Fordeler ved Microsoft Silverlight ####
+#### 4.2.1 Fordeler ved Microsoft Silverlight ####
 
 Microsoft har laget et rammeverk for å lage større applikasjoner som benytter
 både grafikk, animasjoner, lyd og video. Det er viktig å se at dette ikke bare
@@ -26,7 +26,7 @@ som kan brukes for å lage [Rich internet applications][5]. Silverlight begrense
 altså ikke til kun å vise grafikk, animasjoner, video og lyd på nett som SVG
 kanskje gjør.
 
-#### Ulemper ved Microsoft Silverlight ####
+#### 4.2.2 Ulemper ved Microsoft Silverlight ####
 
 Silverlight har sine fordeler, men det er ikke uten ulemper når vi skal sammenligne
 den mot SVG. Siden SVG ikke har like mange muligheter som Silverlight, er det

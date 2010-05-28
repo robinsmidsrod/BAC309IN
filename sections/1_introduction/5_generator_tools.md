@@ -1,12 +1,12 @@
 
-### Programvare som kan produsere SVG-dokumenter ###
+### 1.5 Programvare som kan produsere SVG-dokumenter ###
 
 Det finnes en [god del programvare][1] på markedet som allerede støtter
 SVG-standarden til en varierende grad. Under har vi klassifisert de mest
 populære verktøyene på markedet som faktisk kan brukes til å produsere
 SVG-dokumenter.
 
-#### Kommersiell programvare ####
+#### 1.5.1 Kommersiell programvare ####
 
 [Microsoft Visio][2] er et verktøy for å lage varierte vektoriserte
 diagrammer. Visio beskriver ikke på sine nettsider eksplisitt at de støtter
@@ -38,7 +38,7 @@ grafiske designere. Xara Xtreme har hatt [støtte for eksport av
 SVG-dokumenter siden versjon 3.2][10]. Xara bekrefter at støtten for SVG
 ikke er komplett, men at de jobber med å forbedre støtten fortløpende.
 
-#### Fri programvare ####
+#### 1.5.2 Fri programvare ####
 
 [OpenOffice.org Draw][11] er et tegneprogram som er en del av den større
 OpenOffice.org-pakken (OOo) for produktivitet. [Følgende dokument][12]
@@ -62,7 +62,7 @@ masking/clipping også ikke er støttet. Derimot bekrefter de at nesten alle
 funksjoner i et Scribus-dokument kan eksporteres til SVG med stort hell. Det
 er stort sett import av SVG som er problematisk.
 
-#### Verktøy for utviklere ####
+#### 1.5.3 Verktøy for utviklere ####
 
 [Batik SVG Toolkit][17] er et bibliotek for Java-utviklere som kan benyttes
 til å manipulere, produsere og presentere SVG. Versjon 1.7 av Batik støtter

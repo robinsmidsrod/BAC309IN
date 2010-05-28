@@ -1,5 +1,5 @@
 
-### Kort om nettlesere og SVG-støtte ###
+### 2.1 Kort om nettlesere og SVG-støtte ###
 
 SVG er en standard som for lengst har blitt implementert i de fleste populære
 nettlesere som blir brukt av verdens befolkning. Det er heller et spørsmål om hvor

@@ -1,4 +1,4 @@
-### Hvordan utviklere benytter Adobe Flash fordi SVG ikke er tilgjengelig? ###
+### 4.1 Hvordan utviklere benytter Adobe Flash fordi SVG ikke er tilgjengelig? ###
 
 Adobe Flash har lenge vært en viktig del av vår hverdag på internett. Reklame har
 fått et helt nytt medium med Flash. Det er enkelt å produsere spennende
@@ -19,7 +19,7 @@ informasjon som blir skrevet inn.
 Eneste kravet for å vise flash animasjoner og videoer er at man installer en plugin
 fra adobe, [Adobe Flash Player][1].
 
-#### Fordeler ved Adobe Flash ####
+#### 4.1.1 Fordeler ved Adobe Flash ####
 
 Adobe Flash har lenge vært [markedsdominerende][2] når video, lyd og animasjon skal vises
 i nettleseren. Alle har gjort seg vant med at en plugin må installeres for å kunne se
@@ -37,7 +37,7 @@ tilby. Internet Explorer støtter ingen deler av SVG standarden og det må her
 brukes en [plugin][3] uansett.
 
 
-#### Ulemper ved Adobe Flash ####
+#### 4.1.2 Ulemper ved Adobe Flash ####
 
 Med tiden har vi blitt mer bevisst på hva vi benytter av applikasjoner og tillegg
 for å kunne se det vi vil på nettet. Vi har også blitt mer bevisst på hvilke teknologier

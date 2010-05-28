@@ -1,4 +1,4 @@
-### Problemstilling ###
+### A Problemstilling ###
 
 SVG-standarden (Scalable Vector Graphics) har vært tilgjengelig i mange år.
 Den har likevel ikke total markedspenetrasjon. Vi ønsker å finne ut hvorfor
@@ -16,7 +16,7 @@ velger også å lage et tradisjonelt program med grafisk brukergrensesnitt.
 Dette programmet skal ta imot data fra brukeren og generere SVG-filer ved
 hjelp av biblioteket omtalt over.
 
-### Spørsmål som dekker grunnlaget for oppgaven ###
+### B Spørsmål som dekker grunnlaget for oppgaven ###
 
  - Introduksjon: Hva er SVG?
  - Hvilke nettlesere må støtte SVG for at man som utvikler kan benytte SVG uten å tenke på klient-støtte?
@@ -39,7 +39,7 @@ hjelp av biblioteket omtalt over.
      - Er VML som standard knyttet for sterkt til Microsoft sin implementasjon?
  - Konklusjon: Hva må skje i markedet for at SVG skal "ta av" som standard?
  
-### Arbeidsmetodikk ###
+### C Arbeidsmetodikk ###
 
 Vi vil bruke en smidig utviklingsmetodikk (agile), hvor vi setter opp korte
 perioder (sprint), hvor vi jobber på spesifikke problemstillinger.  Idéen
@@ -55,9 +55,9 @@ arbeidsdager i den gjeldende uken. All dokumentasjon av programvaren
 benytter engelsk som språk. Dette gjør det enklere for tredjeparter å
 evaluere koden i prosjektet uavhengig av norsk språkforståelse.
 
-### Modellapplikasjon ###
+### D Modellapplikasjon ###
 
-#### Bibliotek: SVG-generator ####
+#### D.1 Bibliotek: SVG-generator ####
 
 Vi skal lage et Java-bibliotek som gjør det mulig å generere SVG-filer
 basert på instanser med strukturerte data. Vi velger å benytte mønstre for
@@ -65,7 +65,7 @@ god programdesign slik at biblioteket gjør det enkelt å utvide biblioteket
 til å støtte mer funksjonalitet på et senere tidspunkt. Vi planlegger å
 benytte white-box reuse-konseptet for å oppnå høy fleksibilitet.
 
-#### Applikasjon: Grafisk brukergrensesnitt for håndtering av inndata ####
+#### D.2 Applikasjon: Grafisk brukergrensesnitt for håndtering av inndata ####
 
 Her planlegger vi å lage en normal applikasjon som kan gi et grensesnitt til
 brukeren for å skrive inn data for å fylle inn et datasett. Den skal igjen
@@ -74,13 +74,13 @@ mønstre for god programdesign for å gjøre applikasjonen enkel å utvide og
 lettere å vedlikeholde. Dette vil passe godt sammen med vårt valg om å
 benytte en smidig utviklingsmetodikk.
 
-#### Lisensiering ####
+#### D.3 Lisensiering ####
 
 Kildekoden til biblioteket og applikasjonen velger vi å tilgjengeliggjøre
 under BSD-lisensen. Dette gjør det mulig for andre utviklere å benytte koden
 fra denne bacheloroppgaven i kommersielle sammenhenger.
 
-### Valg av verktøy til prosessen ###
+### E Valg av verktøy til prosessen ###
 
 Vi velger å benytte oss av Eclipse på grunn av god erfaring med denne
 utviklingsplatformen. Siden vi har opparbeidet oss god erfaring med bruk av
