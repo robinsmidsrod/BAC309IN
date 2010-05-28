@@ -2,22 +2,22 @@
 
 Adobe Flash har lenge vært en viktig del av vår hverdag på internett. Reklame har
 fått et helt nytt medium med Flash. Det er enkelt å produsere spennende
-snutter som fanger brukerens oppmerksomhet. Det også mange sider som er utviklet
-fultt og helt i Flash, noe som vil gi en helt spesiell brukeropplevelse. 
+video og grafikk som fanger brukerens oppmerksomhet. Det også mange internett-sider som er utviklet
+fullt og helt i Flash, noe som vil gi en helt spesiell brukeropplevelse. 
 
 Først og fremst er Flash en multimedia plattform som nå vedlikeholdes av [Adobe][1]. Det
 er mulig å lage interaktive nettsider ved å bruke Flash for å vise video, lyd og
 animasjoner. [Flash][1] benytter vektor og raster grafikk for å lage animasjoner. 
-Det gjør det mulig å lage animasjoner som kan skaleres etterbehov uten at man mister 
-skarpheten. Dette er en av fordelene med vektor-grafikk.
+Det gjør det mulig å lage animasjoner som kan skaleres etter behov uten å miste detaljer. 
+Dette er en av fordelene med vektor-grafikk.
 
-Flash har også fått et objektorient script språk, [ActionScript][1], som utviklere kan
-bruke for å øke funksjonaliteten i Flash-snutten. Dette kan for eksempel være at
+Flash har også fått et objekt orientert script språk, [ActionScript][1], som utviklere kan
+bruke for å øke funksjonaliteten i Flash-videoer. Dette kan for eksempel være at
 man vil koble opp mot eksterne script og hente ned informasjon eller lagre
 informasjon som blir skrevet inn.
 
-Eneste kravet for å vise flash animasjoner og videoer er at man installer en plugin
-fra adobe, [Adobe Flash Player][1].
+Det eneste kravet for å vise flash animasjoner og videoer er at man installer en plugin
+fra Adobe, [Adobe Flash Player][1].
 
 #### 4.1.1 Fordeler ved Adobe Flash ####
 
@@ -25,16 +25,16 @@ Adobe Flash har lenge vært [markedsdominerende][2] når video, lyd og animasjon
 i nettleseren. Alle har gjort seg vant med at en plugin må installeres for å kunne se
 siste trailer av en kommende film eller en video reportasje fra en avis. Etter at
 Microsoft tok dette i bruk under utvikling av MSN [nettsidene][1] sine, har flere og 
-flere fulgt etter. Idag benytter store deler av nettsidene vi besøker flash på deler
-eller hele siden.
+flere fulgt etter. De fleste internettsider man besøker idag, inneholder flash i en
+eller annen form. Dette kan være alt fra reklame til nettsider bygget i flah.
 
 Utvikler som ønsker å bruke animasjoner eller video i sitt arbeid, kan være sikker
 på at de aller fleste vil kunne vise innholdet om de benytter Flash som teknologi.
 Utviklere kunne valgt å benytte f.eks SVG til denne oppgaven, da også SVG gjør mye
 av den samme jobben som Flash gjør. SVG har midlertidig ingen hundre prosent god
 implementasjon og ingen nettlesere støtter all funksjonalitet SVG standarden har å
-tilby. Internet Explorer støtter ingen deler av SVG standarden og det må her
-brukes en [plugin][3] uansett.
+tilby. Internet Explorer støtter ingen deler av SVG standarden og det må også her
+brukes en [plugin][3].
 
 
 #### 4.1.2 Ulemper ved Adobe Flash ####
@@ -47,12 +47,12 @@ i flere forhold.
 
 Først kan vi se på [sikkerheten][4] i Adobe Flash opp igjennom årene, og det er ingen lys
 verden vi får innblikk i. Adobe Flash er kanskje en av de store synderne med tanke
-på sikkerhetshull og mulighet for å kunne eksekvere skadelig kode på klient siden. Det
+på sikkerhetshull og mulighet for å kunne eksekvere skadelig kode i klientens nettleser. Det
 ble gjort en undersøkelse av blant annet [Trusteer][5] som sa at Adobe Flash var en
 av de mest brukte teknologieen er for å eksekvere skadelig kode på nettbrukeres maskiner.
 
 For å kunne utvikle noe i Flash kreves det egne [verktøy][6] som kan kompilere og generere
-koden som skrives slik at vi sluttresultatet kan vises i nettleseren eller Adobe Flash
+koden som skrives slik at sluttresultatet kan vises i nettleseren eller Adobe Flash
 Player. Det er flere verktøy ute på markedet som gjør denne jobben, både gratis
 og kommersielle verktøy. Det er ofte at kommersielle verktøy må velges siden mange 
 av gratis verktøyene ikke gjør konverteringsjobben godt nok.

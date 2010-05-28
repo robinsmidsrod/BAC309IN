@@ -1,14 +1,14 @@
 
-### 2.4 Mangler i implementasjon av SVG ###
+### 2.4 Funksjonalitet med feil i implementasjonene ###
 
-I Mozilla Firefox jobbes det i hovedsak med mangler i to av SVG-modulene som 
-jobbes med. Dette er Font og Animasjons modulen. Animasjons modulen står det 
-verst til med ettersom denne inneholder elementer som enten ikke er implementert, 
-eller som er prøvd implementert men inneholder mangler som gjør at de ikke 
+I Mozilla Firefox jobbes det i hovedsak med feil i to av SVG-modulene. 
+Dette er Font og Animasjons modulen. Animasjons modulen står det verst til 
+med ettersom denne inneholder elementer som enten ikke er implementert, 
+eller som er prøvd implementert men inneholder feil som gjør at de ikke 
 funger på en riktig måte i forhold til W3C sin SVG-standard. 
 
 Første element som ikke fungerer korrekt er animate, som gjør det mulig å 
-animere en enkel attribut eller ting over tid. Det er lagt inn en bug [rapport][1] 
+animere en enkel attributt eller ting over tid. Det er lagt inn en bug [rapport][1] 
 på denne modulen, som finnes i bugzilla. Et annet element som inneholder feil 
 er, animateTransform. Elementet skal blant annet gjøre det mulig å skalere eller 
 rotere en ting i SVG, f.eks et rektangel eller en firkant. Det er også her lagt 
@@ -22,7 +22,7 @@ Foreløpig har Mozilla ikke klart å vise mer avanserte fonter, eller fonter som
 inneholder spesielle symboler som man f.eks finner i japansk tegnsett. Dette
 fører til at fonter generelt ikke vil fungere korrekt. Istedenfor å vise deler 
 av fonten som faktisk fungerer eller gi tilbake en generell font, blir
-tekst som bruker en avansert font ikke vist i det hele tatt. Det har også blit 
+tekst som bruker en avansert font ikke vist i det hele tatt. Det har også blitt
 lagt inn en [bug][2] i bugzilla. Feilen skaper problemer med å vise tekst 
 som blir generert av SVG generelt og vil igjen gjøre SVG upålitelig til å 
 vise tekst i når det blir brukt avanserte fonter.
@@ -52,15 +52,15 @@ endringer i farger, hvor det har blitt registrert en [bug][4] i Webkit
 sin bugzilla.
 
 Opera har ikke spesifisert steder hvor elementer i de ulike modulene kun
-er delvis implementert. Ut fra den [generelle][5] SVG-status
-siden, som benytter SVG tester kan vi, trekke en konklusjon på hvordan det
-står til med SVG-støtten i Opera. Ut fra status-sidene ser man få tegn
-til elementer som fungerer delvis. Det eneste som kan nevnes er at Opera
-generelt har flere grønne felter enn både Webkit baserte nettlesere og Mozilla.
-Det finnes et par tester som viser at det kun er delvis støtte tilgjengelig.
-Dette er blant annet på animasjonstesten, og på testen som går på fonter
-som inneholder symboler. Det ser fortsatt ut som både font og animasjon
-er bedre implementert i Opera enn i Webkit og Mozilla.
+er delvis implementert. Ut fra den [generelle][5] SVG-status siden kan 
+vi trekke en konklusjon på hvordan det står til med SVG-støtten i Opera. 
+Ut fra status-sidene ser man få tegn til elementer som fungerer delvis. 
+Det eneste som kan nevnes er at Opera generelt har flere grønne felter 
+enn både Webkit baserte nettlesere og Mozilla. Det finnes et par tester 
+som viser at det kun er delvis støtte tilgjengelig. Dette er blant annet 
+på animasjonstesten, og på testen som går på fonter som inneholder symboler.
+Det ser fortsatt ut som både font og animasjon er bedre implementert i 
+Opera enn i Webkit og Mozilla.
 
 [1]: https://bugzilla.mozilla.org/show_bug.cgi?id=216462 "Implement SVG (SMIL) Animation, Mozilla Bug Tracker, rapportert: 2003-08-17, sist endret: 2010-03-05, status: RESOLVED FIXED"
 [2]: https://bugzilla.mozilla.org/show_bug.cgi?id=119490 "Implement SVG fonts, Mozilla Bug Tracker, rapportert: 2002-01-11, sist endret: 2010-05-25, status: ASSIGNED"

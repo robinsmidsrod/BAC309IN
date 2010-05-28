@@ -7,7 +7,7 @@ det mulig å lage grafikk, animasjoner og vise både lyd og bilde. Rammeverket h
 fått deler av .NET rammeverket integrert, slik at mye av den samme funksjonaliteten
 som finnes i standard .NET biblioteket også finnes i Silverlight.
 
-Silverlight er tilgjenglig på andre platformer enn Microsofts egne, i gjennom 
+Silverlight er tilgjengelig på andre platformer enn Microsofts egne, ved å bruke 
 Moonlight. [Moonlight][2] er utviklet av Novell, og gjør det mulig å bruke
 Silverlight på både Linux og BSD platform.
 
@@ -38,7 +38,7 @@ mapper som må være til stede på server-siden av en applikasjon for at den ska
 fungere. Det er også relativt komplisert struktur på noen av filene, og det kan 
 derfor være vanskelig å sette sammen en applikasjon uten et skikkelig verktøy.
 
-SVG har en stor fordel når det kommer til antall filer små må være tilstede, siden
+SVG har en stor fordel når det kommer til antall filer som må være tilstede, siden
 den kun krever filen som inneholder grafikken. Dette er også en tekst fil, som
 ikke trenger noe annet enn en nettleser for å tolkes. SVG kan også få store filer
 med mange linjer kode men man vil fortsatt slippe å trekke inn biblioteker eller
@@ -50,7 +50,7 @@ som tar seg av kjøringen av Silverlight applikasjonen. Nettleseren har ingen
 innebygget støtte  for Silverlight, og trenger derfor [tredjepartsprogramvare][4] for
 å kunne vise applikasjonen. Det er sjelden positivt når en bruker oppsøker et nettsted
 og trenger enda en plugin for å kunne vise innholdet. Brukeren hadde fått en
-bedre opplevelse om andre teknologier kunne brukes for å slippe alle pluginene.
+bedre opplevelse om andre teknologier kunne brukes for å slippe plugins.
 
 SVG har denne fordelen. Siden det støttes direkte i nettleseren trenger ikke
 brukeren å bekymre seg om å laste ned ekstra tillegg for å finne innholdet på
@@ -59,10 +59,15 @@ blant internett brukere er det viktig å gjøre mest mulig informasjon tilgjengl
 for flest mulig. 
 
 Egentlig kan man stille spørsmål om hvorfor det var behov for enda en teknologi
-som gjorde den samme jobben som flere andre før den. Vi har f.eks mange likheter
-i mellom Silverlight og Flash. Mange vil gå så langt å si at Silverlight er Flash
-i en Microsoft wrapping, noe som på mange måter er korrekt. Hvis vi sammenligner
-f.eks hvordan SVGs XML og Silverlights XAML ser ut når nettleseren skal
+som gjorde den samme jobben som flere andre før den. 
+
+FIXME: Omskriving av settning under
+
+Vi har mange likheter
+i mellom Silverlight og Flash. Mange vil gå så langt som å si at Silverlight er Flash
+i en Microsoft wrapping, noe som på mange måter er korrekt. 
+
+Hvis vi sammenligner f.eks hvordan SVGs XML og Silverlights XAML ser ut når nettleseren skal
 tolke det, er dette veldig likt. Mange stiller derfor spørsmål hvorfor Microsoft
 ikke heller tok i bruk SVG som allerede var etablert istedenfor å lage noe helt 
 eget og proprietært. 

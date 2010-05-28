@@ -1,9 +1,8 @@
 ### 4.4 Microsoft VML, et alternativ til SVG ###
 
 VML har samme [deklarative fokuset][1] som SVG, og benytter også [XML syntaks][1]
-for å lage grafikk og animasjoner. Det som er annerledes med VML er at produktet
-kommer fra Microsoft, og gjør mye av jobben for Internet Explorer som SVG gjør for 
-de fleste andre store nettlesere.
+for å lage grafikk og animasjoner. VML er utviklet eksklusivt for Internet Explorer, 
+og fungerer på lik linje med SVG for andre nettlesere.
 
 VML er et proprietært språk utviklet av Microsoft som ble [presentert for W3C][2]
 som en ny standard for animasjon og multimedia på nett. SVG valgte bort dette
@@ -22,7 +21,7 @@ funger også bra, og kan vise både [grafikk og animasjoner][1] som SVG kan gjø
 nettlesere. Det gjør at VML foreløpig er veldig nyttig for utviklere som et språk
 likt SVG for å ha en form for cross-browser support i grafikken som lages. SVG
 har enda ikke kommet dit at Internet Explorer støtter standarden, og det er derfor
-behov for VML enda liten stund til.
+enda behov for VML.
 
 En annen fordel med VML er at det i forhold til f.eks språk som Flash og
 Silverlight bruker [XML stuktur][1]. Dette er samme struktur som SVG bruker for å vise
@@ -38,9 +37,9 @@ begge bruker en XML struktur.
 #### 4.4.2 Ulemper ved Microsoft VML ####
 
 Først og fremst er VML enda en ting som utviklere må ta hensyn til når de
-skal ta i bruk grafikk og animasjon i nettleseren. Vi kan bare se hvor mye 
-problematikk ulik tolkning av CSS har skapt for web designere for å få et likt
-resultat i f.eks Internet Explorer og Mozilla Firefox. Dette er samme teknologi i
+skal ta i bruk grafikk og animasjon i nettleseren. Vi har erfaring med lignende
+problemer angående ulik tolkning av CSS for å få et likt resultat i 
+f.eks Internet Explorer og Mozilla Firefox. Dette er samme teknologi i
 to nettlesere, nå skal begge teknologiene virke i to nettlesere.
 
 Det kan være enkelt å f.eks legge ved både VML og SVG kode, så det ikke er behov
@@ -55,19 +54,19 @@ grafikk og animasjoner ble vist på rett måte.
 VML er veldig nettleser spesifikt, det fungerer faktisk i kun en nettleser. Dette
 er lite positivt ettersom all utvikling av VML grafikk, vil måtte skrives om til
 noe annet for at andre enn IE brukere skal kunne se innholdet. Dette er kanskje
-en av hovedgrunnene til at VML ikke ble tatt opp som en standard i W3C men at
+en av hovedgrunnene til at VML ikke ble godkjent som en standard i W3C men at
 W3C heller tok deler av VML og startet SVG utviklingsgruppen.
 
 VML har blitt en del av historien til Microsoft ettersom all videre utvikling
 av denne teknologien ble avsluttet i 1998. Etter dette har Microsoft ikke gjort
 forbedringer eller prøvd å lage mer funksjonalitet. Dette kan ha sammenheng med
-nederlaget hos W3C da VML ikke ble tatt opp som offisiell standard for multimedia
+nederlaget hos W3C da VML ikke ble godkjent som offisiell standard for multimedia
 på internett.
 
 Det er derfor til ettertanke at VMLs eksistens kun er tilstede i fravær av annen
 teknologi som fungerer like godt i Internet Explorer. Hadde Microsoft gjort en
 innsats for utvikling av SVG også for Internet Explorer ville det vært mulig for
-utviklere og brukere heller å fokusere mot SVG istedenfor å tenke på begge. 
+utviklere heller å fokusere på SVG istedenfor å bruke ressurser på begge. 
 
 [1]: http://msdn.microsoft.com/en-us/library/bb250524%28VS.85%29.aspx "Vector Markup Language(VML), Microsoft, lest 2010-05-27"
 [2]: http://en.wikipedia.org/wiki/Vector_Markup_Language "Vector Markup Language, Wikipedia, lest 2010-05-27"

@@ -21,12 +21,12 @@ Moduler vi spesielt bør legge spesielt merke til:
 Utfra [statussidene][7] kan vi konkludere med at SVG-implementasjonen i Mozilla har et
 stykke igjen før alt fungerer. Vi ser blant annet at støtten for symboler, som f.eks i
 japanske tegn er dårlig. Disse er ikke implementert i [tekst][1] modulen i Mozillas 
-implementasjon av SVG. Det er heller ikke mulig å spesifisere eget utseende på pekeren 
-i gjennom [cursor][3] modulen. Funksjonalitet nevnt over er ikke det viktigste som 
+implementasjon av SVG. Det er heller ikke mulig å spesifisere eget utseende på 
+musepekeren i [cursor-modulen][3]. Funksjonalitet nevnt over er ikke det viktigste som 
 SVG-standarden implementer, derimot har vi [animasjon][5] og [font][6] som burde være 
 veldig relevante i forhold til å bruke SVG aktivt i utvikling. Alle funksjoner under 
-disse modulene er enten ikke implementert eller inneholder bugs. Noe av det som 
-faktisk er flott med SVG er det å enkelt kunne lage animasjoner på nett.
+disse modulene er enten ikke implementert eller inneholder bugs. Noe av det som
+antakelig kunne tiltrekke utviklere er enkel animasjon i nettapplikasjoner.
 
 Opera har en av de bedre implementasjonene av SVG-standarden. Det ble også gjort en
 [undersøkelse][8] av Jeff Schiller, hvor han benyttet en testpakke fra W3C for å gradere
@@ -39,14 +39,12 @@ eller f.eks japansk skriftspråk.
 
 Støtte for lyd og video skal etter hvert bli integrert direkte i nettleseren ut fra
 hva man kan lese om Operas [arbeid][10] med nettleseren. Dette vil da komme i
-sammenheng med HTML5 som vil gjøre multimedia i nettlesere enklere. Da er det nok
-naturlig å anta at det ikke er prioritert å implementer video eller lyd i SVG,
-ettersom man uansett vil få tilgang til dette gjennom HTML5 når det blir tilgjenglig.
+sammenheng med HTML5 som vil gjøre multimedia i nettlesere enklere. 
 
 Mozilla Firefox baserer seg på [Gecko][11], som er en motor for å vise bilde og tekst i
 nettleseren. Implementasjonen av SVG ble derfor gjort opp mot denne motoren.
-Opera derimot har laget sin helt egen implementasjon, siden denne ikke baserer seg
-på noen separat motor. Alt er altså bygd for å kun fungere mot Opera. 
+Opera derimot har laget sin helt egen implementasjon, siden Opera ikke baserer seg
+på noen separat motor. Dette gjør antagelig at Operas motor er mer tilrettelagt for SVG.
 
 Chrome, som er Google sin nettlesere og relativt ny på markedet, og Safari, Apple sin 
 nettlesere som følger med OSX, baserer seg derimot på [Webkit][12]. Webkit kan sammenlignes 
@@ -57,7 +55,7 @@ og Safari hver for seg.
 Webkit har mange likheter med blant annet Mozilla, men ut fra [statussidene][13] ser
 det ut til at det er mangler eller halveis implementasjoner på moduler som f.eks Mozilla
 og Opera har implementert fullstendig. Text modulen har heller ikke her støtte for symboler,
-som i Opera og Mozilla, og det kan virke som om dette er et generelt problem å implementere.
+som i Opera og Mozilla, og det kan virke som om dette er generelt vanskelig å implementere.
 Webkit har heller ingen fullstending implementasjon av Filter modulen. Det er få som ikke 
 er prøvd implementert men de fleste inneholder bugs eller er bare delvis støttet. Det Webkit 
 har klart i motsetning til Mozilla er å implementere store deler av animasjonsmodulen, selv om 
@@ -71,7 +69,7 @@ SVG-standarden inn i IE9. I Internet Explorer 8 og tidligere finnes det
 ingen støtte for SVG-standarden, uten at det blir benyttet en ekstern
 plugin. Adobe har f.eks laget en slik plugin som kan benyttes for å [vise
 SVG i IE][15]. Det finnes også andre tillegg som kan installeres for å oppnå
-SVG-støtte, blant annet [Batik toolkit fra Apache][16] som implementere
+SVG-støtte, blant annet [Batik toolkit fra Apache][16] som implementerer
 SVG-spesifikasjonene.
 
 [1]: http://www.w3.org/TR/SVG11/text.html "Text - SVG 1.1, W3C, 2003-01-14"

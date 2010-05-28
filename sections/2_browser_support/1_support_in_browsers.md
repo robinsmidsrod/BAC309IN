@@ -3,7 +3,7 @@
 
 SVG er en standard som for lengst har blitt implementert i de fleste populære
 nettlesere som blir brukt av verdens befolkning. Det er heller et spørsmål om hvor
-mye av standarden som fungerer i de ulike nettleserne. Dette variere en god
+mye av standarden som fungerer i de ulike nettleserne. Dette varierer en god
 del fra nettleser til nettleser og en årsak til at SVG ikke er tatt i bruk aktivt 
 er nok at man ikke kan garantere for at resultatet blir som forventet i de ulike 
 nettleserne.
@@ -18,21 +18,21 @@ kan benytte. Denne kan også benyttes av andre applikasjoner som skulle ha behov
 SVG-støtte. 
 
 Flere av de andre populære nettleserne har gjort en implementasjon av SVG-standarden
-men ingen har kommet til det punktet at all funksjonalitet er støttet hundre fullt ut.
+men ingen har kommet til det punktet at all funksjonalitet er støttet fullt ut.
 Både Mozilla Firefox, Google Chrome, Apple Safari og Opera har alle prøvd å implementere 
 SVG. Noen av dem har lykkes i større grad enn andre, men alle har begynt på en vei vi 
 ser frem til å følge videre. SVG gjør det mulig for nettlesere å utføre avanserte 
-aninimasjonsoppgaver, samt å generere egne teksttyper relativt enkelt. Dette vil
+animasjonsoppgaver, samt å generere egne teksttyper relativt enkelt. Dette vil
 sannsynligvis få stor betydning for hvordan vi utvikler websider i fremtiden. 
 
 Jeff Schiller, som er en aktiv deltaker i [SVGIG][3] eller SVG interest group, har laget
-en oversikt, [tilgjenglig på nett][1], over hvilke deler av SVG-implementasjon som er
-tilgjenglig i de ulike nettleserne. Det er en oversikt som tar for seg både nettlesere
+en oversikt, [tilgjengelig på nett][1], over hvilke deler av SVG-implementasjonen som er
+tilgjengelig i de ulike nettleserne. Det er en oversikt som tar for seg både nettlesere
 og andre applikasjoner som implementerer SVG-standarden. Vår oppgave tar ikke
 utgangspunkt i de andre applikasjonene som er spesifisert her, men kun nettlesere som
 er relevante og i bruk pr i dag. Det finnes gode statistikker på nettet over hvilke
 nettlesere som er relevante for tiden, blant annet [Statcounter][2] som gir en veldig
-god oversikt. Ut ifra denne oversikten kom vi frem til følgende nettlesere som skal 
+god oversikt. Ut fra denne oversikten kom vi frem til følgende nettlesere som skal 
 vurderes opp mot SVG-standarden.
 
  * Microsoft Internet Explorer 7 / 8
@@ -45,11 +45,9 @@ Alle nettlesere er godt representert på internett i dag, og kjent av internettb
 i hele verden.
 
 På informasjonssiden om [SVG-status][1] i de ulike nettlesere er det angitt en prosent
-andel som forteller hvor mange prosent av standarden som er støttet. Det er interessant
-at nettlesere som har SVG-standarden innbygget i nettlesermotoren, som f.eks Mozilla
-har gjort med Gecko og Safari har gjort med Webkit, kommer dårligere ut av denne
-testen i motsetning til Opera som har laget sin egen nettlesermotor og bygget
-SVG-standarden inn i denne.
+andel som forteller hvor mange prosent av standarden som er støttet. Det er interessant å 
+se at Opera, som har utviklet sin egen nettlesermotor, kommer bedre ut av testen enn 
+f.eks Firefox, hvor SVG-standarden er utviklet på toppen av en eksisterende motor. 
 
  * Microsoft Internet Explorer 0.00% / 0.00%
  * Mozilla Firefox 46.17% / 60.40% / 60.77% / 61.50%
