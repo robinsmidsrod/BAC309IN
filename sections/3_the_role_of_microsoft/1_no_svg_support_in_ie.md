@@ -2,9 +2,10 @@
 
 Fra analysen av nettlesere tidligere ser vi at Microsoft sin Internet
 Explorer (IE) aldri har hatt innebygget støtte for SVG. Man har alltid vært
-avhengig av et tredjepartstillegg (plugin) for å kunne se SVG i IE. Den
-[mest populære har til nå vært Adobe sin SVG Viewer][1], men andre har nå
-kommet på markedet fordi Adobe valgte å [stoppe å utvikle sin plugin][2].
+avhengig av et tredjepartstillegg (plugin) for å kunne se SVG i IE. Det
+[mest populære tillegget][1] har til nå vært Adobe sin SVG Viewer, men andre
+har nå kommet på markedet fordi Adobe valgte å [stoppe å utvikle sin
+plugin][2].
 
 IE har siden [versjon 5.0][3] hatt støtte for et annet grafikk-språk som
 heter VML (Vector Markup Language). VML er implementert i XML på lik linje
@@ -13,7 +14,7 @@ standardisert. Vi kommer inn på VML i litt mer detalj senere.
 
 Fordi VML allerede var implementert i IE var Microsoft [ikke interessert][4]
 i å legge inn støtte for en konkurrerende teknologi som SVG. De mente det
-var nok å ha et vektorformat og var derfor uvillig til å støtte en åpen
+var nok å ha ett vektorformat og var derfor uvillig til å støtte en åpen
 standard som SVG. Sammen med det faktum at IE sitt utviklerteam nærmest ble
 lagt ned etter utviklingen av IE6 og at det var [stille på nettleserfronten i
 over 5 år][5] førte til en stagnering av nettlesermarkedet.
@@ -22,17 +23,18 @@ Det førte til store problemer for SVG WG, fordi Microsoft hadde gitt klart
 uttrykk for at VML var en standard som [ikke skulle endres/videreutvikles
 fordi den allerede var i bruk][6]. W3C ble da sittende mellom barken og
 veden. De kunne utvikle en standard som de hadde kontroll over og kunne
-videreutvikle, som markedslederen ikke var interessert i å støtte, eller de
-kunne ratifisere en standard de ikke kunne videreutvikle, men som ville være
-mulig å få god markedspenetrasjon på i løpet av relativt kort tid. Det at
-SVG eksisterer som en standard i dag som ikke er kompatibel med VML viser
-klart og tydlig at de valgte å gå for den første løsningen. Dette har gitt
-oss en markedsituasjon hvor nettleseren med størst markedsandel ikke støtter
-den ledende og mest anerkjente teknologien på markedet.
+videreutvikle, som markedslederen ikke var interessert i å støtte.
+Alternativet ville være å ratifisere en standard de ikke kunne
+videreutvikle, men som ville være mulig å få god markedspenetrasjon på i
+løpet av relativt kort tid. Det at SVG eksisterer som en standard i dag som
+ikke er kompatibel med VML viser klart og tydelig at de valgte å gå for den
+første løsningen. Dette har gitt oss en markedsituasjon hvor nettleseren med
+størst markedsandel ikke støtter den ledende og mest anerkjente teknologien
+på markedet.
 
 Helt siden IE fikk støtte for VML har Microsoft vært [uvillig til å endre
 sitt standpunkt][4] på om de ønsker å implementere SVG i nettleseren. Dette,
-sammen med det faktum at Microsoft ikke var villig til å videreutviklet IE,
+sammen med det faktum at Microsoft ikke var villig til å videreutvikle IE,
 har ført til at sluttbrukere har begynt å benytte andre nettlesere, slik som
 Firefox, Safari, Opera og Chrome. Alle disse nettleserne støtter SVG i
 varierende grad, som tidligere avklart. Det at IE sine markedsandeler har

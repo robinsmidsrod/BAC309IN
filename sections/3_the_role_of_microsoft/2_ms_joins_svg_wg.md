@@ -9,7 +9,7 @@ Microsoft ble spurt om dette betydde at en fremtidig versjon av IE ville få
 støtte for SVG valgte Microsoft å [ikke ta stilling til det spørsmålet][3]
 på det tidspunktet.
 
-Som vi har sett fra statistikken på epostliten (nevnt tidligere) ser det ut
+Som vi har sett fra statistikken på epostlisten (nevnt tidligere) ser det ut
 som om Microsoft har valgt å benytte sin stemme og påvirker utviklingen av
 standarden med sin tilstedeværelse. I tillegg er de fremdeles i [*good
 standing* med SVG WG][4], som betyr at de møter opp til de regelmessige
