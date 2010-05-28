@@ -78,13 +78,13 @@ SVG-spesifikasjonene.
 [4]: http://www.w3.org/TR/SVG11/linking.html "Linking - SVG 1.1, W3C, 2003-01-14"
 [5]: http://www.w3.org/TR/SVG11/animate.html "Animate - SVG 1.1, W3C, 2003-01-14"
 [6]: http://www.w3.org/TR/SVG11/fonts.html "Fonts - SVG 1.1, W3C, 2003-01-14"
-[7]: http://www.mozilla.org/projects/svg/status.html "Mozilla SVG Status, Mozilla, lest xxx"
+[7]: http://www.mozilla.org/projects/svg/status.html "Mozilla SVG Status, Mozilla, lest 2010-03-25"
 [8]: http://www.codedread.com/svg-support-table.html
-[9]: http://www.opera.com/docs/specs/svg/ "SVG support in Opera 9, Opera, lest xxx"
-[10]: http://www.opera.com/docs/specs/presto25/html5/ "Opera: HTML5 elements attributes and APIs support in Opera Presto 2.5, Opera, lest xxx"
+[9]: http://www.opera.com/docs/specs/svg/ "SVG support in Opera 9, Opera, lest 2010-03-25"
+[10]: http://www.opera.com/docs/specs/presto25/html5/ "Opera: HTML5 elements attributes and APIs support in Opera Presto 2.5, Opera, lest 2010-03-25"
 [11]: https://developer.mozilla.org/en/Gecko "Gecko - MDC, Mozilla, 2010-03-12"
-[12]: http://webkit.org/ "The Webkit Open Source Project, Webkit, lest xxx"
+[12]: http://webkit.org/ "The Webkit Open Source Project, Webkit, lest 2010-03-25"
 [13]: http://webkit.org/projects/svg/status.xml "WebKit SVG Status, Webkit, 2010-01-05"
 [14]: http://blogs.msdn.com/b/ie/archive/2010/01/05/microsoft-joins-w3c-svg-working-group.aspx "Microsoft joins W3C SVG Working Group, Microsoft IE Team Blog, 2010-01-05"
-[15]: http://www.adobe.com/svg/viewer/install/
+[15]: http://www.adobe.com/svg/viewer/install/ "Adobe SVG Viewer, Adobe, lest 2010-03-25"
 [16]: http://xmlgraphics.apache.org/batik/ "Batik Java SVG Toolkit, Apache Software Foundation, 2010-01-02"
