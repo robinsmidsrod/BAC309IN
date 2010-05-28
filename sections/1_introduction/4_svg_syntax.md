@@ -29,7 +29,7 @@ Følgende primitiver er [tilgjengelig][6] (XML-element benyttet i SVG i parentes
  * Sirkel (circle)
  * Ellipse (ellipse)
 
-Nedenfor vil jeg gå gjennom hver enkelt primitiv i detalj. Som man kan se i
+Nedenfor vil vi gå gjennom hver enkelt primitiv i detalj. Som man kan se i
 eksemplene er det alltid et rot-element med navn `svg` som definerer synlig
 område ([viewport][7]) for hele tegneflaten. I tillegg er det her man definerer
 hvilken versjon av SVG-standarden man benytter, evt. hvilken SVG-profil man
@@ -107,7 +107,7 @@ forklaring. De gjør det mulig å få runde hjørner på rektangelet. Verdiene
 representerer radius i X- og Y-retning for sirkelen som benyttes for å tegne
 hjørnet. Dersom ingen av disse er spesifisert får man hjørner med en 90
 graders vinkel. Det som er viktig å huske på er at negative verdier for
-rx/ry/width/height ikke er tillatt. I dette eksempelet ser man også bruke av
+rx/ry/width/height ikke er tillatt. I dette eksempelet ser man også bruk av
 de konstante navnene i CSS for farger, samt bruk av transparens med
 `opacity`-attributtet. I dette tilfellet er elementet 50% gjennomskinnelig.
 
@@ -127,7 +127,7 @@ kontrollpunkter til destinasjonspunktet. Destinasjonspunktet blir da det nye
 utgangspunktet og tegneoperasjonen fortsetter. Det finnes flere [andre
 tegneoperasjoner][16] man kan benytte til å tegne en sti som vi ikke omtaler
 her. Det som er interessant å legge merke til er at alle de andre
-primitivene jeg har beskrevet her også kan tegnes ved hjelp av en sti.
+primitivene vi har beskrevet her også kan tegnes ved hjelp av en sti.
 
 #### 1.4.6 Sirkel ####
 
@@ -215,7 +215,7 @@ Hvis vi nå tar en kikk på `<filter>`-elementet innenfor definisjonsblokken ser
 vi at filteret består av en [gaussian blur-effekt][25] pluss en
 [offset-effekt][26]. Blur-effekten bruker kildegrafikken, utfører en
 blur-operasjon på størrelse 2 og lagrer resultatet i en midlertidig buffer
-som navngis **blur**. Offset-effekten benytter da denne mildertidige
+som navngis **blur**. Offset-effekten benytter da denne midlertidige
 bufferen som kilde og flytter x- og y-posisjon med 3 piksler. Dette fører da
 til at en skygge tegnes i grått først, og sort tekst tegnes over skyggen
 avslutningsvis.

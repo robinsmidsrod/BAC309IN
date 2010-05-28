@@ -33,7 +33,7 @@ deklarativ, mens animasjon basert på bruk av script-støtten i SVG er
 prosedyre-basert. Den deklarative notasjonen med SMIL er noe som brukere 
 som har erfaring med tradisjonell animasjon sannsynligvis vil kjenne 
 igjen fordi det baserer seg på tidskoder, synkronisering av aktiviteter 
-over en tidslinje med mer. Tradisjonelle programmerer, derimot, vil 
+over en tidslinje med mer. Tradisjonelle programmerere, derimot, vil
 sannsynligvis føle seg mer bekvemme med å bruke script-støtten for å 
 utføre en tilsvarende animasjon. Dette betyr i praksis at 
 SVG-standarden er fleksibel nok til at brukere med forskjellige 

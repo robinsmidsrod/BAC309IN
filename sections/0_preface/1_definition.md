@@ -26,14 +26,14 @@ hjelp av biblioteket omtalt over.
      - Finnes det noen mangler eller andre svakheter i støtten av SVG-standarden i disse nettleserne, f.eks. feil implementasjon?
  - Hvorfor støtter ikke Microsoft Internet Explorer SVG-standarden?
    - Hvordan forholder Microsoft seg til W3C sin SVG-standard?
-     - Har det synspunktet endret seg over tid?
+     - Har Microsofts synspunkt endret seg over tid?
    - Hvilke andre teknologier har Microsoft valgt å benytte isteden?
    - Hvilken innvirkning på markedet har Microsoft sitt synspunkt på adopsjon av SVG i sin helhet?
  - Hvilke alternative teknologier eksisterer som dekker SVG sin funksjonalitet?
    - Hvordan benytter utviklere Adobe Flash fordi SVG ikke er tilgjengelig?
    - Kan Microsoft SilverLight også benyttes for å omgå mangel på SVG-støtte?
    - Kan JavaScript-bibliotek som [Raphaël http://raphaeljs.com/] være et alternativ til SVG?
-     - Hvordan skille Raphaël sin imparative fokus seg fra SVG sin deklarative fokus?   
+     - Hvordan skiller RaphaëlJS sin imperative fokus seg fra SVG sin deklarative fokus?
    - Kunne VML (Vector Markup Lanuage), som Microsoft støtter, vært avansert som en global standard istedenfor SVG?
      - Finnes det proprietære elementer i VML som gjør den uskikket som en åpen standard?
      - Er VML som standard knyttet for sterkt til Microsoft sin implementasjon?

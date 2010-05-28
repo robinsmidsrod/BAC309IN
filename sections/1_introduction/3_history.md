@@ -121,10 +121,10 @@ statiske subsettet av SVG Tiny 1.2.
 
 Siden standarden enda ikke er godkjent er det uvisst hvilke organisasjoner
 som vil være involvert i den endelige versjonen av standarden. Fra
-oversikten over redaktører er det tydlig at Canon viser en stor interesse
+oversikten over redaktører er det tydelig at Canon viser en stor interesse
 for dette arbeidet.
 
-Det vedlaget dokumentet viser en [oversikt over alle forfatterne for de
+Det vedlagte dokumentet viser en [oversikt over alle forfatterne for de
 forskjellige revisjonene av SVG-standarden][14] fargekodet med når de
 involverte seg i arbeidsgruppen.
 
