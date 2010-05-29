@@ -34,6 +34,7 @@ system(
 print "Combining temporary PDF with attachments...\n";
 system(
     "pdftk",
+    $builder->template_dir->file("hve_front_page.pdf"),
     $builder->build_dir->file("temp.pdf"),
     $builder->build_dir->subdir("1_introduction")->file("svg_authors.pdf"),
     "cat",

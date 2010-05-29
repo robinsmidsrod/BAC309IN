@@ -1,6 +1,6 @@
 body.main {
     page: main;
-    counter-reset: page 1;
+    counter-reset: page 3;
 }
 
 @media print {
