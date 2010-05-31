@@ -24,13 +24,13 @@ GitHub-lenker til de forskjellige delene av oppgaven nevnt ovenfor:
 
 Selv om vi benyttet [LiquidPlanner.com][5] (LP) gjennom hele oppgaven og var
 svært flinke med å sette opp og estimere de forskjellige oppgavene vi skulle
-gjennom ble vi likevel sittende igjen med tidsnød mot slutten av oppgaven.
-Dette er helt klart og tydelig at tidsnøden først og fremst forekom på grunn
-av en altfor lang skrivesperre under arbeidet med kapittel 1 og 2.
-Agile-prinsippet med sprinter hjalp oss kraftig til å se at risikoen økte
-for hver uke som gikk. LP sin metode med å gi varsel når man er på tampen
-til å ikke klare en tidsfrist (sprint-milepæler) hjalp oss til å komme i mål
-med et komplett arbeid i tide.
+gjennom var det likevel utfordrende å komme i mål med oppgaven i tide. Den
+største utfordringen forekom under arbeidet med kapittel 1 og 2, som var
+planlagt utført før programmeringen skulle påbegynnes. Agile-prinsippet med
+sprinter hjalp oss kraftig til å se at risikoen økte for hver uke som gikk.
+LP sin metode med å gi varsel når man er på tampen til å ikke klare en
+tidsfrist (sprint-milepæler) hjalp oss til å komme i mål med et komplett
+arbeid i tide.
 
 [1]: http://github.com/robinsmidsrod/BAC309IN "Bacheloroppgave, Petter Dahl Thunæs/Robin Smidsrød , 2010-05-28"
 [2]: http://github.com/robinsmidsrod/SVGChartLibrary "SVG Chart Generator Library, Robin Smidsrød, 2010-05-28"
