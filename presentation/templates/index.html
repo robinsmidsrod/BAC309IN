@@ -1,5 +1,5 @@
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="[% language | html %]">
 <head>
 <title>[% title | html %]</title>
 <!-- metadata -->
@@ -7,7 +7,7 @@
 <meta name="version" content="S5 1.1" />
 <meta name="presdate" content="[% date | html %]" />
 <meta name="author" content="[% author | html %]" />
-<meta name="company" content="[% location | html %]" />
+<meta name="company" content="[% affiliation | html %]" />
 <!-- configuration parameters -->
 <meta name="defaultView" content="slideshow" />
 <meta name="controlVis" content="hidden" />
@@ -16,20 +16,20 @@
 <link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
 <link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
 <link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<link rel="stylesheet" href="custom.css" type="text/css" id="customStyle" />
 <!-- S5 JS -->
 <script src="ui/default/slides.js" type="text/javascript"></script>
 </head>
 <body>
 
 <div class="layout">
-<div id="controls"><!-- DO NOT EDIT --></div>
-<div id="currentSlide"><!-- DO NOT EDIT --></div>
-<div id="header"></div>
-<div id="footer">
-<h1>[% location | html %] - [% date | html %]</h1>
-<h2>[% title | html %]</h2>
-</div>
-
+ <div id="controls"><!-- DO NOT EDIT --></div>
+ <div id="currentSlide"><!-- DO NOT EDIT --></div>
+ <div id="header"></div>
+ <div id="footer">
+  <h1>[% location | html %] - [% date | html %]</h1>
+  <h2>[% title | html %]</h2>
+ </div>
 </div>
 
 <div class="presentation">
@@ -37,7 +37,7 @@
 <div class="slide">
 <h1>[% title | html %]</h1>
 <h3>[% author | html %]</h3>
-<h4>[% company | html %]</h4>
+<h4>[% affiliation | html %]</h4>
 </div>
 
 [% content %]

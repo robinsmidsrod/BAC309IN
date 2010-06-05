@@ -26,23 +26,38 @@ has 'dir' => (
     required => 1,
 );
 
+
 sub dir_name {
     my ($self) = @_;
     return $self->dir->relative( $self->dir->parent );
 }
 
-has 'extra_files' => (
+# Where to find our templates
+has 'template_dir' => (
+    is       => 'ro',
+    isa      => 'Path::Class::Dir',
+    required => 1,
+);
+
+# The name of the template that will be wrapped around each .md file in each section directory
+has 'paragraph_wrapper_filename' => (
+    is 	     => 'ro',
+    isa      => 'Str',
+    default  => "",
+);
+
+has 'assets' => (
     is => 'ro',
     isa => 'ArrayRef[Path::Class::File]',
     init_arg => undef,
     lazy_build => 1,
     traits => ['Array'],
     handles => {
-        'all_extra_files' => 'elements',
+        'all_assets' => 'elements',
     }
 );
 
-sub _build_extra_files {
+sub _build_assets {
     my ($self) = @_;
     my @children = $self->dir->children;
     my @files;
@@ -54,6 +69,35 @@ sub _build_extra_files {
         push @files, $child;
     }
     return \@files;
+}
+
+has 'output' => (
+    is	     => 'ro',
+    isa	     => 'Str',
+    init_arg => undef,
+    lazy_build => 1,
+);
+
+sub _build_output {
+    my ($self) = @_;
+    my $content = "";
+    if ( $self->title ) {
+        $content .= "<h2>" . $self->title . "</h2>\n";
+    }
+    $content .= $self->content;
+    return $content;
+}
+
+sub copy_assets {
+    my ($self, $build_dir) = @_;
+    confess("No build_dir specified!") unless blessed($build_dir) and $build_dir->isa('Path::Class::Dir');
+    foreach my $file ( $self->all_assets ) {
+        next unless $file;
+        my $extra_dir = $build_dir->subdir( $self->dir_name );
+        my $dst = $extra_dir->file( $file->relative($self->dir) );
+        $extra_dir->mkpath();
+        File::Copy::copy($file . "",$dst . "");
+    }
 }
 
 has 'title' => (
@@ -100,9 +144,19 @@ sub process {
 sub markdown {
     my ($self, $input) = @_;
     my $output = Text::MultiMarkdown::markdown($input);
-    return $self->convert_relative_links($output);
+    return $self->wrap_paragraph($output);
 }
 
+sub wrap_paragraph {
+    my ($self, $input) = @_;
+    my $output;
+    my $template_file = $self->template_dir->file(
+        $self->paragraph_wrapper_filename
+    );
+    my $template = ( -f $template_file and -r $template_file ) ? $template_file->slurp() : '[% content %]';
+    $self->tt->process(\$template, { content => $input }, \$output);
+    return $self->convert_relative_links($output);
+}
 
 sub convert_relative_links {
     my ($self, $input) = @_;

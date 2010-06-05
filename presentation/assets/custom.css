@@ -1,0 +1,8 @@
+.slide h1 { text-transform: none; }
+
+object {
+display: block;
+margin-left: 1.5em;
+border: 1px solid #ccc;
+float: right;
+}

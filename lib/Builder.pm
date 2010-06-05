@@ -66,6 +66,13 @@ has 'main_document_filename' => (
     required => 1,
 );
 
+# The name of the template that will be wrapped around each .md file in each section directory
+has 'paragraph_wrapper_filename' => (
+    is 	     => 'ro',
+    isa      => 'Str',
+    default  => "",
+);
+
 sub build {
     my ($self) = @_;
     unless ( $self->section_dir->stat ) {
@@ -117,15 +124,34 @@ sub build_main_document {
     $self->update_toc();
 }
 
+has 'toc_placeholder' => (
+    is      => 'ro',
+    isa     => 'Str',
+    default => 'ToC will be placed here.',
+);
+
+has 'skip_toc' => (
+    is      => 'ro',
+    isa     => 'Bool',
+    default => 0,
+);
+
+has 'skip_bibliography' => (
+    is      => 'ro',
+    isa     => 'Bool',
+    default => 0,
+);
+
 # Updates (actually creates) a Table of Contents on page 2
 sub update_toc {
     my ($self) = @_;
+    return if $self->skip_toc;
     Builder->voice("Updating table of contents...");
     my $filename = $self->build_dir->file($self->main_document_filename) . "";
 
     my $toc = HTML::Toc->new();
     $toc->setOptions({
-        insertionPoint => 'replace ToC will be placed here.',
+        insertionPoint => 'replace ' . $self->toc_placeholder,
     });
     my $toc_inserter = HTML::TocInsertor->new();
     $toc_inserter->insertIntoFile($toc, $filename, { outputFile => $filename . ".new" });
@@ -158,25 +184,14 @@ has 'main_document_vars' => (
 
 sub _build_main_document_vars {
     my ($self) = @_;
-    return {
-        title   => $self->main_document_title,
-        content => $self->main_document_content,
-    };
-}
-
-# Calculates the main document top title
-has 'main_document_title' => (
-    is => 'ro',
-    isa => 'Str',
-    lazy_build => 1,
-);
-
-sub _build_main_document_title {
-    my ($self) = @_;
-    Builder->voice("Computing main document title...");
-    my $title_filename = $self->section_dir->file('title');
-    return '<Please specify a title>' unless $title_filename->stat;
-    return $title_filename->slurp( chomp => 1);
+    my $vars = {};
+    while ( my $path = $self->section_dir->next() ) {
+        next if $path->is_dir;
+        next unless $path->basename =~ m{^[a-zA-Z0-9_-]+$}; # Just import all files without dots in them
+        $vars->{ $path->basename } = $path->slurp( chomp => 1 );
+    }
+    $vars->{'content'} = $self->main_document_content;
+    return $vars;
 }
 
 # The complete content that will go into the main document
@@ -189,6 +204,7 @@ has 'main_document_content' => (
 sub _build_main_document_content {
     my ($self) = @_;
     Builder->voice("Computing main document content...");
+
     my $content = "";
     # Build front page content
     my $file = $self->section_dir->file('frontpage.md');
@@ -200,24 +216,18 @@ sub _build_main_document_content {
     # Build content for each section/chapter (except attachments)
     foreach my $section ( $self->all_sections ) {
         next if $section->dir_name eq '9_attachments';
-        if ( $section->title ) {
-            $content .= "<h2>" . $section->title . "</h2>\n";
-        }
-        $content .= $section->content;
-        $self->copy_section_extra_files($section);
+        $content .= $section->output;
+        $section->copy_assets($self->build_dir);
     }
 
     # Build bibliography
-    $content = $self->build_bibliography($content);
+    $content = $self->build_bibliography($content) unless $self->skip_bibliography;
 
     # Build content for attachment section
     foreach my $section ( $self->all_sections ) {
         next unless $section->dir_name eq '9_attachments';
-        if ( $section->title ) {
-            $content .= "<h2>" . $section->title . "</h2>\n";
-        }
-        $content .= $section->content;
-        $self->copy_section_extra_files($section);
+        $content .= $section->output;
+        $section->copy_assets($self->build_dir);
     }
 
     return $content;
@@ -241,20 +251,13 @@ sub _build_sections {
     my @sections;
     foreach my $dir ( sort @children ) {
         next unless $dir and $dir->isa('Path::Class::Dir');
-        push @sections, Section->new( dir => $dir );
+        push @sections, Section->new(
+            dir                        => $dir,
+            template_dir               => $self->template_dir,
+            paragraph_wrapper_filename => $self->paragraph_wrapper_filename,
+        );
     }
     return \@sections;
-}
-
-sub copy_section_extra_files {
-    my ($self, $section) = @_;
-    foreach my $file ( $section->all_extra_files ) {
-        next unless $file;
-        my $extra_dir = $self->build_dir->subdir( $section->dir_name );
-        my $dst = $extra_dir->file( $file->relative($section->dir) );
-        $extra_dir->mkpath();
-        File::Copy::copy($file . "",$dst . "");
-    }
 }
 
 sub build_bibliography {
