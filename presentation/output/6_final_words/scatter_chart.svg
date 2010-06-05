@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin"
+    version="1.1" viewBox="0 0 1000 750">
+    <title>Income by age/experience</title>
+    <desc>An overview over people and their income across their life with different jobs</desc>
+    <rect fill="none" height="748" stroke="black" stroke-width="1"
+        width="998" x="1" y="1"/>
+    <text font-family="sans-serif" font-size="32" text-anchor="middle"
+        x="50%" y="52">Income by age/experience</text>
+    <g transform="translate(827.8 72.0)">
+        <rect fill="none" height="264.0" stroke="black" stroke-width="1"
+            width="152.2" x="0.0" y="0.0"/>
+        <circle cx="15" cy="23.0" fill="#ff0000" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="32.0">Person 1</text>
+        <circle cx="15" cy="47.0" fill="#ff9900" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="56.0">Person 2</text>
+        <circle cx="15" cy="71.0" fill="#ccff00" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="80.0">Person 3</text>
+        <circle cx="15" cy="95.0" fill="#33ff00" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="104.0">Person 4</text>
+        <circle cx="15" cy="119.0" fill="#00ff66" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="128.0">Person 5</text>
+        <circle cx="15" cy="143.0" fill="#00ffff" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="152.0">Person 6</text>
+        <circle cx="15" cy="167.0" fill="#0066ff" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="176.0">Person 7</text>
+        <circle cx="15" cy="191.0" fill="#3300ff" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="200.0">Person 8</text>
+        <circle cx="15" cy="215.0" fill="#cc00ff" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="224.0">Person 9</text>
+        <circle cx="15" cy="239.0" fill="#ff0099" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="248.0">Person 10</text>
+    </g>
+    <line stroke="black" x1="20" x2="807" y1="674" y2="674"/>
+    <line stroke="black" stroke-dasharray="2,2" x1="177" x2="177"
+        y1="674" y2="72"/>
+    <line stroke="black" x1="177" x2="177" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="177" y="671">28</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="334" x2="334"
+        y1="674" y2="72"/>
+    <line stroke="black" x1="334" x2="334" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="334" y="671">36</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="492" x2="492"
+        y1="674" y2="72"/>
+    <line stroke="black" x1="492" x2="492" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="492" y="671">44</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="649" x2="649"
+        y1="674" y2="72"/>
+    <line stroke="black" x1="649" x2="649" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="649" y="671">52</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="807" x2="807"
+        y1="674" y2="72"/>
+    <line stroke="black" x1="807" x2="807" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="807" y="671">60</text>
+    <line stroke="black" x1="20" x2="20" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="20" y="671">20</text>
+    <text font-family="sans-serif" font-size="14" stroke="black"
+        text-anchor="end" x="807" y="691">Age (year)</text>
+    <line stroke="black" x1="20" x2="20" y1="674" y2="72"/>
+    <line stroke="black" stroke-dasharray="2,2" x1="20" x2="807"
+        y1="599" y2="599"/>
+    <line stroke="black" x1="20" x2="23" y1="599" y2="599"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="603">1</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="20" x2="807"
+        y1="524" y2="524"/>
+    <line stroke="black" x1="20" x2="23" y1="524" y2="524"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="528">2</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="20" x2="807"
+        y1="449" y2="449"/>
+    <line stroke="black" x1="20" x2="23" y1="449" y2="449"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="453">3</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="20" x2="807"
+        y1="373" y2="373"/>
+    <line stroke="black" x1="20" x2="23" y1="373" y2="373"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="377">4</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="20" x2="807"
+        y1="298" y2="298"/>
+    <line stroke="black" x1="20" x2="23" y1="298" y2="298"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="302">5</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="20" x2="807"
+        y1="223" y2="223"/>
+    <line stroke="black" x1="20" x2="23" y1="223" y2="223"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="227">6</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="20" x2="807"
+        y1="148" y2="148"/>
+    <line stroke="black" x1="20" x2="23" y1="148" y2="148"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="152">7</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="20" x2="807" y1="72" y2="72"/>
+    <line stroke="black" x1="20" x2="23" y1="72" y2="72"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="76">8</text>
+    <line stroke="black" x1="20" x2="23" y1="674" y2="674"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="678">0</text>
+    <text font-family="sans-serif" font-size="14" stroke="black"
+        text-anchor="start" x="20" y="61">Experience (year)</text>
+    <defs>
+        <filter id="highlight">
+            <feMorphology operator="dilate" radius="2"/>
+            <feColorMatrix type="saturate" values="1"/>
+            <feGaussianBlur result="coloredBlur" stdDeviation="2.5"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <defs>
+        <clipPath id="dataRegion">
+            <rect height="602" width="787" x="20" y="72"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#dataRegion)">
+        <circle cx="216" cy="387" fill="#ff0000" r="21.655556467825534"/>
+        <circle cx="413" cy="152" fill="#ff0000" r="23.589448430798438"/>
+        <circle cx="610" cy="143" fill="#ff0000" r="2.778022584121457"/>
+        <circle cx="216" cy="552" fill="#ff9900"
+            filter="url(#highlight)" r="34.54061811924751"/>
+        <circle cx="413" cy="513" fill="#ff9900"
+            filter="url(#highlight)" r="62.555743725732185"/>
+        <circle cx="610" cy="131" fill="#ff9900"
+            filter="url(#highlight)" r="33.98797310133002"/>
+        <circle cx="216" cy="436" fill="#ccff00" r="13.438797212484396"/>
+        <circle cx="413" cy="468" fill="#ccff00" r="75.31552204214076"/>
+        <circle cx="610" cy="81" fill="#ccff00" r="11.749526581882323"/>
+        <circle cx="216" cy="348" fill="#33ff00"
+            filter="url(#highlight)" r="14.278331922157411"/>
+        <circle cx="413" cy="274" fill="#33ff00"
+            filter="url(#highlight)" r="8.688330057595394"/>
+        <circle cx="610" cy="299" fill="#33ff00"
+            filter="url(#highlight)" r="100.0"/>
+        <circle cx="216" cy="261" fill="#00ff66" r="4.326410559945678"/>
+        <circle cx="413" cy="290" fill="#00ff66" r="35.02026789310761"/>
+        <circle cx="610" cy="381" fill="#00ff66" r="63.49553629007073"/>
+        <circle cx="216" cy="531" fill="#00ffff"
+            filter="url(#highlight)" r="2.8912861336401154"/>
+        <circle cx="413" cy="468" fill="#00ffff"
+            filter="url(#highlight)" r="29.218764034400085"/>
+        <circle cx="610" cy="240" fill="#00ffff"
+            filter="url(#highlight)" r="15.672010817155778"/>
+        <circle cx="216" cy="565" fill="#0066ff" r="17.26269662342624"/>
+        <circle cx="413" cy="394" fill="#0066ff" r="30.623318623370647"/>
+        <circle cx="610" cy="264" fill="#0066ff" r="64.14528959481733"/>
+        <circle cx="216" cy="293" fill="#3300ff"
+            filter="url(#highlight)" r="9.52812908222052"/>
+        <circle cx="413" cy="495" fill="#3300ff"
+            filter="url(#highlight)" r="31.435382569147436"/>
+        <circle cx="610" cy="398" fill="#3300ff"
+            filter="url(#highlight)" r="8.184054286947203"/>
+        <circle cx="216" cy="540" fill="#cc00ff" r="5.142680543735063"/>
+        <circle cx="413" cy="198" fill="#cc00ff" r="30.26857473334993"/>
+        <circle cx="610" cy="164" fill="#cc00ff" r="87.22995959588977"/>
+        <circle cx="216" cy="234" fill="#ff0099"
+            filter="url(#highlight)" r="15.748181145969573"/>
+        <circle cx="413" cy="482" fill="#ff0099"
+            filter="url(#highlight)" r="48.496429251907486"/>
+        <circle cx="610" cy="323" fill="#ff0099"
+            filter="url(#highlight)" r="77.95654256073189"/>
+    </g>
+</svg>

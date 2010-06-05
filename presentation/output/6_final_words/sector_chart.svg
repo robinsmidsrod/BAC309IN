@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin"
+    version="1.1" viewBox="0 0 1000 750">
+    <title>Employee salaries</title>
+    <desc>An overview of salaries for our employees</desc>
+    <rect fill="none" height="748" stroke="black" stroke-width="1"
+        width="998" x="1" y="1"/>
+    <text font-family="sans-serif" font-size="32" text-anchor="middle"
+        x="50%" y="52">Employee salaries</text>
+    <g transform="translate(803.8 72.0)">
+        <rect fill="none" height="602.0" stroke="black" stroke-width="1"
+            width="176.2" x="0.0" y="0.0"/>
+        <circle cx="15" cy="23.0" fill="#ff0000" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="32.0">Employee 1</text>
+        <circle cx="15" cy="47.0" fill="#ff3300" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="56.0">Employee 2</text>
+        <circle cx="15" cy="71.0" fill="#ff6600" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="80.0">Employee 3</text>
+        <circle cx="15" cy="95.0" fill="#ff9900" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="104.0">Employee 4</text>
+        <circle cx="15" cy="119.0" fill="#ffcc00" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="128.0">Employee 5</text>
+        <circle cx="15" cy="143.0" fill="#ffff00" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="152.0">Employee 6</text>
+        <circle cx="15" cy="167.0" fill="#ccff00" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="176.0">Employee 7</text>
+        <circle cx="15" cy="191.0" fill="#99ff00" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="200.0">Employee 8</text>
+        <circle cx="15" cy="215.0" fill="#66ff00" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="224.0">Employee 9</text>
+        <circle cx="15" cy="239.0" fill="#33ff00" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="248.0">Employee 10</text>
+        <circle cx="15" cy="263.0" fill="#00ff00" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="272.0">Employee 11</text>
+        <circle cx="15" cy="287.0" fill="#00ff33" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="296.0">Employee 12</text>
+        <circle cx="15" cy="311.0" fill="#00ff66" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="320.0">Employee 13</text>
+        <circle cx="15" cy="335.0" fill="#00ff99" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="344.0">Employee 14</text>
+        <circle cx="15" cy="359.0" fill="#00ffcc" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="368.0">Employee 15</text>
+        <circle cx="15" cy="383.0" fill="#00ffff" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="392.0">Employee 16</text>
+        <circle cx="15" cy="407.0" fill="#00ccff" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="416.0">Employee 17</text>
+        <circle cx="15" cy="431.0" fill="#0099ff" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="440.0">Employee 18</text>
+        <circle cx="15" cy="455.0" fill="#0066ff" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="464.0">Employee 19</text>
+        <circle cx="15" cy="479.0" fill="#0033ff" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="488.0">Employee 20</text>
+        <circle cx="15" cy="503.0" fill="#0000ff" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="512.0">Employee 21</text>
+        <circle cx="15" cy="527.0" fill="#3300ff" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="536.0">Employee 22</text>
+        <circle cx="15" cy="551.0" fill="#6600ff" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="560.0">Employee 23</text>
+        <circle cx="15" cy="575.0" fill="#9900ff" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="584.0">Employee 24</text>
+    </g>
+    <text font-family="sans-serif" font-size="18" stroke="black"
+        text-anchor="end" x="980" y="730">Salary (kr)</text>
+    <text font-family="sans-serif" font-size="18" stroke="black" x="20" y="712">Total sum: 10,746,552.56</text>
+    <text font-family="sans-serif" font-size="18" stroke="black" x="20" y="730">Total items: 30</text>
+    <g>
+        <path
+            d="M401,373 L598,373 A197.39130434782612,197.39130434782612 0 0,1595,403 Z"
+            fill="#ff0000" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="636" y="401">2.5%</text>
+        <path
+            d="M448,384 L642,414 A197.39130434782612,197.39130434782612 0 0,1634,448 Z"
+            fill="#ff3300" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="676" y="449">2.8%</text>
+        <path
+            d="M401,373 L587,437 A197.39130434782612,197.39130434782612 0 0,1568,477 Z"
+            fill="#ff6600" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="613" y="484">3.8%</text>
+        <path
+            d="M440,402 L607,506 A197.39130434782612,197.39130434782612 0 0,1591,528 Z"
+            fill="#ff9900" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="630" y="547">2.2%</text>
+        <path
+            d="M401,373 L552,499 A197.39130434782612,197.39130434782612 0 0,1530,521 Z"
+            fill="#ffcc00" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="568" y="548">2.5%</text>
+        <path
+            d="M428,413 L557,561 A197.39130434782612,197.39130434782612 0 0,1520,587 Z"
+            fill="#ffff00" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="559" y="616">3.6%</text>
+        <path
+            d="M401,373 L493,547 A197.39130434782612,197.39130434782612 0 0,1442,566 Z"
+            fill="#ccff00" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="455" y="529">4%</text>
+        <path
+            d="M406,422 L447,615 A197.39130434782612,197.39130434782612 0 0,1409,619 Z"
+            fill="#99ff00" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="430" y="663">3.1%</text>
+        <path
+            d="M401,373 L404,570 A197.39130434782612,197.39130434782612 0 0,1363,566 Z"
+            fill="#66ff00" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="380" y="616">3.3%</text>
+        <path
+            d="M388,420 L350,613 A197.39130434782612,197.39130434782612 0 0,1323,606 Z"
+            fill="#33ff00" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="327" y="655">2.2%</text>
+        <path
+            d="M401,373 L336,559 A197.39130434782612,197.39130434782612 0 0,1293,538 Z"
+            fill="#00ff00" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="297" y="593">3.9%</text>
+        <path
+            d="M369,410 L261,575 A197.39130434782612,197.39130434782612 0 0,1227,547 Z"
+            fill="#00ff33" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="218" y="598">3.7%</text>
+        <path
+            d="M401,373 L259,510 A197.39130434782612,197.39130434782612 0 0,1230,471 Z"
+            fill="#00ff66" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="211" y="523">3.7%</text>
+        <path
+            d="M355,391 L184,489 A197.39130434782612,197.39130434782612 0 0,1164,442 Z"
+            fill="#00ff99" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="206" y="459">4%</text>
+        <path
+            d="M401,373 L210,424 A197.39130434782612,197.39130434782612 0 0,1204,390 Z"
+            fill="#00ffcc" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="167" y="422">2.7%</text>
+        <path
+            d="M351,370 L154,387 A197.39130434782612,197.39130434782612 0 0,1156,335 Z"
+            fill="#00ffff" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="191" y="370">4%</text>
+        <path
+            d="M401,373 L206,338 A197.39130434782612,197.39130434782612 0 0,1220,292 Z"
+            fill="#00ccff" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="174" y="311">3.9%</text>
+        <path
+            d="M359,346 L178,265 A197.39130434782612,197.39130434782612 0 0,1210,216 Z"
+            fill="#0099ff" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="225" y="266">5%</text>
+        <path
+            d="M401,373 L252,243 A197.39130434782612,197.39130434782612 0 0,1290,209 Z"
+            fill="#0066ff" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="295" y="263">4%</text>
+        <path
+            d="M377,329 L266,165 A197.39130434782612,197.39130434782612 0 0,1296,148 Z"
+            fill="#0033ff" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="263" y="132">2.9%</text>
+        <path
+            d="M401,373 L320,192 A197.39130434782612,197.39130434782612 0 0,1363,179 Z"
+            fill="#0000ff" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="327" y="155">3.5%</text>
+        <path
+            d="M397,323 L359,129 A197.39130434782612,197.39130434782612 0 0,1410,126 Z"
+            fill="#3300ff" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="386" y="171">4%</text>
+        <path
+            d="M401,373 L414,176 A197.39130434782612,197.39130434782612 0 0,1442,179 Z"
+            fill="#6600ff" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="433" y="146">2.4%</text>
+        <path
+            d="M415,325 L456,131 A197.39130434782612,197.39130434782612 0 0,1488,141 Z"
+            fill="#9900ff" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="483" y="109">2.9%</text>
+        <path
+            d="M401,373 L474,189 A197.39130434782612,197.39130434782612 0 0,1511,209 Z"
+            fill="#cc00ff" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="512" y="171">3.1%</text>
+        <path
+            d="M432,335 L542,171 A197.39130434782612,197.39130434782612 0 0,1573,197 Z"
+            fill="#ff00ff" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="583" y="163">3.4%</text>
+        <path
+            d="M401,373 L542,235 A197.39130434782612,197.39130434782612 0 0,1558,254 Z"
+            fill="#ff00cc" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="582" y="228">2.1%</text>
+        <path
+            d="M443,347 L600,228 A197.39130434782612,197.39130434782612 0 0,1621,263 Z"
+            fill="#ff0099" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="644" y="234">3.3%</text>
+        <path
+            d="M401,373 L579,289 A197.39130434782612,197.39130434782612 0 0,1593,328 Z"
+            fill="#ff0066" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="624" y="303">3.2%</text>
+        <path
+            d="M449,366 L641,321 A197.39130434782612,197.39130434782612 0 0,1646,365 Z"
+            fill="#ff0033" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            text-anchor="middle" x="682" y="346">3.7%</text>
+    </g>
+</svg>

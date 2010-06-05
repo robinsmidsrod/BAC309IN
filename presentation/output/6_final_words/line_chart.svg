@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin"
+    version="1.1" viewBox="0 0 1000 750">
+    <title>Car type age/milage</title>
+    <desc>An overview over different cars and their respective ages and milages</desc>
+    <rect fill="none" height="748" stroke="black" stroke-width="1"
+        width="998" x="1" y="1"/>
+    <text font-family="sans-serif" font-size="32" text-anchor="middle"
+        x="50%" y="52">Car type age/milage</text>
+    <g transform="translate(875.8 72.0)">
+        <rect fill="none" height="144.0" stroke="black" stroke-width="1"
+            width="104.2" x="0.0" y="0.0"/>
+        <circle cx="15" cy="23.0" fill="#ff0000" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="32.0">Car 1</text>
+        <circle cx="15" cy="47.0" fill="#ccff00" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="56.0">Car 2</text>
+        <circle cx="15" cy="71.0" fill="#00ff66" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="80.0">Car 3</text>
+        <circle cx="15" cy="95.0" fill="#0066ff" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="104.0">Car 4</text>
+        <circle cx="15" cy="119.0" fill="#cc00ff" r="9.600000000000001" stroke="black"/>
+        <text font-family="sans-serif" font-size="24" stroke="black"
+            x="30.0" y="128.0">Car 5</text>
+    </g>
+    <line stroke="black" x1="20" x2="855" y1="674" y2="674"/>
+    <line stroke="black" stroke-dasharray="2,2" x1="95" x2="95" y1="674" y2="72"/>
+    <line stroke="black" x1="95" x2="95" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="95" y="671">51,065.42</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="171" x2="171"
+        y1="674" y2="72"/>
+    <line stroke="black" x1="171" x2="171" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="171" y="671">102,130.85</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="247" x2="247"
+        y1="674" y2="72"/>
+    <line stroke="black" x1="247" x2="247" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="247" y="671">153,196.27</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="323" x2="323"
+        y1="674" y2="72"/>
+    <line stroke="black" x1="323" x2="323" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="323" y="671">204,261.69</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="399" x2="399"
+        y1="674" y2="72"/>
+    <line stroke="black" x1="399" x2="399" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="399" y="671">255,327.11</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="475" x2="475"
+        y1="674" y2="72"/>
+    <line stroke="black" x1="475" x2="475" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="475" y="671">306,392.54</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="551" x2="551"
+        y1="674" y2="72"/>
+    <line stroke="black" x1="551" x2="551" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="551" y="671">357,457.96</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="627" x2="627"
+        y1="674" y2="72"/>
+    <line stroke="black" x1="627" x2="627" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="627" y="671">408,523.38</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="703" x2="703"
+        y1="674" y2="72"/>
+    <line stroke="black" x1="703" x2="703" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="703" y="671">459,588.8</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="779" x2="779"
+        y1="674" y2="72"/>
+    <line stroke="black" x1="779" x2="779" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="779" y="671">510,654.23</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="855" x2="855"
+        y1="674" y2="72"/>
+    <line stroke="black" x1="855" x2="855" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="855" y="671">561,719.65</text>
+    <line stroke="black" x1="20" x2="20" y1="674" y2="671"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="middle" x="20" y="671">0</text>
+    <text font-family="sans-serif" font-size="14" stroke="black"
+        text-anchor="end" x="855" y="691">Milage (km)</text>
+    <line stroke="black" x1="20" x2="20" y1="674" y2="72"/>
+    <line stroke="black" stroke-dasharray="2,2" x1="20" x2="855"
+        y1="474" y2="474"/>
+    <line stroke="black" x1="20" x2="23" y1="474" y2="474"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="478">15</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="20" x2="855"
+        y1="273" y2="273"/>
+    <line stroke="black" x1="20" x2="23" y1="273" y2="273"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="277">25</text>
+    <line stroke="black" stroke-dasharray="2,2" x1="20" x2="855" y1="72" y2="72"/>
+    <line stroke="black" x1="20" x2="23" y1="72" y2="72"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="76">35</text>
+    <line stroke="black" x1="20" x2="23" y1="674" y2="674"/>
+    <text font-family="sans-serif" font-size="12" stroke="black"
+        text-anchor="start" x="27" y="678">5</text>
+    <text font-family="sans-serif" font-size="14" stroke="black"
+        text-anchor="start" x="20" y="61">Age (year)</text>
+    <defs>
+        <filter id="highlight">
+            <feMorphology operator="dilate" radius="2"/>
+            <feColorMatrix type="saturate" values="1"/>
+            <feGaussianBlur result="coloredBlur" stdDeviation="2.5"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <circle cx="41" cy="573" fill="#ff0000" r="3.0"/>
+    <line stroke="#ff0000" x1="41" x2="41" y1="573" y2="573"/>
+    <circle cx="41" cy="573" fill="#ff0000" r="3.0"/>
+    <circle cx="41" cy="573" fill="#ff0000" r="3.0"/>
+    <line stroke="#ff0000" x1="41" x2="529" y1="573" y2="373"/>
+    <circle cx="529" cy="373" fill="#ff0000" r="3.0"/>
+    <circle cx="529" cy="373" fill="#ff0000" r="3.0"/>
+    <line stroke="#ff0000" x1="529" x2="855" y1="373" y2="172"/>
+    <circle cx="855" cy="172" fill="#ff0000" r="3.0"/>
+    <circle cx="77" cy="573" fill="#ccff00" filter="url(#highlight)" r="3.0"/>
+    <line filter="url(#highlight)" stroke="#ccff00" x1="77" x2="77"
+        y1="573" y2="573"/>
+    <circle cx="77" cy="573" fill="#ccff00" filter="url(#highlight)" r="3.0"/>
+    <circle cx="77" cy="573" fill="#ccff00" filter="url(#highlight)" r="3.0"/>
+    <line filter="url(#highlight)" stroke="#ccff00" x1="77" x2="422"
+        y1="573" y2="373"/>
+    <circle cx="422" cy="373" fill="#ccff00" filter="url(#highlight)" r="3.0"/>
+    <circle cx="422" cy="373" fill="#ccff00" filter="url(#highlight)" r="3.0"/>
+    <line filter="url(#highlight)" stroke="#ccff00" x1="422" x2="120"
+        y1="373" y2="172"/>
+    <circle cx="120" cy="172" fill="#ccff00" filter="url(#highlight)" r="3.0"/>
+    <circle cx="48" cy="573" fill="#00ff66" r="3.0"/>
+    <line stroke="#00ff66" x1="48" x2="48" y1="573" y2="573"/>
+    <circle cx="48" cy="573" fill="#00ff66" r="3.0"/>
+    <circle cx="48" cy="573" fill="#00ff66" r="3.0"/>
+    <line stroke="#00ff66" x1="48" x2="189" y1="573" y2="373"/>
+    <circle cx="189" cy="373" fill="#00ff66" r="3.0"/>
+    <circle cx="189" cy="373" fill="#00ff66" r="3.0"/>
+    <line stroke="#00ff66" x1="189" x2="670" y1="373" y2="172"/>
+    <circle cx="670" cy="172" fill="#00ff66" r="3.0"/>
+    <circle cx="83" cy="573" fill="#0066ff" filter="url(#highlight)" r="3.0"/>
+    <line filter="url(#highlight)" stroke="#0066ff" x1="83" x2="83"
+        y1="573" y2="573"/>
+    <circle cx="83" cy="573" fill="#0066ff" filter="url(#highlight)" r="3.0"/>
+    <circle cx="83" cy="573" fill="#0066ff" filter="url(#highlight)" r="3.0"/>
+    <line filter="url(#highlight)" stroke="#0066ff" x1="83" x2="198"
+        y1="573" y2="373"/>
+    <circle cx="198" cy="373" fill="#0066ff" filter="url(#highlight)" r="3.0"/>
+    <circle cx="198" cy="373" fill="#0066ff" filter="url(#highlight)" r="3.0"/>
+    <line filter="url(#highlight)" stroke="#0066ff" x1="198" x2="396"
+        y1="373" y2="172"/>
+    <circle cx="396" cy="172" fill="#0066ff" filter="url(#highlight)" r="3.0"/>
+    <circle cx="63" cy="573" fill="#cc00ff" r="3.0"/>
+    <line stroke="#cc00ff" x1="63" x2="63" y1="573" y2="573"/>
+    <circle cx="63" cy="573" fill="#cc00ff" r="3.0"/>
+    <circle cx="63" cy="573" fill="#cc00ff" r="3.0"/>
+    <line stroke="#cc00ff" x1="63" x2="417" y1="573" y2="373"/>
+    <circle cx="417" cy="373" fill="#cc00ff" r="3.0"/>
+    <circle cx="417" cy="373" fill="#cc00ff" r="3.0"/>
+    <line stroke="#cc00ff" x1="417" x2="266" y1="373" y2="172"/>
+    <circle cx="266" cy="172" fill="#cc00ff" r="3.0"/>
+</svg>
