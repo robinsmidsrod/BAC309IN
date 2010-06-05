@@ -1,0 +1,3 @@
+# Alternativer til SVG #
+
+FIXME

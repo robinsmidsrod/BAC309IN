@@ -1,0 +1,3 @@
+# Funksjonalitet med feil #
+
+FIXME

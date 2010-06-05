@@ -1,0 +1,3 @@
+# Dekningsgrad i implementasjonene #
+
+FIXME

@@ -1,0 +1,3 @@
+# SVG-generatorbibliotek #
+
+FIXME

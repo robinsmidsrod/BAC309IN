@@ -1,0 +1,3 @@
+# Ikke støttet funksjonalitet #
+
+FIXME
