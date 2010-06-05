@@ -1,0 +1,3 @@
+# Hva er SVG? #
+
+FIXME
