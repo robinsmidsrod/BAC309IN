@@ -6,3 +6,8 @@ margin-left: 1.5em;
 border: 1px solid #ccc;
 float: right;
 }
+
+.slide li { margin-top: 0.25em; }
+.slide li p { margin-top: 0; margin-bottom: 0 }
+
+.slide pre code { font-size: 80%; }
