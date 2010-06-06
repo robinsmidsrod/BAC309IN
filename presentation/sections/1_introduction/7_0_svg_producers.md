@@ -1,5 +1,7 @@
 # Programvare med SVG-støtte #
 
- * Programvare som kan produsere SVG
+Programvare som kan produsere SVG-dokumenter
 
-FIXME
+* Kommersiell programvare
+* Fri programvare
+* Utviklerverktøy

@@ -2,4 +2,4 @@
 
 ![filter example](filter.svg)
 
-FIXME
+[% INSERT 'filter.svg' | indent %]

@@ -2,4 +2,4 @@
 
 ![ellipse example](ellipse.svg)
 
-FIXME
+[% INSERT 'ellipse.svg' | indent %]

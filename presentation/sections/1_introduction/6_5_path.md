@@ -2,4 +2,4 @@
 
 ![path example](path.svg)
 
-FIXME
+[% INSERT 'path.svg' | indent %]

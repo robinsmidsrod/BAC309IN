@@ -2,4 +2,4 @@
 
 ![line example](line.svg)
 
-FIXME
+[% INSERT 'line.svg' | indent %]

@@ -2,4 +2,4 @@
 
 ![polyline example](polyline.svg)
 
-FIXME
+[% INSERT 'polyline.svg' | indent %]

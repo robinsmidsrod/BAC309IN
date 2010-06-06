@@ -2,4 +2,4 @@
 
 ![rect example](rect.svg)
 
-FIXME
+[% INSERT 'rect.svg' | indent %]
