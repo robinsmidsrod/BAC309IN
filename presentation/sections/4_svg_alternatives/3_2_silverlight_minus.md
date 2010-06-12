@@ -1,3 +1,5 @@
 # Ulemper med Silverlight #
 
-FIXME
+* Større og mindre oversiktelig struktur
+* Plugin nødvendig
+* I prinsippe, samme som Flash

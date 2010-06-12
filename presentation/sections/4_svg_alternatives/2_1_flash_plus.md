@@ -1,3 +1,4 @@
 # Fordeler med Flash #
 
-FIXME
+* Markedsdominerende
+* Garantere visning av innhold

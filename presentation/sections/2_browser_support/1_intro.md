@@ -1,3 +1,7 @@
 # Nettlesere og SVG-støtte #
 
-FIXME
+* Animasjon
+* Ikke garantere for resultat
+* Internet Explorer plugin
+* Innebygget implementasjon
+* Jeff Schiller

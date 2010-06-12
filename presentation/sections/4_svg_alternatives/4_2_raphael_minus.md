@@ -1,3 +1,6 @@
 # Ulemper med Raphaël #
 
-FIXME
+* Krever serverside plugin
+* Ikke nødvendig
+* Kun et verktøy
+

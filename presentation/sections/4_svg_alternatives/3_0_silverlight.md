@@ -1,3 +1,5 @@
 # Microsoft Silverlight #
 
-FIXME
+* Rammeverk utvidelse av .NET
+* Moonlight, opensource implementasjon
+* Visual Studio som utviklingsverktøy

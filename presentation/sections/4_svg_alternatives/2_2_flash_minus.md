@@ -1,3 +1,6 @@
 # Ulemper med Flash #
 
-FIXME
+* Sikkerhet
+* Krever spesial verktøy
+* Plugin nødvendig
+* Properitært

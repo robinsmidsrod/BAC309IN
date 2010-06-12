@@ -1,3 +1,6 @@
 # Alternativer til SVG #
 
-FIXME
+* Andre teknologier mer lovende
+* Adobe Flash større brukeremasse
+* SVG har ingen fullstendig implementasjon
+
