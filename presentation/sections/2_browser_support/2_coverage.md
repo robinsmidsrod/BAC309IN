@@ -8,3 +8,5 @@
 * Webkit samme feil som Firefox
 * Webkit har mange feil
 * Internet Explorer har ingen direkte støtte
+
+FIXME

@@ -10,3 +10,5 @@
 * Stor forskjelle i module støtte
 * Internet Explorer på begynt arbeid med SVG
 * Opera best
+
+FIXME
