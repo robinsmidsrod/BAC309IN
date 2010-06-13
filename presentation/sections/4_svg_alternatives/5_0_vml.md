@@ -1,6 +1,10 @@
 # Microsoft VML #
 
-* Microsoft sin SVG implementasjon
-* Properitært språk
-* VML har blitt lagt på is.
+* Microsoft sin SVG versjon
+* Benytter XML, deklarativt
+* VML fungerer kun i Internet Explorer
 
+* ProperitÃ¦rt
+* Presentert for W3C, valgt bort for SVG
+* Ingen vidre utvikling
+* Blir fortsatt implementert i Internet Explorer.

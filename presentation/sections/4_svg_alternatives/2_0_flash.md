@@ -1,6 +1,14 @@
 # Adobe Flash #
 
-* Lang fartstid på internett
-* Enkelt å produsere spennende bannere og nettsider
-* Kan produsere kompliserte nettsider
-* ActionScript
+* Flash har lang fartstid
+* Enkelt Ã¥ lage spennende grafikk og animasjonenr
+
+* Flash er en multimedia platform
+* Flash benytter vektor og raster grafikk
+* Lager interaktiv opplevelse pÃ¥ nett
+
+* ActionScript kan brukes til avanserte operasjoner
+* Objekt orientert programmerings sprÃ¥k
+* Oppkobling av eksterne script, sende data f.eks
+
+* Krever plugin

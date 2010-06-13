@@ -1,4 +1,4 @@
 # Fordeler med Silverlight #
 
-* Eget rammeverk for utvikling av applikasjoner
-* Kan vise animasjoner, video og lyd
+* Rammeverk for utvikling av applikasjoner
+* Bredt fokus

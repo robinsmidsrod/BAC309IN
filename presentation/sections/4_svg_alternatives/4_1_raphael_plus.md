@@ -1,5 +1,6 @@
 # Fordeler med Raphaël #
 
-* Forenkler utvikling av SVG og VML grafikk
-* Imperativt fokus
-* Mindre redigering for å endre animasjon.
+* Imperativ programmerings fokus
+* SVG/VML har deklarativt programmerings fokus
+* Enklere å duplisere kode, samt gjøre endringer.
+
