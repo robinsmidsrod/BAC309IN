@@ -1,4 +1,4 @@
 # Fordeler med Silverlight #
 
-* Rammeverk for utvikling av applikasjoner
-* Bredt fokus
+* Microsoft rammeverk for applikasjons utvikling
+* Bredere fokus enn andre teknologier.

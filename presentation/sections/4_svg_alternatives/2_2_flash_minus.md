@@ -1,15 +1,12 @@
 # Ulemper med Flash #
 
-* Flash har hatt problemer med sikkerheten
-* Flere kritiske sikkerhetshull
-* Trusteer bekrefter Flash som en stor synder
+* Flash har problemer med applikasjons sikkerhet
+* Trusteer bekrefter Flash som en sikkerhetshull synder
 
-* Flash krever eget sett med verktøy
-* Gratis og komersielle er tilgjenglige
-* Gratis tilsvarer dårlig konvertings jobb
+* Flash krever avanserte spesial verktøy
+* Gratis og komersielle verktøy er tilgjenglige
+* Gratis verktøy holdre ofte ikke mål
 
 * Plugin kreves for kjøring av Flash apps
-
 * Adobe Flash er et properitært prosjekt
-* Adobe er eneste utvikler
-* Bare egne interesser som  ivaretas?
+

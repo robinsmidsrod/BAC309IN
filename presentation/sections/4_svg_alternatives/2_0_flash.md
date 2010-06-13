@@ -5,10 +5,10 @@
 
 * Flash er en multimedia platform
 * Flash benytter vektor og raster grafikk
-* Lager interaktiv opplevelse på nett
+* Brukes til å lage interaktive og spennende nettsteder
 
-* ActionScript kan brukes til avanserte operasjoner
-* Objekt orientert programmerings språk
+* ActionScript, programmerings språk for Flash.
+* Språket brukes til mer avanserte operasjoner
 * Oppkobling av eksterne script, sende data f.eks
 
-* Krever plugin
+* Krever ekstern plugin fra f.eks Adobe.

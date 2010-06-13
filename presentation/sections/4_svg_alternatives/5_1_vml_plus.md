@@ -2,7 +2,7 @@
 
 * Eneste språk på linje med SVG for Internet Explorer
 * Viser både grafikk og animasjon som SVG
-* Enda behov, ingen SVG i Internet Explorer
+* Enda behov, ingen native SVG støtte i Internet Explorer
 
 * Enkel XML kode
 * Trenger ingen avanserte verktøy

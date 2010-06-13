@@ -1,4 +1,4 @@
 # Fordeler med Flash #
 
-* Markedsdominerende, alle bruker Flash
+* Markedsdominerende, de fleste bruker Flash.
 * Garantere for resultatet

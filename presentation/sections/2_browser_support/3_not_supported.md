@@ -1,52 +1,25 @@
 # Ikke støttet funksjonalitet #
 
-* Jeff Schillers detaljerte oversikt
+* Jeff Schiller's detaljerte oversikt
 * Ikke implementerte moduler
+* Variende implementsjon i nettleserne
+* Filter module kommer dårligst ut
 
-* Store deler røde felter
-* Noen nettlesere utmerker seg
-* Filtre er en synder
+* Firefox og Opera har god støtte for filtre.
+* Webkit har dårlig støtte for filtre.
 
-* Firefox er god
-* Opera er god, bortsett fra 8.5
-* Webkit har ingen støtte, Chrome i beta men exp.
+* Motsatt for Font modulen
+* Webkit og Opera har god støtte.
+* Firefox har mindre god støtte.
 
-* Ser ut som noen har droppet implementasjon
+* Opera har god støtte for Animation modulen
+* Webkit mindre god implementasjon
+* Firefox har ingen støtte for modulen.
 
-* Motsatt for font støtte i nettleser
-* Webkit er god
-* Opera er god
-* Firefox er bad
-
-* Animasjons element
-* Firefox ingen støtte, exp i beta.
-* Webkit har god støtte
-* Opera har god støtte
-* Firefox blir bra når 3.7 kommer.
-
-* Text elementer
-* Firefox har problemer i alle sine versjoner
-* Webkit good
-* Opera good
-* Noen mangler
+* Text modulen
+* Opera og Webkit har god implementasjon
+* Firefox har en mindre god implementasjon.
 
 * Stor forskjell på støtten i modulen
 * Kan ikke garantere for resultat
-* Gjør brukt vanskelig
-
-* Opera har best implementasjon.
-
--------------------------------------------------
-
-* Stor forskjell på nettlesere
-* Firefox filter støtte
-* Webkit ingen filtre
-* Chrome eksprimentel
-* Droppet filtre i noen nettlesere
-* Font elementer (module)
-* Animasjons elementer (module)
-* Stor forskjelle i module støtte
-* Internet Explorer på begynt arbeid med SVG
-* Opera best
-
-FIXME
+* Gjør bruk av SVG vanskelig

@@ -1,13 +1,11 @@
 # Microsoft Silverlight #
 
-* Silverlight er Flash i Microsoft innpakkning
+* Silverlight, Flash i Microsoft innpakkning
 * Rammeverk for Microsoft utviklere
 * Kan lage grafikk, animasjoner, video og lyd
-* Innebbygget deler av .NET i Silverlight
 
-* Moonlight utviklet av Novel
-* Gjør det mulig å kjøre Silverlight samt annen .NET kode på BSD/Unix
+* Moonlight, kjører .NET kode på BSD/UNIX-platform
 
-* Samme verktøy som vanlig MS utviklere.
-* Kompllisert å utvikle i Tekst editor.
+* Utvikling i vanlig Microsoft miljø (Visual Studio)
+* For avansert å utvikle i tekst editor
 

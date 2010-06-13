@@ -1,9 +1,9 @@
 # Raphaël #
 
 * JS-bibliotek som bruker SVG/VML
-* Tar i bruk VML for å vise grafikk og animasjoner også i Internet Explorer
-* Cross-browser, fungerer i alle nettlesere.
+* VML for Internet Explorer, SVG for andre nettlesere.
+* Fungerer i alle nettlesere.
 
-* Emulerer funksjonalitet som ikke eksister i implementasjon av SVG/VML
+* Emulerer funksjonalitet som ikke funger i nettlesere
 * Bruker SVG og VML
 * Heller hjelpemiddel enn teknologi

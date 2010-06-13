@@ -9,10 +9,9 @@
 * Krever plugin
 * Adobe / Apache
 
-* Alle andre har prøvd, ingen gode resultat
+* De fleste nettlesere har prøvd, ingen gode resultat
 * Opera er foreløpig best
 
 * Jeff Schiller's implementasjons test
-* Viser generell prosent andel
-* Firefox, Safari, Opera, Chrome
+* Firefox, Safari, Opera, Chrome, Internet Explorer
 

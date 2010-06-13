@@ -1,30 +1,18 @@
 # Funksjonalitet med feil #
 
-* Firefox sliter med Font og Animasjon
-* Animasjon inneholder noen prøvd elementer men fleste inneholde feil.
-* Kan ikke animere element over tid
-* Kan ikke skalere eller rotere element
-* Kan ikke vise symboler og tegn, f.eks japanske.
-* Text vises ikke om font inneholder symboler.
+* Firefox, dårlig Font/Animation implementasjon.
+* Ikke mulig å animere element over tid.
+* Ikke mulig å skalere eller rotere element.
+* Ikke mulig å vise symboler og tegn.
 
-* Webkit sliter med cursor modulen samt view
-* Kan ikke gi peker eget design
-* Kan ikke hente ut nåværende elemeneter
-* Vanskelig sier W3C
+* Webkit, dårlig Cursor/View/Animate implementasjon.
+* Ikke mulig å definere egen peker.
+* Ikke mulig å hente ut aktive elementer.
+* Kan ikke endre attributter.
+* Kan ikke rotere eller skalere elementer.
+* W3C bekrefter at dette er vanskelig.
 
-* Webkit samme feil som FF, animasjon
-* Kan ikke endre attr.
-* Kan ikke rotere eller skalere
-
-* Opera har best støtte
-* Animasjonstesten
-* symboler i fonter.
-
-
-* Animasjon
-* Font
-* Webkit har flere feil
-* Opera har f� feil
-* Webkit animasjons module svakheter
-
-FIXME
+* Opera har foreløpig den beste støtten.
+* Få moduler med feil eller mangler.
+* Ikke mulig å vise symboler og tegn.
+* Font/Animation, best implementasjon i Opera.
