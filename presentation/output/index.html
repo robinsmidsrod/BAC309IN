@@ -579,23 +579,15 @@ C211 300 186 274 156 274&quot;
   <h1 id="nettlesereogsvg-sttte">Nettlesere og SVG-støtte</h1>
   <ul>
     <li>SVG har vært tilgjenglig lenge</li>
-    <li>Spørsmål knyttet til støtten i nettlesere</li>
-    <li>Stor variasjon</li>
+    <li>Stor variasjon i nettlesere implementasjoner</li>
     <li>
       <p>Ikke garantere for innhold</p>
     </li>
     <li>
       <p>Internet Explorer har ingen støtte for SVG</p>
     </li>
-    <li>Krever plugin</li>
     <li>
-      <p>Adobe / Apache</p>
-    </li>
-    <li>
-      <p>De fleste nettlesere har prøvd, ingen gode resultat</p>
-    </li>
-    <li>
-      <p>Opera er foreløpig best</p>
+      <p>Adobe SVG Viewer / Apache Batick SVG Toolkit</p>
     </li>
     <li>
       <p>Jeff Schiller&#39;s implementasjons test</p>
@@ -608,85 +600,72 @@ C211 300 186 274 156 274&quot;
 <div class="slide">
   <h1 id="dekningsgradiimplementasjonene">Dekningsgrad i implementasjonene</h1>
   <ul>
-    <li>Firefox har native støtte</li>
-    <li>Flere moduler mangler implementasjon</li>
-    <li>
-      <p>Sammenligning utgangspunkt i Firefox</p>
-    </li>
-    <li>
-      <p>Text module, mangler symbol støtte</p>
-    </li>
+    <li>Firefox, utgangspunkt for sammenligning</li>
+    <li>Text module, mangler symbol støtte</li>
     <li>Cursor module, egendefinert peker</li>
     <li>
       <p>Animation, flere feil og mangler</p>
     </li>
     <li>
-      <p>Opera best ut i Jeff Schiller&#39;s test</p>
+      <p>Opera har den beste implementasjonen</p>
     </li>
-    <li>Video og lyd</li>
-    <li>Font module, symboler</li>
+    <li>Video og lyd, mangler.</li>
     <li>
-      <p>Mulig mindre viktig med tanke på HTML5</p>
+      <p>Font module, symbol støtte.</p>
     </li>
     <li>
       <p>Chrome og Safari, basert på Webkits SVG implementasjon.</p>
     </li>
     <li>Text module, mangler symbol støtte.</li>
     <li>Filter module, mangler.</li>
-    <li>Flere av modulene inneholder feil, eller mangler.</li>
     <li>Antimation module, bedre implementert enn Firefox</li>
-    <li>
-      <p>Font module, bedre enn andre nettlesere.</p>
-    </li>
-    <li>
-      <p>IE har ikke SVG støtte</p>
-    </li>
+    <li>Font module, bedre enn andre nettlesere.</li>
   </ul>
   <div class="handout">
   </div>
 </div>
 <div class="slide">
   <h1 id="ikkestttetfunksjonalitet">Ikke støttet funksjonalitet</h1>
-  <ul>
-    <li>Jeff Schiller&#39;s detaljerte oversikt</li>
-    <li>Ikke implementerte moduler</li>
-    <li>Variende implementsjon i nettleserne</li>
-    <li>
-      <p>Filter module kommer dårligst ut</p>
-    </li>
-    <li>
-      <p>Firefox og Opera har god støtte for filtre.</p>
-    </li>
-    <li>
-      <p>Webkit har dårlig støtte for filtre.</p>
-    </li>
-    <li>
-      <p>Motsatt for Font modulen</p>
-    </li>
-    <li>Webkit og Opera har god støtte.</li>
-    <li>
-      <p>Firefox har mindre god støtte.</p>
-    </li>
-    <li>
-      <p>Opera har god støtte for Animation modulen</p>
-    </li>
-    <li>Webkit mindre god implementasjon</li>
-    <li>
-      <p>Firefox har ingen støtte for modulen.</p>
-    </li>
-    <li>
-      <p>Text modulen</p>
-    </li>
-    <li>Opera og Webkit har god implementasjon</li>
-    <li>
-      <p>Firefox har en mindre god implementasjon.</p>
-    </li>
-    <li>
-      <p>Stor forskjell på støtten i modulen</p>
-    </li>
-    <li>Kan ikke garantere for resultat</li>
-    <li>Gjør bruk av SVG vanskelig</li>
-  </ul>
+  <table>
+    <col align="center" />
+    <col align="center" />
+    <col align="center" />
+    <col align="center" />
+    <thead>
+      <tr>
+        <th>Modul</th>
+        <th>Firefox</th>
+        <th>Opera</th>
+        <th>WebKit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">Filter</td>
+        <td align="center">OK</td>
+        <td align="center">OK</td>
+        <td align="center">FEIL</td>
+      </tr>
+      <tr>
+        <td align="center">Font</td>
+        <td align="center">FEIL</td>
+        <td align="center">OK</td>
+        <td align="center">OK</td>
+      </tr>
+      <tr>
+        <td align="center">Animation</td>
+        <td align="center">FEIL</td>
+        <td align="center">OK</td>
+        <td align="center">DELVIS</td>
+      </tr>
+      <tr>
+        <td align="center">Text</td>
+        <td align="center">DELVIS</td>
+        <td align="center">OK</td>
+        <td align="center">OK</td>
+      </tr>
+    </tbody>
+  </table>
   <div class="handout">
   </div>
 </div>
@@ -704,16 +683,14 @@ C211 300 186 274 156 274&quot;
     </li>
     <li>Ikke mulig å definere egen peker.</li>
     <li>Ikke mulig å hente ut aktive elementer.</li>
-    <li>Kan ikke endre attributter.</li>
-    <li>Kan ikke rotere eller skalere elementer.</li>
+    <li>Ikke mulig å animere element over tid.</li>
     <li>
-      <p>W3C bekrefter at dette er vanskelig.</p>
+      <p>Ikke mulig å skalere eller rotere element.</p>
     </li>
     <li>
-      <p>Opera har foreløpig den beste støtten.</p>
+      <p>Opera minst feil, best støtte.</p>
     </li>
-    <li>Få moduler med feil eller mangler.</li>
-    <li>Ikke mulig å vise symboler og tegn.</li>
+    <li>Spesial tegn i Font / Text modulen.</li>
     <li>Font/Animation, best implementasjon i Opera.</li>
   </ul>
   <div class="handout">
@@ -792,12 +769,12 @@ C211 300 186 274 156 274&quot;
       <p>SVG er internetts offisielle åpne standard for grafikk og animasjon (W3C)</p>
     </li>
     <li>
-      <p>Flash og Silverlight har mye flere utviklere</p>
+      <p>Flash og Silverlight har mange flere utviklere</p>
     </li>
     <li>
       <p>Flash har god funksjonalitet for video og lyd</p>
     </li>
-    <li>SVG har ingen hundre prosent implementasjon</li>
+    <li>Det finnes ingen SVG-implementasjon uten mangler</li>
     <li>Vanskelig å ta i bruk for utviklere</li>
     <li>Microsoft har annonsert sin interesse for SVG</li>
   </ul>
@@ -809,24 +786,24 @@ C211 300 186 274 156 274&quot;
   <ul>
     <li>Flash har lang fartstid</li>
     <li>
-      <p>Enkelt å lage spennende grafikk og animasjonenr</p>
+      <p>Enkelt å lage spennende grafikk og animasjoner</p>
     </li>
     <li>
-      <p>Flash er en multimedia platform</p>
+      <p>Flash er en multimedia-plattform</p>
     </li>
-    <li>Flash benytter vektor og raster grafikk</li>
+    <li>Flash benytter vektor- og raster-grafikk</li>
     <li>
       <p>Brukes til å lage interaktive og spennende nettsteder</p>
     </li>
     <li>
-      <p>ActionScript, programmerings språk for Flash.</p>
+      <p>ActionScript, programmeringspråk for Flash</p>
     </li>
     <li>Språket brukes til mer avanserte operasjoner</li>
     <li>
-      <p>Oppkobling av eksterne script, sende data f.eks</p>
+      <p>Oppkobling av eksterne script, sende data, osv.</p>
     </li>
     <li>
-      <p>Krever ekstern plugin fra f.eks Adobe.</p>
+      <p>Krever ekstern plugin fra Adobe</p>
     </li>
   </ul>
   <div class="handout">
@@ -835,8 +812,11 @@ C211 300 186 274 156 274&quot;
 <div class="slide">
   <h1 id="fordelermedflash">Fordeler med Flash</h1>
   <ul>
-    <li>Markedsdominerende, de fleste bruker Flash.</li>
-    <li>Garantere for resultatet</li>
+    <li>Markedsdominerende, de fleste bruker Flash</li>
+    <li>Samme utseende/rendering alltid garantert <ul>
+        <li>Kun én implementasjon</li>
+      </ul>
+    </li>
   </ul>
   <div class="handout">
   </div>
@@ -844,21 +824,21 @@ C211 300 186 274 156 274&quot;
 <div class="slide">
   <h1 id="ulempermedflash">Ulemper med Flash</h1>
   <ul>
-    <li>Flash har problemer med applikasjons sikkerhet</li>
+    <li>Flash har problemer med sikkerhet</li>
     <li>
-      <p>Trusteer bekrefter Flash som en sikkerhetshull synder</p>
+      <p>Trusteer bekrefter Flash som en synder når det kommer til sikkerhetshull</p>
     </li>
     <li>
-      <p>Flash krever avanserte spesial verktøy</p>
+      <p>Flash krever avanserte spesialverktøy</p>
     </li>
-    <li>Gratis og komersielle verktøy er tilgjenglige</li>
+    <li>Gratis og kommersielle verktøy er tilgjenglige</li>
     <li>
-      <p>Gratis verktøy holdre ofte ikke mål</p>
+      <p>Gratisverktøy holder ofte ikke mål</p>
     </li>
     <li>
-      <p>Plugin kreves for kjøring av Flash apps</p>
+      <p>Plugin kreves for kjøring av Flash-applikasjoner</p>
     </li>
-    <li>Adobe Flash er et properitært prosjekt</li>
+    <li>Adobe Flash er et proprietært prosjekt</li>
   </ul>
   <div class="handout">
   </div>
@@ -866,18 +846,18 @@ C211 300 186 274 156 274&quot;
 <div class="slide">
   <h1 id="microsoftsilverlight">Microsoft Silverlight</h1>
   <ul>
-    <li>Silverlight, Flash i Microsoft innpakkning</li>
-    <li>Rammeverk for Microsoft utviklere</li>
+    <li>Silverlight - Flash i Microsoft-innpakking</li>
+    <li>Rammeverk for Microsoft-utviklere</li>
     <li>
       <p>Kan lage grafikk, animasjoner, video og lyd</p>
     </li>
     <li>
-      <p>Moonlight, kjører .NET kode på BSD/UNIX-platform</p>
+      <p>Moonlight - kjører .NET-kode på BSD/UNIX-plattformen</p>
     </li>
     <li>
-      <p>Utvikling i vanlig Microsoft miljø (Visual Studio)</p>
+      <p>Utvikling i vanlig Microsoft-miljø (Visual Studio)</p>
     </li>
-    <li>For avansert å utvikle i tekst editor</li>
+    <li>Svært vanskelig å utvikle for med en tekstbehandler</li>
   </ul>
   <div class="handout">
   </div>
@@ -885,8 +865,11 @@ C211 300 186 274 156 274&quot;
 <div class="slide">
   <h1 id="fordelermedsilverlight">Fordeler med Silverlight</h1>
   <ul>
-    <li>Microsoft rammeverk for applikasjons utvikling</li>
-    <li>Bredere fokus enn andre teknologier.</li>
+    <li>Microsoft-rammeverk for programvareutvikling</li>
+    <li>Bredere fokus enn andre teknologier <ul>
+        <li>Ikke bare tekst, grafikk, animasjon, osv.</li>
+      </ul>
+    </li>
   </ul>
   <div class="handout">
   </div>
@@ -894,15 +877,14 @@ C211 300 186 274 156 274&quot;
 <div class="slide">
   <h1 id="ulempermedsilverlight">Ulemper med Silverlight</h1>
   <ul>
-    <li>Silverlight prosjekt krever stor filstruktur</li>
-    <li>Vanskelig å sette sammen i tekst editor</li>
+    <li>Silverlight-prosjekter krever stor filstruktur</li>
+    <li>Vanskelig å sette sammen i tekstbehandler</li>
     <li>
-      <p>Krever kraftige utviklings verktøy</p>
+      <p>Krever kraftige utviklingsverktøy</p>
     </li>
     <li>
-      <p>Krever tredjeparts programvare</p>
+      <p>Krever tredjepartsprogramvare</p>
     </li>
-    <li>Er det egentlig behov for Silverlight</li>
   </ul>
   <div class="handout">
   </div>
@@ -910,16 +892,17 @@ C211 300 186 274 156 274&quot;
 <div class="slide">
   <h1 id="raphal">Raphaël</h1>
   <ul>
-    <li>JS-bibliotek som bruker SVG/VML</li>
-    <li>VML for Internet Explorer, SVG for andre nettlesere.</li>
+    <li>JavaScript-bibliotek som benytter SVG eller VML</li>
+    <li>VML for Internet Explorer, SVG for andre nettlesere</li>
     <li>
-      <p>Fungerer i alle nettlesere.</p>
+      <p>Fungerer i alle nettlesere</p>
     </li>
     <li>
       <p>Emulerer funksjonalitet som ikke funger i nettlesere</p>
     </li>
     <li>Bruker SVG og VML</li>
     <li>Heller hjelpemiddel enn teknologi</li>
+    <li>Verktøy for animasjon og grafikk på web</li>
   </ul>
   <div class="handout">
   </div>
@@ -927,8 +910,12 @@ C211 300 186 274 156 274&quot;
 <div class="slide">
   <h1 id="fordelermedraphal">Fordeler med Raphaël</h1>
   <ul>
-    <li>Imperativ programmerings fokus</li>
-    <li>Enklere å duplisere kode, samt gjøre endringer.</li>
+    <li>Imperativt programmeringsfokus <ul>
+        <li>Enklere å duplisere grafikk-elementer</li>
+        <li>Enklere å gjøre endringer</li>
+      </ul>
+    </li>
+    <li>Tar i bruk teknologi som allerede eksisterer i nettlesere</li>
   </ul>
   <div class="handout">
   </div>
@@ -936,9 +923,12 @@ C211 300 186 274 156 274&quot;
 <div class="slide">
   <h1 id="ulempermedraphal">Ulemper med Raphaël</h1>
   <ul>
-    <li>Krever serverside JavaScript include</li>
-    <li>Tar i bruk teknologi som allerede eksisterer i nettlesere </li>
-    <li>Verktøy for animasjon og grafikk på web.</li>
+    <li>Krever inkludering av JavaScript-bibliotek på nettsiden</li>
+    <li>Krever JavaScript-støtte i nettleser <ul>
+        <li>Tregere en innebygd grafikkstøtte</li>
+      </ul>
+    </li>
+    <li>Ekstra programvarelag</li>
   </ul>
   <div class="handout">
   </div>
@@ -946,17 +936,18 @@ C211 300 186 274 156 274&quot;
 <div class="slide">
   <h1 id="microsoftvml">Microsoft VML</h1>
   <ul>
-    <li>Microsoft sin SVG versjon</li>
-    <li>Benytter XML, deklarativt</li>
+    <li>Microsoft sitt språk for vektorgrafikk</li>
+    <li>Benytter XML</li>
+    <li>Deklarativt</li>
     <li>
       <p>VML fungerer kun i Internet Explorer</p>
     </li>
     <li>
-      <p>Properitært</p>
+      <p>Proprietært</p>
     </li>
-    <li>Presentert for W3C, valgt bort for SVG</li>
-    <li>Ingen vidre utvikling</li>
-    <li>Blir fortsatt implementert i Internet Explorer.</li>
+    <li>Fremlagt for W3C, ble ikke godkjent</li>
+    <li>Ingen videre utvikling</li>
+    <li>Er fortsatt tilgjengelig i Internet Explorer 8</li>
   </ul>
   <div class="handout">
   </div>
@@ -967,17 +958,18 @@ C211 300 186 274 156 274&quot;
     <li>Eneste språk på linje med SVG for Internet Explorer</li>
     <li>Viser både grafikk og animasjon som SVG</li>
     <li>
-      <p>Enda behov, ingen native SVG støtte i Internet Explorer</p>
+      <p>Fremdeles behov fordi Internet Explorer ikke har innebygd støtte for SVG</p>
     </li>
     <li>
-      <p>Enkel XML kode</p>
+      <p>Enkel XML-kode</p>
     </li>
     <li>Trenger ingen avanserte verktøy</li>
+    <li>Trenger ingen ekstra filer</li>
     <li>
-      <p>Trenger ingen ekstra filer, kan komprimeres</p>
+      <p>Kan komprimeres</p>
     </li>
     <li>
-      <p>Mulig å konvertere mellom språkene</p>
+      <p>Mulig å konvertere mellom SVG og VML med f.eks. XSLT</p>
     </li>
   </ul>
   <div class="handout">
@@ -987,10 +979,9 @@ C211 300 186 274 156 274&quot;
   <h1 id="ulempermedvml">Ulemper med VML</h1>
   <ul>
     <li>Enda en teknologi å ta hensyn til</li>
-    <li>Dynamisk generering krever komplisert kode</li>
+    <li>Dynamisk generering av SVG eller VML krever komplisert kode</li>
     <li>Kun tilgjenglig i Internet Explorer</li>
-    <li>VML utvikles ikke lenger</li>
-    <li>VML eksister i mangel av noe bedre.</li>
+    <li>Utviklingen av VML har stoppet</li>
   </ul>
   <div class="handout">
   </div>
@@ -1129,12 +1120,13 @@ C211 300 186 274 156 274&quot;
 </div>
 <div class="slide">
   <h1 id="brukergrensesnitt">Brukergrensesnitt</h1>
+  <p><img alt="SVGChartApp" id="svgchartapp" src="6_final_words/svgchartapp.png" /></p>
   <ul>
-    <li>Benyttet COR(Chain of responsibility) pattern</li>
+    <li>Benyttet CoR (Chain of Responsibility)-mønster</li>
     <li>Benyttet enkle layouts</li>
-    <li>...</li>
-    <li>...</li>
-    <li>...</li>
+    <li>Benyttet statisk kontroller</li>
+    <li>Henter og skriver data til API</li>
+    <li>Benyttet MVC (Model-View-Controller)-mønster</li>
   </ul>
   <div class="handout">
   </div>
