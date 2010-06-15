@@ -2,10 +2,11 @@
 
 * Eneste språk på linje med SVG for Internet Explorer
 * Viser både grafikk og animasjon som SVG
-* Enda behov, ingen native SVG støtte i Internet Explorer
+* Fremdeles behov fordi Internet Explorer ikke har innebygd støtte for SVG
 
-* Enkel XML kode
+* Enkel XML-kode
 * Trenger ingen avanserte verktøy
-* Trenger ingen ekstra filer, kan komprimeres
+* Trenger ingen ekstra filer
+* Kan komprimeres
 
-* Mulig å konvertere mellom språkene
+* Mulig å konvertere mellom SVG og VML med f.eks. XSLT

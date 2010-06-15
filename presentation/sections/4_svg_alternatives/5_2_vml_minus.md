@@ -1,8 +1,6 @@
 # Ulemper med VML #
 
 * Enda en teknologi å ta hensyn til
-* Dynamisk generering krever komplisert kode
+* Dynamisk generering av SVG eller VML krever komplisert kode
 * Kun tilgjenglig i Internet Explorer
-* VML utvikles ikke lenger
-* VML eksister i mangel av noe bedre.
-
+* Utviklingen av VML har stoppet

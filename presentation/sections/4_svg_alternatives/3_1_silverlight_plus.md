@@ -1,4 +1,5 @@
 # Fordeler med Silverlight #
 
-* Microsoft rammeverk for applikasjons utvikling
-* Bredere fokus enn andre teknologier.
+* Microsoft-rammeverk for programvareutvikling
+* Bredere fokus enn andre teknologier
+  * Ikke bare tekst, grafikk, animasjon, osv.

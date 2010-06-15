@@ -1,8 +1,7 @@
 # Ulemper med Silverlight #
 
-* Silverlight prosjekt krever stor filstruktur
-* Vanskelig å sette sammen i tekst editor
-* Krever kraftige utviklings verktøy
+* Silverlight-prosjekter krever stor filstruktur
+* Vanskelig å sette sammen i tekstbehandler
+* Krever kraftige utviklingsverktøy
 
-* Krever tredjeparts programvare
-* Er det egentlig behov for Silverlight
+* Krever tredjepartsprogramvare

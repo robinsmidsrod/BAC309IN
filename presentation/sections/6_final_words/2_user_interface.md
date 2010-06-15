@@ -2,7 +2,8 @@
 
 ![SVGChartApp](svgchartapp.png)
 
-* Benyttet COR(Chain of responsibility) pattern
+* Benyttet CoR (Chain of Responsibility)-mønster
 * Benyttet enkle layouts
 * Benyttet statisk kontroller
 * Henter og skriver data til API
+* Benyttet MVC (Model-View-Controller)-mønster
