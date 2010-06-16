@@ -579,18 +579,19 @@ C211 300 186 274 156 274&quot;
   <h1 id="nettlesereogsvg-sttte">Nettlesere og SVG-støtte</h1>
   <ul>
     <li>SVG har vært tilgjenglig lenge</li>
-    <li>Stor variasjon i nettlesere implementasjoner</li>
+    <li>Stor variasjon i nettleserimplementasjoner</li>
     <li>
-      <p>Ikke garantere for innhold</p>
+      <p>Kan ikke garantere for utseende</p>
     </li>
     <li>
       <p>Internet Explorer har ingen støtte for SVG</p>
+      <ul>
+        <li>Adobe SVG Viewer</li>
+        <li>Apache Batick SVG Toolkit</li>
+      </ul>
     </li>
     <li>
-      <p>Adobe SVG Viewer / Apache Batick SVG Toolkit</p>
-    </li>
-    <li>
-      <p>Jeff Schiller&#39;s implementasjons test</p>
+      <p>Jeff Schillers implementasjonstest</p>
     </li>
     <li>Firefox, Safari, Opera, Chrome, Internet Explorer</li>
   </ul>
@@ -600,26 +601,30 @@ C211 300 186 274 156 274&quot;
 <div class="slide">
   <h1 id="dekningsgradiimplementasjonene">Dekningsgrad i implementasjonene</h1>
   <ul>
-    <li>Firefox, utgangspunkt for sammenligning</li>
-    <li>Text module, mangler symbol støtte</li>
-    <li>Cursor module, egendefinert peker</li>
     <li>
-      <p>Animation, flere feil og mangler</p>
+      <p>Firefox - utgangspunkt for sammenligning</p>
+      <ul>
+        <li>Text module - mangler symbolstøtte</li>
+        <li>Cursor module - egendefinert peker</li>
+        <li>Animation module - flere feil og mangler</li>
+      </ul>
     </li>
     <li>
       <p>Opera har den beste implementasjonen</p>
+      <ul>
+        <li>Video og lyd - mangler</li>
+        <li>Font module - mangler symbolstøtte</li>
+      </ul>
     </li>
-    <li>Video og lyd, mangler.</li>
     <li>
-      <p>Font module, symbol støtte.</p>
+      <p>Chrome og Safari - basert på WebKits SVG-implementasjon</p>
+      <ul>
+        <li>Text module - mangler symbolstøtte</li>
+        <li>Filter module - mangler delvis</li>
+        <li>Animation module - bedre implementert enn Firefox</li>
+        <li>Font module - bedre enn andre nettlesere</li>
+      </ul>
     </li>
-    <li>
-      <p>Chrome og Safari, basert på Webkits SVG implementasjon.</p>
-    </li>
-    <li>Text module, mangler symbol støtte.</li>
-    <li>Filter module, mangler.</li>
-    <li>Antimation module, bedre implementert enn Firefox</li>
-    <li>Font module, bedre enn andre nettlesere.</li>
   </ul>
   <div class="handout">
   </div>
@@ -644,7 +649,7 @@ C211 300 186 274 156 274&quot;
         <td align="center">Filter</td>
         <td align="center">OK</td>
         <td align="center">OK</td>
-        <td align="center">FEIL</td>
+        <td align="center">DELVIS</td>
       </tr>
       <tr>
         <td align="center">Font</td>
@@ -672,26 +677,30 @@ C211 300 186 274 156 274&quot;
 <div class="slide">
   <h1 id="funksjonalitetmedfeil">Funksjonalitet med feil</h1>
   <ul>
-    <li>Firefox, dårlig Font/Animation implementasjon.</li>
-    <li>Ikke mulig å animere element over tid.</li>
-    <li>Ikke mulig å skalere eller rotere element.</li>
     <li>
-      <p>Ikke mulig å vise symboler og tegn.</p>
+      <p>Firefox - dårlig Font/Animation-implementasjon</p>
+      <ul>
+        <li>Ikke mulig å animere element over tid</li>
+        <li>Ikke mulig å skalere eller rotere element</li>
+        <li>Ikke mulig å vise symboler og tegn</li>
+      </ul>
     </li>
     <li>
-      <p>Webkit, dårlig Cursor/View/Animate implementasjon.</p>
+      <p>WebKit - dårlig Cursor/View/Animate-implementasjon</p>
+      <ul>
+        <li>Ikke mulig å definere egen peker</li>
+        <li>Ikke mulig å hente ut aktive elementer</li>
+        <li>Ikke mulig å animere element over tid</li>
+        <li>Ikke mulig å skalere eller rotere element</li>
+      </ul>
     </li>
-    <li>Ikke mulig å definere egen peker.</li>
-    <li>Ikke mulig å hente ut aktive elementer.</li>
-    <li>Ikke mulig å animere element over tid.</li>
     <li>
-      <p>Ikke mulig å skalere eller rotere element.</p>
+      <p>Opera minst feil, best støtte</p>
+      <ul>
+        <li>Spesialtegn i Font/Text-modulen</li>
+        <li>Font/Animation - best implementasjon i Opera</li>
+      </ul>
     </li>
-    <li>
-      <p>Opera minst feil, best støtte.</p>
-    </li>
-    <li>Spesial tegn i Font / Text modulen.</li>
-    <li>Font/Animation, best implementasjon i Opera.</li>
   </ul>
   <div class="handout">
   </div>
