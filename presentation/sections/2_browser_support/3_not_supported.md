@@ -2,7 +2,7 @@
 
 | Modul     | Firefox | Opera | WebKit |
 |:---------:|:-------:|:-----:|:------:|
-| Filter    | OK      | OK    | FEIL   |
+| Filter    | OK      | OK    | DELVIS |
 | Font      | FEIL    | OK    | OK     |
 | Animation | FEIL    | OK    | DELVIS |
 | Text      | DELVIS  | OK    | OK     |
