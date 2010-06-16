@@ -11,7 +11,7 @@
   * Git
   * GitHub.com
 * Tekstproduksjon
-  * Markdown
-  * Template Toolkit
+  * Markdown / Template Toolkit
   * S5 slideshow
+  * PrinceXML
   * Perl
